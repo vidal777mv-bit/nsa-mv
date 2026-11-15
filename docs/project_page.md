@@ -4,7 +4,7 @@
 
 NASA Space Apps Challenge 2026. Challenges: *Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars* and *Interplanetary Survival Guide: Martian Map*.
 
-Repository and demo: [[PENDING: public repository URL and demo/video URL]]
+Live site: https://vidal777mv-bit.github.io/nsa-mv/ · Repository: https://github.com/vidal777mv-bit/nsa-mv · Demo video (30 s): link added on upload.
 
 ## High-level summary
 
