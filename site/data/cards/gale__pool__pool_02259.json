@@ -1,0 +1,142 @@
+{
+  "target_id": "gale",
+  "analog_id": "pool__pool_02259",
+  "rank": 10,
+  "D": 0.2055907670812696,
+  "tie_group": 0,
+  "features": {
+    "slope_p95_deg": {
+      "target": 5.632688298101299,
+      "analog": 5.4231202101981735,
+      "z_diff": -0.06891513430539037
+    },
+    "hi": {
+      "target": 0.4759383632763258,
+      "analog": 0.47629084759015183,
+      "z_diff": 0.0055064422366075125
+    },
+    "coherence": {
+      "target": 0.36211346115404286,
+      "analog": 0.39847176335321755,
+      "z_diff": 0.23169504786906878
+    },
+    "hurst": {
+      "target": 0.7002340746089979,
+      "analog": 0.7701623385814211,
+      "z_diff": 0.34931801253980516
+    },
+    "ridge_pct": {
+      "target": 1.1137011137011137,
+      "analog": 5.853405853405853,
+      "z_diff": 2.5985643996677252
+    },
+    "valley_pct": {
+      "target": 2.797202797202797,
+      "analog": 6.88940688940689,
+      "z_diff": 6.660596249831378
+    }
+  },
+  "vertical_exaggeration": 10.0,
+  "in_distance": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "context_features": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "similar": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "different": [],
+  "context_similar": [
+    "coherence"
+  ],
+  "context_different": [
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "analog_place": {
+    "name": "Krasnoyarsk, Russia",
+    "admin1": "Krasnoyarsk",
+    "country": "Russia",
+    "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+    "match": "inside",
+    "distance_km": 0.0,
+    "nearest_named_feature": null
+  },
+  "mission_pct": {
+    "landing": {
+      "target": 99.9791710060404,
+      "analog": 100.0,
+      "limit_deg": 15.0,
+      "source": "https://marsoweb.nas.nasa.gov/landingsites/mer2003/doc/original.html",
+      "reason": null
+    },
+    "driving": {
+      "target": 100.0,
+      "analog": 100.0,
+      "limit_deg": 30.0,
+      "source": "https://science.nasa.gov/mission/mars-2020-perseverance/rover-components/",
+      "reason": null
+    }
+  },
+  "mission_baseline_m": 100,
+  "rotation_deg": 170.0,
+  "rotation_rms": 1.0592480811443885,
+  "files": {
+    "target": "terrain/gale/",
+    "analog": "terrain/pool__pool_02259/"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:52:29Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "gale_ctx_dtm_tile_3_3",
+        "path": "data/raw/mars/gale/ctx_3_3/PG_Gale_CTX_3_3_AATE_20m.tif",
+        "sha256": "b1bb428ffcbd7c4b77de9291a4bd2ebf7f73ae3a854680eb950c2e22dc7228f8"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00259.tif",
+        "sha256": "42e0dcb512e477e10b410e2f1d4108a5a046adec91b3ea90e3a79383a265f2bb"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  },
+  "context": {
+    "koppen_class": "ET",
+    "koppen_label": "Polar, tundra",
+    "koppen_code": 29,
+    "elevation_m": 186.10191615502123,
+    "nearest_town": {
+      "name": "Mikhaylova",
+      "country": "Russia",
+      "distance_km": 147.32
+    },
+    "sources": {
+      "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+      "elevation": "cop_dem_glo30 window mean over the 4 km disk (source_id of the window's measure record)",
+      "town": "Natural Earth 1:10m populated places (public domain)",
+      "novelty": "config/known_analog_regions.json (circle approximation)"
+    }
+  },
+  "novelty": "new",
+  "known_region_id": null,
+  "refined": {
+    "pool_id": "pool__pool_02259",
+    "rank_before": 10,
+    "D_before": 0.2055907670812696,
+    "D_clip_offset0": null,
+    "refined_offset_km": null
+  }
+}

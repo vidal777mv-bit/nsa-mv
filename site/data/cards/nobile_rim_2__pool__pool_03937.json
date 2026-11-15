@@ -1,0 +1,141 @@
+{
+  "target_id": "nobile_rim_2",
+  "analog_id": "pool__pool_03937",
+  "rank": 7,
+  "D": 0.45398900985129687,
+  "tie_group": 0,
+  "features": {
+    "slope_p95_deg": {
+      "target": 16.744024118691062,
+      "analog": 18.37441332474526,
+      "z_diff": 0.5361431324277878
+    },
+    "hi": {
+      "target": 0.43859299142371433,
+      "analog": 0.4078651585884183,
+      "z_diff": -0.4800243015841266
+    },
+    "coherence": {
+      "target": 0.2663123021976634,
+      "analog": 0.04684104897332227,
+      "z_diff": -1.3985912280263875
+    },
+    "hurst": {
+      "target": 0.9503004459155807,
+      "analog": 0.8868555745237395,
+      "z_diff": -0.3169310250456301
+    },
+    "ridge_pct": {
+      "target": 17.042217042217043,
+      "analog": 27.81662781662782,
+      "z_diff": 5.907119072468709
+    },
+    "valley_pct": {
+      "target": 13.468013468013469,
+      "analog": 28.56772856772857,
+      "z_diff": 24.57675704842844
+    }
+  },
+  "vertical_exaggeration": 1.8,
+  "in_distance": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "context_features": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "similar": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "different": [],
+  "context_similar": [],
+  "context_different": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "analog_place": {
+    "name": "Chukchi Autonomous Okrug, Russia",
+    "admin1": "Chukchi Autonomous Okrug",
+    "country": "Russia",
+    "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+    "match": "inside",
+    "distance_km": 0.0,
+    "nearest_named_feature": null
+  },
+  "mission_pct": {
+    "landing": {
+      "target": 76.40074984378255,
+      "analog": 70.69360549885441,
+      "limit_deg": 12.0,
+      "source": "https://ntrs.nasa.gov/citations/19720018253",
+      "reason": null
+    },
+    "driving": {
+      "target": 100.0,
+      "analog": 99.12518225369715,
+      "limit_deg": 25.0,
+      "source": "https://ntrs.nasa.gov/citations/19730008090",
+      "reason": null
+    }
+  },
+  "mission_baseline_m": 100,
+  "rotation_deg": 190.0,
+  "rotation_rms": 0.9271879110766426,
+  "files": {
+    "target": "terrain/nobile_rim_2/",
+    "analog": "terrain/pool__pool_03937/"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:52:18Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "lola_5m_dm2_surf",
+        "path": "data/raw/moon/nobile_rim_2/lola_5m_dm2_surf.tif",
+        "sha256": "d88677c21633683061117db0a577f0510e0948fe9db315d13be28782407ff604"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01937.tif",
+        "sha256": "8afc32bec7987d199f557c6030f7d15422b41f1a84798fff1a5f56675ee5b237"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  },
+  "context": {
+    "koppen_class": "ET",
+    "koppen_label": "Polar, tundra",
+    "koppen_code": 29,
+    "elevation_m": 384.7621651634337,
+    "nearest_town": {
+      "name": "Uelen",
+      "country": "Russia",
+      "distance_km": 51.27
+    },
+    "sources": {
+      "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+      "elevation": "cop_dem_glo30 window mean over the 4 km disk (source_id of the window's measure record)",
+      "town": "Natural Earth 1:10m populated places (public domain)",
+      "novelty": "config/known_analog_regions.json (circle approximation)"
+    }
+  },
+  "novelty": "new",
+  "known_region_id": null,
+  "refined": {
+    "pool_id": "pool__pool_03937",
+    "rank_before": 7,
+    "D_before": 0.45398900985129687,
+    "D_clip_offset0": null,
+    "refined_offset_km": null
+  }
+}

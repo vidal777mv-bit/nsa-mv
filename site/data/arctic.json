@@ -1,0 +1,355 @@
+{
+ "provenance": {
+  "schema": "analog.arctic_site/1",
+  "created": "2026-11-14T14:51:13Z",
+  "config_version": "1.3",
+  "code_version": "uncommitted",
+  "inputs": [
+   {
+    "source_id": "arctic_probe_results",
+    "path": "data/derived/arctic_probe/results.json",
+    "sha256": "ebbf676260d40b513c292299f229116df425e80254764cbdeedf49f0933d7215"
+   }
+  ],
+  "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources."
+ },
+ "note": "Experiment: Copernicus GLO-30 Arctic windows 60-82N; closures are ties within sensor noise (D <= p95 0.415); a lower bound (n=400 of 2065 candidates).",
+ "mars_closed_cell_ids": [
+  "mars_00029",
+  "mars_00119",
+  "mars_00134",
+  "mars_00151",
+  "mars_00163",
+  "mars_00172",
+  "mars_00254",
+  "mars_00271",
+  "mars_00272",
+  "mars_00276",
+  "mars_00277",
+  "mars_00280",
+  "mars_00351",
+  "mars_00385",
+  "mars_00388",
+  "mars_00399",
+  "mars_00402",
+  "mars_00405",
+  "mars_00447",
+  "mars_00471",
+  "mars_00496",
+  "mars_00498",
+  "mars_00501",
+  "mars_00541",
+  "mars_00571",
+  "mars_00589",
+  "mars_00590",
+  "mars_00597",
+  "mars_00618",
+  "mars_00620",
+  "mars_00629",
+  "mars_00668",
+  "mars_00751",
+  "mars_00755",
+  "mars_00761",
+  "mars_00767",
+  "mars_00771",
+  "mars_00784",
+  "mars_00797",
+  "mars_00841",
+  "mars_00850",
+  "mars_00866",
+  "mars_00904",
+  "mars_00911",
+  "mars_00950",
+  "mars_00976",
+  "mars_00982",
+  "mars_01000",
+  "mars_01003",
+  "mars_01017",
+  "mars_01047",
+  "mars_01049",
+  "mars_01062",
+  "mars_01066",
+  "mars_01067",
+  "mars_01117",
+  "mars_01134",
+  "mars_01166",
+  "mars_01252",
+  "mars_01266",
+  "mars_01277",
+  "mars_01306",
+  "mars_01322",
+  "mars_01358",
+  "mars_01385",
+  "mars_01388",
+  "mars_01420",
+  "mars_01467",
+  "mars_01482",
+  "mars_01504",
+  "mars_01535",
+  "mars_01577",
+  "mars_01587",
+  "mars_01593",
+  "mars_01599",
+  "mars_01618",
+  "mars_01637",
+  "mars_01759",
+  "mars_01802",
+  "mars_01841",
+  "mars_01843",
+  "mars_01867",
+  "mars_01871",
+  "mars_01881",
+  "mars_01916",
+  "mars_01935",
+  "mars_01949"
+ ],
+ "moon_closed_target_ids": [
+  "nobile_rim_1",
+  "mons_mouton_plateau"
+ ],
+ "windows": [
+  {
+   "id": "arc_00006",
+   "lat": 65.77,
+   "lon": -38.93,
+   "place": "Kommuneqarfik Sermersooq, Greenland"
+  },
+  {
+   "id": "arc_00013",
+   "lat": 80.77,
+   "lon": -17.93,
+   "place": "Nationalparken, Greenland"
+  },
+  {
+   "id": "arc_00041",
+   "lat": 81.97,
+   "lon": -65.03,
+   "place": "Nunavut, Canada"
+  },
+  {
+   "id": "arc_00050",
+   "lat": 80.77,
+   "lon": -75.23,
+   "place": "Nunavut, Canada"
+  },
+  {
+   "id": "arc_00051",
+   "lat": 74.77,
+   "lon": -21.23,
+   "place": "Nationalparken, Greenland"
+  },
+  {
+   "id": "arc_00065",
+   "lat": 81.97,
+   "lon": -42.23,
+   "place": "Nationalparken, Greenland"
+  },
+  {
+   "id": "arc_00067",
+   "lat": 69.97,
+   "lon": -69.23,
+   "place": "Nunavut, Canada"
+  },
+  {
+   "id": "arc_00089",
+   "lat": 72.07,
+   "lon": -78.23,
+   "place": "Nunavut, Canada"
+  },
+  {
+   "id": "arc_00099",
+   "lat": 71.77,
+   "lon": -82.13,
+   "place": "Nunavut, Canada"
+  },
+  {
+   "id": "arc_00105",
+   "lat": 81.97,
+   "lon": -44.03,
+   "place": "Nationalparken, Greenland"
+  },
+  {
+   "id": "arc_00122",
+   "lat": 69.07,
+   "lon": 94.87,
+   "place": "Krasnoyarsk, Russia"
+  },
+  {
+   "id": "arc_00146",
+   "lat": 67.87,
+   "lon": -68.03,
+   "place": "Nunavut, Canada"
+  },
+  {
+   "id": "arc_00153",
+   "lat": 78.97,
+   "lon": -82.13,
+   "place": "Nunavut, Canada"
+  },
+  {
+   "id": "arc_00162",
+   "lat": 81.07,
+   "lon": -20.93,
+   "place": "Nationalparken, Greenland"
+  },
+  {
+   "id": "arc_00163",
+   "lat": 61.87,
+   "lon": -47.93,
+   "place": "Kommuneqarfik Sermersooq, Greenland"
+  },
+  {
+   "id": "arc_00172",
+   "lat": 81.97,
+   "lon": -71.93,
+   "place": "Nunavut, Canada"
+  },
+  {
+   "id": "arc_00180",
+   "lat": 80.77,
+   "lon": 48.07,
+   "place": "Arkhangel'sk, Russia"
+  },
+  {
+   "id": "arc_00186",
+   "lat": 76.87,
+   "lon": -87.23,
+   "place": "Nunavut, Canada"
+  },
+  {
+   "id": "arc_00187",
+   "lat": 78.97,
+   "lon": -66.23,
+   "place": "Qaasuitsup Kommunia, Greenland"
+  },
+  {
+   "id": "arc_00189",
+   "lat": 78.97,
+   "lon": -78.23,
+   "place": "Nunavut, Canada"
+  },
+  {
+   "id": "arc_00191",
+   "lat": 79.87,
+   "lon": -19.13,
+   "place": "Nationalparken, Greenland"
+  },
+  {
+   "id": "arc_00214",
+   "lat": 81.97,
+   "lon": -53.03,
+   "place": "Nationalparken, Greenland"
+  },
+  {
+   "id": "arc_00225",
+   "lat": 75.97,
+   "lon": 62.77,
+   "place": "Arkhangel'sk, Russia"
+  },
+  {
+   "id": "arc_00227",
+   "lat": 64.87,
+   "lon": -73.13,
+   "place": "Nunavut, Canada"
+  },
+  {
+   "id": "arc_00244",
+   "lat": 74.77,
+   "lon": -82.13,
+   "place": "Nunavut, Canada"
+  },
+  {
+   "id": "arc_00257",
+   "lat": 81.97,
+   "lon": -59.93,
+   "place": "Nationalparken, Greenland"
+  },
+  {
+   "id": "arc_00261",
+   "lat": 81.97,
+   "lon": -35.03,
+   "place": "Nationalparken, Greenland"
+  },
+  {
+   "id": "arc_00264",
+   "lat": 71.77,
+   "lon": 107.77,
+   "place": "Krasnoyarsk, Russia"
+  },
+  {
+   "id": "arc_00287",
+   "lat": 79.87,
+   "lon": 98.77,
+   "place": "Krasnoyarsk, Russia"
+  },
+  {
+   "id": "arc_00297",
+   "lat": 75.07,
+   "lon": -81.23,
+   "place": "Nunavut, Canada"
+  },
+  {
+   "id": "arc_00313",
+   "lat": 77.77,
+   "lon": -65.93,
+   "place": "Qaasuitsup Kommunia, Greenland"
+  },
+  {
+   "id": "arc_00316",
+   "lat": 80.77,
+   "lon": 61.87,
+   "place": "Arkhangel'sk, Russia"
+  },
+  {
+   "id": "arc_00323",
+   "lat": 65.77,
+   "lon": -15.23,
+   "place": "Austurland, Iceland"
+  },
+  {
+   "id": "arc_00331",
+   "lat": 70.87,
+   "lon": -73.13,
+   "place": "Nunavut, Canada"
+  },
+  {
+   "id": "arc_00349",
+   "lat": 80.77,
+   "lon": -26.03,
+   "place": "Nationalparken, Greenland"
+  },
+  {
+   "id": "arc_00361",
+   "lat": 77.77,
+   "lon": -66.23,
+   "place": "Qaasuitsup Kommunia, Greenland"
+  },
+  {
+   "id": "arc_00378",
+   "lat": 68.77,
+   "lon": 93.97,
+   "place": "Krasnoyarsk, Russia"
+  },
+  {
+   "id": "arc_00385",
+   "lat": 72.97,
+   "lon": -81.23,
+   "place": "Nunavut, Canada"
+  },
+  {
+   "id": "arc_00388",
+   "lat": 79.87,
+   "lon": -94.13,
+   "place": "Nunavut, Canada"
+  }
+ ],
+ "counts": {
+  "mars_gap_cells": 211,
+  "mars_gap_cells_closed": 87,
+  "moon_gap_targets": 3,
+  "moon_gap_targets_closed": 2,
+  "windows_measured": 400,
+  "windows_candidates": 2065,
+  "windows_closing": 39
+ }
+}

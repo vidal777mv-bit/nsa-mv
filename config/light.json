@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "created": "2026-11-14",
+  "doc": "Obliquity per body for the sun-light stage (STANDARDS section 10.15, P-S). The angle is the tilt of the body's equator to the reference plane that sets the Sun's declination: for Earth and Mars the orbit plane (NSSDC 'Obliquity to orbit'); for the Moon the ecliptic plane (Cassini's second law), NOT NSSDC's 6.68 deg, which is the tilt to the lunar orbit around Earth. Each value was read from its source on 2026-11-14.",
+  "bodies": {
+    "earth": {
+      "obliquity_deg": 23.44,
+      "reference_plane": "orbit plane (NSSDC 'Obliquity to orbit')",
+      "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+      "source_checked": "2026-11-14: page line 'Obliquity to orbit (deg) 23.44'",
+      "note": "NSSDC planetary fact sheet, printed value."
+    },
+    "mars": {
+      "obliquity_deg": 25.19,
+      "reference_plane": "orbit plane (NSSDC 'Obliquity to orbit')",
+      "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html",
+      "source_checked": "2026-11-14: page row 'Obliquity to orbit (deg) 25.19'",
+      "note": "NSSDC planetary fact sheet, printed value."
+    },
+    "moon": {
+      "obliquity_deg": 1.54,
+      "reference_plane": "ecliptic plane (Cassini's second law: the lunar equator is inclined 1.54 deg to the ecliptic and 6.68 deg to the lunar orbit)",
+      "source_url": "https://arxiv.org/abs/2004.00242",
+      "doi": "10.1007/s10569-020-09961-9",
+      "source_title": "Cassini states of a rigid body with a liquid core, G. Boue, Celestial Mechanics and Dynamical Astronomy (2020); arXiv preprint 2004.00242",
+      "source_checked": "2026-11-14: arXiv PDF text, sentence 'The Moon's equatorial plane has a constant inclination of 6.68 to the orbit plane, and of 1.54 to the ecliptic plane.' The published journal version was not read; the arXiv text is the one checked.",
+      "note": "Used: 1.54 deg to the ecliptic. Not used: NSSDC 6.68 deg (lunar equator to the lunar orbit around Earth), which would give the wrong Sun declination range."
+    }
+  }
+}

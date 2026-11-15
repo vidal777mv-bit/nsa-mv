@@ -1,0 +1,145 @@
+{
+  "target_id": "gale",
+  "analog_id": "gale__pool__pool_01893",
+  "rank": 2,
+  "D": 0.09131867269683935,
+  "tie_group": 0,
+  "features": {
+    "slope_p95_deg": {
+      "target": 5.632688298101299,
+      "analog": 5.768301410163883,
+      "z_diff": 0.04459551034165619
+    },
+    "hi": {
+      "target": 0.4759383632763258,
+      "analog": 0.4726680422634937,
+      "z_diff": -0.0510883266176009
+    },
+    "coherence": {
+      "target": 0.36211346115404286,
+      "analog": 0.28008615660193187,
+      "z_diff": -0.5227229849914018
+    },
+    "hurst": {
+      "target": 0.7002340746089979,
+      "analog": 0.7288392049503181,
+      "z_diff": 0.1428933983433734
+    },
+    "ridge_pct": {
+      "target": 1.1137011137011137,
+      "analog": 6.216006216006216,
+      "z_diff": 2.7973616761450373
+    },
+    "valley_pct": {
+      "target": 2.797202797202797,
+      "analog": 1.4504014504014504,
+      "z_diff": -2.1920949682989344
+    }
+  },
+  "vertical_exaggeration": 9.3,
+  "in_distance": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "context_features": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "similar": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "different": [],
+  "context_similar": [
+    "coherence"
+  ],
+  "context_different": [
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "analog_place": {
+    "name": "Xinjiang, China",
+    "admin1": "Xinjiang",
+    "country": "China",
+    "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+    "match": "inside",
+    "distance_km": 0.0,
+    "nearest_named_feature": null
+  },
+  "mission_pct": {
+    "landing": {
+      "target": 99.9791710060404,
+      "analog": 99.89585503020204,
+      "limit_deg": 15.0,
+      "source": "https://marsoweb.nas.nasa.gov/landingsites/mer2003/doc/original.html",
+      "reason": null
+    },
+    "driving": {
+      "target": 100.0,
+      "analog": 100.0,
+      "limit_deg": 30.0,
+      "source": "https://science.nasa.gov/mission/mars-2020-perseverance/rover-components/",
+      "reason": null
+    }
+  },
+  "mission_baseline_m": 100,
+  "rotation_deg": 20.0,
+  "rotation_rms": 0.9305168467296769,
+  "files": {
+    "target": "terrain/gale/",
+    "analog": "terrain/gale__pool__pool_01893/"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:52:26Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "gale_ctx_dtm_tile_3_3",
+        "path": "data/raw/mars/gale/ctx_3_3/PG_Gale_CTX_3_3_AATE_20m.tif",
+        "sha256": "b1bb428ffcbd7c4b77de9291a4bd2ebf7f73ae3a854680eb950c2e22dc7228f8"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01893.tif",
+        "sha256": "3d668797ea00b18bfb3725fd8380bc7299dbcd37df68a4a2e69b0c19883fb5b1"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  },
+  "context": {
+    "koppen_class": "BWk",
+    "koppen_label": "Arid, desert, cold",
+    "koppen_code": 5,
+    "elevation_m": 1717.4862703402578,
+    "nearest_town": {
+      "name": "Hami",
+      "country": "China",
+      "distance_km": 125.3
+    },
+    "sources": {
+      "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+      "elevation": "nasadem window mean over the 4 km disk (source_id of the window's measure record)",
+      "town": "Natural Earth 1:10m populated places (public domain)",
+      "novelty": "config/known_analog_regions.json (circle approximation)"
+    }
+  },
+  "novelty": "new",
+  "known_region_id": null,
+  "refined": {
+    "pool_id": "pool__pool_01893",
+    "rank_before": 8,
+    "D_before": 0.19588645681418043,
+    "D_clip_offset0": 0.2037017691648365,
+    "refined_offset_km": [
+      4.0,
+      -4.0
+    ]
+  }
+}

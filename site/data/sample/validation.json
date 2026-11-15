@@ -1,0 +1,324 @@
+{
+  "sample": true,
+  "v1.2": {
+    "config_version": "SAMPLE 1.2",
+    "status": "SAMPLE: placeholder numbers, NOT results",
+    "sample": true,
+    "V0": {
+      "features": [
+        "slope_p95_deg",
+        "hurst",
+        "hi",
+        "coherence"
+      ],
+      "n_pool": 2000,
+      "pairs": [
+        {
+          "a": "slope_p95_deg",
+          "b": "hi",
+          "n": 2000,
+          "rho": -0.25,
+          "flag": false
+        },
+        {
+          "a": "slope_p95_deg",
+          "b": "coherence",
+          "n": 2000,
+          "rho": 0.41,
+          "flag": false
+        },
+        {
+          "a": "slope_p95_deg",
+          "b": "hurst",
+          "n": 2000,
+          "rho": 0.62,
+          "flag": false
+        },
+        {
+          "a": "hi",
+          "b": "coherence",
+          "n": 2000,
+          "rho": -0.21,
+          "flag": false
+        },
+        {
+          "a": "hi",
+          "b": "hurst",
+          "n": 2000,
+          "rho": -0.22,
+          "flag": false
+        },
+        {
+          "a": "coherence",
+          "b": "hurst",
+          "n": 2000,
+          "rho": 0.56,
+          "flag": false
+        }
+      ],
+      "max_abs_rho_threshold": 0.8,
+      "flagged": [],
+      "pass": true
+    },
+    "V1": {
+      "n": 15,
+      "n_expected": 15,
+      "median": 0.11,
+      "p95": 0.3
+    },
+    "V2": {
+      "auc": 0.71,
+      "bootstrap": {
+        "ci_lo": 0.55,
+        "ci_hi": 0.84
+      },
+      "permutation": {
+        "p": 0.04
+      },
+      "pass": true
+    },
+    "V2R": {
+      "rows": [],
+      "k_correct": 3,
+      "n_computed": 5,
+      "n_expected": 5,
+      "wilson95": [
+        0.2307,
+        0.8824
+      ],
+      "binomial_one_sided_p": 0.5,
+      "chance": 0.2,
+      "reserve_min_correct": 4,
+      "pass": false
+    },
+    "summary": {
+      "V0_redundancy_pass": true,
+      "V1_noise_reported": true,
+      "V2_discrimination_pass": true,
+      "V2R_reserve_pass": false,
+      "all_pass": false,
+      "complete": true
+    },
+    "diagnosis": "SAMPLE diagnosis: placeholder text, not an interpretation of any result."
+  },
+  "v1.3": {
+    "version": "SAMPLE 1.3",
+    "status": "SAMPLE: placeholder numbers, NOT results",
+    "sample": true,
+    "features_in_distance": [
+      "slope_p95_deg",
+      "hi",
+      "hurst"
+    ],
+    "AUC": {
+      "n_regions": 15,
+      "n_regions_expected": 15,
+      "auc": 0.69,
+      "bootstrap": {
+        "ci_lo": 0.51,
+        "ci_hi": 0.92
+      },
+      "permutation": {
+        "p": 0.007
+      }
+    },
+    "NN": {
+      "summary": {
+        "k_correct": 5,
+        "n_computed": 15,
+        "n_expected": 15,
+        "wilson95": [
+          0.1518,
+          0.5829
+        ],
+        "binomial_one_sided_p": 0.06,
+        "chance": 0.2,
+        "min_correct": 7,
+        "pass": false
+      },
+      "rows": [
+        {
+          "region_id": "sample_holdout_00",
+          "true_class": "impact_crater",
+          "nearest_dev": "sample_dev_00",
+          "D": 0.2,
+          "predicted_class": "impact_crater",
+          "correct": true
+        },
+        {
+          "region_id": "sample_holdout_01",
+          "true_class": "impact_crater",
+          "nearest_dev": "sample_dev_01",
+          "D": 0.25,
+          "predicted_class": "dune_field",
+          "correct": false
+        },
+        {
+          "region_id": "sample_holdout_02",
+          "true_class": "impact_crater",
+          "nearest_dev": "sample_dev_02",
+          "D": 0.30000000000000004,
+          "predicted_class": "plain",
+          "correct": false
+        },
+        {
+          "region_id": "sample_holdout_03",
+          "true_class": "volcanic_field",
+          "nearest_dev": "sample_dev_03",
+          "D": 0.35000000000000003,
+          "predicted_class": "volcanic_field",
+          "correct": true
+        },
+        {
+          "region_id": "sample_holdout_04",
+          "true_class": "volcanic_field",
+          "nearest_dev": "sample_dev_04",
+          "D": 0.4,
+          "predicted_class": "canyon_valley",
+          "correct": false
+        },
+        {
+          "region_id": "sample_holdout_05",
+          "true_class": "volcanic_field",
+          "nearest_dev": "sample_dev_05",
+          "D": 0.45,
+          "predicted_class": "impact_crater",
+          "correct": false
+        },
+        {
+          "region_id": "sample_holdout_06",
+          "true_class": "dune_field",
+          "nearest_dev": "sample_dev_06",
+          "D": 0.5,
+          "predicted_class": "dune_field",
+          "correct": true
+        },
+        {
+          "region_id": "sample_holdout_07",
+          "true_class": "dune_field",
+          "nearest_dev": "sample_dev_07",
+          "D": 0.55,
+          "predicted_class": "plain",
+          "correct": false
+        },
+        {
+          "region_id": "sample_holdout_08",
+          "true_class": "dune_field",
+          "nearest_dev": "sample_dev_08",
+          "D": 0.6000000000000001,
+          "predicted_class": "volcanic_field",
+          "correct": false
+        },
+        {
+          "region_id": "sample_holdout_09",
+          "true_class": "canyon_valley",
+          "nearest_dev": "sample_dev_09",
+          "D": 0.65,
+          "predicted_class": "canyon_valley",
+          "correct": true
+        },
+        {
+          "region_id": "sample_holdout_10",
+          "true_class": "canyon_valley",
+          "nearest_dev": "sample_dev_10",
+          "D": 0.7,
+          "predicted_class": "impact_crater",
+          "correct": false
+        },
+        {
+          "region_id": "sample_holdout_11",
+          "true_class": "canyon_valley",
+          "nearest_dev": "sample_dev_11",
+          "D": 0.75,
+          "predicted_class": "dune_field",
+          "correct": false
+        },
+        {
+          "region_id": "sample_holdout_12",
+          "true_class": "plain",
+          "nearest_dev": "sample_dev_12",
+          "D": 0.8,
+          "predicted_class": "plain",
+          "correct": true
+        },
+        {
+          "region_id": "sample_holdout_13",
+          "true_class": "plain",
+          "nearest_dev": "sample_dev_13",
+          "D": 0.8500000000000001,
+          "predicted_class": "volcanic_field",
+          "correct": false
+        },
+        {
+          "region_id": "sample_holdout_14",
+          "true_class": "plain",
+          "nearest_dev": "sample_dev_14",
+          "D": 0.9000000000000001,
+          "predicted_class": "canyon_valley",
+          "correct": false
+        }
+      ]
+    },
+    "pass": {
+      "auc": false,
+      "auc_ci_lower": true,
+      "permutation_p": true,
+      "nn_against_dev": false,
+      "all": false
+    },
+    "summary": {
+      "AUC_pass": false,
+      "NN_pass": false,
+      "all_pass": false
+    },
+    "holdout_regions_sample": [
+      "sample_holdout_00",
+      "sample_holdout_01",
+      "sample_holdout_02",
+      "sample_holdout_03",
+      "sample_holdout_04",
+      "sample_holdout_05",
+      "sample_holdout_06",
+      "sample_holdout_07",
+      "sample_holdout_08",
+      "sample_holdout_09",
+      "sample_holdout_10",
+      "sample_holdout_11",
+      "sample_holdout_12",
+      "sample_holdout_13",
+      "sample_holdout_14"
+    ]
+  },
+  "v1.3_noise": {
+    "status": "SAMPLE: placeholder",
+    "flat_slope_p95_deg": 3.0,
+    "sample": true,
+    "rule": "SAMPLE: tie threshold = p95 of D over dev regions of the same relief class",
+    "n_expected": 15,
+    "n_used": 15,
+    "classes": {
+      "rugged": {
+        "n": 13,
+        "median": 0.1,
+        "p95": 0.3,
+        "regions": []
+      },
+      "flat": {
+        "n": 2,
+        "median": 0.2,
+        "p95": 0.4,
+        "regions": []
+      }
+    }
+  },
+  "provenance": {
+    "schema": "analog.sample.validation/1",
+    "created": "2026-11-14T07:15:00Z",
+    "config_version": "1.1",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [],
+    "generated_with": "SAMPLE: synthetic terrain generated by tools/make_sample_data.py. Not NASA data. Code written with AI assistance (Claude, Anthropic) under the team's direction.",
+    "sample": true
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "target_id": "nobile_rim_2",
+  "analog_id": "pool__pool_03351",
+  "rank": 1,
+  "D": 0.2209727975908572,
+  "tie_group": 0,
+  "features": {
+    "slope_p95_deg": {
+      "target": 16.744024118691062,
+      "analog": 17.69319782933552,
+      "z_diff": 0.3121297445746892
+    },
+    "hi": {
+      "target": 0.43859299142371433,
+      "analog": 0.45093655578064223,
+      "z_diff": 0.1928287911240831
+    },
+    "coherence": {
+      "target": 0.2663123021976634,
+      "analog": 0.3305218869391578,
+      "z_diff": 0.4091786995123022
+    },
+    "hurst": {
+      "target": 0.9503004459155807,
+      "analog": 0.9284820950746031,
+      "z_diff": -0.1089908789337613
+    },
+    "ridge_pct": {
+      "target": 17.042217042217043,
+      "analog": 17.145817145817144,
+      "z_diff": 0.056799221850659276
+    },
+    "valley_pct": {
+      "target": 13.468013468013469,
+      "analog": 22.17042217042217,
+      "z_diff": 14.164305949008499
+    }
+  },
+  "vertical_exaggeration": 1.8,
+  "in_distance": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "context_features": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "similar": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "different": [],
+  "context_similar": [
+    "coherence",
+    "ridge_pct"
+  ],
+  "context_different": [
+    "valley_pct"
+  ],
+  "analog_place": {
+    "name": "Krasnoyarsk, Russia",
+    "admin1": "Krasnoyarsk",
+    "country": "Russia",
+    "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+    "match": "inside",
+    "distance_km": 0.0,
+    "nearest_named_feature": null
+  },
+  "mission_pct": {
+    "landing": {
+      "target": 76.40074984378255,
+      "analog": 80.42074567798376,
+      "limit_deg": 12.0,
+      "source": "https://ntrs.nasa.gov/citations/19720018253",
+      "reason": null
+    },
+    "driving": {
+      "target": 100.0,
+      "analog": 99.2293272234951,
+      "limit_deg": 25.0,
+      "source": "https://ntrs.nasa.gov/citations/19730008090",
+      "reason": null
+    }
+  },
+  "mission_baseline_m": 100,
+  "rotation_deg": 0.0,
+  "rotation_rms": 0.9390065931908351,
+  "files": {
+    "target": "terrain/nobile_rim_2/",
+    "analog": "terrain/pool__pool_03351/"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:52:16Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "lola_5m_dm2_surf",
+        "path": "data/raw/moon/nobile_rim_2/lola_5m_dm2_surf.tif",
+        "sha256": "d88677c21633683061117db0a577f0510e0948fe9db315d13be28782407ff604"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01351.tif",
+        "sha256": "28e0587fa9c76e81d044a8effc1a27f661a7a28d4fb2ddf32adda4babafb74ee"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  },
+  "context": {
+    "koppen_class": "ET",
+    "koppen_label": "Polar, tundra",
+    "koppen_code": 29,
+    "elevation_m": 1155.1651584292733,
+    "nearest_town": {
+      "name": "Boyarka",
+      "country": "Russia",
+      "distance_km": 199.9
+    },
+    "sources": {
+      "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+      "elevation": "cop_dem_glo30 window mean over the 4 km disk (source_id of the window's measure record)",
+      "town": "Natural Earth 1:10m populated places (public domain)",
+      "novelty": "config/known_analog_regions.json (circle approximation)"
+    }
+  },
+  "novelty": "new",
+  "known_region_id": null,
+  "refined": {
+    "pool_id": "pool__pool_03351",
+    "rank_before": 1,
+    "D_before": 0.2209727975908572,
+    "D_clip_offset0": null,
+    "refined_offset_km": null
+  }
+}

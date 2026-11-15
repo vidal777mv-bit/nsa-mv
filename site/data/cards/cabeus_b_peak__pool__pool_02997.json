@@ -1,0 +1,141 @@
+{
+  "target_id": "cabeus_b_peak",
+  "analog_id": "pool__pool_02997",
+  "rank": 4,
+  "D": 0.5339143817690031,
+  "tie_group": 0,
+  "features": {
+    "slope_p95_deg": {
+      "target": 23.92789449642651,
+      "analog": 22.750761642628643,
+      "z_diff": -0.387092660559402
+    },
+    "hi": {
+      "target": 0.6117535066879656,
+      "analog": 0.6173303544361362,
+      "z_diff": 0.08712044418184893
+    },
+    "coherence": {
+      "target": 0.613030359679738,
+      "analog": 0.37687769286079853,
+      "z_diff": -1.5048943469165739
+    },
+    "hurst": {
+      "target": 0.9723831527584808,
+      "analog": 0.8051641092855455,
+      "z_diff": -0.835322094479687
+    },
+    "ridge_pct": {
+      "target": 26.702926702926703,
+      "analog": 29.44832944832945,
+      "z_diff": 1.5051793790425079
+    },
+    "valley_pct": {
+      "target": 4.351204351204351,
+      "analog": 30.665630665630665,
+      "z_diff": 42.830163226763794
+    }
+  },
+  "vertical_exaggeration": 1.2,
+  "in_distance": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "context_features": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "similar": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "different": [],
+  "context_similar": [],
+  "context_different": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "analog_place": {
+    "name": "Nationalparken, Greenland",
+    "admin1": "Nationalparken",
+    "country": "Greenland",
+    "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+    "match": "inside",
+    "distance_km": 0.0,
+    "nearest_named_feature": null
+  },
+  "mission_pct": {
+    "landing": {
+      "target": 39.137679650072904,
+      "analog": 73.56800666527806,
+      "limit_deg": 12.0,
+      "source": "https://ntrs.nasa.gov/citations/19720018253",
+      "reason": null
+    },
+    "driving": {
+      "target": 98.85440533222246,
+      "analog": 97.29223078525307,
+      "limit_deg": 25.0,
+      "source": "https://ntrs.nasa.gov/citations/19730008090",
+      "reason": null
+    }
+  },
+  "mission_baseline_m": 100,
+  "rotation_deg": 250.0,
+  "rotation_rms": 1.4111534441576812,
+  "files": {
+    "target": "terrain/cabeus_b_peak/",
+    "analog": "terrain/pool__pool_02997/"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:52:48Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "lola_20m_polar_ldem",
+        "path": "data/raw/moon/cabeus_b_peak/lola_20m_polar_ldem_win6km.tif",
+        "sha256": "1b77398f2b7b7f5a2fdd37a8a3b26142cdaedbc23da809c0997f19d195cf07b1"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00997.tif",
+        "sha256": "9632a9d19e6d8d0469a4358493808af44eace47ae203b5376b73c1f9b678a9a6"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  },
+  "context": {
+    "koppen_class": "EF",
+    "koppen_label": "Polar, frost",
+    "koppen_code": 30,
+    "elevation_m": 754.8552258937926,
+    "nearest_town": {
+      "name": "Nord",
+      "country": "Greenland",
+      "distance_km": 190.87
+    },
+    "sources": {
+      "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+      "elevation": "cop_dem_glo30 window mean over the 4 km disk (source_id of the window's measure record)",
+      "town": "Natural Earth 1:10m populated places (public domain)",
+      "novelty": "config/known_analog_regions.json (circle approximation)"
+    }
+  },
+  "novelty": "new",
+  "known_region_id": null,
+  "refined": {
+    "pool_id": "pool__pool_02997",
+    "rank_before": 4,
+    "D_before": 0.5339143817690031,
+    "D_clip_offset0": null,
+    "refined_offset_km": null
+  }
+}

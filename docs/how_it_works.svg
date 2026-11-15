@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" font-family="Bahnschrift, Segoe UI, sans-serif">
+  <title>Common Ground: how the engine works (10 steps, one direction)</title>
+  <desc>Ten steps in two rows, arrows in one direction. Each box gives the step name and one key figure from the files on disk, 2026-11-15.</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#f4efe7"/>
+    </marker>
+  </defs>
+  <style>
+    .bg { fill: #0b0b0c; }
+    .ink { fill: #f4efe7; }
+    .mute { fill: #f4efe7; opacity: 0.72; }
+    .num { font-size: 16px; font-weight: 700; letter-spacing: 1px; }
+    .name { font-size: 20px; font-weight: 700; fill: #f4efe7; }
+    .fig { font-size: 34px; font-weight: 700; }
+    .unit { font-size: 14px; fill: #f4efe7; opacity: 0.75; }
+    .box { fill: #141416; stroke-width: 2; }
+    .earth { fill: #a9cf9b; }
+    .mars { fill: #ec9a6c; }
+    .flow { stroke: #f4efe7; stroke-width: 2; fill: none; marker-end: url(#arr); }
+    .flowdim { stroke: #f4efe7; stroke-width: 2; fill: none; opacity: 0.6; marker-end: url(#arr); }
+  </style>
+
+  <!-- background -->
+  <rect x="0" y="0" width="1600" height="900" class="bg"/>
+
+  <!-- title -->
+  <text x="58" y="80" font-size="44" font-weight="700" class="ink">How the engine works</text>
+  <text x="58" y="118" font-size="20" class="mute">10 steps, one direction. Each step reads only what the step before persisted.</text>
+
+  <!-- legend -->
+  <circle cx="1120" cy="72" r="7" class="earth"/>
+  <text x="1136" y="78" font-size="16" class="ink">Earth</text>
+  <circle cx="1232" cy="72" r="7" class="mars"/>
+  <text x="1248" y="78" font-size="16" class="ink">Mars and Moon</text>
+  <circle cx="1400" cy="72" r="7" fill="none" stroke="#f4efe7" stroke-width="2"/>
+  <text x="1416" y="78" font-size="16" class="ink">Both, or pipeline</text>
+
+  <!-- ROW 1: steps 01 to 05 (boxes at y 170 to 320) -->
+  <!-- 01 Sources -->
+  <g>
+    <rect x="58" y="170" width="252" height="150" rx="10" class="box" stroke="#f4efe7" stroke-opacity="0.35"/>
+    <text x="76" y="204" class="num ink">01</text>
+    <text x="76" y="232" class="name">Sources</text>
+    <text x="76" y="278" class="fig ink">54</text>
+    <text x="76" y="302" class="unit">source records in config/sources.json</text>
+  </g>
+  <line x1="314" y1="245" x2="362" y2="245" class="flow"/>
+
+  <!-- 02 Windows -->
+  <g>
+    <rect x="366" y="170" width="252" height="150" rx="10" class="box" stroke="#f4efe7" stroke-opacity="0.35"/>
+    <text x="384" y="204" class="num ink">02</text>
+    <text x="384" y="232" class="name">Windows</text>
+    <text x="384" y="278" class="fig ink">8 km</text>
+    <text x="384" y="302" class="unit">disc, 100 m grid, 81 x 81 px</text>
+  </g>
+  <line x1="622" y1="245" x2="670" y2="245" class="flow"/>
+
+  <!-- 03 Measure -->
+  <g>
+    <rect x="674" y="170" width="252" height="150" rx="10" class="box" stroke="#f4efe7" stroke-opacity="0.35"/>
+    <text x="692" y="204" class="num ink">03</text>
+    <text x="692" y="232" class="name">Measure</text>
+    <text x="692" y="278" class="fig ink">6,126</text>
+    <text x="692" y="302" class="unit">window records, 6 features each</text>
+  </g>
+  <line x1="930" y1="245" x2="978" y2="245" class="flow"/>
+
+  <!-- 04 Earth pool -->
+  <g>
+    <rect x="982" y="170" width="252" height="150" rx="10" class="box" stroke="#a9cf9b" stroke-width="2.5"/>
+    <text x="1000" y="204" class="num earth">04</text>
+    <text x="1000" y="232" class="name">Earth pool</text>
+    <text x="1000" y="278" class="fig earth">2,730</text>
+    <text x="1000" y="302" class="unit">of 4,065 places kept after ice rule</text>
+  </g>
+  <line x1="1238" y1="245" x2="1286" y2="245" class="flow"/>
+
+  <!-- 05 Sigma -->
+  <g>
+    <rect x="1290" y="170" width="252" height="150" rx="10" class="box" stroke="#a9cf9b" stroke-width="2.5"/>
+    <text x="1308" y="204" class="num earth">05</text>
+    <text x="1308" y="232" class="name">Sigma calibration</text>
+    <text x="1308" y="278" class="fig earth">3.04 deg</text>
+    <text x="1308" y="302" class="unit">sigma of slope, 1.4826 x MAD</text>
+  </g>
+
+  <!-- connector from 05 down and back to 06 (one direction: 01 to 10) -->
+  <path d="M 1416 320 L 1416 370 L 184 370 L 184 418" class="flow"/>
+
+  <!-- ROW 2: steps 06 to 10 (boxes at y 420 to 570) -->
+  <!-- 06 Neighbours -->
+  <g>
+    <rect x="58" y="420" width="252" height="150" rx="10" class="box" stroke="#f4efe7" stroke-opacity="0.35"/>
+    <text x="76" y="454" class="num ink">06</text>
+    <text x="76" y="482" class="name">Neighbours</text>
+    <text x="76" y="528" class="fig ink">1,854</text>
+    <text x="76" y="552" class="unit">exact queries, match brute force</text>
+  </g>
+  <line x1="314" y1="495" x2="362" y2="495" class="flow"/>
+
+  <!-- 07 Earth gap (Mars) -->
+  <g>
+    <rect x="366" y="420" width="252" height="150" rx="10" class="box" stroke="#ec9a6c" stroke-width="2.5"/>
+    <text x="384" y="454" class="num mars">07</text>
+    <text x="384" y="482" class="name">Earth gap</text>
+    <text x="384" y="528" class="fig mars">84 / 1,838</text>
+    <text x="384" y="552" class="unit">Mars places with no Earth twin</text>
+  </g>
+  <line x1="622" y1="495" x2="670" y2="495" class="flow"/>
+
+  <!-- 08 Light and rehearsal (Earth) -->
+  <g>
+    <rect x="674" y="420" width="252" height="150" rx="10" class="box" stroke="#a9cf9b" stroke-width="2.5"/>
+    <text x="692" y="454" class="num earth">08</text>
+    <text x="692" y="482" class="name">Light and rehearsal</text>
+    <text x="692" y="528" class="fig earth">160 pairs</text>
+    <text x="692" y="552" class="unit">x 8 rehearsal lines, current run</text>
+  </g>
+  <line x1="930" y1="495" x2="978" y2="495" class="flow"/>
+
+  <!-- 09 Facts ledger -->
+  <g>
+    <rect x="982" y="420" width="252" height="150" rx="10" class="box" stroke="#f4efe7" stroke-opacity="0.35"/>
+    <text x="1000" y="454" class="num ink">09</text>
+    <text x="1000" y="482" class="name">Facts ledger</text>
+    <text x="1000" y="528" class="fig ink">120,290</text>
+    <text x="1000" y="552" class="unit">facts; rules R1 to R6: 0 violations</text>
+  </g>
+  <line x1="1238" y1="495" x2="1286" y2="495" class="flow"/>
+
+  <!-- 10 Site exports -->
+  <g>
+    <rect x="1290" y="420" width="252" height="150" rx="10" class="box" stroke="#f4efe7" stroke-opacity="0.35"/>
+    <text x="1308" y="454" class="num ink">10</text>
+    <text x="1308" y="482" class="name">Site exports</text>
+    <text x="1308" y="528" class="fig ink">16 sites</text>
+    <text x="1308" y="552" class="unit">160 twin cards, 167 terrain folders</text>
+  </g>
+
+  <!-- validation strip (outside the chain) -->
+  <rect x="58" y="650" width="1484" height="110" rx="10" fill="none" stroke="#ec9a6c" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="82" y="690" font-size="22" font-weight="700" class="mars">Validation, v1.3: one blind run on 15 new regions</text>
+  <text x="82" y="722" font-size="18" class="ink">AUC 0.6948 vs 0.70 needed  |  nearest-region 6 of 15 vs 7 needed  |  both failed, narrowly</text>
+  <text x="82" y="746" font-size="16" class="mute">v1.2 (kept): AUC 0.6926, 2 of 5 nearest-region, also failed. Permutation p below 0.01 in both runs.</text>
+
+  <!-- footer -->
+  <text x="58" y="840" font-size="14" class="mute">Source: docs/HOW_IT_WORKS.md. Figures read from data/derived and site/data on 2026-11-15.</text>
+</svg>

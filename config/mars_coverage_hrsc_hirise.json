@@ -1,0 +1,2209 @@
+{
+ "products": [
+  {
+   "id": "hrsc_dtmrdr_family",
+   "provider": "ESA Mars Express HRSC / DLR / FU Berlin (PDS)",
+   "product": "HRSC DTMRDR single-orbit DTMs (level 4), 1370 DT4 products in PDS volume mexhrs_2001",
+   "native_m": null,
+   "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+   ],
+   "url": "https://pds-geosciences.wustl.edu/mex/mex-m-hrsc-5-refdr-dtm-v1/mexhrs_2001/",
+   "licence": "public domain per NASA catalog record (search result)",
+   "windowed_read": true,
+   "source_catalogue": "PDS volume index; ESA PSA copy HTTP 401 (guest) in this check",
+   "notes": "Native per product from label MAP_SCALE: 50 m (3 of 19 valid sampled), 75, 100, 125, 225 m. Sample only."
+  },
+  {
+   "id": "hrsc_fuberlin_mc_dtm_mosaic_family",
+   "provider": "FU Berlin HRSC Level 3 mosaic",
+   "product": "HRSC MC-quadrangle DTM mosaics int16 (16bit folders), 65 tiles in 10 mc folders",
+   "native_m": 50.0,
+   "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/",
+   "licence": "unconfirmed on server",
+   "windowed_read": true,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing",
+   "notes": "26 tiles at 50 m, 35 tiles at 12.5 m (mc19), 4 tiles unreadable (mc18). Units/offset of int16 not verified."
+  },
+  {
+   "id": "hirise_dtm_family",
+   "provider": "NASA MRO HiRISE / UA LPL",
+   "product": "HiRISE DTM family, 39 DTM rows in DTMINDEX.TAB",
+   "native_m": 1.0,
+   "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+   ],
+   "url": "https://www.uahirise.org/dtm/",
+   "licence": "not verified in this run",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB",
+   "notes": "Index is stale (April 2026 release DTMs missing). Native 1.00-2.02 m. Single-DTM 8 km coverage: 0 of 20 >= 0.90 (polygon)."
+  },
+  {
+   "id": "hrsc_dtmrdr_h0037_0000_dt4",
+   "provider": "ESA Mars Express HRSC / DLR / FU Berlin (PDS mirror, MEX-M-HRSC-5-REFDR-DTM-V1.0)",
+   "product": "HRSC DTMRDR single-orbit DTM (DT4, sphere) sampled product",
+   "native_m": 50.0,
+   "bbox": [
+    -133.999,
+    14.1033,
+    -129.126,
+    44.6393
+   ],
+   "url": "https://pds-geosciences.wustl.edu/mex/mex-m-hrsc-5-refdr-dtm-v1/mexhrs_2001/DATA/0037/H0037_0000_DT4.IMG",
+   "licence": "public domain per NASA catalog record (found by search; PDS licence page not read)",
+   "windowed_read": null,
+   "source_catalogue": "PDS volume mexhrs_2001 INDEX/INDEX.TAB (1370 DT4 rows); sample seed 20261114",
+   "coverage_fraction_8km": 1.0
+  },
+  {
+   "id": "hrsc_dtmrdr_h0100_0009_dt4",
+   "provider": "ESA Mars Express HRSC / DLR / FU Berlin (PDS mirror, MEX-M-HRSC-5-REFDR-DTM-V1.0)",
+   "product": "HRSC DTMRDR single-orbit DTM (DT4, sphere) sampled product",
+   "native_m": 100.0,
+   "bbox": [
+    -55.344,
+    26.8595,
+    -52.088,
+    34.4496
+   ],
+   "url": "https://pds-geosciences.wustl.edu/mex/mex-m-hrsc-5-refdr-dtm-v1/mexhrs_2001/DATA/0100/H0100_0009_DT4.IMG",
+   "licence": "public domain per NASA catalog record (found by search; PDS licence page not read)",
+   "windowed_read": null,
+   "source_catalogue": "PDS volume mexhrs_2001 INDEX/INDEX.TAB (1370 DT4 rows); sample seed 20261114",
+   "coverage_fraction_8km": 1.0
+  },
+  {
+   "id": "hrsc_dtmrdr_h1000_0000_dt4",
+   "provider": "ESA Mars Express HRSC / DLR / FU Berlin (PDS mirror, MEX-M-HRSC-5-REFDR-DTM-V1.0)",
+   "product": "HRSC DTMRDR single-orbit DTM (DT4, sphere) sampled product",
+   "native_m": 75.0,
+   "bbox": [
+    -23.744,
+    -1.0356,
+    -22.607,
+    11.6693
+   ],
+   "url": "https://pds-geosciences.wustl.edu/mex/mex-m-hrsc-5-refdr-dtm-v1/mexhrs_2001/DATA/1000/H1000_0000_DT4.IMG",
+   "licence": "public domain per NASA catalog record (found by search; PDS licence page not read)",
+   "windowed_read": null,
+   "source_catalogue": "PDS volume mexhrs_2001 INDEX/INDEX.TAB (1370 DT4 rows); sample seed 20261114",
+   "coverage_fraction_8km": 1.0
+  },
+  {
+   "id": "hrsc_dtmrdr_h1240_0000_dt4",
+   "provider": "ESA Mars Express HRSC / DLR / FU Berlin (PDS mirror, MEX-M-HRSC-5-REFDR-DTM-V1.0)",
+   "product": "HRSC DTMRDR single-orbit DTM (DT4, sphere) sampled product",
+   "native_m": 75.0,
+   "bbox": [
+    152.091,
+    29.5204,
+    153.409,
+    34.3273
+   ],
+   "url": "https://pds-geosciences.wustl.edu/mex/mex-m-hrsc-5-refdr-dtm-v1/mexhrs_2001/DATA/1240/H1240_0000_DT4.IMG",
+   "licence": "public domain per NASA catalog record (found by search; PDS licence page not read)",
+   "windowed_read": null,
+   "source_catalogue": "PDS volume mexhrs_2001 INDEX/INDEX.TAB (1370 DT4 rows); sample seed 20261114",
+   "coverage_fraction_8km": 1.0
+  },
+  {
+   "id": "hrsc_dtmrdr_h1451_0000_dt4",
+   "provider": "ESA Mars Express HRSC / DLR / FU Berlin (PDS mirror, MEX-M-HRSC-5-REFDR-DTM-V1.0)",
+   "product": "HRSC DTMRDR single-orbit DTM (DT4, sphere) sampled product",
+   "native_m": 100.0,
+   "bbox": [
+    -73.751,
+    51.289,
+    -71.11,
+    54.0329
+   ],
+   "url": "https://pds-geosciences.wustl.edu/mex/mex-m-hrsc-5-refdr-dtm-v1/mexhrs_2001/DATA/1451/H1451_0000_DT4.IMG",
+   "licence": "public domain per NASA catalog record (found by search; PDS licence page not read)",
+   "windowed_read": null,
+   "source_catalogue": "PDS volume mexhrs_2001 INDEX/INDEX.TAB (1370 DT4 rows); sample seed 20261114",
+   "coverage_fraction_8km": 1.0
+  },
+  {
+   "id": "hrsc_dtmrdr_h1932_0000_dt4",
+   "provider": "ESA Mars Express HRSC / DLR / FU Berlin (PDS mirror, MEX-M-HRSC-5-REFDR-DTM-V1.0)",
+   "product": "HRSC DTMRDR single-orbit DTM (DT4, sphere) sampled product",
+   "native_m": 225.0,
+   "bbox": [
+    3.1987,
+    -48.4739,
+    9.5922,
+    -32.4439
+   ],
+   "url": "https://pds-geosciences.wustl.edu/mex/mex-m-hrsc-5-refdr-dtm-v1/mexhrs_2001/DATA/1932/H1932_0000_DT4.IMG",
+   "licence": "public domain per NASA catalog record (found by search; PDS licence page not read)",
+   "windowed_read": null,
+   "source_catalogue": "PDS volume mexhrs_2001 INDEX/INDEX.TAB (1370 DT4 rows); sample seed 20261114",
+   "coverage_fraction_8km": 1.0
+  },
+  {
+   "id": "hrsc_dtmrdr_h2035_0000_dt4",
+   "provider": "ESA Mars Express HRSC / DLR / FU Berlin (PDS mirror, MEX-M-HRSC-5-REFDR-DTM-V1.0)",
+   "product": "HRSC DTMRDR single-orbit DTM (DT4, sphere) sampled product",
+   "native_m": 50.0,
+   "bbox": [
+    -36.509,
+    -6.6166,
+    -35.342,
+    14.4189
+   ],
+   "url": "https://pds-geosciences.wustl.edu/mex/mex-m-hrsc-5-refdr-dtm-v1/mexhrs_2001/DATA/2035/H2035_0000_DT4.IMG",
+   "licence": "public domain per NASA catalog record (found by search; PDS licence page not read)",
+   "windowed_read": null,
+   "source_catalogue": "PDS volume mexhrs_2001 INDEX/INDEX.TAB (1370 DT4 rows); sample seed 20261114",
+   "coverage_fraction_8km": 1.0
+  },
+  {
+   "id": "hrsc_dtmrdr_h2288_0000_dt4",
+   "provider": "ESA Mars Express HRSC / DLR / FU Berlin (PDS mirror, MEX-M-HRSC-5-REFDR-DTM-V1.0)",
+   "product": "HRSC DTMRDR single-orbit DTM (DT4, sphere) sampled product",
+   "native_m": 100.0,
+   "bbox": [
+    -82.893,
+    -82.5508,
+    -63.268,
+    -80.8639
+   ],
+   "url": "https://pds-geosciences.wustl.edu/mex/mex-m-hrsc-5-refdr-dtm-v1/mexhrs_2001/DATA/2288/H2288_0000_DT4.IMG",
+   "licence": "public domain per NASA catalog record (found by search; PDS licence page not read)",
+   "windowed_read": null,
+   "source_catalogue": "PDS volume mexhrs_2001 INDEX/INDEX.TAB (1370 DT4 rows); sample seed 20261114",
+   "coverage_fraction_8km": 1.0
+  },
+  {
+   "id": "hrsc_dtmrdr_h2507_0000_dt4",
+   "provider": "ESA Mars Express HRSC / DLR / FU Berlin (PDS mirror, MEX-M-HRSC-5-REFDR-DTM-V1.0)",
+   "product": "HRSC DTMRDR single-orbit DTM (DT4, sphere) sampled product",
+   "native_m": 75.0,
+   "bbox": [
+    24.6916,
+    -68.7725,
+    30.7977,
+    -54.8564
+   ],
+   "url": "https://pds-geosciences.wustl.edu/mex/mex-m-hrsc-5-refdr-dtm-v1/mexhrs_2001/DATA/2507/H2507_0000_DT4.IMG",
+   "licence": "public domain per NASA catalog record (found by search; PDS licence page not read)",
+   "windowed_read": null,
+   "source_catalogue": "PDS volume mexhrs_2001 INDEX/INDEX.TAB (1370 DT4 rows); sample seed 20261114",
+   "coverage_fraction_8km": 1.0
+  },
+  {
+   "id": "hrsc_dtmrdr_h2530_0001_dt4",
+   "provider": "ESA Mars Express HRSC / DLR / FU Berlin (PDS mirror, MEX-M-HRSC-5-REFDR-DTM-V1.0)",
+   "product": "HRSC DTMRDR single-orbit DTM (DT4, sphere) sampled product",
+   "native_m": 125.0,
+   "bbox": [
+    -70.644,
+    -42.9046,
+    -66.358,
+    -24.0114
+   ],
+   "url": "https://pds-geosciences.wustl.edu/mex/mex-m-hrsc-5-refdr-dtm-v1/mexhrs_2001/DATA/2530/H2530_0001_DT4.IMG",
+   "licence": "public domain per NASA catalog record (found by search; PDS licence page not read)",
+   "windowed_read": null,
+   "source_catalogue": "PDS volume mexhrs_2001 INDEX/INDEX.TAB (1370 DT4 rows); sample seed 20261114",
+   "coverage_fraction_8km": 1.0
+  },
+  {
+   "id": "hrsc_dtmrdr_h3149_0000_dt4",
+   "provider": "ESA Mars Express HRSC / DLR / FU Berlin (PDS mirror, MEX-M-HRSC-5-REFDR-DTM-V1.0)",
+   "product": "HRSC DTMRDR single-orbit DTM (DT4, sphere) sampled product",
+   "native_m": 75.0,
+   "bbox": [
+    129.347,
+    -20.9227,
+    131.323,
+    -8.945
+   ],
+   "url": "https://pds-geosciences.wustl.edu/mex/mex-m-hrsc-5-refdr-dtm-v1/mexhrs_2001/DATA/3149/H3149_0000_DT4.IMG",
+   "licence": "public domain per NASA catalog record (found by search; PDS licence page not read)",
+   "windowed_read": null,
+   "source_catalogue": "PDS volume mexhrs_2001 INDEX/INDEX.TAB (1370 DT4 rows); sample seed 20261114",
+   "coverage_fraction_8km": 1.0
+  },
+  {
+   "id": "hrsc_dtmrdr_h4199_0000_dt4",
+   "provider": "ESA Mars Express HRSC / DLR / FU Berlin (PDS mirror, MEX-M-HRSC-5-REFDR-DTM-V1.0)",
+   "product": "HRSC DTMRDR single-orbit DTM (DT4, sphere) sampled product",
+   "native_m": 50.0,
+   "bbox": [
+    73.6926,
+    -27.6974,
+    74.9094,
+    -23.4631
+   ],
+   "url": "https://pds-geosciences.wustl.edu/mex/mex-m-hrsc-5-refdr-dtm-v1/mexhrs_2001/DATA/4199/H4199_0000_DT4.IMG",
+   "licence": "public domain per NASA catalog record (found by search; PDS licence page not read)",
+   "windowed_read": null,
+   "source_catalogue": "PDS volume mexhrs_2001 INDEX/INDEX.TAB (1370 DT4 rows); sample seed 20261114",
+   "coverage_fraction_8km": 1.0
+  },
+  {
+   "id": "hrsc_dtmrdr_h4257_0000_dt4",
+   "provider": "ESA Mars Express HRSC / DLR / FU Berlin (PDS mirror, MEX-M-HRSC-5-REFDR-DTM-V1.0)",
+   "product": "HRSC DTMRDR single-orbit DTM (DT4, sphere) sampled product",
+   "native_m": 75.0,
+   "bbox": [
+    135.322,
+    -38.7327,
+    136.697,
+    -27.9868
+   ],
+   "url": "https://pds-geosciences.wustl.edu/mex/mex-m-hrsc-5-refdr-dtm-v1/mexhrs_2001/DATA/4257/H4257_0000_DT4.IMG",
+   "licence": "public domain per NASA catalog record (found by search; PDS licence page not read)",
+   "windowed_read": null,
+   "source_catalogue": "PDS volume mexhrs_2001 INDEX/INDEX.TAB (1370 DT4 rows); sample seed 20261114",
+   "coverage_fraction_8km": 1.0
+  },
+  {
+   "id": "hrsc_dtmrdr_h4304_0000_dt4",
+   "provider": "ESA Mars Express HRSC / DLR / FU Berlin (PDS mirror, MEX-M-HRSC-5-REFDR-DTM-V1.0)",
+   "product": "HRSC DTMRDR single-orbit DTM (DT4, sphere) sampled product",
+   "native_m": 75.0,
+   "bbox": [
+    -165.539,
+    -46.074,
+    -163.844,
+    -40.255
+   ],
+   "url": "https://pds-geosciences.wustl.edu/mex/mex-m-hrsc-5-refdr-dtm-v1/mexhrs_2001/DATA/4304/H4304_0000_DT4.IMG",
+   "licence": "public domain per NASA catalog record (found by search; PDS licence page not read)",
+   "windowed_read": null,
+   "source_catalogue": "PDS volume mexhrs_2001 INDEX/INDEX.TAB (1370 DT4 rows); sample seed 20261114",
+   "coverage_fraction_8km": 1.0
+  },
+  {
+   "id": "hrsc_dtmrdr_h4370_0000_dt4",
+   "provider": "ESA Mars Express HRSC / DLR / FU Berlin (PDS mirror, MEX-M-HRSC-5-REFDR-DTM-V1.0)",
+   "product": "HRSC DTMRDR single-orbit DTM (DT4, sphere) sampled product",
+   "native_m": 75.0,
+   "bbox": [
+    -172.183,
+    -51.7228,
+    -170.228,
+    -45.9063
+   ],
+   "url": "https://pds-geosciences.wustl.edu/mex/mex-m-hrsc-5-refdr-dtm-v1/mexhrs_2001/DATA/4370/H4370_0000_DT4.IMG",
+   "licence": "public domain per NASA catalog record (found by search; PDS licence page not read)",
+   "windowed_read": null,
+   "source_catalogue": "PDS volume mexhrs_2001 INDEX/INDEX.TAB (1370 DT4 rows); sample seed 20261114",
+   "coverage_fraction_8km": 1.0
+  },
+  {
+   "id": "hrsc_dtmrdr_h5296_0000_dt4",
+   "provider": "ESA Mars Express HRSC / DLR / FU Berlin (PDS mirror, MEX-M-HRSC-5-REFDR-DTM-V1.0)",
+   "product": "HRSC DTMRDR single-orbit DTM (DT4, sphere) sampled product",
+   "native_m": 75.0,
+   "bbox": [
+    0.0,
+    32.0338,
+    0.0,
+    90.0
+   ],
+   "url": "https://pds-geosciences.wustl.edu/mex/mex-m-hrsc-5-refdr-dtm-v1/mexhrs_2001/DATA/5296/H5296_0000_DT4.IMG",
+   "licence": "public domain per NASA catalog record (found by search; PDS licence page not read)",
+   "windowed_read": null,
+   "source_catalogue": "PDS volume mexhrs_2001 INDEX/INDEX.TAB (1370 DT4 rows); sample seed 20261114",
+   "coverage_fraction_8km": 0.0,
+   "notes": "Polar footprint: bbox-centre method invalid; excluded from statistics."
+  },
+  {
+   "id": "hrsc_dtmrdr_h5378_0000_dt4",
+   "provider": "ESA Mars Express HRSC / DLR / FU Berlin (PDS mirror, MEX-M-HRSC-5-REFDR-DTM-V1.0)",
+   "product": "HRSC DTMRDR single-orbit DTM (DT4, sphere) sampled product",
+   "native_m": 100.0,
+   "bbox": [
+    69.3893,
+    23.8728,
+    71.1298,
+    34.1045
+   ],
+   "url": "https://pds-geosciences.wustl.edu/mex/mex-m-hrsc-5-refdr-dtm-v1/mexhrs_2001/DATA/5378/H5378_0000_DT4.IMG",
+   "licence": "public domain per NASA catalog record (found by search; PDS licence page not read)",
+   "windowed_read": null,
+   "source_catalogue": "PDS volume mexhrs_2001 INDEX/INDEX.TAB (1370 DT4 rows); sample seed 20261114",
+   "coverage_fraction_8km": 1.0
+  },
+  {
+   "id": "hrsc_dtmrdr_h5364_0000_dt4",
+   "provider": "ESA Mars Express HRSC / DLR / FU Berlin (PDS mirror, MEX-M-HRSC-5-REFDR-DTM-V1.0)",
+   "product": "HRSC DTMRDR single-orbit DTM (DT4, sphere) sampled product",
+   "native_m": 100.0,
+   "bbox": [
+    28.8013,
+    45.8774,
+    30.8444,
+    48.9141
+   ],
+   "url": "https://pds-geosciences.wustl.edu/mex/mex-m-hrsc-5-refdr-dtm-v1/mexhrs_2001/DATA/5364/H5364_0000_DT4.IMG",
+   "licence": "public domain per NASA catalog record (found by search; PDS licence page not read)",
+   "windowed_read": null,
+   "source_catalogue": "PDS volume mexhrs_2001 INDEX/INDEX.TAB (1370 DT4 rows); sample seed 20261114",
+   "coverage_fraction_8km": 1.0
+  },
+  {
+   "id": "hrsc_dtmrdr_h5432_0000_dt4",
+   "provider": "ESA Mars Express HRSC / DLR / FU Berlin (PDS mirror, MEX-M-HRSC-5-REFDR-DTM-V1.0)",
+   "product": "HRSC DTMRDR single-orbit DTM (DT4, sphere) sampled product",
+   "native_m": 100.0,
+   "bbox": [
+    61.4913,
+    55.2413,
+    66.636,
+    67.8
+   ],
+   "url": "https://pds-geosciences.wustl.edu/mex/mex-m-hrsc-5-refdr-dtm-v1/mexhrs_2001/DATA/5432/H5432_0000_DT4.IMG",
+   "licence": "public domain per NASA catalog record (found by search; PDS licence page not read)",
+   "windowed_read": null,
+   "source_catalogue": "PDS volume mexhrs_2001 INDEX/INDEX.TAB (1370 DT4 rows); sample seed 20261114",
+   "coverage_fraction_8km": 1.0
+  },
+  {
+   "id": "hrsc_dtmrdr_h5502_0000_dt4",
+   "provider": "ESA Mars Express HRSC / DLR / FU Berlin (PDS mirror, MEX-M-HRSC-5-REFDR-DTM-V1.0)",
+   "product": "HRSC DTMRDR single-orbit DTM (DT4, sphere) sampled product",
+   "native_m": 75.0,
+   "bbox": [
+    -104.345,
+    71.4011,
+    -99.794,
+    72.3997
+   ],
+   "url": "https://pds-geosciences.wustl.edu/mex/mex-m-hrsc-5-refdr-dtm-v1/mexhrs_2001/DATA/5502/H5502_0000_DT4.IMG",
+   "licence": "public domain per NASA catalog record (found by search; PDS licence page not read)",
+   "windowed_read": null,
+   "source_catalogue": "PDS volume mexhrs_2001 INDEX/INDEX.TAB (1370 DT4 rows); sample seed 20261114",
+   "coverage_fraction_8km": 1.0
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc10_tile_m002p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc10/16bit)",
+   "native_m": 50.0,
+   "bbox": [
+    -67.4866,
+    -0.0004,
+    -33.7435,
+    33.7427
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc10/16bit/tile_-002+000.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": true,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.7066,
+   "notes": "Remote window test 200x200: open 2.21 s, window 4.04 s (strip blocks, 1 row per block)."
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc10_tile_m003p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc10/16bit)",
+   "native_m": 50.0,
+   "bbox": [
+    -101.2297,
+    -0.0004,
+    -67.4866,
+    33.7427
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc10/16bit/tile_-003+000.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.7061
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc12_tile_p000p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc12/16bit)",
+   "native_m": 50.0,
+   "bbox": [
+    -0.0004,
+    -0.0004,
+    33.7427,
+    33.7427
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc12/16bit/tile_+000+000.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 1.0
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc12_tile_p001p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc12/16bit)",
+   "native_m": 50.0,
+   "bbox": [
+    33.7427,
+    -0.0004,
+    67.4858,
+    33.7427
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc12/16bit/tile_+001+000.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 1.0
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc13_tile_p001p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc13/16bit)",
+   "native_m": 50.0,
+   "bbox": [
+    33.7427,
+    -0.0004,
+    67.4858,
+    33.7427
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc13/16bit/tile_+001+000.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.6988
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc13_tile_p002p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc13/16bit)",
+   "native_m": 50.0,
+   "bbox": [
+    67.4858,
+    -0.0004,
+    101.2289,
+    33.7427
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc13/16bit/tile_+002+000.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.698
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc14_tile_p002p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc14/16bit)",
+   "native_m": 50.0,
+   "bbox": [
+    67.4858,
+    -0.0004,
+    101.2289,
+    33.7427
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc14/16bit/tile_+002+000.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 1.0
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc14_tile_p003p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc14/16bit)",
+   "native_m": 50.0,
+   "bbox": [
+    101.2289,
+    -0.0004,
+    134.972,
+    33.7427
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc14/16bit/tile_+003+000.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 1.0
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc14_tile_p004p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc14/16bit)",
+   "native_m": 50.0,
+   "bbox": [
+    134.972,
+    -0.0004,
+    168.7151,
+    33.7427
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc14/16bit/tile_+004+000.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 1.0
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc15_tile_p000p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc15/16bit)",
+   "native_m": 50.0,
+   "bbox": [
+    -0.0004,
+    -0.0004,
+    33.7427,
+    33.7427
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc15/16bit/tile_+000+000.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.0511
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc15_tile_m001p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc15/16bit)",
+   "native_m": 50.0,
+   "bbox": [
+    -33.7435,
+    -0.0004,
+    -0.0004,
+    33.7427
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc15/16bit/tile_-001+000.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.9799
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc15_tile_m002p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc15/16bit)",
+   "native_m": 50.0,
+   "bbox": [
+    -67.4866,
+    -0.0004,
+    -33.7435,
+    33.7427
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc15/16bit/tile_-002+000.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.3721
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc18_tile_m002p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de)",
+   "product": "HRSC MC-quadrangle DTM mosaic tile (not readable)",
+   "native_m": null,
+   "bbox": null,
+   "url": "https://maps.planet.fu-berlin.de/level3/mc18/16bit/tile_-002+000.tif",
+   "licence": "unconfirmed",
+   "windowed_read": false,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing",
+   "notes": "RasterioIOError: HTTP response code: 403"
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc18_tile_m002m001",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de)",
+   "product": "HRSC MC-quadrangle DTM mosaic tile (not readable)",
+   "native_m": null,
+   "bbox": null,
+   "url": "https://maps.planet.fu-berlin.de/level3/mc18/16bit/tile_-002-001.tif",
+   "licence": "unconfirmed",
+   "windowed_read": false,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing",
+   "notes": "RasterioIOError: '/vsicurl/https://maps.planet.fu-berlin.de/level3/mc18/16bit/tile_-002-001.tif' not recognized as being in a supported file format."
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc18_tile_m003p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de)",
+   "product": "HRSC MC-quadrangle DTM mosaic tile (not readable)",
+   "native_m": null,
+   "bbox": null,
+   "url": "https://maps.planet.fu-berlin.de/level3/mc18/16bit/tile_-003+000.tif",
+   "licence": "unconfirmed",
+   "windowed_read": false,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing",
+   "notes": "RasterioIOError: '/vsicurl/https://maps.planet.fu-berlin.de/level3/mc18/16bit/tile_-003+000.tif' not recognized as being in a supported file format."
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc18_tile_m003m001",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de)",
+   "product": "HRSC MC-quadrangle DTM mosaic tile (not readable)",
+   "native_m": null,
+   "bbox": null,
+   "url": "https://maps.planet.fu-berlin.de/level3/mc18/16bit/tile_-003-001.tif",
+   "licence": "unconfirmed",
+   "windowed_read": false,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing",
+   "notes": "RasterioIOError: '/vsicurl/https://maps.planet.fu-berlin.de/level3/mc18/16bit/tile_-003-001.tif' not recognized as being in a supported file format."
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_p000p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -0.0001,
+    -0.0001,
+    8.4357,
+    8.4357
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_+000+000.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.0159
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_p000m001",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -0.0001,
+    -8.4359,
+    8.4357,
+    -0.0001
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_+000-001.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.126
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_p000m002",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -0.0001,
+    -16.8717,
+    8.4357,
+    -8.4359
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_+000-002.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.126
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_p000m003",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -0.0001,
+    -25.3074,
+    8.4357,
+    -16.8717
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_+000-003.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.126
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_p000m004",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -0.0001,
+    -33.7432,
+    8.4357,
+    -25.3074
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_+000-004.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.0789
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m001p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -8.4359,
+    -0.0001,
+    -0.0001,
+    8.4357
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-001+000.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.1199
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m001m001",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -8.4359,
+    -8.4359,
+    -0.0001,
+    -0.0001
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-001-001.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.9957
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m001m002",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -8.4359,
+    -16.8717,
+    -0.0001,
+    -8.4359
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-001-002.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.9292
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m001m003",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -8.4359,
+    -25.3074,
+    -0.0001,
+    -16.8717
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-001-003.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.9393
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m001m004",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -8.4359,
+    -33.7432,
+    -0.0001,
+    -25.3074
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-001-004.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.6083
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m002p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -16.8717,
+    -0.0001,
+    -8.4359,
+    8.4357
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-002+000.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.126
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m002m001",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -16.8717,
+    -8.4359,
+    -8.4359,
+    -0.0001
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-002-001.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 1.0
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m002m002",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -16.8717,
+    -16.8717,
+    -8.4359,
+    -8.4359
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-002-002.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.9245
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m002m003",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -16.8717,
+    -25.3074,
+    -8.4359,
+    -16.8717
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-002-003.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.9921
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m002m004",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -16.8717,
+    -33.7432,
+    -8.4359,
+    -25.3074
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-002-004.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.626
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m003p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -25.3074,
+    -0.0001,
+    -16.8717,
+    8.4357
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-003+000.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.126
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m003m001",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -25.3074,
+    -8.4359,
+    -16.8717,
+    -0.0001
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-003-001.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 1.0
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m003m002",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -25.3074,
+    -16.8717,
+    -16.8717,
+    -8.4359
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-003-002.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.9962
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m003m003",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -25.3074,
+    -25.3074,
+    -16.8717,
+    -16.8717
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-003-003.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.9054
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m003m004",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -25.3074,
+    -33.7432,
+    -16.8717,
+    -25.3074
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-003-004.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.626
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m004p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -33.7432,
+    -0.0001,
+    -25.3074,
+    8.4357
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-004+000.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.126
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m004m001",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -33.7432,
+    -8.4359,
+    -25.3074,
+    -0.0001
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-004-001.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 1.0
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m004m002",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -33.7432,
+    -16.8717,
+    -25.3074,
+    -8.4359
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-004-002.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 1.0
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m004m003",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -33.7432,
+    -25.3074,
+    -25.3074,
+    -16.8717
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-004-003.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.9998
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m004m004",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -33.7432,
+    -33.7432,
+    -25.3074,
+    -25.3074
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-004-004.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.626
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m005p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -42.179,
+    -0.0001,
+    -33.7432,
+    8.4357
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-005+000.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.126
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m005m001",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -42.179,
+    -8.4359,
+    -33.7432,
+    -0.0001
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-005-001.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.9911
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m005m002",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -42.179,
+    -16.8717,
+    -33.7432,
+    -8.4359
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-005-002.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 1.0
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m005m003",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -42.179,
+    -25.3074,
+    -33.7432,
+    -16.8717
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-005-003.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 1.0
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m005m004",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -42.179,
+    -33.7432,
+    -33.7432,
+    -25.3074
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-005-004.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.626
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m006p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -50.6148,
+    -0.0001,
+    -42.179,
+    8.4357
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-006+000.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.0474
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m006m001",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -50.6148,
+    -8.4359,
+    -42.179,
+    -0.0001
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-006-001.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.376
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m006m002",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -50.6148,
+    -16.8717,
+    -42.179,
+    -8.4359
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-006-002.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.376
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m006m003",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -50.6148,
+    -25.3074,
+    -42.179,
+    -16.8717
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-006-003.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.376
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc19_tile_m006m004",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc19/16bit)",
+   "native_m": 12.5,
+   "bbox": [
+    -50.6148,
+    -33.7432,
+    -42.179,
+    -25.3074
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc19/16bit/tile_-006-004.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.2354
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc20_tile_p000p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc20/16bit)",
+   "native_m": 50.0,
+   "bbox": [
+    -0.0004,
+    -0.0004,
+    33.7427,
+    33.7427
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc20/16bit/tile_+000+000.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.1182
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc20_tile_p000m001",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc20/16bit)",
+   "native_m": 50.0,
+   "bbox": [
+    -0.0004,
+    -33.7435,
+    33.7427,
+    -0.0004
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc20/16bit/tile_+000-001.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.985
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc20_tile_p001p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc20/16bit)",
+   "native_m": 50.0,
+   "bbox": [
+    33.7427,
+    -0.0004,
+    67.4858,
+    33.7427
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc20/16bit/tile_+001+000.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.0454
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc20_tile_p001m001",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc20/16bit)",
+   "native_m": 50.0,
+   "bbox": [
+    33.7427,
+    -33.7435,
+    67.4858,
+    -0.0004
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc20/16bit/tile_+001-001.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.3689
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc21_tile_p001p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc21/16bit)",
+   "native_m": 50.0,
+   "bbox": [
+    33.7427,
+    -0.0004,
+    67.4858,
+    33.7427
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc21/16bit/tile_+001+000.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 1.0
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc21_tile_p001m001",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc21/16bit)",
+   "native_m": 50.0,
+   "bbox": [
+    33.7427,
+    -33.7435,
+    67.4858,
+    -0.0004
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc21/16bit/tile_+001-001.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 1.0
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc21_tile_p002p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc21/16bit)",
+   "native_m": 50.0,
+   "bbox": [
+    67.4858,
+    -0.0004,
+    101.2289,
+    33.7427
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc21/16bit/tile_+002+000.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 1.0
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc21_tile_p002m001",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc21/16bit)",
+   "native_m": 50.0,
+   "bbox": [
+    67.4858,
+    -33.7435,
+    101.2289,
+    -0.0004
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc21/16bit/tile_+002-001.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 1.0
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc22_tile_p002p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc22/16bit)",
+   "native_m": 50.0,
+   "bbox": [
+    67.4858,
+    -0.0004,
+    101.2289,
+    33.7427
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc22/16bit/tile_+002+000.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.0384
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc22_tile_p002m001",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc22/16bit)",
+   "native_m": 50.0,
+   "bbox": [
+    67.4858,
+    -33.7435,
+    101.2289,
+    -0.0004
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc22/16bit/tile_+002-001.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.3632
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc22_tile_p003p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc22/16bit)",
+   "native_m": 50.0,
+   "bbox": [
+    101.2289,
+    -0.0004,
+    134.972,
+    33.7427
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc22/16bit/tile_+003+000.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.1166
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc22_tile_p003m001",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc22/16bit)",
+   "native_m": 50.0,
+   "bbox": [
+    101.2289,
+    -33.7435,
+    134.972,
+    -0.0004
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc22/16bit/tile_+003-001.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.9384
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc22_tile_p004p000",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc22/16bit)",
+   "native_m": 50.0,
+   "bbox": [
+    134.972,
+    -0.0004,
+    168.7151,
+    33.7427
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc22/16bit/tile_+004+000.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.009
+  },
+  {
+   "id": "hrsc_fuberlin_mc_mc22_tile_p004m001",
+   "provider": "FU Berlin HRSC Level 3 mosaic (maps.planet.fu-berlin.de), derived from HRSC",
+   "product": "HRSC MC-quadrangle DTM mosaic tile, int16 (mc22/16bit)",
+   "native_m": 50.0,
+   "bbox": [
+    134.972,
+    -33.7435,
+    168.7151,
+    -0.0004
+   ],
+   "url": "https://maps.planet.fu-berlin.de/level3/mc22/16bit/tile_+004-001.tif",
+   "licence": "unconfirmed on server; FU Berlin page: CC BY-SA 3.0 IGO where stated; credit ESA/DLR/FU-Berlin",
+   "windowed_read": null,
+   "source_catalogue": "maps.planet.fu-berlin.de/level3 directory listing (10 mc folders, 65 tiles)",
+   "valid_frac_decimated": 0.0746
+  },
+  {
+   "id": "hirise_dtm_dteec_001388_1565_001586_1565_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEEC_001388_1565_001586_1565_A01 (equirectangular), MARS",
+   "native_m": 1.01,
+   "bbox": [
+    -12.1531,
+    -23.5701,
+    -12.0439,
+    -23.426
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/PSP/ORB_001300_001399/PSP_001388_1565_PSP_001586_1565/DTEEC_001388_1565_001586_1565_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteec_002033_1720_002099_1720_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEEC_002033_1720_002099_1720_A01 (equirectangular), MARS",
+   "native_m": 1.01,
+   "bbox": [
+    24.9642,
+    -8.1313,
+    25.0646,
+    -7.9591
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/PSP/ORB_002000_002099/PSP_002033_1720_PSP_002099_1720/DTEEC_002033_1720_002099_1720_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteec_002580_2035_002646_2035_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEEC_002580_2035_002646_2035_A01 (equirectangular), MARS",
+   "native_m": 1.01,
+   "bbox": [
+    -152.5737,
+    22.9598,
+    -152.4257,
+    23.3457
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/PSP/ORB_002500_002599/PSP_002580_2035_PSP_002646_2035/DTEEC_002580_2035_002646_2035_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteec_002946_1765_002590_1765_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEEC_002946_1765_002590_1765_A01 (equirectangular), MARS",
+   "native_m": 1.01,
+   "bbox": [
+    -61.7869,
+    -3.4288,
+    -61.6667,
+    -3.155
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/PSP/ORB_002900_002999/PSP_002946_1765_PSP_002590_1765/DTEEC_002946_1765_002590_1765_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteec_007145_1475_007000_1475_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEEC_007145_1475_007000_1475_A01 (equirectangular), MARS",
+   "native_m": 1.01,
+   "bbox": [
+    141.1714,
+    -32.2289,
+    141.3171,
+    -31.8456
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/PSP/ORB_007100_007199/PSP_007145_1475_PSP_007000_1475/DTEEC_007145_1475_007000_1475_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteec_011339_1665_011972_1665_g01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEEC_011339_1665_011972_1665_G01 (equirectangular), MARS",
+   "native_m": 1.01,
+   "bbox": [
+    106.4489,
+    -13.2456,
+    106.5572,
+    -13.0504
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_011300_011399/ESP_011339_1665_ESP_011972_1665/DTEEC_011339_1665_011972_1665_G01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteec_011948_1335_012014_1335_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEEC_011948_1335_012014_1335_A01 (equirectangular), MARS",
+   "native_m": 1.0,
+   "bbox": [
+    45.8624,
+    -46.0185,
+    46.0166,
+    -45.8187
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_011900_011999/ESP_011948_1335_ESP_012014_1335/DTEEC_011948_1335_012014_1335_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteec_013673_1380_013528_1380_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEEC_013673_1380_013528_1380_A01 (equirectangular), MARS",
+   "native_m": 1.0,
+   "bbox": [
+    108.697,
+    -41.7908,
+    108.8456,
+    -41.4875
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_013600_013699/ESP_013673_1380_ESP_013528_1380/DTEEC_013673_1380_013528_1380_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteec_023340_1505_023195_1505_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEEC_023340_1505_023195_1505_A01 (equirectangular), MARS",
+   "native_m": 1.01,
+   "bbox": [
+    66.6461,
+    -29.2815,
+    66.7775,
+    -28.9742
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_023300_023399/ESP_023340_1505_ESP_023195_1505/DTEEC_023340_1505_023195_1505_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteec_033225_2250_033146_2250_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEEC_033225_2250_033146_2250_A01 (equirectangular), MARS",
+   "native_m": 1.0,
+   "bbox": [
+    -176.3881,
+    44.3576,
+    -176.2531,
+    44.4608
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_033200_033299/ESP_033225_2250_ESP_033146_2250/DTEEC_033225_2250_033146_2250_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteec_033563_1565_033418_1565_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEEC_033563_1565_033418_1565_A01 (equirectangular), MARS",
+   "native_m": 1.01,
+   "bbox": [
+    -33.2602,
+    -23.4186,
+    -33.1652,
+    -23.2864
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_033500_033599/ESP_033563_1565_ESP_033418_1565/DTEEC_033563_1565_033418_1565_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteec_038308_1720_037675_1720_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEEC_038308_1720_037675_1720_A01 (equirectangular), MARS",
+   "native_m": 1.01,
+   "bbox": [
+    24.8827,
+    -8.1504,
+    24.9784,
+    -7.9361
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_038300_038399/ESP_038308_1720_ESP_037675_1720/DTEEC_038308_1720_037675_1720_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteec_054060_2265_054126_2265_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEEC_054060_2265_054126_2265_A01 (equirectangular), MARS",
+   "native_m": 1.0,
+   "bbox": [
+    172.482,
+    45.9627,
+    172.6461,
+    46.1777
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_054000_054099/ESP_054060_2265_ESP_054126_2265/DTEEC_054060_2265_054126_2265_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteec_060707_2160_060773_2160_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEEC_060707_2160_060773_2160_A01 (equirectangular), MARS",
+   "native_m": 1.0,
+   "bbox": [
+    163.5565,
+    35.3722,
+    163.6849,
+    35.6179
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_060700_060799/ESP_060707_2160_ESP_060773_2160/DTEEC_060707_2160_060773_2160_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteec_060742_2190_060808_2190_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEEC_060742_2190_060808_2190_A01 (equirectangular), MARS",
+   "native_m": 1.0,
+   "bbox": [
+    -72.6969,
+    38.4331,
+    -72.5712,
+    38.5404
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_060700_060799/ESP_060742_2190_ESP_060808_2190/DTEEC_060742_2190_060808_2190_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteec_069102_1890_069234_1890_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEEC_069102_1890_069234_1890_A01 (equirectangular), MARS",
+   "native_m": 1.01,
+   "bbox": [
+    -1.8102,
+    8.6666,
+    -1.7061,
+    8.8587
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_069100_069199/ESP_069102_1890_ESP_069234_1890/DTEEC_069102_1890_069234_1890_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteec_073561_1660_067758_1660_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEEC_073561_1660_067758_1660_A01 (equirectangular), MARS",
+   "native_m": 1.01,
+   "bbox": [
+    -60.3745,
+    -13.637,
+    -60.2793,
+    -13.5028
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_073500_073599/ESP_073561_1660_ESP_067758_1660/DTEEC_073561_1660_067758_1660_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteec_094062_2130_093627_2130_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEEC_094062_2130_093627_2130_A01 (equirectangular), MARS",
+   "native_m": 1.01,
+   "bbox": [
+    23.1624,
+    32.8387,
+    23.2633,
+    32.9873
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_094000_094099/ESP_094062_2130_ESP_093627_2130/DTEEC_094062_2130_093627_2130_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteed_011917_1790_011772_1790_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEED_011917_1790_011772_1790_A01 (equirectangular), MARS",
+   "native_m": 2.02,
+   "bbox": [
+    163.4468,
+    -1.1074,
+    163.5611,
+    -0.9138
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_011900_011999/ESP_011917_1790_ESP_011772_1790/DTEED_011917_1790_011772_1790_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteed_013871_1475_013726_1475_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEED_013871_1475_013726_1475_A01 (equirectangular), MARS",
+   "native_m": 2.01,
+   "bbox": [
+    103.0788,
+    -32.5205,
+    103.229,
+    -32.1774
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_013800_013899/ESP_013871_1475_ESP_013726_1475/DTEED_013871_1475_013726_1475_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteed_019035_2165_018178_2165_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEED_019035_2165_018178_2165_A01 (equirectangular), MARS",
+   "native_m": 2.01,
+   "bbox": [
+    -130.007,
+    35.7693,
+    -129.8443,
+    36.1187
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_019000_019099/ESP_019035_2165_ESP_018178_2165/DTEED_019035_2165_018178_2165_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteed_020558_2215_020835_2215_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEED_020558_2215_020835_2215_A01 (equirectangular), MARS",
+   "native_m": 2.0,
+   "bbox": [
+    50.7969,
+    41.0743,
+    50.9468,
+    41.277
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_020500_020599/ESP_020558_2215_ESP_020835_2215/DTEED_020558_2215_020835_2215_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteed_025219_2270_025285_2270_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEED_025219_2270_025285_2270_A01 (equirectangular), MARS",
+   "native_m": 2.0,
+   "bbox": [
+    -121.1128,
+    46.3134,
+    -120.9064,
+    46.831
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_025200_025299/ESP_025219_2270_ESP_025285_2270/DTEED_025219_2270_025285_2270_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteed_044184_1850_044039_1850_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEED_044184_1850_044039_1850_A01 (equirectangular), MARS",
+   "native_m": 2.02,
+   "bbox": [
+    169.0175,
+    4.7323,
+    169.1306,
+    5.0159
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_044100_044199/ESP_044184_1850_ESP_044039_1850/DTEED_044184_1850_044039_1850_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteed_049095_1575_048950_1575_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEED_049095_1575_048950_1575_A01 (equirectangular), MARS",
+   "native_m": 2.02,
+   "bbox": [
+    14.5707,
+    -22.5622,
+    14.6806,
+    -22.2579
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_049000_049099/ESP_049095_1575_ESP_048950_1575/DTEED_049095_1575_048950_1575_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteed_049573_2265_049639_2265_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEED_049573_2265_049639_2265_A01 (equirectangular), MARS",
+   "native_m": 2.0,
+   "bbox": [
+    -83.1454,
+    46.0056,
+    -82.9608,
+    46.3653
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_049500_049599/ESP_049573_2265_ESP_049639_2265/DTEED_049573_2265_049639_2265_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteed_050825_1825_050680_1825_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEED_050825_1825_050680_1825_A01 (equirectangular), MARS",
+   "native_m": 2.02,
+   "bbox": [
+    -58.7939,
+    2.2541,
+    -58.6636,
+    2.6926
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_050800_050899/ESP_050825_1825_ESP_050680_1825/DTEED_050825_1825_050680_1825_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteed_051124_1415_050979_1415_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEED_051124_1415_050979_1415_A01 (equirectangular), MARS",
+   "native_m": 2.01,
+   "bbox": [
+    63.1682,
+    -38.1283,
+    63.308,
+    -37.7811
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_051100_051199/ESP_051124_1415_ESP_050979_1415/DTEED_051124_1415_050979_1415_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteed_052165_1975_052231_1975_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEED_052165_1975_052231_1975_A01 (equirectangular), MARS",
+   "native_m": 2.02,
+   "bbox": [
+    76.5645,
+    17.2114,
+    76.6821,
+    17.4489
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_052100_052199/ESP_052165_1975_ESP_052231_1975/DTEED_052165_1975_052231_1975_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteed_055264_1565_055330_1565_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEED_055264_1565_055330_1565_A01 (equirectangular), MARS",
+   "native_m": 2.02,
+   "bbox": [
+    72.7453,
+    -23.5176,
+    72.8508,
+    -23.3014
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_055200_055299/ESP_055264_1565_ESP_055330_1565/DTEED_055264_1565_055330_1565_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteed_061990_1770_062056_1770_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEED_061990_1770_062056_1770_A01 (equirectangular), MARS",
+   "native_m": 2.02,
+   "bbox": [
+    65.0529,
+    -2.9117,
+    65.1586,
+    -2.6443
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_061900_061999/ESP_061990_1770_ESP_062056_1770/DTEED_061990_1770_062056_1770_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteed_063997_1610_064063_1610_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEED_063997_1610_064063_1610_A01 (equirectangular), MARS",
+   "native_m": 2.02,
+   "bbox": [
+    -11.3451,
+    -19.0907,
+    -11.232,
+    -18.7756
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_063900_063999/ESP_063997_1610_ESP_064063_1610/DTEED_063997_1610_064063_1610_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteed_064881_1965_064736_1965_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEED_064881_1965_064736_1965_A01 (equirectangular), MARS",
+   "native_m": 2.02,
+   "bbox": [
+    -30.6222,
+    16.2482,
+    -30.5133,
+    16.4867
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_064800_064899/ESP_064881_1965_ESP_064736_1965/DTEED_064881_1965_064736_1965_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteed_076767_1510_076833_1510_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEED_076767_1510_076833_1510_A01 (equirectangular), MARS",
+   "native_m": 2.01,
+   "bbox": [
+    -99.7449,
+    -28.68,
+    -99.6202,
+    -28.3536
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_076700_076799/ESP_076767_1510_ESP_076833_1510/DTEED_076767_1510_076833_1510_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteed_077490_2155_077556_2155_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEED_077490_2155_077556_2155_A01 (equirectangular), MARS",
+   "native_m": 2.01,
+   "bbox": [
+    -38.3405,
+    35.2396,
+    -38.1975,
+    35.5849
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_077400_077499/ESP_077490_2155_ESP_077556_2155/DTEED_077490_2155_077556_2155_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dteed_085753_1370_085542_1370_g01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEED_085753_1370_085542_1370_G01 (equirectangular), MARS",
+   "native_m": 2.0,
+   "bbox": [
+    97.8325,
+    -42.7236,
+    97.952,
+    -42.5946
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_085700_085799/ESP_085753_1370_ESP_085542_1370/DTEED_085753_1370_085542_1370_G01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dtepc_053324_2570_053377_2570_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEPC_053324_2570_053377_2570_A01 (polar stereographic), MARS",
+   "native_m": 1.0,
+   "bbox": [
+    89.2538,
+    76.5468,
+    89.682,
+    76.7003
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_053300_053399/ESP_053324_2570_ESP_053377_2570/DTEPC_053324_2570_053377_2570_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dtepc_053334_2650_053361_2650_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEPC_053334_2650_053361_2650_A01 (polar stereographic), MARS",
+   "native_m": 1.0,
+   "bbox": [
+    156.06,
+    84.6199,
+    157.377,
+    84.7743
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_053300_053399/ESP_053334_2650_ESP_053361_2650/DTEPC_053334_2650_053361_2650_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  },
+  {
+   "id": "hirise_dtm_dtepd_091978_1130_092756_1130_a01",
+   "provider": "NASA MRO HiRISE / UA LPL (PDS)",
+   "product": "HiRISE DTM DTEPD_091978_1130_092756_1130_A01 (polar stereographic), MARS",
+   "native_m": 2.0,
+   "bbox": [
+    64.1849,
+    -66.8415,
+    64.4334,
+    -66.631
+   ],
+   "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_091900_091999/ESP_091978_1130_ESP_092756_1130/DTEPD_091978_1130_092756_1130_A01.IMG",
+   "licence": "not verified in this run (NASA PDS data; credit NASA/JPL/UA)",
+   "windowed_read": null,
+   "source_catalogue": "uahirise/PDS INDEX/DTMINDEX.TAB (39 DTM rows; index is stale, see notes)"
+  }
+ ],
+ "hirise_sample": [
+  {
+   "id": "DTEEC_001388_1565_001586_1565_A01",
+   "coverage_fraction": 0.7436,
+   "bbox_fraction": 0.8489
+  },
+  {
+   "id": "DTEEC_002946_1765_002590_1765_A01",
+   "coverage_fraction": 0.7441,
+   "bbox_fraction": 0.9564
+  },
+  {
+   "id": "DTEEC_011339_1665_011972_1665_G01",
+   "coverage_fraction": 0.731,
+   "bbox_fraction": 0.8814
+  },
+  {
+   "id": "DTEEC_011948_1335_012014_1335_A01",
+   "coverage_fraction": 0.7387,
+   "bbox_fraction": 0.8919
+  },
+  {
+   "id": "DTEEC_033225_2250_033146_2250_A01",
+   "coverage_fraction": 0.5613,
+   "bbox_fraction": 0.6929
+  },
+  {
+   "id": "DTEEC_054060_2265_054126_2265_A01",
+   "coverage_fraction": 0.784,
+   "bbox_fraction": 0.9275
+  },
+  {
+   "id": "DTEEC_060742_2190_060808_2190_A01",
+   "coverage_fraction": 0.5807,
+   "bbox_fraction": 0.7298
+  },
+  {
+   "id": "DTEEC_073561_1660_067758_1660_A01",
+   "coverage_fraction": 0.6521,
+   "bbox_fraction": 0.7982
+  },
+  {
+   "id": "DTEEC_094062_2130_093627_2130_A01",
+   "coverage_fraction": 0.5796,
+   "bbox_fraction": 0.743
+  },
+  {
+   "id": "DTEED_011917_1790_011772_1790_A01",
+   "coverage_fraction": 0.7967,
+   "bbox_fraction": 0.9297
+  },
+  {
+   "id": "DTEED_013871_1475_013726_1475_A01",
+   "coverage_fraction": 0.7007,
+   "bbox_fraction": 0.9826
+  },
+  {
+   "id": "DTEED_020558_2215_020835_2215_A01",
+   "coverage_fraction": 0.8065,
+   "bbox_fraction": 0.9223
+  },
+  {
+   "id": "DTEED_050825_1825_050680_1825_A01",
+   "coverage_fraction": 0.698,
+   "bbox_fraction": 0.992
+  },
+  {
+   "id": "DTEED_051124_1415_050979_1415_A01",
+   "coverage_fraction": 0.6368,
+   "bbox_fraction": 0.9085
+  },
+  {
+   "id": "DTEED_055264_1565_055330_1565_A01",
+   "coverage_fraction": 0.645,
+   "bbox_fraction": 0.8275
+  },
+  {
+   "id": "DTEED_061990_1770_062056_1770_A01",
+   "coverage_fraction": 0.6537,
+   "bbox_fraction": 0.8821
+  },
+  {
+   "id": "DTEED_063997_1610_064063_1610_A01",
+   "coverage_fraction": 0.6618,
+   "bbox_fraction": 0.8903
+  },
+  {
+   "id": "DTEED_064881_1965_064736_1965_A01",
+   "coverage_fraction": 0.691,
+   "bbox_fraction": 0.8756
+  },
+  {
+   "id": "DTEED_077490_2155_077556_2155_A01",
+   "coverage_fraction": 0.6798,
+   "bbox_fraction": 0.9407
+  },
+  {
+   "id": "DTEPC_053324_2570_053377_2570_A01",
+   "coverage_fraction": 0.5649,
+   "bbox_fraction": 0.842
+  }
+ ],
+ "notes": "Mars inventory part 2 (M2), 2026-11-13. Coverage = area(8 km disk, R=3396190) intersect footprint / disk area. HiRISE: 20 of 39 DTM rows, seed 20261114 (numpy default_rng), footprint = 4 index corners, centre = bbox centre; bbox_fraction is a cross-check only. HiRISE index stale (7 April 2026 DTMs not in it); count of real DTMs unknown (>39). HRSC DTMRDR: 1370 DT4 rows in index.tab (an earlier count of 2740 double-counted); 19 of 20 sampled valid (H5296 polar excluded). Sample native: 3 of 19 at 50 m. Coverage: all 19 valid products cover the disk fully (footprints are long strips). FU Berlin MC mosaics: tile extents, not footprints; decimated valid fraction used only as a rough estimate. ESA PSA returned HTTP 401 to guest HEAD; the PDS mirror was used. hrscview.fu-berlin.de unreachable; hrscteam.dlr.de HMC30 404. The FU Berlin hrsc3-mos.tif (50 m, uint8) is an image mosaic, not elevation: excluded."
+}

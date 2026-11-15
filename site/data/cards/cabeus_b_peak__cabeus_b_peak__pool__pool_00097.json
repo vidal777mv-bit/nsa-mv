@@ -1,0 +1,145 @@
+{
+  "target_id": "cabeus_b_peak",
+  "analog_id": "cabeus_b_peak__pool__pool_00097",
+  "rank": 1,
+  "D": 0.30738463978255376,
+  "tie_group": 0,
+  "features": {
+    "slope_p95_deg": {
+      "target": 23.92789449642651,
+      "analog": 24.180824909706512,
+      "z_diff": 0.08317455952151777
+    },
+    "hi": {
+      "target": 0.6117535066879656,
+      "analog": 0.5871839559415652,
+      "z_diff": -0.3838208018278865
+    },
+    "coherence": {
+      "target": 0.613030359679738,
+      "analog": 0.840182829164467,
+      "z_diff": 1.4475401519721167
+    },
+    "hurst": {
+      "target": 0.9723831527584808,
+      "analog": 0.9004223742479349,
+      "z_diff": -0.35947118807402456
+    },
+    "ridge_pct": {
+      "target": 26.702926702926703,
+      "analog": 27.764827764827764,
+      "z_diff": 0.5821920239692712
+    },
+    "valley_pct": {
+      "target": 4.351204351204351,
+      "analog": 24.397824397824397,
+      "z_diff": 32.628490489680296
+    }
+  },
+  "vertical_exaggeration": 1.2,
+  "in_distance": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "context_features": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "similar": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "different": [],
+  "context_similar": [
+    "ridge_pct"
+  ],
+  "context_different": [
+    "coherence",
+    "valley_pct"
+  ],
+  "analog_place": {
+    "name": "Tacna, Peru",
+    "admin1": "Tacna",
+    "country": "Peru",
+    "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+    "match": "inside",
+    "distance_km": 0.0,
+    "nearest_named_feature": null
+  },
+  "mission_pct": {
+    "landing": {
+      "target": 39.137679650072904,
+      "analog": 60.0916475734222,
+      "limit_deg": 12.0,
+      "source": "https://ntrs.nasa.gov/citations/19720018253",
+      "reason": null
+    },
+    "driving": {
+      "target": 98.85440533222246,
+      "analog": 96.83399291814206,
+      "limit_deg": 25.0,
+      "source": "https://ntrs.nasa.gov/citations/19730008090",
+      "reason": null
+    }
+  },
+  "mission_baseline_m": 100,
+  "rotation_deg": 40.0,
+  "rotation_rms": 0.8358558555681342,
+  "files": {
+    "target": "terrain/cabeus_b_peak/",
+    "analog": "terrain/cabeus_b_peak__pool__pool_00097/"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:52:47Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "lola_20m_polar_ldem",
+        "path": "data/raw/moon/cabeus_b_peak/lola_20m_polar_ldem_win6km.tif",
+        "sha256": "1b77398f2b7b7f5a2fdd37a8a3b26142cdaedbc23da809c0997f19d195cf07b1"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00097.tif",
+        "sha256": "af5ba3adea1b77e80af3018a573edd608775fdc5b94ca4923c65e8c8b6c3557a"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  },
+  "context": {
+    "koppen_class": "BWk",
+    "koppen_label": "Arid, desert, cold",
+    "koppen_code": 5,
+    "elevation_m": 834.1876942306817,
+    "nearest_town": {
+      "name": "Tacna",
+      "country": "Peru",
+      "distance_km": 26.1
+    },
+    "sources": {
+      "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+      "elevation": "nasadem window mean over the 4 km disk (source_id of the window's measure record)",
+      "town": "Natural Earth 1:10m populated places (public domain)",
+      "novelty": "config/known_analog_regions.json (circle approximation)"
+    }
+  },
+  "novelty": "known_region",
+  "known_region_id": "atacama_desert",
+  "refined": {
+    "pool_id": "pool__pool_00097",
+    "rank_before": 1,
+    "D_before": 0.36275469168523616,
+    "D_clip_offset0": 0.35276226732073196,
+    "refined_offset_km": [
+      2.0,
+      4.0
+    ]
+  }
+}

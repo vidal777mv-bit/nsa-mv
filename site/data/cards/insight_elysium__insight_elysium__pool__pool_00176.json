@@ -1,0 +1,145 @@
+{
+  "target_id": "insight_elysium",
+  "analog_id": "insight_elysium__pool__pool_00176",
+  "rank": 8,
+  "D": 0.1880200964882333,
+  "tie_group": 0,
+  "features": {
+    "slope_p95_deg": {
+      "target": 1.545509859340771,
+      "analog": 1.3538535603483013,
+      "z_diff": -0.06302495631704005
+    },
+    "hi": {
+      "target": 0.536998319548761,
+      "analog": 0.545951836155424,
+      "z_diff": 0.13987011641440672
+    },
+    "coherence": {
+      "target": 0.31209686021784055,
+      "analog": 0.0741580955475934,
+      "z_diff": -1.5162763422828751
+    },
+    "hurst": {
+      "target": 0.7352364036923609,
+      "analog": 0.6777310317795667,
+      "z_diff": -0.2872609884160904
+    },
+    "ridge_pct": {
+      "target": 0.0,
+      "analog": 0.0,
+      "z_diff": 0.0
+    },
+    "valley_pct": {
+      "target": 0.1554001554001554,
+      "analog": 0.0,
+      "z_diff": -0.2529340348037232
+    }
+  },
+  "vertical_exaggeration": 10.0,
+  "in_distance": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "context_features": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "similar": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "different": [],
+  "context_similar": [
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "context_different": [
+    "coherence"
+  ],
+  "analog_place": {
+    "name": "Khartoum, Sudan",
+    "admin1": "Khartoum",
+    "country": "Sudan",
+    "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+    "match": "inside",
+    "distance_km": 0.0,
+    "nearest_named_feature": null
+  },
+  "mission_pct": {
+    "landing": {
+      "target": 100.0,
+      "analog": 100.0,
+      "limit_deg": 15.0,
+      "source": "https://marsoweb.nas.nasa.gov/landingsites/mer2003/doc/original.html",
+      "reason": null
+    },
+    "driving": {
+      "target": 100.0,
+      "analog": 100.0,
+      "limit_deg": 30.0,
+      "source": "https://science.nasa.gov/mission/mars-2020-perseverance/rover-components/",
+      "reason": null
+    }
+  },
+  "mission_baseline_m": 100,
+  "rotation_deg": 100.0,
+  "rotation_rms": 0.9369473424669574,
+  "files": {
+    "target": "terrain/insight_elysium/",
+    "analog": "terrain/insight_elysium__pool__pool_00176/"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:52:31Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "usgs_ctx_dtm_insight_n15_068239",
+        "path": "data/raw/mars/insight_elysium/usgs_ctx_dtm_insight_n15_068239_win6km.tif",
+        "sha256": "5ce6f5456f1ee5f4049f88971cd843f676f35ab0dd6db342809a990fd12117a1"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00176.tif",
+        "sha256": "23c0288958d9ce516a865f7f9286856089bfe338994c94ae0f1c2f567d8d1456"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  },
+  "context": {
+    "koppen_class": "BWh",
+    "koppen_label": "Arid, desert, hot",
+    "koppen_code": 4,
+    "elevation_m": 533.9375747759186,
+    "nearest_town": {
+      "name": "Khartoum",
+      "country": "Sudan",
+      "distance_km": 72.59
+    },
+    "sources": {
+      "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+      "elevation": "nasadem window mean over the 4 km disk (source_id of the window's measure record)",
+      "town": "Natural Earth 1:10m populated places (public domain)",
+      "novelty": "config/known_analog_regions.json (circle approximation)"
+    }
+  },
+  "novelty": "new",
+  "known_region_id": null,
+  "refined": {
+    "pool_id": "pool__pool_00176",
+    "rank_before": 8,
+    "D_before": 0.18955352470667944,
+    "D_clip_offset0": 0.1899857549880405,
+    "refined_offset_km": [
+      0.0,
+      2.0
+    ]
+  }
+}

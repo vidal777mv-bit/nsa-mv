@@ -1,0 +1,678 @@
+{
+ "schema": "analog.arctic_ice_check/1",
+ "question": "Do the Arctic windows that close Mars gaps sit on rock/bare ground (ROCK) or on snow/ice (ICE)?",
+ "seed": 20261114,
+ "class_rule": {
+  "ROCK": "share70 < 0.2",
+  "MIXED": "0.2 <= share70 < 0.5",
+  "ICE": "share70 >= 0.5"
+ },
+ "share_definition": "WorldCover 2021 class 70 pixels / all pixels within 4 km (full disk, nearest-sampled 300x300 per 3 deg tile, same as the coarse cache)",
+ "distance": {
+  "features": [
+   "slope_p95_deg",
+   "hi",
+   "hurst"
+  ],
+  "sigma": {
+   "slope_p95_deg": 3.040958854907633,
+   "hi": 0.0640130775335565,
+   "hurst": 0.20018510773032308
+  },
+  "formula": "sqrt(mean_k((a_k-b_k)/sigma_k)^2), K=3"
+ },
+ "classes": {
+  "closing_39": {
+   "n": 39,
+   "ROCK": {
+    "n": 17,
+    "share": 0.4359,
+    "wilson95": [
+     0.293,
+     0.5902
+    ]
+   },
+   "MIXED": {
+    "n": 2,
+    "share": 0.0513,
+    "wilson95": [
+     0.0142,
+     0.1689
+    ]
+   },
+   "ICE": {
+    "n": 20,
+    "share": 0.5128,
+    "wilson95": [
+     0.362,
+     0.6614
+    ]
+   }
+  },
+  "sample_40_of_other_361": {
+   "n": 40,
+   "ROCK": {
+    "n": 10,
+    "share": 0.25,
+    "wilson95": [
+     0.1419,
+     0.4019
+    ]
+   },
+   "MIXED": {
+    "n": 3,
+    "share": 0.075,
+    "wilson95": [
+     0.0258,
+     0.1986
+    ]
+   },
+   "ICE": {
+    "n": 27,
+    "share": 0.675,
+    "wilson95": [
+     0.5202,
+     0.7992
+    ]
+   }
+  },
+  "all_400": {
+   "n": 400,
+   "ROCK": {
+    "n": 144,
+    "share": 0.36,
+    "wilson95": [
+     0.3145,
+     0.4082
+    ]
+   },
+   "MIXED": {
+    "n": 13,
+    "share": 0.0325,
+    "wilson95": [
+     0.0191,
+     0.0548
+    ]
+   },
+   "ICE": {
+    "n": 243,
+    "share": 0.6075,
+    "wilson95": [
+     0.5588,
+     0.6541
+    ]
+   }
+  }
+ },
+ "closing_39_table": [
+  {
+   "arctic_id": "arc_00163",
+   "lat": 61.87,
+   "lon": -47.93,
+   "class": "ICE",
+   "s70": 1.0,
+   "s60": 0.0,
+   "s100": 0.0,
+   "n_disk_px": 88,
+   "slope_p95_deg": 6.97
+  },
+  {
+   "arctic_id": "arc_00006",
+   "lat": 65.77,
+   "lon": -38.93,
+   "class": "ICE",
+   "s70": 1.0,
+   "s60": 0.0,
+   "s100": 0.0,
+   "n_disk_px": 100,
+   "slope_p95_deg": 5.73
+  },
+  {
+   "arctic_id": "arc_00297",
+   "lat": 75.07,
+   "lon": -81.23,
+   "class": "ICE",
+   "s70": 1.0,
+   "s60": 0.0,
+   "s100": 0.0,
+   "n_disk_px": 160,
+   "slope_p95_deg": 6.92
+  },
+  {
+   "arctic_id": "arc_00313",
+   "lat": 77.77,
+   "lon": -65.93,
+   "class": "ICE",
+   "s70": 1.0,
+   "s60": 0.0,
+   "s100": 0.0,
+   "n_disk_px": 192,
+   "slope_p95_deg": 7.88
+  },
+  {
+   "arctic_id": "arc_00050",
+   "lat": 80.77,
+   "lon": -75.23,
+   "class": "ICE",
+   "s70": 1.0,
+   "s60": 0.0,
+   "s100": 0.0,
+   "n_disk_px": 252,
+   "slope_p95_deg": 6.7
+  },
+  {
+   "arctic_id": "arc_00316",
+   "lat": 80.77,
+   "lon": 61.87,
+   "class": "ICE",
+   "s70": 1.0,
+   "s60": 0.0,
+   "s100": 0.0,
+   "n_disk_px": 252,
+   "slope_p95_deg": 8.77
+  },
+  {
+   "arctic_id": "arc_00244",
+   "lat": 74.77,
+   "lon": -82.13,
+   "class": "ICE",
+   "s70": 1.0,
+   "s60": 0.0,
+   "s100": 0.0,
+   "n_disk_px": 156,
+   "slope_p95_deg": 12.36
+  },
+  {
+   "arctic_id": "arc_00361",
+   "lat": 77.77,
+   "lon": -66.23,
+   "class": "ICE",
+   "s70": 1.0,
+   "s60": 0.0,
+   "s100": 0.0,
+   "n_disk_px": 192,
+   "slope_p95_deg": 10.18
+  },
+  {
+   "arctic_id": "arc_00225",
+   "lat": 75.97,
+   "lon": 62.77,
+   "class": "ICE",
+   "s70": 1.0,
+   "s60": 0.0,
+   "s100": 0.0,
+   "n_disk_px": 168,
+   "slope_p95_deg": 4.52
+  },
+  {
+   "arctic_id": "arc_00331",
+   "lat": 70.87,
+   "lon": -73.13,
+   "class": "ICE",
+   "s70": 1.0,
+   "s60": 0.0,
+   "s100": 0.0,
+   "n_disk_px": 128,
+   "slope_p95_deg": 15.07
+  },
+  {
+   "arctic_id": "arc_00162",
+   "lat": 81.07,
+   "lon": -20.93,
+   "class": "ICE",
+   "s70": 0.9394,
+   "s60": 0.0492,
+   "s100": 0.0114,
+   "n_disk_px": 264,
+   "slope_p95_deg": 11.28
+  },
+  {
+   "arctic_id": "arc_00388",
+   "lat": 79.87,
+   "lon": -94.13,
+   "class": "ICE",
+   "s70": 0.9237,
+   "s60": 0.0339,
+   "s100": 0.0339,
+   "n_disk_px": 236,
+   "slope_p95_deg": 26.04
+  },
+  {
+   "arctic_id": "arc_00065",
+   "lat": 81.97,
+   "lon": -42.23,
+   "class": "ICE",
+   "s70": 0.9075,
+   "s60": 0.0548,
+   "s100": 0.0377,
+   "n_disk_px": 292,
+   "slope_p95_deg": 18.83
+  },
+  {
+   "arctic_id": "arc_00013",
+   "lat": 80.77,
+   "lon": -17.93,
+   "class": "ICE",
+   "s70": 0.9048,
+   "s60": 0.0913,
+   "s100": 0.004,
+   "n_disk_px": 252,
+   "slope_p95_deg": 34.29
+  },
+  {
+   "arctic_id": "arc_00172",
+   "lat": 81.97,
+   "lon": -71.93,
+   "class": "ICE",
+   "s70": 0.9041,
+   "s60": 0.0959,
+   "s100": 0.0,
+   "n_disk_px": 292,
+   "slope_p95_deg": 29.17
+  },
+  {
+   "arctic_id": "arc_00189",
+   "lat": 78.97,
+   "lon": -78.23,
+   "class": "ICE",
+   "s70": 0.838,
+   "s60": 0.0787,
+   "s100": 0.0833,
+   "n_disk_px": 216,
+   "slope_p95_deg": 35.01
+  },
+  {
+   "arctic_id": "arc_00287",
+   "lat": 79.87,
+   "lon": 98.77,
+   "class": "ICE",
+   "s70": 0.7373,
+   "s60": 0.2585,
+   "s100": 0.0042,
+   "n_disk_px": 236,
+   "slope_p95_deg": 8.61
+  },
+  {
+   "arctic_id": "arc_00191",
+   "lat": 79.87,
+   "lon": -19.13,
+   "class": "ICE",
+   "s70": 0.7034,
+   "s60": 0.1822,
+   "s100": 0.089,
+   "n_disk_px": 236,
+   "slope_p95_deg": 29.69
+  },
+  {
+   "arctic_id": "arc_00105",
+   "lat": 81.97,
+   "lon": -44.03,
+   "class": "ICE",
+   "s70": 0.5616,
+   "s60": 0.1336,
+   "s100": 0.2123,
+   "n_disk_px": 292,
+   "slope_p95_deg": 33.33
+  },
+  {
+   "arctic_id": "arc_00261",
+   "lat": 81.97,
+   "lon": -35.03,
+   "class": "ICE",
+   "s70": 0.5205,
+   "s60": 0.274,
+   "s100": 0.1267,
+   "n_disk_px": 292,
+   "slope_p95_deg": 30.83
+  },
+  {
+   "arctic_id": "arc_00067",
+   "lat": 69.97,
+   "lon": -69.23,
+   "class": "MIXED",
+   "s70": 0.3167,
+   "s60": 0.275,
+   "s100": 0.2583,
+   "n_disk_px": 120,
+   "slope_p95_deg": 39.05
+  },
+  {
+   "arctic_id": "arc_00186",
+   "lat": 76.87,
+   "lon": -87.23,
+   "class": "MIXED",
+   "s70": 0.2333,
+   "s60": 0.4833,
+   "s100": 0.2833,
+   "n_disk_px": 180,
+   "slope_p95_deg": 10.15
+  },
+  {
+   "arctic_id": "arc_00214",
+   "lat": 81.97,
+   "lon": -53.03,
+   "class": "ROCK",
+   "s70": 0.1507,
+   "s60": 0.3151,
+   "s100": 0.3288,
+   "n_disk_px": 292,
+   "slope_p95_deg": 26.92
+  },
+  {
+   "arctic_id": "arc_00180",
+   "lat": 80.77,
+   "lon": 48.07,
+   "class": "ROCK",
+   "s70": 0.1468,
+   "s60": 0.4603,
+   "s100": 0.3294,
+   "n_disk_px": 252,
+   "slope_p95_deg": 5.85
+  },
+  {
+   "arctic_id": "arc_00089",
+   "lat": 72.07,
+   "lon": -78.23,
+   "class": "ROCK",
+   "s70": 0.1176,
+   "s60": 0.3456,
+   "s100": 0.5294,
+   "n_disk_px": 136,
+   "slope_p95_deg": 26.09
+  },
+  {
+   "arctic_id": "arc_00051",
+   "lat": 74.77,
+   "lon": -21.23,
+   "class": "ROCK",
+   "s70": 0.0769,
+   "s60": 0.4423,
+   "s100": 0.4615,
+   "n_disk_px": 156,
+   "slope_p95_deg": 31.47
+  },
+  {
+   "arctic_id": "arc_00146",
+   "lat": 67.87,
+   "lon": -68.03,
+   "class": "ROCK",
+   "s70": 0.0648,
+   "s60": 0.5833,
+   "s100": 0.2407,
+   "n_disk_px": 108,
+   "slope_p95_deg": 14.35
+  },
+  {
+   "arctic_id": "arc_00041",
+   "lat": 81.97,
+   "lon": -65.03,
+   "class": "ROCK",
+   "s70": 0.0137,
+   "s60": 0.7671,
+   "s100": 0.2158,
+   "n_disk_px": 292,
+   "slope_p95_deg": 27.03
+  },
+  {
+   "arctic_id": "arc_00153",
+   "lat": 78.97,
+   "lon": -82.13,
+   "class": "ROCK",
+   "s70": 0.0093,
+   "s60": 0.338,
+   "s100": 0.5556,
+   "n_disk_px": 216,
+   "slope_p95_deg": 32.77
+  },
+  {
+   "arctic_id": "arc_00385",
+   "lat": 72.97,
+   "lon": -81.23,
+   "class": "ROCK",
+   "s70": 0.0,
+   "s60": 0.0714,
+   "s100": 0.8,
+   "n_disk_px": 140,
+   "slope_p95_deg": 24.16
+  },
+  {
+   "arctic_id": "arc_00099",
+   "lat": 71.77,
+   "lon": -82.13,
+   "class": "ROCK",
+   "s70": 0.0,
+   "s60": 0.0625,
+   "s100": 0.9375,
+   "n_disk_px": 128,
+   "slope_p95_deg": 18.58
+  },
+  {
+   "arctic_id": "arc_00264",
+   "lat": 71.77,
+   "lon": 107.77,
+   "class": "ROCK",
+   "s70": 0.0,
+   "s60": 0.0,
+   "s100": 1.0,
+   "n_disk_px": 128,
+   "slope_p95_deg": 10.76
+  },
+  {
+   "arctic_id": "arc_00257",
+   "lat": 81.97,
+   "lon": -59.93,
+   "class": "ROCK",
+   "s70": 0.0,
+   "s60": 0.8733,
+   "s100": 0.0,
+   "n_disk_px": 292,
+   "slope_p95_deg": 12.98
+  },
+  {
+   "arctic_id": "arc_00349",
+   "lat": 80.77,
+   "lon": -26.03,
+   "class": "ROCK",
+   "s70": 0.0,
+   "s60": 0.0952,
+   "s100": 0.8968,
+   "n_disk_px": 252,
+   "slope_p95_deg": 28.79
+  },
+  {
+   "arctic_id": "arc_00378",
+   "lat": 68.77,
+   "lon": 93.97,
+   "class": "ROCK",
+   "s70": 0.0,
+   "s60": 0.0,
+   "s100": 0.9018,
+   "n_disk_px": 112,
+   "slope_p95_deg": 20.98
+  },
+  {
+   "arctic_id": "arc_00323",
+   "lat": 65.77,
+   "lon": -15.23,
+   "class": "ROCK",
+   "s70": 0.0,
+   "s60": 0.27,
+   "s100": 0.62,
+   "n_disk_px": 100,
+   "slope_p95_deg": 14.13
+  },
+  {
+   "arctic_id": "arc_00187",
+   "lat": 78.97,
+   "lon": -66.23,
+   "class": "ROCK",
+   "s70": 0.0,
+   "s60": 0.3935,
+   "s100": 0.4907,
+   "n_disk_px": 216,
+   "slope_p95_deg": 26.97
+  },
+  {
+   "arctic_id": "arc_00122",
+   "lat": 69.07,
+   "lon": 94.87,
+   "class": "ROCK",
+   "s70": 0.0,
+   "s60": 0.2768,
+   "s100": 0.7232,
+   "n_disk_px": 112,
+   "slope_p95_deg": 17.49
+  },
+  {
+   "arctic_id": "arc_00227",
+   "lat": 64.87,
+   "lon": -73.13,
+   "class": "ROCK",
+   "s70": 0.0,
+   "s60": 0.1042,
+   "s100": 0.8333,
+   "n_disk_px": 96,
+   "slope_p95_deg": 8.84
+  }
+ ],
+ "pool_rule_check": {
+  "windows_checked": 400,
+  "replica_matches_stored_candidate_share": 387,
+  "windows_full_disk_differs_from_stored": 157,
+  "max_abs_diff_full_disk_vs_stored": 0.1555,
+  "mismatch_lat_range": [
+   60.07,
+   81.97
+  ]
+ },
+ "closure": {
+  "n_gap_cells": 211,
+  "closed_all_windows": {
+   "k": 87,
+   "share": 0.4123,
+   "wilson95": [
+    0.348,
+    0.4797
+   ]
+  },
+  "closed_rock_only": {
+   "k": 64,
+   "share": 0.3033,
+   "wilson95": [
+    0.2453,
+    0.3684
+   ]
+  },
+  "closed_lost_when_ice_removed": 23,
+  "lost_cell_ids": [
+   "mars_00029",
+   "mars_00151",
+   "mars_00271",
+   "mars_00276",
+   "mars_00351",
+   "mars_00385",
+   "mars_00498",
+   "mars_00751",
+   "mars_00761",
+   "mars_00976",
+   "mars_00982",
+   "mars_01017",
+   "mars_01049",
+   "mars_01062",
+   "mars_01067",
+   "mars_01166",
+   "mars_01306",
+   "mars_01388",
+   "mars_01420",
+   "mars_01482",
+   "mars_01802",
+   "mars_01841",
+   "mars_01916"
+  ],
+  "n_rock_windows": 144,
+  "rock_nearest_windows_for_closed_rock": {
+   "arc_00024": 1,
+   "arc_00041": 5,
+   "arc_00051": 1,
+   "arc_00089": 2,
+   "arc_00097": 1,
+   "arc_00099": 4,
+   "arc_00122": 4,
+   "arc_00146": 2,
+   "arc_00153": 2,
+   "arc_00158": 9,
+   "arc_00174": 2,
+   "arc_00180": 1,
+   "arc_00187": 1,
+   "arc_00214": 5,
+   "arc_00227": 1,
+   "arc_00257": 2,
+   "arc_00264": 3,
+   "arc_00268": 2,
+   "arc_00308": 1,
+   "arc_00323": 1,
+   "arc_00337": 2,
+   "arc_00349": 2,
+   "arc_00378": 3,
+   "arc_00385": 7
+  },
+  "all_nearest_class_of_closing_windows": {
+   "ROCK": 42,
+   "MIXED": 3,
+   "ICE": 42
+  }
+ },
+ "sanity": {
+  "closed_all_recomputed": 87,
+  "closed_stored": 87,
+  "max_abs_diff_nearest_D_vs_stored": 2.220446049250313e-16,
+  "closed_flags_identical": true
+ },
+ "sample40_ids": [
+  "arc_00035",
+  "arc_00135",
+  "arc_00315",
+  "arc_00335",
+  "arc_00276",
+  "arc_00288",
+  "arc_00074",
+  "arc_00283",
+  "arc_00015",
+  "arc_00250",
+  "arc_00133",
+  "arc_00246",
+  "arc_00086",
+  "arc_00016",
+  "arc_00240",
+  "arc_00350",
+  "arc_00371",
+  "arc_00307",
+  "arc_00217",
+  "arc_00228",
+  "arc_00396",
+  "arc_00151",
+  "arc_00124",
+  "arc_00134",
+  "arc_00260",
+  "arc_00084",
+  "arc_00372",
+  "arc_00298",
+  "arc_00322",
+  "arc_00119",
+  "arc_00210",
+  "arc_00109",
+  "arc_00226",
+  "arc_00275",
+  "arc_00165",
+  "arc_00071",
+  "arc_00364",
+  "arc_00104",
+  "arc_00321",
+  "arc_00204"
+ ],
+ "tile_errors": {},
+ "cache_check": {
+  "tiles_compared": 220,
+  "mismatching_cells": 0
+ }
+}

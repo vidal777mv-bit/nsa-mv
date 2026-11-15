@@ -1,0 +1,145 @@
+{
+  "target_id": "jezero",
+  "analog_id": "jezero__pool__pool_01676",
+  "rank": 3,
+  "D": 0.08998542566240002,
+  "tie_group": 0,
+  "features": {
+    "slope_p95_deg": {
+      "target": 6.8181204556214325,
+      "analog": 6.516371714962329,
+      "z_diff": -0.09922815633369335
+    },
+    "hi": {
+      "target": 0.432550896371319,
+      "analog": 0.4371398971177868,
+      "z_diff": 0.07168848809154928
+    },
+    "coherence": {
+      "target": 0.2172834918361744,
+      "analog": 0.1612725570039733,
+      "z_diff": -0.3569324044903479
+    },
+    "hurst": {
+      "target": 0.7388012193582705,
+      "analog": 0.7194891511233228,
+      "z_diff": -0.09647105348597511
+    },
+    "ridge_pct": {
+      "target": 5.49080549080549,
+      "analog": 7.873607873607874,
+      "z_diff": 1.3063821025651954
+    },
+    "valley_pct": {
+      "target": 4.998704998704999,
+      "analog": 7.588707588707589,
+      "z_diff": 4.21556724672872
+    }
+  },
+  "vertical_exaggeration": 7.4,
+  "in_distance": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "context_features": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "similar": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "different": [],
+  "context_similar": [
+    "coherence"
+  ],
+  "context_different": [
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "analog_place": {
+    "name": "Qinghai, China",
+    "admin1": "Qinghai",
+    "country": "China",
+    "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+    "match": "inside",
+    "distance_km": 0.0,
+    "nearest_named_feature": null
+  },
+  "mission_pct": {
+    "landing": {
+      "target": 99.54176213288898,
+      "analog": 100.0,
+      "limit_deg": 15.0,
+      "source": "https://marsoweb.nas.nasa.gov/landingsites/mer2003/doc/original.html",
+      "reason": null
+    },
+    "driving": {
+      "target": 100.0,
+      "analog": 100.0,
+      "limit_deg": 30.0,
+      "source": "https://science.nasa.gov/mission/mars-2020-perseverance/rover-components/",
+      "reason": null
+    }
+  },
+  "mission_baseline_m": 100,
+  "rotation_deg": 90.0,
+  "rotation_rms": 0.4499636469152625,
+  "files": {
+    "target": "terrain/jezero/",
+    "analog": "terrain/jezero__pool__pool_01676/"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:52:23Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "jezero_ctx_trn_dtm_20m",
+        "path": "data/raw/mars/jezero/jezero_ctx_trn_dtm_20m.tif",
+        "sha256": "16a1aa66c3f48c1bca252795827db7b417876217aff0f5e1aff18027fab2327b"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01676.tif",
+        "sha256": "5a01821a12bb7976fb12f266e3e7389d77893373cf52a6bc269439228ccec8c9"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  },
+  "context": {
+    "koppen_class": "BSk",
+    "koppen_label": "Arid, steppe, cold",
+    "koppen_code": 7,
+    "elevation_m": 3969.7996988739487,
+    "nearest_town": {
+      "name": "Golmud",
+      "country": "China",
+      "distance_km": 192.82
+    },
+    "sources": {
+      "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+      "elevation": "nasadem window mean over the 4 km disk (source_id of the window's measure record)",
+      "town": "Natural Earth 1:10m populated places (public domain)",
+      "novelty": "config/known_analog_regions.json (circle approximation)"
+    }
+  },
+  "novelty": "known_region",
+  "known_region_id": "qaidam_basin",
+  "refined": {
+    "pool_id": "pool__pool_01676",
+    "rank_before": 3,
+    "D_before": 0.09524562370007686,
+    "D_clip_offset0": 0.08998542566240002,
+    "refined_offset_km": [
+      0.0,
+      0.0
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+ "mars_cells": {
+  "n": 1838,
+  "gap_old": 211,
+  "gap_nasadem": 215,
+  "gap_all": 84
+ },
+ "targets": {
+  "n": 16,
+  "gap_old": 3,
+  "gap_nasadem": 3,
+  "gap_all": 1,
+  "moon_gap_nasadem": [
+   "de_gerlache_rim_2",
+   "mons_mouton_plateau",
+   "nobile_rim_1"
+  ],
+  "moon_gap_all": [
+   "de_gerlache_rim_2"
+  ],
+  "moon_gap_old": [
+   "de_gerlache_rim_2",
+   "mons_mouton_plateau",
+   "nobile_rim_1"
+  ]
+ }
+}

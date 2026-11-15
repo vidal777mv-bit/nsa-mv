@@ -1,0 +1,43 @@
+{
+  "earth": {
+    "gravity_m_s2": 9.82,
+    "gravity_as_printed": "Surface gravity (mean) (m/s2): 9.820",
+    "surface_pressure_pa": 101400,
+    "surface_pressure_as_printed": "Surface pressure: 1014 mb",
+    "temp_min_k": 283,
+    "temp_max_k": 293,
+    "temp_as_printed": "Diurnal temperature range: 283 K to 293 K (10 to 20 C)",
+    "day_length_h": 24.0,
+    "day_length_as_printed": "Length of day (hrs): 24.0000",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+    "read": "2026-11-14"
+  },
+  "moon": {
+    "gravity_m_s2": 1.62,
+    "gravity_as_printed": "Surface gravity (m/s2): 1.62 (Moon column)",
+    "surface_pressure_pa": 3e-10,
+    "surface_pressure_as_printed": "Surface pressure (night): 3 x 10^-15 bar",
+    "temp_min_k": 95,
+    "temp_max_k": 390,
+    "temp_as_printed": "Diurnal temperature range (equator): 95 K to 390 K",
+    "day_length_h": 708.72,
+    "day_length_as_printed": "Synodic period (days): 29.53 (day_length_h = 29.53 x 24, derived)",
+    "sidereal_rotation_h_as_printed": 655.72,
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
+    "read": "2026-11-14"
+  },
+  "mars": {
+    "gravity_m_s2": 3.73,
+    "gravity_as_printed": "Surface gravity (mean) (m/s2): 3.73",
+    "surface_pressure_pa": 636,
+    "surface_pressure_as_printed": "Surface pressure: 6.36 mb at mean radius (variable from 4.0 to 8.7 mb depending on season)",
+    "temp_min_k": 184,
+    "temp_max_k": 242,
+    "temp_as_printed": "Diurnal temperature range: 184 K to 242 K (-89 to -31 C) (Viking 1 Lander site)",
+    "day_length_h": 24.6597,
+    "day_length_as_printed": "Length of day (hrs): 24.6597",
+    "sidereal_rotation_h_as_printed": 24.6229,
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html",
+    "read": "2026-11-14"
+  }
+}

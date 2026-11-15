@@ -1,0 +1,1268 @@
+{
+  "seed": 20261114,
+  "design": {
+    "estrato": "pais del gemelo (analog_place.country)",
+    "paises_totales": 34,
+    "paises_cubiertos": 30,
+    "paises_no_cubiertos": [
+      "India",
+      "Niger",
+      "Pakistan",
+      "United States of America"
+    ],
+    "regla": "1 ficha por pais para 30 paises elegidos con random.Random(20261114).sample; ficha dentro del pais elegida con rng.choice sobre nombres ordenados",
+    "fichas_match_no_inside_en_cards": 0,
+    "n_total": 30
+  },
+  "stats": {
+    "admin1": {
+      "k": 30,
+      "n": 30,
+      "p": 1.0,
+      "wilson95_low": 0.8865,
+      "wilson95_high": 1.0
+    },
+    "country": {
+      "k": 30,
+      "n": 30,
+      "p": 1.0,
+      "wilson95_low": 0.8865,
+      "wilson95_high": 1.0
+    },
+    "match": {
+      "k": 30,
+      "n": 30,
+      "p": 1.0,
+      "wilson95_low": 0.8865,
+      "wilson95_high": 1.0
+    },
+    "nearest_town_name": {
+      "k": 30,
+      "n": 30,
+      "p": 1.0,
+      "wilson95_low": 0.8865,
+      "wilson95_high": 1.0
+    },
+    "nearest_town_country": {
+      "k": 30,
+      "n": 30,
+      "p": 1.0,
+      "wilson95_low": 0.8865,
+      "wilson95_high": 1.0
+    },
+    "nearest_town_distance": {
+      "k": 30,
+      "n": 30,
+      "p": 1.0,
+      "wilson95_low": 0.8865,
+      "wilson95_high": 1.0
+    }
+  },
+  "results": [
+    {
+      "stratum": "Afghanistan",
+      "why": "pais",
+      "card": "haworth__haworth__pool__pool_01467.json",
+      "target_id": "haworth",
+      "analog_id": "haworth__pool__pool_01467",
+      "lat": 32.77,
+      "lon": 64.87,
+      "coord_source": "haworth.json",
+      "discoveries_max_diff_km": null,
+      "ficha": {
+        "admin1": "Hilmand",
+        "country": "Afghanistan",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Tarin Kowt",
+          "country": "Afghanistan",
+          "distance_km": 94.49
+        }
+      },
+      "recomputado": {
+        "admin1": "Hilmand",
+        "country": "Afghanistan",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Tarin Kowt",
+          "country": "Afghanistan",
+          "distance_km": 94.491,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "Algeria",
+      "why": "pais",
+      "card": "jezero__jezero__pool__pool_01394.json",
+      "target_id": "jezero",
+      "analog_id": "jezero__pool__pool_01394",
+      "lat": 31.87,
+      "lon": 8.748820761367922,
+      "coord_source": "jezero.json",
+      "discoveries_max_diff_km": null,
+      "ficha": {
+        "admin1": "Ouargla",
+        "country": "Algeria",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Dehibat",
+          "country": "Tunisia",
+          "distance_km": 184.83
+        }
+      },
+      "recomputado": {
+        "admin1": "Ouargla",
+        "country": "Algeria",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Dehibat",
+          "country": "Tunisia",
+          "distance_km": 184.83,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "Angola",
+      "why": "pais",
+      "card": "gale__gale__pool__pool_00103.json",
+      "target_id": "gale",
+      "analog_id": "gale__pool__pool_00103",
+      "lat": -13.13,
+      "lon": 12.97,
+      "coord_source": "gale.json",
+      "discoveries_max_diff_km": null,
+      "ficha": {
+        "admin1": "Benguela",
+        "country": "Angola",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Benguela",
+          "country": "Angola",
+          "distance_km": 77.53
+        }
+      },
+      "recomputado": {
+        "admin1": "Benguela",
+        "country": "Angola",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Benguela",
+          "country": "Angola",
+          "distance_km": 77.528,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "Argentina",
+      "why": "pais",
+      "card": "gale__gale__pool__pool_00001.json",
+      "target_id": "gale",
+      "analog_id": "gale__pool__pool_00001",
+      "lat": -50.03,
+      "lon": -69.23,
+      "coord_source": "gale.json",
+      "discoveries_max_diff_km": null,
+      "ficha": {
+        "admin1": "Santa Cruz",
+        "country": "Argentina",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Comondante Luis Piedrabuena",
+          "country": "Argentina",
+          "distance_km": 24.14
+        }
+      },
+      "recomputado": {
+        "admin1": "Santa Cruz",
+        "country": "Argentina",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Comondante Luis Piedrabuena",
+          "country": "Argentina",
+          "distance_km": 24.138,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "Bolivia",
+      "why": "pais",
+      "card": "im2_athena__im2_athena__pool__pool_00084.json",
+      "target_id": "im2_athena",
+      "analog_id": "im2_athena__pool__pool_00084",
+      "lat": -21.194027136848774,
+      "lon": -68.01070403476197,
+      "coord_source": "im2_athena.json",
+      "discoveries_max_diff_km": 0.0,
+      "ficha": {
+        "admin1": "Potosí",
+        "country": "Bolivia",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Villa Martin",
+          "country": "Bolivia",
+          "distance_km": 53.07
+        }
+      },
+      "recomputado": {
+        "admin1": "Potosí",
+        "country": "Bolivia",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Villa Martin",
+          "country": "Bolivia",
+          "distance_km": 53.072,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "Chad",
+      "why": "pais",
+      "card": "oxia_planum__oxia_planum__pool__pool_00162.json",
+      "target_id": "oxia_planum",
+      "analog_id": "oxia_planum__pool__pool_00162",
+      "lat": 15.97,
+      "lon": 14.77,
+      "coord_source": "oxia_planum.json",
+      "discoveries_max_diff_km": null,
+      "ficha": {
+        "admin1": "Kanem",
+        "country": "Chad",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Mao",
+          "country": "Chad",
+          "distance_km": 213.88
+        }
+      },
+      "recomputado": {
+        "admin1": "Kanem",
+        "country": "Chad",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Mao",
+          "country": "Chad",
+          "distance_km": 213.884,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "Chile",
+      "why": "pais",
+      "card": "cabeus_b_peak__cabeus_b_peak__pool__pool_00091.json",
+      "target_id": "cabeus_b_peak",
+      "analog_id": "cabeus_b_peak__pool__pool_00091",
+      "lat": -20.03,
+      "lon": -69.19171117650556,
+      "coord_source": "cabeus_b_peak.json",
+      "discoveries_max_diff_km": null,
+      "ficha": {
+        "admin1": "Tarapacá",
+        "country": "Chile",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Pozo Almonte",
+          "country": "Chile",
+          "distance_km": 68.86
+        }
+      },
+      "recomputado": {
+        "admin1": "Tarapacá",
+        "country": "Chile",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Pozo Almonte",
+          "country": "Chile",
+          "distance_km": 68.864,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "China",
+      "why": "pais",
+      "card": "nobile_rim_2__nobile_rim_2__pool__pool_01549.json",
+      "target_id": "nobile_rim_2",
+      "analog_id": "nobile_rim_2__pool__pool_01549",
+      "lat": 33.987986431575614,
+      "lon": 85.8916879000139,
+      "coord_source": "nobile_rim_2.json",
+      "discoveries_max_diff_km": 0.0,
+      "ficha": {
+        "admin1": "Xizang",
+        "country": "China",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Quiemo",
+          "country": "China",
+          "distance_km": 462.11
+        }
+      },
+      "recomputado": {
+        "admin1": "Xizang",
+        "country": "China",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Quiemo",
+          "country": "China",
+          "distance_km": 462.112,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "Egypt",
+      "why": "pais",
+      "card": "spirit_columbia__spirit_columbia__pool__pool_00961.json",
+      "target_id": "spirit_columbia",
+      "analog_id": "spirit_columbia__pool__pool_00961",
+      "lat": 26.78798643157561,
+      "lon": 32.749854398628116,
+      "coord_source": "spirit_columbia.json",
+      "discoveries_max_diff_km": null,
+      "ficha": {
+        "admin1": "Al Bahr al Ahmar",
+        "country": "Egypt",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Qena",
+          "country": "Egypt",
+          "distance_km": 70.95
+        }
+      },
+      "recomputado": {
+        "admin1": "Al Bahr al Ahmar",
+        "country": "Egypt",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Qena",
+          "country": "Egypt",
+          "distance_km": 70.952,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "Eritrea",
+      "why": "pais",
+      "card": "apollo17_taurus_littrow__apollo17_taurus_littrow__pool__pool_00151.json",
+      "target_id": "apollo17_taurus_littrow",
+      "analog_id": "apollo17_taurus_littrow__pool__pool_00151",
+      "lat": 15.052013568424387,
+      "lon": 39.988627035858904,
+      "coord_source": "apollo17_taurus_littrow.json",
+      "discoveries_max_diff_km": null,
+      "ficha": {
+        "admin1": "Debub",
+        "country": "Eritrea",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Massawa",
+          "country": "Eritrea",
+          "distance_km": 84.78
+        }
+      },
+      "recomputado": {
+        "admin1": "Debub",
+        "country": "Eritrea",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Massawa",
+          "country": "Eritrea",
+          "distance_km": 84.777,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "Ethiopia",
+      "why": "pais",
+      "card": "mons_mouton_plateau__mons_mouton_plateau__pool__pool_00117.json",
+      "target_id": "mons_mouton_plateau",
+      "analog_id": "mons_mouton_plateau__pool__pool_00117",
+      "lat": 12.07,
+      "lon": 41.77,
+      "coord_source": "mons_mouton_plateau.json",
+      "discoveries_max_diff_km": null,
+      "ficha": {
+        "admin1": "Afar",
+        "country": "Ethiopia",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Dikhil",
+          "country": "Djibouti",
+          "distance_km": 125.85
+        }
+      },
+      "recomputado": {
+        "admin1": "Afar",
+        "country": "Ethiopia",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Dikhil",
+          "country": "Djibouti",
+          "distance_km": 125.848,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "Iran",
+      "why": "pais",
+      "card": "de_gerlache_rim_2__de_gerlache_rim_2__pool__pool_00975.json",
+      "target_id": "de_gerlache_rim_2",
+      "analog_id": "de_gerlache_rim_2__pool__pool_00975",
+      "lat": 26.77,
+      "lon": 62.72970879725622,
+      "coord_source": "de_gerlache_rim_2.json",
+      "discoveries_max_diff_km": null,
+      "ficha": {
+        "admin1": "Sistan and Baluchestan",
+        "country": "Iran",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Turbat",
+          "country": "Pakistan",
+          "distance_km": 93.0
+        }
+      },
+      "recomputado": {
+        "admin1": "Sistan and Baluchestan",
+        "country": "Iran",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Turbat",
+          "country": "Pakistan",
+          "distance_km": 93.002,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "Israel",
+      "why": "pais",
+      "card": "gale__gale__pool__pool_01287.json",
+      "target_id": "gale",
+      "analog_id": "gale__pool__pool_01287",
+      "lat": 30.07,
+      "lon": 34.87,
+      "coord_source": "gale.json",
+      "discoveries_max_diff_km": null,
+      "ficha": {
+        "admin1": "HaDarom",
+        "country": "Israel",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Al Aqabah",
+          "country": "Jordan",
+          "distance_km": 63.62
+        }
+      },
+      "recomputado": {
+        "admin1": "HaDarom",
+        "country": "Israel",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Al Aqabah",
+          "country": "Jordan",
+          "distance_km": 63.619,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "Jordan",
+      "why": "pais",
+      "card": "gale__gale__pool__pool_01344.json",
+      "target_id": "gale",
+      "analog_id": "gale__pool__pool_01344",
+      "lat": 30.97,
+      "lon": 36.949023024915086,
+      "coord_source": "gale.json",
+      "discoveries_max_diff_km": null,
+      "ficha": {
+        "admin1": "Ma`an",
+        "country": "Jordan",
+        "match": "inside",
+        "nearest_town": {
+          "name": "An Nabk",
+          "country": "Saudi Arabia",
+          "distance_km": 54.49
+        }
+      },
+      "recomputado": {
+        "admin1": "Ma`an",
+        "country": "Jordan",
+        "match": "inside",
+        "nearest_town": {
+          "name": "An Nabk",
+          "country": "Saudi Arabia",
+          "distance_km": 54.49,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "Libya",
+      "why": "pais",
+      "card": "jezero__jezero__pool__pool_01135.json",
+      "target_id": "jezero",
+      "analog_id": "jezero__pool__pool_01135",
+      "lat": 28.87,
+      "lon": 13.87,
+      "coord_source": "jezero.json",
+      "discoveries_max_diff_km": null,
+      "ficha": {
+        "admin1": "Ash Shati'",
+        "country": "Libya",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Birak",
+          "country": "Libya",
+          "distance_km": 154.05
+        }
+      },
+      "recomputado": {
+        "admin1": "Ash Shati'",
+        "country": "Libya",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Birak",
+          "country": "Libya",
+          "distance_km": 154.053,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "Mali",
+      "why": "pais",
+      "card": "gale__gale__pool__pool_00700.json",
+      "target_id": "gale",
+      "analog_id": "gale__pool__pool_00700",
+      "lat": 23.77,
+      "lon": -5.93,
+      "coord_source": "gale.json",
+      "discoveries_max_diff_km": null,
+      "ficha": {
+        "admin1": "Timbuktu",
+        "country": "Mali",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Chegga",
+          "country": "Mauritania",
+          "distance_km": 179.71
+        }
+      },
+      "recomputado": {
+        "admin1": "Timbuktu",
+        "country": "Mali",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Chegga",
+          "country": "Mauritania",
+          "distance_km": 179.71,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "Mauritania",
+      "why": "pais",
+      "card": "spirit_columbia__spirit_columbia__pool__pool_00336.json",
+      "target_id": "spirit_columbia",
+      "analog_id": "spirit_columbia__pool__pool_00336",
+      "lat": 18.934027136848773,
+      "lon": -11.96803879124953,
+      "coord_source": "spirit_columbia.json",
+      "discoveries_max_diff_km": 0.0,
+      "ficha": {
+        "admin1": "Tagant",
+        "country": "Mauritania",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Tidjikdja",
+          "country": "Mauritania",
+          "distance_km": 72.08
+        }
+      },
+      "recomputado": {
+        "admin1": "Tagant",
+        "country": "Mauritania",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Tidjikdja",
+          "country": "Mauritania",
+          "distance_km": 72.076,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "Mongolia",
+      "why": "pais",
+      "card": "mons_mouton_plateau__mons_mouton_plateau__pool__pool_01945.json",
+      "target_id": "mons_mouton_plateau",
+      "analog_id": "mons_mouton_plateau__pool__pool_01945",
+      "lat": 45.087986431575615,
+      "lon": 93.07,
+      "coord_source": "mons_mouton_plateau.json",
+      "discoveries_max_diff_km": 0.0,
+      "ficha": {
+        "admin1": "Hovd",
+        "country": "Mongolia",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Hami",
+          "country": "China",
+          "distance_km": 253.92
+        }
+      },
+      "recomputado": {
+        "admin1": "Hovd",
+        "country": "Mongolia",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Hami",
+          "country": "China",
+          "distance_km": 253.922,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "Morocco",
+      "why": "pais",
+      "card": "de_gerlache_rim_2__de_gerlache_rim_2__pool__pool_01247.json",
+      "target_id": "de_gerlache_rim_2",
+      "analog_id": "de_gerlache_rim_2__pool__pool_01247",
+      "lat": 30.07,
+      "lon": -8.03,
+      "coord_source": "de_gerlache_rim_2.json",
+      "discoveries_max_diff_km": null,
+      "ficha": {
+        "admin1": "Souss - Massa - Draâ",
+        "country": "Morocco",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Agadir",
+          "country": "Morocco",
+          "distance_km": 158.17
+        }
+      },
+      "recomputado": {
+        "admin1": "Souss - Massa - Draâ",
+        "country": "Morocco",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Agadir",
+          "country": "Morocco",
+          "distance_km": 158.165,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "Namibia",
+      "why": "pais",
+      "card": "insight_elysium__insight_elysium__pool__pool_00086.json",
+      "target_id": "insight_elysium",
+      "analog_id": "insight_elysium__pool__pool_00086",
+      "lat": -21.21201356842439,
+      "lon": 15.031408069523955,
+      "coord_source": "insight_elysium.json",
+      "discoveries_max_diff_km": null,
+      "ficha": {
+        "admin1": "Erongo",
+        "country": "Namibia",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Omaruru",
+          "country": "Namibia",
+          "distance_km": 98.46
+        }
+      },
+      "recomputado": {
+        "admin1": "Erongo",
+        "country": "Namibia",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Omaruru",
+          "country": "Namibia",
+          "distance_km": 98.456,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "Peru",
+      "why": "pais",
+      "card": "de_gerlache_rim_2__de_gerlache_rim_2__pool__pool_00097.json",
+      "target_id": "de_gerlache_rim_2",
+      "analog_id": "de_gerlache_rim_2__pool__pool_00097",
+      "lat": -18.194027136848774,
+      "lon": -70.11106309451984,
+      "coord_source": "de_gerlache_rim_2.json",
+      "discoveries_max_diff_km": 0.0,
+      "ficha": {
+        "admin1": "Tacna",
+        "country": "Peru",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Tacna",
+          "country": "Peru",
+          "distance_km": 26.1
+        }
+      },
+      "recomputado": {
+        "admin1": "Tacna",
+        "country": "Peru",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Tacna",
+          "country": "Peru",
+          "distance_km": 26.099,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "Russia",
+      "why": "pais",
+      "card": "im1_odysseus__im1_odysseus__pool__pool_01993.json",
+      "target_id": "im1_odysseus",
+      "analog_id": "im1_odysseus__pool__pool_01993",
+      "lat": 57.10597286315122,
+      "lon": 159.9369132296165,
+      "coord_source": "im1_odysseus.json",
+      "discoveries_max_diff_km": 0.0,
+      "ficha": {
+        "admin1": "Kamchatka",
+        "country": "Russia",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Klyuchi",
+          "country": "Russia",
+          "distance_km": 105.54
+        }
+      },
+      "recomputado": {
+        "admin1": "Kamchatka",
+        "country": "Russia",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Klyuchi",
+          "country": "Russia",
+          "distance_km": 105.541,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "Saudi Arabia",
+      "why": "pais",
+      "card": "im2_athena__im2_athena__pool__pool_00737.json",
+      "target_id": "im2_athena",
+      "analog_id": "im2_athena__pool__pool_00737",
+      "lat": 23.77,
+      "lon": 39.97,
+      "coord_source": "im2_athena.json",
+      "discoveries_max_diff_km": null,
+      "ficha": {
+        "admin1": "Al Madinah",
+        "country": "Saudi Arabia",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Medina",
+          "country": "Saudi Arabia",
+          "distance_km": 90.59
+        }
+      },
+      "recomputado": {
+        "admin1": "Al Madinah",
+        "country": "Saudi Arabia",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Medina",
+          "country": "Saudi Arabia",
+          "distance_km": 90.585,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "Somalia",
+      "why": "pais",
+      "card": "nobile_rim_1__nobile_rim_1__pool__pool_00112.json",
+      "target_id": "nobile_rim_1",
+      "analog_id": "nobile_rim_1__pool__pool_00112",
+      "lat": 10.87,
+      "lon": 48.97,
+      "coord_source": "nobile_rim_1.json",
+      "discoveries_max_diff_km": null,
+      "ficha": {
+        "admin1": "Bari",
+        "country": "Somalia",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Boosaaso",
+          "country": "Somalia",
+          "distance_km": 51.03
+        }
+      },
+      "recomputado": {
+        "admin1": "Bari",
+        "country": "Somalia",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Boosaaso",
+          "country": "Somalia",
+          "distance_km": 51.027,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "Sudan",
+      "why": "pais",
+      "card": "spirit_columbia__spirit_columbia__pool__pool_00616.json",
+      "target_id": "spirit_columbia",
+      "analog_id": "spirit_columbia__pool__pool_00616",
+      "lat": 21.952013568424388,
+      "lon": 25.85060510893349,
+      "coord_source": "spirit_columbia.json",
+      "discoveries_max_diff_km": null,
+      "ficha": {
+        "admin1": "Northern",
+        "country": "Sudan",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Al Jawf",
+          "country": "Libya",
+          "distance_km": 362.05
+        }
+      },
+      "recomputado": {
+        "admin1": "Northern",
+        "country": "Sudan",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Al Jawf",
+          "country": "Libya",
+          "distance_km": 362.052,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "Tunisia",
+      "why": "pais",
+      "card": "gale__gale__pool__pool_01488.json",
+      "target_id": "gale",
+      "analog_id": "gale__pool__pool_01488",
+      "lat": 33.07,
+      "lon": 9.97,
+      "coord_source": "gale.json",
+      "discoveries_max_diff_km": null,
+      "ficha": {
+        "admin1": "Tataouine",
+        "country": "Tunisia",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Tataouine",
+          "country": "Tunisia",
+          "distance_km": 46.95
+        }
+      },
+      "recomputado": {
+        "admin1": "Tataouine",
+        "country": "Tunisia",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Tataouine",
+          "country": "Tunisia",
+          "distance_km": 46.952,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "Turkmenistan",
+      "why": "pais",
+      "card": "jezero__jezero__pool__pool_01824.json",
+      "target_id": "jezero",
+      "analog_id": "jezero__pool__pool_01824",
+      "lat": 42.07,
+      "lon": 57.97,
+      "coord_source": "jezero.json",
+      "discoveries_max_diff_km": null,
+      "ficha": {
+        "admin1": "Tashauz",
+        "country": "Turkmenistan",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Koneurgench",
+          "country": "Turkmenistan",
+          "distance_km": 102.33
+        }
+      },
+      "recomputado": {
+        "admin1": "Tashauz",
+        "country": "Turkmenistan",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Koneurgench",
+          "country": "Turkmenistan",
+          "distance_km": 102.327,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "United Arab Emirates",
+      "why": "pais",
+      "card": "zhurong__zhurong__pool__pool_00748.json",
+      "target_id": "zhurong",
+      "analog_id": "zhurong__pool__pool_00748",
+      "lat": 23.77,
+      "lon": 54.97,
+      "coord_source": "zhurong.json",
+      "discoveries_max_diff_km": null,
+      "ficha": {
+        "admin1": "Abu Dhabi",
+        "country": "United Arab Emirates",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Al Ayn",
+          "country": "United Arab Emirates",
+          "distance_km": 93.49
+        }
+      },
+      "recomputado": {
+        "admin1": "Abu Dhabi",
+        "country": "United Arab Emirates",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Al Ayn",
+          "country": "United Arab Emirates",
+          "distance_km": 93.486,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "Uzbekistan",
+      "why": "pais",
+      "card": "insight_elysium__insight_elysium__pool__pool_01862.json",
+      "target_id": "insight_elysium",
+      "analog_id": "insight_elysium__pool__pool_01862",
+      "lat": 42.97,
+      "lon": 56.819162686023425,
+      "coord_source": "insight_elysium.json",
+      "discoveries_max_diff_km": 0.0,
+      "ficha": {
+        "admin1": "Karakalpakstan",
+        "country": "Uzbekistan",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Qunghirot",
+          "country": "Uzbekistan",
+          "distance_km": 169.53
+        }
+      },
+      "recomputado": {
+        "admin1": "Karakalpakstan",
+        "country": "Uzbekistan",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Qunghirot",
+          "country": "Uzbekistan",
+          "distance_km": 169.529,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    },
+    {
+      "stratum": "Yemen",
+      "why": "pais",
+      "card": "cabeus_b_peak__cabeus_b_peak__pool__pool_00138.json",
+      "target_id": "cabeus_b_peak",
+      "analog_id": "cabeus_b_peak__pool__pool_00138",
+      "lat": 14.77,
+      "lon": 48.07,
+      "coord_source": "cabeus_b_peak.json",
+      "discoveries_max_diff_km": null,
+      "ficha": {
+        "admin1": "Hadramawt",
+        "country": "Yemen",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Al Mukalla",
+          "country": "Yemen",
+          "distance_km": 116.41
+        }
+      },
+      "recomputado": {
+        "admin1": "Hadramawt",
+        "country": "Yemen",
+        "match": "inside",
+        "nearest_town": {
+          "name": "Al Mukalla",
+          "country": "Yemen",
+          "distance_km": 116.409,
+          "ties_at_min": 1
+        }
+      },
+      "ok": {
+        "admin1": true,
+        "country": true,
+        "match": true,
+        "nearest_town_name": true,
+        "nearest_town_country": true,
+        "nearest_town_distance": true
+      }
+    }
+  ],
+  "fuentes": {
+    "admin1": "data/raw/reference/ne_10m_admin_1 (name, admin), Natural Earth 5.1.1",
+    "populated_places": "data/raw/reference/ne_10m_populated_places (NAME, ADM0NAME), 5.1.2",
+    "coords": "site/data/rankings/<target>.json (lat/lon por analog_id)"
+  }
+}

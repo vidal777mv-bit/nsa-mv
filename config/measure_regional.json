@@ -1,0 +1,51 @@
+{
+  "version": "regional-0.1",
+  "frozen": "2026-11-13",
+  "doc": "EXPERIMENTAL, STANDARDS 10.10. Regional scale (L 400 m, R 16 km) for whole-Mars coverage; same six features and formulas as config/measure.json (STANDARDS section 4). Sigma null until a regional Earth pool calibration exists (1.4826 MAD, own pool). Never mixed with the 100 m scale. Not validated: shown as exploratory.",
+  "grid": {
+    "L_m": 400,
+    "R_m": 16000,
+    "min_coverage": 0.9,
+    "min_L_over_native": 2.0,
+    "resampling": "bilinear"
+  },
+  "features": {
+    "slope_p95_deg": {
+      "weight": 1.0,
+      "sigma": null
+    },
+    "hi": {
+      "weight": 1.0,
+      "sigma": null
+    },
+    "coherence": {
+      "weight": 1.0,
+      "sigma": null
+    },
+    "hurst": {
+      "weight": 1.0,
+      "sigma": null,
+      "lags_px": [
+        1,
+        2,
+        4,
+        8
+      ]
+    },
+    "ridge_pct": {
+      "weight": 1.0,
+      "sigma": null
+    },
+    "valley_pct": {
+      "weight": 1.0,
+      "sigma": null
+    }
+  },
+  "tpi": {
+    "radius_px": 5,
+    "threshold_deg": 1.0
+  },
+  "distance": {
+    "min_shared_features": 4
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "insight_elysium__pool__pool_00075",
+  "kind": "analog",
+  "body": "earth",
+  "name": "pool__pool_00075 (refined for insight_elysium)",
+  "lat": -23.03,
+  "lon": 14.77,
+  "n": 269,
+  "L": 30.0,
+  "R": 4000.0,
+  "native_res_m": 30.887522287092473,
+  "z_min": -54.512379317313446,
+  "z_max": 39.85975717301119,
+  "relief_p99_p1_m": 75.85750813036097,
+  "vertical_exaggeration": 0.8,
+  "source_id": "nasadem",
+  "layers": {
+    "mars": "layers_mars.bin"
+  },
+  "files": {
+    "height": "height.bin",
+    "hillshade": "hillshade.png"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:51:58Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00075.tif",
+        "sha256": "6d5d529aff94c8193d87c3ea4a7e7e4b0a866b84b60e9e8ae81f97236701e65a"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  }
+}

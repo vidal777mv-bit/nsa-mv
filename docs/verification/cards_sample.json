@@ -1,0 +1,4085 @@
+{
+  "design": {
+    "seed": 20261114,
+    "strata": {
+      "novelty_new": {
+        "k": 6,
+        "population": 124
+      },
+      "novelty_known": {
+        "k": 6,
+        "population": 36
+      },
+      "landing_yes": {
+        "k": 5,
+        "population": 113
+      },
+      "landing_partial": {
+        "k": 5,
+        "population": 24
+      },
+      "landing_no": {
+        "k": 5,
+        "population": 23
+      },
+      "low_sun_no": {
+        "k": 5,
+        "population": 90
+      },
+      "low_sun_yes": {
+        "k": 5,
+        "population": 70
+      }
+    },
+    "unique_cards": 34,
+    "bodies": {
+      "moon": 24,
+      "mars": 10
+    },
+    "mission_check_cards": [
+      "de_gerlache_rim_2__de_gerlache_rim_2__pool__pool_00091.json",
+      "haworth__haworth__pool__pool_00603.json",
+      "malapert_massif__malapert_massif__pool__pool_00024.json",
+      "spirit_columbia__spirit_columbia__pool__pool_00336.json",
+      "zhurong__zhurong__pool__pool_00748.json"
+    ],
+    "tolerances": {
+      "mission_pct_pp": 1.0,
+      "grazing_pct_pp": 0.05,
+      "numeric": 1e-06,
+      "wilson_z": 1.96
+    },
+    "novelty_value_note": "el valor real del campo es 'known_region' (no 'known'); se usa ese",
+    "blocked": "analog_place y nearest_town: no hay lector de shapefile en .venv (pyshp, fiona, pyogrio, osgeo ausentes)"
+  },
+  "summary": {
+    "novelty_new": {
+      "cards": 6,
+      "novelty": {
+        "n": 6,
+        "ok": 6,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.6096569663469354,
+        "wilson_hi": 0.9999999999999999
+      },
+      "known_region_id": {
+        "n": 6,
+        "ok": 6,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.6096569663469354,
+        "wilson_hi": 0.9999999999999999
+      },
+      "koppen_class": {
+        "n": 6,
+        "ok": 6,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.6096569663469354,
+        "wilson_hi": 0.9999999999999999
+      },
+      "rehearsal.landing": {
+        "n": 6,
+        "ok": 6,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.6096569663469354,
+        "wilson_hi": 0.9999999999999999
+      },
+      "rehearsal.driving": {
+        "n": 6,
+        "ok": 6,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.6096569663469354,
+        "wilson_hi": 0.9999999999999999
+      },
+      "rehearsal.low_sun": {
+        "n": 6,
+        "ok": 6,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.6096569663469354,
+        "wilson_hi": 0.9999999999999999
+      },
+      "rehearsal.low_sun_lat": {
+        "n": 4,
+        "ok": 4,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5100999795960008,
+        "wilson_hi": 1.0
+      },
+      "rehearsal.cold": {
+        "n": 6,
+        "ok": 6,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.6096569663469354,
+        "wilson_hi": 0.9999999999999999
+      },
+      "limit_deg": {
+        "n": 6,
+        "ok": 6,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.6096569663469354,
+        "wilson_hi": 0.9999999999999999
+      },
+      "mission_pct.landing": {
+        "n": 2,
+        "ok": 2,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.34237195288961925,
+        "wilson_hi": 1.0
+      },
+      "analog_place": {
+        "n": 0,
+        "ok": 0,
+        "blocked": 6,
+        "p": null,
+        "wilson_lo": null,
+        "wilson_hi": null
+      },
+      "nearest_town": {
+        "n": 0,
+        "ok": 0,
+        "blocked": 6,
+        "p": null,
+        "wilson_lo": null,
+        "wilson_hi": null
+      }
+    },
+    "novelty_known": {
+      "cards": 6,
+      "novelty": {
+        "n": 6,
+        "ok": 6,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.6096569663469354,
+        "wilson_hi": 0.9999999999999999
+      },
+      "known_region_id": {
+        "n": 6,
+        "ok": 6,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.6096569663469354,
+        "wilson_hi": 0.9999999999999999
+      },
+      "koppen_class": {
+        "n": 6,
+        "ok": 6,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.6096569663469354,
+        "wilson_hi": 0.9999999999999999
+      },
+      "rehearsal.landing": {
+        "n": 6,
+        "ok": 6,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.6096569663469354,
+        "wilson_hi": 0.9999999999999999
+      },
+      "rehearsal.driving": {
+        "n": 6,
+        "ok": 6,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.6096569663469354,
+        "wilson_hi": 0.9999999999999999
+      },
+      "rehearsal.low_sun": {
+        "n": 6,
+        "ok": 6,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.6096569663469354,
+        "wilson_hi": 0.9999999999999999
+      },
+      "rehearsal.low_sun_lat": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "rehearsal.cold": {
+        "n": 6,
+        "ok": 6,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.6096569663469354,
+        "wilson_hi": 0.9999999999999999
+      },
+      "limit_deg": {
+        "n": 6,
+        "ok": 6,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.6096569663469354,
+        "wilson_hi": 0.9999999999999999
+      },
+      "mission_pct.landing": {
+        "n": 0,
+        "ok": 0,
+        "blocked": 0,
+        "p": null,
+        "wilson_lo": null,
+        "wilson_hi": null
+      },
+      "analog_place": {
+        "n": 0,
+        "ok": 0,
+        "blocked": 6,
+        "p": null,
+        "wilson_lo": null,
+        "wilson_hi": null
+      },
+      "nearest_town": {
+        "n": 0,
+        "ok": 0,
+        "blocked": 6,
+        "p": null,
+        "wilson_lo": null,
+        "wilson_hi": null
+      }
+    },
+    "landing_yes": {
+      "cards": 5,
+      "novelty": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "known_region_id": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "koppen_class": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "rehearsal.landing": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "rehearsal.driving": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "rehearsal.low_sun": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "rehearsal.low_sun_lat": {
+        "n": 2,
+        "ok": 2,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.34237195288961925,
+        "wilson_hi": 1.0
+      },
+      "rehearsal.cold": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "limit_deg": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "mission_pct.landing": {
+        "n": 1,
+        "ok": 1,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.20654329147389294,
+        "wilson_hi": 1.0
+      },
+      "analog_place": {
+        "n": 0,
+        "ok": 0,
+        "blocked": 5,
+        "p": null,
+        "wilson_lo": null,
+        "wilson_hi": null
+      },
+      "nearest_town": {
+        "n": 0,
+        "ok": 0,
+        "blocked": 5,
+        "p": null,
+        "wilson_lo": null,
+        "wilson_hi": null
+      }
+    },
+    "landing_partial": {
+      "cards": 5,
+      "novelty": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "known_region_id": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "koppen_class": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "rehearsal.landing": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "rehearsal.driving": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "rehearsal.low_sun": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "rehearsal.low_sun_lat": {
+        "n": 4,
+        "ok": 4,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5100999795960008,
+        "wilson_hi": 1.0
+      },
+      "rehearsal.cold": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "limit_deg": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "mission_pct.landing": {
+        "n": 0,
+        "ok": 0,
+        "blocked": 0,
+        "p": null,
+        "wilson_lo": null,
+        "wilson_hi": null
+      },
+      "analog_place": {
+        "n": 0,
+        "ok": 0,
+        "blocked": 5,
+        "p": null,
+        "wilson_lo": null,
+        "wilson_hi": null
+      },
+      "nearest_town": {
+        "n": 0,
+        "ok": 0,
+        "blocked": 5,
+        "p": null,
+        "wilson_lo": null,
+        "wilson_hi": null
+      }
+    },
+    "landing_no": {
+      "cards": 5,
+      "novelty": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "known_region_id": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "koppen_class": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "rehearsal.landing": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "rehearsal.driving": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "rehearsal.low_sun": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "rehearsal.low_sun_lat": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "rehearsal.cold": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "limit_deg": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "mission_pct.landing": {
+        "n": 2,
+        "ok": 0,
+        "blocked": 0,
+        "p": 0.0,
+        "wilson_lo": 0.0,
+        "wilson_hi": 0.6576280471103807
+      },
+      "analog_place": {
+        "n": 0,
+        "ok": 0,
+        "blocked": 5,
+        "p": null,
+        "wilson_lo": null,
+        "wilson_hi": null
+      },
+      "nearest_town": {
+        "n": 0,
+        "ok": 0,
+        "blocked": 5,
+        "p": null,
+        "wilson_lo": null,
+        "wilson_hi": null
+      }
+    },
+    "low_sun_no": {
+      "cards": 5,
+      "novelty": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "known_region_id": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "koppen_class": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "rehearsal.landing": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "rehearsal.driving": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "rehearsal.low_sun": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "rehearsal.low_sun_lat": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "rehearsal.cold": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "limit_deg": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "mission_pct.landing": {
+        "n": 0,
+        "ok": 0,
+        "blocked": 0,
+        "p": null,
+        "wilson_lo": null,
+        "wilson_hi": null
+      },
+      "analog_place": {
+        "n": 0,
+        "ok": 0,
+        "blocked": 5,
+        "p": null,
+        "wilson_lo": null,
+        "wilson_hi": null
+      },
+      "nearest_town": {
+        "n": 0,
+        "ok": 0,
+        "blocked": 5,
+        "p": null,
+        "wilson_lo": null,
+        "wilson_hi": null
+      }
+    },
+    "low_sun_yes": {
+      "cards": 5,
+      "novelty": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "known_region_id": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "koppen_class": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "rehearsal.landing": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "rehearsal.driving": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "rehearsal.low_sun": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "rehearsal.low_sun_lat": {
+        "n": 0,
+        "ok": 0,
+        "blocked": 0,
+        "p": null,
+        "wilson_lo": null,
+        "wilson_hi": null
+      },
+      "rehearsal.cold": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "limit_deg": {
+        "n": 5,
+        "ok": 5,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.5655085052479191,
+        "wilson_hi": 1.0000000000000002
+      },
+      "mission_pct.landing": {
+        "n": 0,
+        "ok": 0,
+        "blocked": 0,
+        "p": null,
+        "wilson_lo": null,
+        "wilson_hi": null
+      },
+      "analog_place": {
+        "n": 0,
+        "ok": 0,
+        "blocked": 5,
+        "p": null,
+        "wilson_lo": null,
+        "wilson_hi": null
+      },
+      "nearest_town": {
+        "n": 0,
+        "ok": 0,
+        "blocked": 5,
+        "p": null,
+        "wilson_lo": null,
+        "wilson_hi": null
+      }
+    },
+    "TOTAL": {
+      "cards": 34,
+      "novelty": {
+        "n": 34,
+        "ok": 34,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.8984820937803899,
+        "wilson_hi": 1.0
+      },
+      "known_region_id": {
+        "n": 34,
+        "ok": 34,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.8984820937803899,
+        "wilson_hi": 1.0
+      },
+      "koppen_class": {
+        "n": 34,
+        "ok": 34,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.8984820937803899,
+        "wilson_hi": 1.0
+      },
+      "rehearsal.landing": {
+        "n": 34,
+        "ok": 34,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.8984820937803899,
+        "wilson_hi": 1.0
+      },
+      "rehearsal.driving": {
+        "n": 34,
+        "ok": 34,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.8984820937803899,
+        "wilson_hi": 1.0
+      },
+      "rehearsal.low_sun": {
+        "n": 34,
+        "ok": 34,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.8984820937803899,
+        "wilson_hi": 1.0
+      },
+      "rehearsal.low_sun_lat": {
+        "n": 22,
+        "ok": 22,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.8513404742740388,
+        "wilson_hi": 1.0
+      },
+      "rehearsal.cold": {
+        "n": 34,
+        "ok": 34,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.8984820937803899,
+        "wilson_hi": 1.0
+      },
+      "limit_deg": {
+        "n": 34,
+        "ok": 34,
+        "blocked": 0,
+        "p": 1.0,
+        "wilson_lo": 0.8984820937803899,
+        "wilson_hi": 1.0
+      },
+      "mission_pct.landing": {
+        "n": 5,
+        "ok": 3,
+        "blocked": 0,
+        "p": 0.6,
+        "wilson_lo": 0.23071993220883708,
+        "wilson_hi": 0.8823817688407467
+      },
+      "analog_place": {
+        "n": 0,
+        "ok": 0,
+        "blocked": 34,
+        "p": null,
+        "wilson_lo": null,
+        "wilson_hi": null
+      },
+      "nearest_town": {
+        "n": 0,
+        "ok": 0,
+        "blocked": 34,
+        "p": null,
+        "wilson_lo": null,
+        "wilson_hi": null
+      }
+    }
+  },
+  "discrepancies": [
+    {
+      "file": "de_gerlache_rim_2__de_gerlache_rim_2__pool__pool_00091.json",
+      "field": "mission_pct.landing",
+      "card": 62.382836908977296,
+      "recomputed": 60.050622,
+      "note": "denominador = pixeles con pendiente definida (4741); alternativa denominador = todo el disco (4965): 57.3414; grilla 81 px a 100 m; tolerancia 1.0 pts"
+    },
+    {
+      "file": "malapert_massif__malapert_massif__pool__pool_00024.json",
+      "field": "mission_pct.landing",
+      "card": 67.79837533847115,
+      "recomputed": 63.741827,
+      "note": "denominador = pixeles con pendiente definida (4741); alternativa denominador = todo el disco (4965): 60.8661; grilla 81 px a 100 m; tolerancia 1.0 pts"
+    }
+  ],
+  "results": [
+    {
+      "file": "apollo17_taurus_littrow__apollo17_taurus_littrow__pool__pool_00078.json",
+      "target_id": "apollo17_taurus_littrow",
+      "analog_id": "apollo17_taurus_littrow__pool__pool_00078",
+      "body": "moon",
+      "strata": [
+        "novelty_known"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": -22.13,
+        "lon": -68.93,
+        "ranking_lat": -22.13,
+        "ranking_lon": -68.93,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "known_region",
+          "recomputed": "known_region",
+          "status": "OK",
+          "note": "circulos que contienen el punto: atacama_desert (259.444 km)"
+        },
+        {
+          "field": "known_region_id",
+          "card": "atacama_desert",
+          "recomputed": "atacama_desert",
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWk",
+          "recomputed": "BWk (codigo 5)",
+          "status": "OK",
+          "note": "ficha codigo 5"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 2.9161 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.1250 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "recomputado T=6.230710 A=6.230710; linea T=6.23070987654321 A=6.23070987654321"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "clase ficha BWk"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 12.0 / driving 25.0",
+          "recomputed": "landing 12 / driving 25 (missions.json limits.moon)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "apollo17_taurus_littrow__apollo17_taurus_littrow__pool__pool_01514.json",
+      "target_id": "apollo17_taurus_littrow",
+      "analog_id": "apollo17_taurus_littrow__pool__pool_01514",
+      "body": "moon",
+      "strata": [
+        "landing_partial"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": 33.052013568424385,
+        "lon": 83.77,
+        "ranking_lat": 33.052013568424385,
+        "ranking_lon": 83.77,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "new",
+          "recomputed": "new",
+          "status": "OK",
+          "note": "ningun circulo contiene el punto"
+        },
+        {
+          "field": "known_region_id",
+          "card": null,
+          "recomputed": null,
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BSk",
+          "recomputed": "BSk (codigo 7)",
+          "status": "OK",
+          "note": "ficha codigo 7"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 10.7269 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.1666 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "recomputado T=6.230710 A=7.040895; linea T=6.23070987654321 A=7.040895061728395"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "clase ficha BSk"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 12.0 / driving 25.0",
+          "recomputed": "landing 12 / driving 25 (missions.json limits.moon)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "cabeus_b_peak__cabeus_b_peak__pool__pool_00138.json",
+      "target_id": "cabeus_b_peak",
+      "analog_id": "cabeus_b_peak__pool__pool_00138",
+      "body": "moon",
+      "strata": [
+        "novelty_new"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": 14.77,
+        "lon": 48.07,
+        "ranking_lat": 14.77,
+        "ranking_lon": 48.07,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "new",
+          "recomputed": "new",
+          "status": "OK",
+          "note": "ningun circulo contiene el punto"
+        },
+        {
+          "field": "known_region_id",
+          "card": null,
+          "recomputed": null,
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWh",
+          "recomputed": "BWh (codigo 4)",
+          "status": "OK",
+          "note": "ficha codigo 4"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 34.4512 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 3.7076 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "recomputado T=49.980710 A=5.999228; linea T=49.98070987654321 A=5.999228395061729"
+        },
+        {
+          "field": "rehearsal.low_sun_lat",
+          "card": "lowest=None emax=18.643904320987655@72.5",
+          "recomputed": "lowest=None emax=18.643904@72.5",
+          "status": "OK",
+          "note": "solo casos low_sun=no: latitud minima en Tierra que alcanza el objetivo"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "clase ficha BWh"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 12.0 / driving 25.0",
+          "recomputed": "landing 12 / driving 25 (missions.json limits.moon)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "de_gerlache_rim_2__de_gerlache_rim_2__pool__pool_00055.json",
+      "target_id": "de_gerlache_rim_2",
+      "analog_id": "de_gerlache_rim_2__pool__pool_00055",
+      "body": "moon",
+      "strata": [
+        "novelty_known"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": -26.03,
+        "lon": -68.90998314675548,
+        "ranking_lat": -26.03,
+        "ranking_lon": -68.90998314675548,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "known_region",
+          "recomputed": "known_region",
+          "status": "OK",
+          "note": "circulos que contienen el punto: atacama_desert (246.118 km)"
+        },
+        {
+          "field": "known_region_id",
+          "card": "atacama_desert",
+          "recomputed": "atacama_desert",
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWk",
+          "recomputed": "BWk (codigo 5)",
+          "status": "OK",
+          "note": "ficha codigo 5"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 28.2441 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 3.8325 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "recomputado T=49.980710 A=6.500772; linea T=49.98070987654321 A=6.500771604938271"
+        },
+        {
+          "field": "rehearsal.low_sun_lat",
+          "card": "lowest=None emax=18.643904320987655@72.5",
+          "recomputed": "lowest=None emax=18.643904@72.5",
+          "status": "OK",
+          "note": "solo casos low_sun=no: latitud minima en Tierra que alcanza el objetivo"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "clase ficha BWk"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 12.0 / driving 25.0",
+          "recomputed": "landing 12 / driving 25 (missions.json limits.moon)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "de_gerlache_rim_2__de_gerlache_rim_2__pool__pool_00091.json",
+      "target_id": "de_gerlache_rim_2",
+      "analog_id": "de_gerlache_rim_2__pool__pool_00091",
+      "body": "moon",
+      "strata": [
+        "landing_no"
+      ],
+      "mission_check": true,
+      "twin": {
+        "lat": -20.03,
+        "lon": -69.21085558825278,
+        "ranking_lat": -20.03,
+        "ranking_lon": -69.21085558825278,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "known_region",
+          "recomputed": "known_region",
+          "status": "OK",
+          "note": "circulos que contienen el punto: atacama_desert (469.316 km)"
+        },
+        {
+          "field": "known_region_id",
+          "card": "atacama_desert",
+          "recomputed": "atacama_desert",
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWk",
+          "recomputed": "BWk (codigo 5)",
+          "status": "OK",
+          "note": "ficha codigo 5"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 33.1389 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 1.0623 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "recomputado T=49.980710 A=6.230710; linea T=49.98070987654321 A=6.23070987654321"
+        },
+        {
+          "field": "rehearsal.low_sun_lat",
+          "card": "lowest=None emax=18.643904320987655@72.5",
+          "recomputed": "lowest=None emax=18.643904@72.5",
+          "status": "OK",
+          "note": "solo casos low_sun=no: latitud minima en Tierra que alcanza el objetivo"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "clase ficha BWk"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 12.0 / driving 25.0",
+          "recomputed": "landing 12 / driving 25 (missions.json limits.moon)",
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "mission_pct.landing",
+          "card": 62.382836908977296,
+          "recomputed": 60.050622,
+          "status": "DIF",
+          "note": "denominador = pixeles con pendiente definida (4741); alternativa denominador = todo el disco (4965): 57.3414; grilla 81 px a 100 m; tolerancia 1.0 pts"
+        }
+      ]
+    },
+    {
+      "file": "de_gerlache_rim_2__de_gerlache_rim_2__pool__pool_00097.json",
+      "target_id": "de_gerlache_rim_2",
+      "analog_id": "de_gerlache_rim_2__pool__pool_00097",
+      "body": "moon",
+      "strata": [
+        "landing_no"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": -18.194027136848774,
+        "lon": -70.11106309451984,
+        "ranking_lat": -18.194027136848774,
+        "ranking_lon": -70.11106309451984,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "known_region",
+          "recomputed": "known_region",
+          "status": "OK",
+          "note": "circulos que contienen el punto: atacama_desert (662.339 km)"
+        },
+        {
+          "field": "known_region_id",
+          "card": "atacama_desert",
+          "recomputed": "atacama_desert",
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWk",
+          "recomputed": "BWk (codigo 5)",
+          "status": "OK",
+          "note": "ficha codigo 5"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 30.8477 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 3.0202 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "recomputado T=49.980710 A=6.037809; linea T=49.98070987654321 A=6.057098765432099"
+        },
+        {
+          "field": "rehearsal.low_sun_lat",
+          "card": "lowest=None emax=18.643904320987655@72.5",
+          "recomputed": "lowest=None emax=18.643904@72.5",
+          "status": "OK",
+          "note": "solo casos low_sun=no: latitud minima en Tierra que alcanza el objetivo"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "clase ficha BWk"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 12.0 / driving 25.0",
+          "recomputed": "landing 12 / driving 25 (missions.json limits.moon)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "de_gerlache_rim_2__de_gerlache_rim_2__pool__pool_01835.json",
+      "target_id": "de_gerlache_rim_2",
+      "analog_id": "de_gerlache_rim_2__pool__pool_01835",
+      "body": "moon",
+      "strata": [
+        "low_sun_no"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": 42.07,
+        "lon": 84.07,
+        "ranking_lat": 42.07,
+        "ranking_lon": 84.07,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "new",
+          "recomputed": "new",
+          "status": "OK",
+          "note": "ningun circulo contiene el punto"
+        },
+        {
+          "field": "known_region_id",
+          "card": null,
+          "recomputed": null,
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWk",
+          "recomputed": "BWk (codigo 5)",
+          "status": "OK",
+          "note": "ficha codigo 5"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 44.2200 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.6665 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "recomputado T=49.980710 A=8.198302; linea T=49.98070987654321 A=8.198302469135802"
+        },
+        {
+          "field": "rehearsal.low_sun_lat",
+          "card": "lowest=None emax=18.643904320987655@72.5",
+          "recomputed": "lowest=None emax=18.643904@72.5",
+          "status": "OK",
+          "note": "solo casos low_sun=no: latitud minima en Tierra que alcanza el objetivo"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "clase ficha BWk"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 12.0 / driving 25.0",
+          "recomputed": "landing 12 / driving 25 (missions.json limits.moon)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "haworth__haworth__pool__pool_00063.json",
+      "target_id": "haworth",
+      "analog_id": "haworth__pool__pool_00063",
+      "body": "moon",
+      "strata": [
+        "landing_yes"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": -24.23,
+        "lon": -69.23,
+        "ranking_lat": -24.23,
+        "ranking_lon": -69.23,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "known_region",
+          "recomputed": "known_region",
+          "status": "OK",
+          "note": "circulos que contienen el punto: atacama_desert (98.789 km)"
+        },
+        {
+          "field": "known_region_id",
+          "card": "atacama_desert",
+          "recomputed": "atacama_desert",
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWk",
+          "recomputed": "BWk (codigo 5)",
+          "status": "OK",
+          "note": "ficha codigo 5"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.5624 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.0000 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "recomputado T=49.980710 A=6.481481; linea T=49.98070987654321 A=6.481481481481482"
+        },
+        {
+          "field": "rehearsal.low_sun_lat",
+          "card": "lowest=None emax=18.643904320987655@72.5",
+          "recomputed": "lowest=None emax=18.643904@72.5",
+          "status": "OK",
+          "note": "solo casos low_sun=no: latitud minima en Tierra que alcanza el objetivo"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "clase ficha BWk"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 12.0 / driving 25.0",
+          "recomputed": "landing 12 / driving 25 (missions.json limits.moon)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "haworth__haworth__pool__pool_00603.json",
+      "target_id": "haworth",
+      "analog_id": "haworth__pool__pool_00603",
+      "body": "moon",
+      "strata": [
+        "novelty_new"
+      ],
+      "mission_check": true,
+      "twin": {
+        "lat": 21.97,
+        "lon": 12.07,
+        "ranking_lat": 21.97,
+        "ranking_lon": 12.07,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "new",
+          "recomputed": "new",
+          "status": "OK",
+          "note": "ningun circulo contiene el punto"
+        },
+        {
+          "field": "known_region_id",
+          "card": null,
+          "recomputed": null,
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWh",
+          "recomputed": "BWh (codigo 4)",
+          "status": "OK",
+          "note": "ficha codigo 4"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 3.3951 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.0000 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "recomputado T=49.980710 A=6.153549; linea T=49.98070987654321 A=6.153549382716049"
+        },
+        {
+          "field": "rehearsal.low_sun_lat",
+          "card": "lowest=None emax=18.643904320987655@72.5",
+          "recomputed": "lowest=None emax=18.643904@72.5",
+          "status": "OK",
+          "note": "solo casos low_sun=no: latitud minima en Tierra que alcanza el objetivo"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "clase ficha BWh"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 12.0 / driving 25.0",
+          "recomputed": "landing 12 / driving 25 (missions.json limits.moon)",
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "mission_pct.landing",
+          "card": 94.04290772755675,
+          "recomputed": 93.398017,
+          "status": "OK",
+          "note": "denominador = pixeles con pendiente definida (4741); alternativa denominador = todo el disco (4965): 89.1843; grilla 81 px a 100 m; tolerancia 1.0 pts"
+        }
+      ]
+    },
+    {
+      "file": "haworth__haworth__pool__pool_01222.json",
+      "target_id": "haworth",
+      "analog_id": "haworth__pool__pool_01222",
+      "body": "moon",
+      "strata": [
+        "low_sun_no"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": 29.77,
+        "lon": 35.77,
+        "ranking_lat": 29.77,
+        "ranking_lon": 35.77,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "new",
+          "recomputed": "new",
+          "status": "OK",
+          "note": "ningun circulo contiene el punto"
+        },
+        {
+          "field": "known_region_id",
+          "card": null,
+          "recomputed": null,
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWk",
+          "recomputed": "BWk (codigo 5)",
+          "status": "OK",
+          "note": "ficha codigo 5"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 1.3539 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.0000 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "recomputado T=49.980710 A=6.809414; linea T=49.98070987654321 A=6.809413580246914"
+        },
+        {
+          "field": "rehearsal.low_sun_lat",
+          "card": "lowest=None emax=18.643904320987655@72.5",
+          "recomputed": "lowest=None emax=18.643904@72.5",
+          "status": "OK",
+          "note": "solo casos low_sun=no: latitud minima en Tierra que alcanza el objetivo"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "clase ficha BWk"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 12.0 / driving 25.0",
+          "recomputed": "landing 12 / driving 25 (missions.json limits.moon)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "im1_odysseus__im1_odysseus__pool__pool_00072.json",
+      "target_id": "im1_odysseus",
+      "analog_id": "im1_odysseus__pool__pool_00072",
+      "body": "moon",
+      "strata": [
+        "landing_yes"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": -23.047986431575612,
+        "lon": -70.14954409303603,
+        "ranking_lat": -23.047986431575612,
+        "ranking_lon": -70.14954409303603,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "known_region",
+          "recomputed": "known_region",
+          "status": "OK",
+          "note": "circulos que contienen el punto: atacama_desert (122.646 km)"
+        },
+        {
+          "field": "known_region_id",
+          "card": "atacama_desert",
+          "recomputed": "atacama_desert",
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWk",
+          "recomputed": "BWk (codigo 5)",
+          "status": "OK",
+          "note": "ficha codigo 5"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 1.2914 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.0000 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "recomputado T=43.778935 A=6.404321; linea T=43.77893518518518 A=6.404320987654321"
+        },
+        {
+          "field": "rehearsal.low_sun_lat",
+          "card": "lowest=None emax=18.643904320987655@72.5",
+          "recomputed": "lowest=None emax=18.643904@72.5",
+          "status": "OK",
+          "note": "solo casos low_sun=no: latitud minima en Tierra que alcanza el objetivo"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "clase ficha BWk"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 12.0 / driving 25.0",
+          "recomputed": "landing 12 / driving 25 (missions.json limits.moon)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "insight_elysium__insight_elysium__pool__pool_00524.json",
+      "target_id": "insight_elysium",
+      "analog_id": "insight_elysium__pool__pool_00524",
+      "body": "mars",
+      "strata": [
+        "low_sun_yes"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": 21.07,
+        "lon": 0.07,
+        "ranking_lat": 21.07,
+        "ranking_lon": 0.07,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "new",
+          "recomputed": "new",
+          "status": "OK",
+          "note": "ningun circulo contiene el punto"
+        },
+        {
+          "field": "known_region_id",
+          "card": null,
+          "recomputed": null,
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWh",
+          "recomputed": "BWh (codigo 4)",
+          "status": "OK",
+          "note": "ficha codigo 4"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.0000 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.0000 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "recomputado T=5.806327 A=6.192130; linea T=5.806327160493828 A=6.19212962962963"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "clase ficha BWh"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 15.0 / driving 30.0",
+          "recomputed": "landing 15 / driving 30 (missions.json limits.mars)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "insight_elysium__insight_elysium__pool__pool_01650.json",
+      "target_id": "insight_elysium",
+      "analog_id": "insight_elysium__pool__pool_01650",
+      "body": "mars",
+      "strata": [
+        "landing_yes"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": 36.987986431575614,
+        "lon": 89.79251257286494,
+        "ranking_lat": 36.987986431575614,
+        "ranking_lon": 89.79251257286494,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "new",
+          "recomputed": "new",
+          "status": "OK",
+          "note": "ningun circulo contiene el punto"
+        },
+        {
+          "field": "known_region_id",
+          "card": null,
+          "recomputed": null,
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BSk",
+          "recomputed": "BSk (codigo 7)",
+          "status": "OK",
+          "note": "ficha codigo 7"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.0000 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.0000 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "recomputado T=5.806327 A=7.542438; linea T=5.806327160493828 A=7.542438271604938"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "clase ficha BSk"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 15.0 / driving 30.0",
+          "recomputed": "landing 15 / driving 30 (missions.json limits.mars)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "jezero__jezero__pool__pool_01135.json",
+      "target_id": "jezero",
+      "analog_id": "jezero__pool__pool_01135",
+      "body": "mars",
+      "strata": [
+        "novelty_new"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": 28.87,
+        "lon": 13.87,
+        "ranking_lat": 28.87,
+        "ranking_lon": 13.87,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "new",
+          "recomputed": "new",
+          "status": "OK",
+          "note": "ningun circulo contiene el punto"
+        },
+        {
+          "field": "known_region_id",
+          "card": null,
+          "recomputed": null,
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWh",
+          "recomputed": "BWh (codigo 4)",
+          "status": "OK",
+          "note": "ficha codigo 4"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.4582 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.0000 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "recomputado T=6.250000 A=6.712963; linea T=6.25 A=6.712962962962963"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "clase ficha BWh"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 15.0 / driving 30.0",
+          "recomputed": "landing 15 / driving 30 (missions.json limits.mars)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "jezero__jezero__pool__pool_01676.json",
+      "target_id": "jezero",
+      "analog_id": "jezero__pool__pool_01676",
+      "body": "mars",
+      "strata": [
+        "low_sun_yes"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": 37.87,
+        "lon": 96.07,
+        "ranking_lat": 37.87,
+        "ranking_lon": 96.07,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "known_region",
+          "recomputed": "known_region",
+          "status": "OK",
+          "note": "circulos que contienen el punto: qaidam_basin (157.751 km)"
+        },
+        {
+          "field": "known_region_id",
+          "card": "qaidam_basin",
+          "recomputed": "qaidam_basin",
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BSk",
+          "recomputed": "BSk (codigo 7)",
+          "status": "OK",
+          "note": "ficha codigo 7"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.4582 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.0000 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "recomputado T=6.250000 A=7.638889; linea T=6.25 A=7.638888888888889"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "clase ficha BSk"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 15.0 / driving 30.0",
+          "recomputed": "landing 15 / driving 30 (missions.json limits.mars)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "malapert_massif__malapert_massif__pool__pool_00024.json",
+      "target_id": "malapert_massif",
+      "analog_id": "malapert_massif__pool__pool_00024",
+      "body": "moon",
+      "strata": [
+        "landing_no"
+      ],
+      "mission_check": true,
+      "twin": {
+        "lat": -29.93,
+        "lon": -68.90924568168248,
+        "ranking_lat": -29.93,
+        "ranking_lon": -68.90924568168248,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "known_region",
+          "recomputed": "known_region",
+          "status": "OK",
+          "note": "circulos que contienen el punto: atacama_desert (655.279 km)"
+        },
+        {
+          "field": "known_region_id",
+          "card": "atacama_desert",
+          "recomputed": "atacama_desert",
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWk",
+          "recomputed": "BWk (codigo 5)",
+          "status": "OK",
+          "note": "ficha codigo 5"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 25.4530 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 3.4576 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "recomputado T=49.980710 A=6.886574; linea T=49.98070987654321 A=6.886574074074074"
+        },
+        {
+          "field": "rehearsal.low_sun_lat",
+          "card": "lowest=None emax=18.643904320987655@72.5",
+          "recomputed": "lowest=None emax=18.643904@72.5",
+          "status": "OK",
+          "note": "solo casos low_sun=no: latitud minima en Tierra que alcanza el objetivo"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "clase ficha BWk"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 12.0 / driving 25.0",
+          "recomputed": "landing 12 / driving 25 (missions.json limits.moon)",
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "mission_pct.landing",
+          "card": 67.79837533847115,
+          "recomputed": 63.741827,
+          "status": "DIF",
+          "note": "denominador = pixeles con pendiente definida (4741); alternativa denominador = todo el disco (4965): 60.8661; grilla 81 px a 100 m; tolerancia 1.0 pts"
+        }
+      ]
+    },
+    {
+      "file": "malapert_massif__malapert_massif__pool__pool_00097.json",
+      "target_id": "malapert_massif",
+      "analog_id": "malapert_massif__pool__pool_00097",
+      "body": "moon",
+      "strata": [
+        "novelty_known"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": -18.23,
+        "lon": -70.14893690548016,
+        "ranking_lat": -18.23,
+        "ranking_lon": -70.14893690548016,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "known_region",
+          "recomputed": "known_region",
+          "status": "OK",
+          "note": "circulos que contienen el punto: atacama_desert (658.296 km)"
+        },
+        {
+          "field": "known_region_id",
+          "card": "atacama_desert",
+          "recomputed": "atacama_desert",
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWk",
+          "recomputed": "BWk (codigo 5)",
+          "status": "OK",
+          "note": "ficha codigo 5"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 25.8071 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.0208 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "recomputado T=49.980710 A=6.057099; linea T=49.98070987654321 A=6.057098765432099"
+        },
+        {
+          "field": "rehearsal.low_sun_lat",
+          "card": "lowest=None emax=18.643904320987655@72.5",
+          "recomputed": "lowest=None emax=18.643904@72.5",
+          "status": "OK",
+          "note": "solo casos low_sun=no: latitud minima en Tierra que alcanza el objetivo"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "clase ficha BWk"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 12.0 / driving 25.0",
+          "recomputed": "landing 12 / driving 25 (missions.json limits.moon)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "malapert_massif__malapert_massif__pool__pool_01247.json",
+      "target_id": "malapert_massif",
+      "analog_id": "malapert_massif__pool__pool_01247",
+      "body": "moon",
+      "strata": [
+        "novelty_new",
+        "landing_no"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": 30.05201356842439,
+        "lon": -8.050783617797377,
+        "ranking_lat": 30.05201356842439,
+        "ranking_lon": -8.050783617797377,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "new",
+          "recomputed": "new",
+          "status": "OK",
+          "note": "ningun circulo contiene el punto"
+        },
+        {
+          "field": "known_region_id",
+          "card": null,
+          "recomputed": null,
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BSk",
+          "recomputed": "BSk (codigo 7)",
+          "status": "OK",
+          "note": "ficha codigo 7"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 40.0125 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 3.2285 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "recomputado T=49.980710 A=6.886574; linea T=49.98070987654321 A=6.886574074074074"
+        },
+        {
+          "field": "rehearsal.low_sun_lat",
+          "card": "lowest=None emax=18.643904320987655@72.5",
+          "recomputed": "lowest=None emax=18.643904@72.5",
+          "status": "OK",
+          "note": "solo casos low_sun=no: latitud minima en Tierra que alcanza el objetivo"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "clase ficha BSk"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 12.0 / driving 25.0",
+          "recomputed": "landing 12 / driving 25 (missions.json limits.moon)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "mons_mouton_plateau__mons_mouton_plateau__pool__pool_00117.json",
+      "target_id": "mons_mouton_plateau",
+      "analog_id": "mons_mouton_plateau__pool__pool_00117",
+      "body": "moon",
+      "strata": [
+        "landing_partial"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": 12.07,
+        "lon": 41.77,
+        "ranking_lat": 12.07,
+        "ranking_lon": 41.77,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "new",
+          "recomputed": "new",
+          "status": "OK",
+          "note": "ningun circulo contiene el punto"
+        },
+        {
+          "field": "known_region_id",
+          "card": null,
+          "recomputed": null,
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWh",
+          "recomputed": "BWh (codigo 4)",
+          "status": "OK",
+          "note": "ficha codigo 4"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 11.0602 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 2.3953 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "recomputado T=49.980710 A=5.960648; linea T=49.98070987654321 A=5.960648148148148"
+        },
+        {
+          "field": "rehearsal.low_sun_lat",
+          "card": "lowest=None emax=18.643904320987655@72.5",
+          "recomputed": "lowest=None emax=18.643904@72.5",
+          "status": "OK",
+          "note": "solo casos low_sun=no: latitud minima en Tierra que alcanza el objetivo"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "clase ficha BWh"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 12.0 / driving 25.0",
+          "recomputed": "landing 12 / driving 25 (missions.json limits.moon)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "mons_mouton_plateau__mons_mouton_plateau__pool__pool_00370.json",
+      "target_id": "mons_mouton_plateau",
+      "analog_id": "mons_mouton_plateau__pool__pool_00370",
+      "body": "moon",
+      "strata": [
+        "novelty_new"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": 18.934027136848773,
+        "lon": 43.85098060437523,
+        "ranking_lat": 18.934027136848773,
+        "ranking_lon": 43.85098060437523,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "new",
+          "recomputed": "new",
+          "status": "OK",
+          "note": "ningun circulo contiene el punto"
+        },
+        {
+          "field": "known_region_id",
+          "card": null,
+          "recomputed": null,
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWh",
+          "recomputed": "BWh (codigo 4)",
+          "status": "OK",
+          "note": "ficha codigo 4"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 6.5195 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.8540 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "recomputado T=49.980710 A=6.172840; linea T=49.98070987654321 A=6.172839506172839"
+        },
+        {
+          "field": "rehearsal.low_sun_lat",
+          "card": "lowest=None emax=18.643904320987655@72.5",
+          "recomputed": "lowest=None emax=18.643904@72.5",
+          "status": "OK",
+          "note": "solo casos low_sun=no: latitud minima en Tierra que alcanza el objetivo"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "clase ficha BWh"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 12.0 / driving 25.0",
+          "recomputed": "landing 12 / driving 25 (missions.json limits.moon)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "mons_mouton_plateau__mons_mouton_plateau__pool__pool_01222.json",
+      "target_id": "mons_mouton_plateau",
+      "analog_id": "mons_mouton_plateau__pool__pool_01222",
+      "body": "moon",
+      "strata": [
+        "low_sun_no"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": 29.75201356842439,
+        "lon": 35.811442170887275,
+        "ranking_lat": 29.75201356842439,
+        "ranking_lon": 35.811442170887275,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "new",
+          "recomputed": "new",
+          "status": "OK",
+          "note": "ningun circulo contiene el punto"
+        },
+        {
+          "field": "known_region_id",
+          "card": null,
+          "recomputed": null,
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWk",
+          "recomputed": "BWk (codigo 5)",
+          "status": "OK",
+          "note": "ficha codigo 5"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 9.2064 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.0417 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "recomputado T=49.980710 A=6.809414; linea T=49.98070987654321 A=6.809413580246914"
+        },
+        {
+          "field": "rehearsal.low_sun_lat",
+          "card": "lowest=None emax=18.643904320987655@72.5",
+          "recomputed": "lowest=None emax=18.643904@72.5",
+          "status": "OK",
+          "note": "solo casos low_sun=no: latitud minima en Tierra que alcanza el objetivo"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "clase ficha BWk"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 12.0 / driving 25.0",
+          "recomputed": "landing 12 / driving 25 (missions.json limits.moon)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "nobile_rim_1__nobile_rim_1__pool__pool_00045.json",
+      "target_id": "nobile_rim_1",
+      "analog_id": "nobile_rim_1__pool__pool_00045",
+      "body": "moon",
+      "strata": [
+        "novelty_known"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": -26.894027136848774,
+        "lon": -69.20982589929554,
+        "ranking_lat": -26.894027136848774,
+        "ranking_lon": -69.20982589929554,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "known_region",
+          "recomputed": "known_region",
+          "status": "OK",
+          "note": "circulos que contienen el punto: atacama_desert (320.887 km)"
+        },
+        {
+          "field": "known_region_id",
+          "card": "atacama_desert",
+          "recomputed": "atacama_desert",
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWk",
+          "recomputed": "BWk (codigo 5)",
+          "status": "OK",
+          "note": "ficha codigo 5"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 4.1033 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.0833 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "recomputado T=49.980710 A=6.520062; linea T=49.98070987654321 A=6.520061728395062"
+        },
+        {
+          "field": "rehearsal.low_sun_lat",
+          "card": "lowest=None emax=18.643904320987655@72.5",
+          "recomputed": "lowest=None emax=18.643904@72.5",
+          "status": "OK",
+          "note": "solo casos low_sun=no: latitud minima en Tierra que alcanza el objetivo"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "clase ficha BWk"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 12.0 / driving 25.0",
+          "recomputed": "landing 12 / driving 25 (missions.json limits.moon)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "nobile_rim_1__nobile_rim_1__pool__pool_00091.json",
+      "target_id": "nobile_rim_1",
+      "analog_id": "nobile_rim_1__pool__pool_00091",
+      "body": "moon",
+      "strata": [
+        "low_sun_no"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": -20.03,
+        "lon": -69.23,
+        "ranking_lat": -20.03,
+        "ranking_lon": -69.23,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "known_region",
+          "recomputed": "known_region",
+          "status": "OK",
+          "note": "circulos que contienen el punto: atacama_desert (468.892 km)"
+        },
+        {
+          "field": "known_region_id",
+          "card": "atacama_desert",
+          "recomputed": "atacama_desert",
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWk",
+          "recomputed": "BWk (codigo 5)",
+          "status": "OK",
+          "note": "ficha codigo 5"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 39.4501 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.4374 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "recomputado T=49.980710 A=6.230710; linea T=49.98070987654321 A=6.23070987654321"
+        },
+        {
+          "field": "rehearsal.low_sun_lat",
+          "card": "lowest=None emax=18.643904320987655@72.5",
+          "recomputed": "lowest=None emax=18.643904@72.5",
+          "status": "OK",
+          "note": "solo casos low_sun=no: latitud minima en Tierra que alcanza el objetivo"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "clase ficha BWk"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 12.0 / driving 25.0",
+          "recomputed": "landing 12 / driving 25 (missions.json limits.moon)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "nobile_rim_1__nobile_rim_1__pool__pool_01675.json",
+      "target_id": "nobile_rim_1",
+      "analog_id": "nobile_rim_1__pool__pool_01675",
+      "body": "moon",
+      "strata": [
+        "novelty_known"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": 37.90597286315122,
+        "lon": 95.74721522216282,
+        "ranking_lat": 37.90597286315122,
+        "ranking_lon": 95.74721522216282,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "known_region",
+          "recomputed": "known_region",
+          "status": "OK",
+          "note": "circulos que contienen el punto: qaidam_basin (134.602 km)"
+        },
+        {
+          "field": "known_region_id",
+          "card": "qaidam_basin",
+          "recomputed": "qaidam_basin",
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BSk",
+          "recomputed": "BSk (codigo 7)",
+          "status": "OK",
+          "note": "ficha codigo 7"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 35.2218 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 3.1868 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "recomputado T=49.980710 A=7.600309; linea T=49.98070987654321 A=7.638888888888889"
+        },
+        {
+          "field": "rehearsal.low_sun_lat",
+          "card": "lowest=None emax=18.643904320987655@72.5",
+          "recomputed": "lowest=None emax=18.643904@72.5",
+          "status": "OK",
+          "note": "solo casos low_sun=no: latitud minima en Tierra que alcanza el objetivo"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "clase ficha BSk"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 12.0 / driving 25.0",
+          "recomputed": "landing 12 / driving 25 (missions.json limits.moon)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "nobile_rim_1__nobile_rim_1__pool__pool_01835.json",
+      "target_id": "nobile_rim_1",
+      "analog_id": "nobile_rim_1__pool__pool_01835",
+      "body": "moon",
+      "strata": [
+        "landing_no"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": 42.07,
+        "lon": 84.07,
+        "ranking_lat": 42.07,
+        "ranking_lon": 84.07,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "new",
+          "recomputed": "new",
+          "status": "OK",
+          "note": "ningun circulo contiene el punto"
+        },
+        {
+          "field": "known_region_id",
+          "card": null,
+          "recomputed": null,
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWk",
+          "recomputed": "BWk (codigo 5)",
+          "status": "OK",
+          "note": "ficha codigo 5"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 41.9704 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 2.0621 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "recomputado T=49.980710 A=8.198302; linea T=49.98070987654321 A=8.198302469135802"
+        },
+        {
+          "field": "rehearsal.low_sun_lat",
+          "card": "lowest=None emax=18.643904320987655@72.5",
+          "recomputed": "lowest=None emax=18.643904@72.5",
+          "status": "OK",
+          "note": "solo casos low_sun=no: latitud minima en Tierra que alcanza el objetivo"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "clase ficha BWk"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 12.0 / driving 25.0",
+          "recomputed": "landing 12 / driving 25 (missions.json limits.moon)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "nobile_rim_2__nobile_rim_2__pool__pool_00040.json",
+      "target_id": "nobile_rim_2",
+      "analog_id": "nobile_rim_2__pool__pool_00040",
+      "body": "moon",
+      "strata": [
+        "novelty_known",
+        "landing_partial"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": -27.23,
+        "lon": -70.13,
+        "ranking_lat": -27.23,
+        "ranking_lon": -70.13,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "known_region",
+          "recomputed": "known_region",
+          "status": "OK",
+          "note": "circulos que contienen el punto: atacama_desert (342.553 km)"
+        },
+        {
+          "field": "known_region_id",
+          "card": "atacama_desert",
+          "recomputed": "atacama_desert",
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWk",
+          "recomputed": "BWk (codigo 5)",
+          "status": "OK",
+          "note": "ficha codigo 5"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 14.4762 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 1.1248 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "recomputado T=49.980710 A=6.597222; linea T=49.98070987654321 A=6.597222222222222"
+        },
+        {
+          "field": "rehearsal.low_sun_lat",
+          "card": "lowest=None emax=18.643904320987655@72.5",
+          "recomputed": "lowest=None emax=18.643904@72.5",
+          "status": "OK",
+          "note": "solo casos low_sun=no: latitud minima en Tierra que alcanza el objetivo"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "clase ficha BWk"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 12.0 / driving 25.0",
+          "recomputed": "landing 12 / driving 25 (missions.json limits.moon)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "nobile_rim_2__nobile_rim_2__pool__pool_00069.json",
+      "target_id": "nobile_rim_2",
+      "analog_id": "nobile_rim_2__pool__pool_00069",
+      "body": "moon",
+      "strata": [
+        "landing_partial",
+        "low_sun_no"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": -23.93,
+        "lon": -68.0693558228458,
+        "ranking_lat": -23.93,
+        "ranking_lon": -68.0693558228458,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "known_region",
+          "recomputed": "known_region",
+          "status": "OK",
+          "note": "circulos que contienen el punto: atacama_desert (217.744 km)"
+        },
+        {
+          "field": "known_region_id",
+          "card": "atacama_desert",
+          "recomputed": "atacama_desert",
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWk",
+          "recomputed": "BWk (codigo 5)",
+          "status": "OK",
+          "note": "ficha codigo 5"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 11.5809 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.1666 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "recomputado T=49.980710 A=6.442901; linea T=49.98070987654321 A=6.442901234567901"
+        },
+        {
+          "field": "rehearsal.low_sun_lat",
+          "card": "lowest=None emax=18.643904320987655@72.5",
+          "recomputed": "lowest=None emax=18.643904@72.5",
+          "status": "OK",
+          "note": "solo casos low_sun=no: latitud minima en Tierra que alcanza el objetivo"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "clase ficha BWk"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 12.0 / driving 25.0",
+          "recomputed": "landing 12 / driving 25 (missions.json limits.moon)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "nobile_rim_2__nobile_rim_2__pool__pool_00078.json",
+      "target_id": "nobile_rim_2",
+      "analog_id": "nobile_rim_2__pool__pool_00078",
+      "body": "moon",
+      "strata": [
+        "landing_partial"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": -22.13,
+        "lon": -68.93,
+        "ranking_lat": -22.13,
+        "ranking_lon": -68.93,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "known_region",
+          "recomputed": "known_region",
+          "status": "OK",
+          "note": "circulos que contienen el punto: atacama_desert (259.444 km)"
+        },
+        {
+          "field": "known_region_id",
+          "card": "atacama_desert",
+          "recomputed": "atacama_desert",
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWk",
+          "recomputed": "BWk (codigo 5)",
+          "status": "OK",
+          "note": "ficha codigo 5"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 11.7059 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.1458 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "recomputado T=49.980710 A=6.230710; linea T=49.98070987654321 A=6.23070987654321"
+        },
+        {
+          "field": "rehearsal.low_sun_lat",
+          "card": "lowest=None emax=18.643904320987655@72.5",
+          "recomputed": "lowest=None emax=18.643904@72.5",
+          "status": "OK",
+          "note": "solo casos low_sun=no: latitud minima en Tierra que alcanza el objetivo"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "clase ficha BWk"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 12.0 / driving 25.0",
+          "recomputed": "landing 12 / driving 25 (missions.json limits.moon)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "oxia_planum__oxia_planum__pool__pool_01843.json",
+      "target_id": "oxia_planum",
+      "analog_id": "oxia_planum__pool__pool_01843",
+      "body": "mars",
+      "strata": [
+        "low_sun_yes"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": 42.052013568424385,
+        "lon": 94.01845960622798,
+        "ranking_lat": 42.052013568424385,
+        "ranking_lon": 94.01845960622798,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "new",
+          "recomputed": "new",
+          "status": "OK",
+          "note": "ningun circulo contiene el punto"
+        },
+        {
+          "field": "known_region_id",
+          "card": null,
+          "recomputed": null,
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWk",
+          "recomputed": "BWk (codigo 5)",
+          "status": "OK",
+          "note": "ficha codigo 5"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.0000 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.0000 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "recomputado T=6.250000 A=8.198302; linea T=6.25 A=8.198302469135802"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "partial",
+          "recomputed": "partial",
+          "status": "OK",
+          "note": "clase ficha BWk"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 15.0 / driving 30.0",
+          "recomputed": "landing 15 / driving 30 (missions.json limits.mars)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "spirit_columbia__spirit_columbia__pool__pool_00249.json",
+      "target_id": "spirit_columbia",
+      "analog_id": "spirit_columbia__pool__pool_00249",
+      "body": "mars",
+      "strata": [
+        "low_sun_yes"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": 17.77,
+        "lon": 19.007775140651226,
+        "ranking_lat": 17.77,
+        "ranking_lon": 19.007775140651226,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "new",
+          "recomputed": "new",
+          "status": "OK",
+          "note": "ningun circulo contiene el punto"
+        },
+        {
+          "field": "known_region_id",
+          "card": null,
+          "recomputed": null,
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWh",
+          "recomputed": "BWh (codigo 4)",
+          "status": "OK",
+          "note": "ficha codigo 4"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.0000 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.0000 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "recomputado T=6.037809 A=6.076389; linea T=6.0378086419753085 A=6.076388888888889"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "clase ficha BWh"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 15.0 / driving 30.0",
+          "recomputed": "landing 15 / driving 30 (missions.json limits.mars)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "spirit_columbia__spirit_columbia__pool__pool_00336.json",
+      "target_id": "spirit_columbia",
+      "analog_id": "spirit_columbia__pool__pool_00336",
+      "body": "mars",
+      "strata": [
+        "landing_yes"
+      ],
+      "mission_check": true,
+      "twin": {
+        "lat": 18.934027136848773,
+        "lon": -11.96803879124953,
+        "ranking_lat": 18.934027136848773,
+        "ranking_lon": -11.96803879124953,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "new",
+          "recomputed": "new",
+          "status": "OK",
+          "note": "ningun circulo contiene el punto"
+        },
+        {
+          "field": "known_region_id",
+          "card": null,
+          "recomputed": null,
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWh",
+          "recomputed": "BWh (codigo 4)",
+          "status": "OK",
+          "note": "ficha codigo 4"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.0000 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.0000 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "recomputado T=6.037809 A=6.172840; linea T=6.0378086419753085 A=6.172839506172839"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "clase ficha BWh"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 15.0 / driving 30.0",
+          "recomputed": "landing 15 / driving 30 (missions.json limits.mars)",
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "mission_pct.landing",
+          "card": 100.0,
+          "recomputed": 100.0,
+          "status": "OK",
+          "note": "denominador = pixeles con pendiente definida (4741); alternativa denominador = todo el disco (4965): 95.4884; grilla 81 px a 100 m; tolerancia 1.0 pts"
+        }
+      ]
+    },
+    {
+      "file": "zhurong__zhurong__pool__pool_00435.json",
+      "target_id": "zhurong",
+      "analog_id": "zhurong__pool__pool_00435",
+      "body": "mars",
+      "strata": [
+        "low_sun_yes"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": 19.87,
+        "lon": 49.90825003213295,
+        "ranking_lat": 19.87,
+        "ranking_lon": 49.90825003213295,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "new",
+          "recomputed": "new",
+          "status": "OK",
+          "note": "ningun circulo contiene el punto"
+        },
+        {
+          "field": "known_region_id",
+          "card": null,
+          "recomputed": null,
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWh",
+          "recomputed": "BWh (codigo 4)",
+          "status": "OK",
+          "note": "ficha codigo 4"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.1724 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.0000 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "recomputado T=6.481481 A=6.250000; linea T=6.481481481481482 A=6.25"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "clase ficha BWh"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 15.0 / driving 30.0",
+          "recomputed": "landing 15 / driving 30 (missions.json limits.mars)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "file": "zhurong__zhurong__pool__pool_00748.json",
+      "target_id": "zhurong",
+      "analog_id": "zhurong__pool__pool_00748",
+      "body": "mars",
+      "strata": [
+        "novelty_new"
+      ],
+      "mission_check": true,
+      "twin": {
+        "lat": 23.77,
+        "lon": 54.97,
+        "ranking_lat": 23.77,
+        "ranking_lon": 54.97,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "new",
+          "recomputed": "new",
+          "status": "OK",
+          "note": "ningun circulo contiene el punto"
+        },
+        {
+          "field": "known_region_id",
+          "card": null,
+          "recomputed": null,
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWh",
+          "recomputed": "BWh (codigo 4)",
+          "status": "OK",
+          "note": "ficha codigo 4"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.1724 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.0000 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "recomputado T=6.481481 A=6.404321; linea T=6.481481481481482 A=6.404320987654321"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "clase ficha BWh"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 15.0 / driving 30.0",
+          "recomputed": "landing 15 / driving 30 (missions.json limits.mars)",
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "mission_pct.landing",
+          "card": 100.0,
+          "recomputed": 100.0,
+          "status": "OK",
+          "note": "denominador = pixeles con pendiente definida (4741); alternativa denominador = todo el disco (4965): 95.4884; grilla 81 px a 100 m; tolerancia 1.0 pts"
+        }
+      ]
+    },
+    {
+      "file": "zhurong__zhurong__pool__pool_00955.json",
+      "target_id": "zhurong",
+      "analog_id": "zhurong__pool__pool_00955",
+      "body": "mars",
+      "strata": [
+        "landing_yes"
+      ],
+      "mission_check": false,
+      "twin": {
+        "lat": 26.77,
+        "lon": 25.82970879725622,
+        "ranking_lat": 26.77,
+        "ranking_lon": 25.82970879725622,
+        "coords_match_ranking": true
+      },
+      "checks": [
+        {
+          "field": "novelty",
+          "card": "new",
+          "recomputed": "new",
+          "status": "OK",
+          "note": "ningun circulo contiene el punto"
+        },
+        {
+          "field": "known_region_id",
+          "card": null,
+          "recomputed": null,
+          "status": "OK",
+          "note": ""
+        },
+        {
+          "field": "analog_place",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: .venv sin lector de shapefile (pyshp, fiona, pyogrio, osgeo ausentes); shapely no lee .shp"
+        },
+        {
+          "field": "nearest_town",
+          "card": null,
+          "recomputed": null,
+          "status": "BLOQUEADO",
+          "note": "BLOQUEADO: idem, ne_10m_populated_places.shp no se puede leer"
+        },
+        {
+          "field": "koppen_class",
+          "card": "BWh",
+          "recomputed": "BWh (codigo 4)",
+          "status": "OK",
+          "note": "ficha codigo 4"
+        },
+        {
+          "field": "rehearsal.landing",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.1724 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.driving",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "|gemelo-objetivo| = 0.0000 pts; umbrales yes<=10, partial<=25; valores de la linea = ficha"
+        },
+        {
+          "field": "rehearsal.low_sun",
+          "card": "yes",
+          "recomputed": "yes",
+          "status": "OK",
+          "note": "recomputado T=6.481481 A=6.558642; linea T=6.481481481481482 A=6.558641975308642"
+        },
+        {
+          "field": "rehearsal.cold",
+          "card": "no",
+          "recomputed": "no",
+          "status": "OK",
+          "note": "clase ficha BWh"
+        },
+        {
+          "field": "limit_deg",
+          "card": "landing 15.0 / driving 30.0",
+          "recomputed": "landing 15 / driving 30 (missions.json limits.mars)",
+          "status": "OK",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

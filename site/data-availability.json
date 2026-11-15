@@ -1,0 +1,22 @@
+{
+  "data/": {
+    "regional_mars": false,
+    "coverage": {
+      "mars": true,
+      "moon": true,
+      "earth": true
+    },
+    "atlas": true,
+    "discoveries": true
+  },
+  "data/sample/": {
+    "regional_mars": false,
+    "coverage": {
+      "mars": true,
+      "moon": true,
+      "earth": true
+    },
+    "atlas": true,
+    "discoveries": true
+  }
+}

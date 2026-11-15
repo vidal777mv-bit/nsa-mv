@@ -1,0 +1,470 @@
+{
+  "generated_by": "pipelines/export_ties.py",
+  "rule": "Places in one tie group differ pairwise by less than the sensor-noise threshold of the target's relief class: the 95th percentile of D between NASADEM and Copernicus GLO-30 over the dev regions of that class (data/derived/validation/noise_v1.3.json, classes.<class>.p95; STANDARDS 10.11). Groups are formed by the anchor rule: a new group starts when D minus the first D of the current group reaches the threshold.",
+  "targets": {
+    "haworth": {
+      "threshold": 0.4150468510682017,
+      "threshold_basis": "95th percentile of D between two DEMs of the same place (NASADEM vs Copernicus GLO-30), 13 dev regions of relief class 'rugged' (noise_v1.3.json, classes.rugged.p95)",
+      "groups": [
+        {
+          "tie_group": 0,
+          "ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "D_min": 0.28563910700072564,
+          "D_max": 0.5684394958878753
+        }
+      ],
+      "n_tied_with_first": 10,
+      "n_candidates": 10,
+      "sentence": "All 10 Earth places are statistically tied: their differences are smaller than the measurement noise. None of them is 'the' twin; choose among them by climate, access or what you want to rehearse.",
+      "relief_class": "rugged",
+      "n_noise_regions": 13,
+      "threshold_note": null
+    },
+    "malapert_massif": {
+      "threshold": 0.4150468510682017,
+      "threshold_basis": "95th percentile of D between two DEMs of the same place (NASADEM vs Copernicus GLO-30), 13 dev regions of relief class 'rugged' (noise_v1.3.json, classes.rugged.p95)",
+      "groups": [
+        {
+          "tie_group": 0,
+          "ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "D_min": 0.1762365077339961,
+          "D_max": 0.4759063267251023
+        }
+      ],
+      "n_tied_with_first": 10,
+      "n_candidates": 10,
+      "sentence": "All 10 Earth places are statistically tied: their differences are smaller than the measurement noise. None of them is 'the' twin; choose among them by climate, access or what you want to rehearse.",
+      "relief_class": "rugged",
+      "n_noise_regions": 13,
+      "threshold_note": null
+    },
+    "nobile_rim_1": {
+      "threshold": 0.4150468510682017,
+      "threshold_basis": "95th percentile of D between two DEMs of the same place (NASADEM vs Copernicus GLO-30), 13 dev regions of relief class 'rugged' (noise_v1.3.json, classes.rugged.p95)",
+      "groups": [
+        {
+          "tie_group": 0,
+          "ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "D_min": 0.33232997901317873,
+          "D_max": 0.6249011062133345
+        }
+      ],
+      "n_tied_with_first": 10,
+      "n_candidates": 10,
+      "sentence": "All 10 Earth places are statistically tied: their differences are smaller than the measurement noise. None of them is 'the' twin; choose among them by climate, access or what you want to rehearse.",
+      "relief_class": "rugged",
+      "n_noise_regions": 13,
+      "threshold_note": null
+    },
+    "nobile_rim_2": {
+      "threshold": 0.4150468510682017,
+      "threshold_basis": "95th percentile of D between two DEMs of the same place (NASADEM vs Copernicus GLO-30), 13 dev regions of relief class 'rugged' (noise_v1.3.json, classes.rugged.p95)",
+      "groups": [
+        {
+          "tie_group": 0,
+          "ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "D_min": 0.2209727975908572,
+          "D_max": 0.4929406761578379
+        }
+      ],
+      "n_tied_with_first": 10,
+      "n_candidates": 10,
+      "sentence": "All 10 Earth places are statistically tied: their differences are smaller than the measurement noise. None of them is 'the' twin; choose among them by climate, access or what you want to rehearse.",
+      "relief_class": "rugged",
+      "n_noise_regions": 13,
+      "threshold_note": null
+    },
+    "de_gerlache_rim_2": {
+      "threshold": 0.4150468510682017,
+      "threshold_basis": "95th percentile of D between two DEMs of the same place (NASADEM vs Copernicus GLO-30), 13 dev regions of relief class 'rugged' (noise_v1.3.json, classes.rugged.p95)",
+      "groups": [
+        {
+          "tie_group": 0,
+          "ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "D_min": 0.3321477925221362,
+          "D_max": 0.6213546081106854
+        }
+      ],
+      "n_tied_with_first": 10,
+      "n_candidates": 10,
+      "sentence": "All 10 Earth places are statistically tied: their differences are smaller than the measurement noise. None of them is 'the' twin; choose among them by climate, access or what you want to rehearse.",
+      "relief_class": "rugged",
+      "n_noise_regions": 13,
+      "threshold_note": null
+    },
+    "jezero": {
+      "threshold": 0.4150468510682017,
+      "threshold_basis": "95th percentile of D between two DEMs of the same place (NASADEM vs Copernicus GLO-30), 13 dev regions of relief class 'rugged' (noise_v1.3.json, classes.rugged.p95)",
+      "groups": [
+        {
+          "tie_group": 0,
+          "ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "D_min": 0.05689244856441505,
+          "D_max": 0.1703562129282481
+        }
+      ],
+      "n_tied_with_first": 10,
+      "n_candidates": 10,
+      "sentence": "All 10 Earth places are statistically tied: their differences are smaller than the measurement noise. None of them is 'the' twin; choose among them by climate, access or what you want to rehearse.",
+      "relief_class": "rugged",
+      "n_noise_regions": 13,
+      "threshold_note": null
+    },
+    "gale": {
+      "threshold": 0.4150468510682017,
+      "threshold_basis": "95th percentile of D between two DEMs of the same place (NASADEM vs Copernicus GLO-30), 13 dev regions of relief class 'rugged' (noise_v1.3.json, classes.rugged.p95)",
+      "groups": [
+        {
+          "tie_group": 0,
+          "ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "D_min": 0.07842919206873995,
+          "D_max": 0.2055907670812696
+        }
+      ],
+      "n_tied_with_first": 10,
+      "n_candidates": 10,
+      "sentence": "All 10 Earth places are statistically tied: their differences are smaller than the measurement noise. None of them is 'the' twin; choose among them by climate, access or what you want to rehearse.",
+      "relief_class": "rugged",
+      "n_noise_regions": 13,
+      "threshold_note": null
+    },
+    "insight_elysium": {
+      "threshold": 1.1017189574465522,
+      "threshold_basis": "95th percentile of D between two DEMs of the same place (NASADEM vs Copernicus GLO-30), 2 dev regions of relief class 'flat' (noise_v1.3.json, classes.flat.p95)",
+      "groups": [
+        {
+          "tie_group": 0,
+          "ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "D_min": 0.05620976895733612,
+          "D_max": 0.19430674631312997
+        }
+      ],
+      "n_tied_with_first": 10,
+      "n_candidates": 10,
+      "sentence": "All 10 Earth places are statistically tied: their differences are smaller than the measurement noise. None of them is 'the' twin; choose among them by climate, access or what you want to rehearse.",
+      "relief_class": "flat",
+      "n_noise_regions": 2,
+      "threshold_note": "The noise threshold of the 'flat' class comes from only 2 regions: treat the tie as approximate."
+    },
+    "spirit_columbia": {
+      "threshold": 0.4150468510682017,
+      "threshold_basis": "95th percentile of D between two DEMs of the same place (NASADEM vs Copernicus GLO-30), 13 dev regions of relief class 'rugged' (noise_v1.3.json, classes.rugged.p95)",
+      "groups": [
+        {
+          "tie_group": 0,
+          "ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "D_min": 0.14008419303513314,
+          "D_max": 0.248116391556912
+        }
+      ],
+      "n_tied_with_first": 10,
+      "n_candidates": 10,
+      "sentence": "All 10 Earth places are statistically tied: their differences are smaller than the measurement noise. None of them is 'the' twin; choose among them by climate, access or what you want to rehearse.",
+      "relief_class": "rugged",
+      "n_noise_regions": 13,
+      "threshold_note": null
+    },
+    "zhurong": {
+      "threshold": 0.4150468510682017,
+      "threshold_basis": "95th percentile of D between two DEMs of the same place (NASADEM vs Copernicus GLO-30), 13 dev regions of relief class 'rugged' (noise_v1.3.json, classes.rugged.p95)",
+      "groups": [
+        {
+          "tie_group": 0,
+          "ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "D_min": 0.02383051478520374,
+          "D_max": 0.13977920778862266
+        }
+      ],
+      "n_tied_with_first": 10,
+      "n_candidates": 10,
+      "sentence": "All 10 Earth places are statistically tied: their differences are smaller than the measurement noise. None of them is 'the' twin; choose among them by climate, access or what you want to rehearse.",
+      "relief_class": "rugged",
+      "n_noise_regions": 13,
+      "threshold_note": null
+    },
+    "oxia_planum": {
+      "threshold": 1.1017189574465522,
+      "threshold_basis": "95th percentile of D between two DEMs of the same place (NASADEM vs Copernicus GLO-30), 2 dev regions of relief class 'flat' (noise_v1.3.json, classes.flat.p95)",
+      "groups": [
+        {
+          "tie_group": 0,
+          "ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "D_min": 0.08007012764480523,
+          "D_max": 0.20416168517839983
+        }
+      ],
+      "n_tied_with_first": 10,
+      "n_candidates": 10,
+      "sentence": "All 10 Earth places are statistically tied: their differences are smaller than the measurement noise. None of them is 'the' twin; choose among them by climate, access or what you want to rehearse.",
+      "relief_class": "flat",
+      "n_noise_regions": 2,
+      "threshold_note": "The noise threshold of the 'flat' class comes from only 2 regions: treat the tie as approximate."
+    },
+    "apollo17_taurus_littrow": {
+      "threshold": 0.4150468510682017,
+      "threshold_basis": "95th percentile of D between two DEMs of the same place (NASADEM vs Copernicus GLO-30), 13 dev regions of relief class 'rugged' (noise_v1.3.json, classes.rugged.p95)",
+      "groups": [
+        {
+          "tie_group": 0,
+          "ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "D_min": 0.05775346099771104,
+          "D_max": 0.34584388411121963
+        }
+      ],
+      "n_tied_with_first": 10,
+      "n_candidates": 10,
+      "sentence": "All 10 Earth places are statistically tied: their differences are smaller than the measurement noise. None of them is 'the' twin; choose among them by climate, access or what you want to rehearse.",
+      "relief_class": "rugged",
+      "n_noise_regions": 13,
+      "threshold_note": null
+    },
+    "im1_odysseus": {
+      "threshold": 0.4150468510682017,
+      "threshold_basis": "95th percentile of D between two DEMs of the same place (NASADEM vs Copernicus GLO-30), 13 dev regions of relief class 'rugged' (noise_v1.3.json, classes.rugged.p95)",
+      "groups": [
+        {
+          "tie_group": 0,
+          "ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "D_min": 0.16891173634240728,
+          "D_max": 0.38188700322848645
+        }
+      ],
+      "n_tied_with_first": 10,
+      "n_candidates": 10,
+      "sentence": "All 10 Earth places are statistically tied: their differences are smaller than the measurement noise. None of them is 'the' twin; choose among them by climate, access or what you want to rehearse.",
+      "relief_class": "rugged",
+      "n_noise_regions": 13,
+      "threshold_note": null
+    },
+    "im2_athena": {
+      "threshold": 0.4150468510682017,
+      "threshold_basis": "95th percentile of D between two DEMs of the same place (NASADEM vs Copernicus GLO-30), 13 dev regions of relief class 'rugged' (noise_v1.3.json, classes.rugged.p95)",
+      "groups": [
+        {
+          "tie_group": 0,
+          "ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "D_min": 0.1554776427920774,
+          "D_max": 0.31255341096797046
+        }
+      ],
+      "n_tied_with_first": 10,
+      "n_candidates": 10,
+      "sentence": "All 10 Earth places are statistically tied: their differences are smaller than the measurement noise. None of them is 'the' twin; choose among them by climate, access or what you want to rehearse.",
+      "relief_class": "rugged",
+      "n_noise_regions": 13,
+      "threshold_note": null
+    },
+    "cabeus_b_peak": {
+      "threshold": 0.4150468510682017,
+      "threshold_basis": "95th percentile of D between two DEMs of the same place (NASADEM vs Copernicus GLO-30), 13 dev regions of relief class 'rugged' (noise_v1.3.json, classes.rugged.p95)",
+      "groups": [
+        {
+          "tie_group": 0,
+          "ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "D_min": 0.30738463978255376,
+          "D_max": 0.5813477390298871
+        }
+      ],
+      "n_tied_with_first": 10,
+      "n_candidates": 10,
+      "sentence": "All 10 Earth places are statistically tied: their differences are smaller than the measurement noise. None of them is 'the' twin; choose among them by climate, access or what you want to rehearse.",
+      "relief_class": "rugged",
+      "n_noise_regions": 13,
+      "threshold_note": null
+    },
+    "mons_mouton_plateau": {
+      "threshold": 0.4150468510682017,
+      "threshold_basis": "95th percentile of D between two DEMs of the same place (NASADEM vs Copernicus GLO-30), 13 dev regions of relief class 'rugged' (noise_v1.3.json, classes.rugged.p95)",
+      "groups": [
+        {
+          "tie_group": 0,
+          "ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "D_min": 0.2751814497152868,
+          "D_max": 0.618804212907688
+        }
+      ],
+      "n_tied_with_first": 10,
+      "n_candidates": 10,
+      "sentence": "All 10 Earth places are statistically tied: their differences are smaller than the measurement noise. None of them is 'the' twin; choose among them by climate, access or what you want to rehearse.",
+      "relief_class": "rugged",
+      "n_noise_regions": 13,
+      "threshold_note": null
+    }
+  }
+}

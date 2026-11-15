@@ -1,0 +1,1546 @@
+{
+  "vertical_exaggeration": 0.8,
+  "vertical_exaggeration_rule": "one value for the site: VE = 0.2 * 2R / max(P99 - P1 relief of the 30 m disk over the exported terrains), rounded down to 0.1 (viz.vertical_exaggeration)",
+  "roughest_terrain": "nobile_rim_1",
+  "grid": {
+    "L_m": 30.0,
+    "R_m": 4000.0,
+    "n": 269
+  },
+  "hillshade": {
+    "azimuth_deg": 315.0,
+    "altitude_deg": 45.0,
+    "computed_on": "VE x height on the 30 m grid"
+  },
+  "layer_bits": {
+    "0": "slope > landing limit",
+    "1": "slope > driving limit",
+    "2": "ridge (TPI > +t)",
+    "3": "valley (TPI < -t)"
+  },
+  "layers_measured_on": {
+    "L_m": 100,
+    "nearest-neighbour upsampled to 30 m": true
+  },
+  "rotation": {
+    "step_deg": 10,
+    "inner_r_frac": 0.9,
+    "meaning": "analog rotated counter-clockwise by rotation_deg matches the target"
+  },
+  "terrains": {
+    "haworth": {
+      "status": "ok",
+      "relief_m": 653.6411910715635
+    },
+    "malapert_massif": {
+      "status": "ok",
+      "relief_m": 1240.8580052459592
+    },
+    "nobile_rim_1": {
+      "status": "ok",
+      "relief_m": 1840.3084608579509
+    },
+    "nobile_rim_2": {
+      "status": "ok",
+      "relief_m": 877.6384839088629
+    },
+    "de_gerlache_rim_2": {
+      "status": "ok",
+      "relief_m": 1376.1985914543498
+    },
+    "jezero": {
+      "status": "ok",
+      "relief_m": 198.8047107887498
+    },
+    "gale": {
+      "status": "ok",
+      "relief_m": 120.55544806389479
+    },
+    "insight_elysium": {
+      "status": "ok",
+      "relief_m": 66.26448444030838
+    },
+    "spirit_columbia": {
+      "status": "ok",
+      "relief_m": 59.126844120910675
+    },
+    "zhurong": {
+      "status": "ok",
+      "relief_m": 83.76871403583894
+    },
+    "oxia_planum": {
+      "status": "ok",
+      "relief_m": 56.53689543185337
+    },
+    "apollo17_taurus_littrow": {
+      "status": "ok",
+      "relief_m": 459.7255597130402
+    },
+    "im1_odysseus": {
+      "status": "ok",
+      "relief_m": 402.3866747064399
+    },
+    "im2_athena": {
+      "status": "ok",
+      "relief_m": 321.7061895010778
+    },
+    "cabeus_b_peak": {
+      "status": "ok",
+      "relief_m": 1295.8896158782848
+    },
+    "mons_mouton_plateau": {
+      "status": "ok",
+      "relief_m": 819.0367829859536
+    },
+    "pool__pool_04055": {
+      "status": "ok",
+      "relief_m": 248.16338648827946
+    },
+    "haworth__pool__pool_01222": {
+      "status": "ok",
+      "relief_m": 319.9756324687062
+    },
+    "haworth__pool__pool_00072": {
+      "status": "ok",
+      "relief_m": 607.1640733906559
+    },
+    "pool__pool_03902": {
+      "status": "ok",
+      "relief_m": 459.91693381941
+    },
+    "pool__pool_02842": {
+      "status": "ok",
+      "relief_m": 280.848290241588
+    },
+    "pool__pool_03532": {
+      "status": "ok",
+      "relief_m": 215.9804134175315
+    },
+    "pool__pool_02834": {
+      "status": "ok",
+      "relief_m": 223.6299284333411
+    },
+    "pool__pool_03684": {
+      "status": "ok",
+      "relief_m": 255.2876291224032
+    },
+    "pool__pool_02125": {
+      "status": "ok",
+      "relief_m": 195.33057573814168
+    },
+    "pool__pool_03843": {
+      "status": "ok",
+      "relief_m": 167.60085535182031
+    },
+    "pool__pool_02378": {
+      "status": "ok",
+      "relief_m": 594.5609601609897
+    },
+    "pool__pool_03724": {
+      "status": "ok",
+      "relief_m": 506.3130524269727
+    },
+    "malapert_massif__pool__pool_00097": {
+      "status": "ok",
+      "relief_m": 545.4366557780297
+    },
+    "pool__pool_02737": {
+      "status": "ok",
+      "relief_m": 616.7264212517275
+    },
+    "pool__pool_03397": {
+      "status": "ok",
+      "relief_m": 481.23742908928665
+    },
+    "pool__pool_03445": {
+      "status": "ok",
+      "relief_m": 391.81606673616494
+    },
+    "pool__pool_03867": {
+      "status": "ok",
+      "relief_m": 534.1121634741353
+    },
+    "pool__pool_03900": {
+      "status": "ok",
+      "relief_m": 781.9213467987609
+    },
+    "pool__pool_03121": {
+      "status": "ok",
+      "relief_m": 330.5033572633704
+    },
+    "pool__pool_03828": {
+      "status": "ok",
+      "relief_m": 607.6048254794026
+    },
+    "pool__pool_02972": {
+      "status": "ok",
+      "relief_m": 840.4690460797394
+    },
+    "pool__pool_03943": {
+      "status": "ok",
+      "relief_m": 834.2964967587484
+    },
+    "nobile_rim_1__pool__pool_00091": {
+      "status": "ok",
+      "relief_m": 619.3334450290038
+    },
+    "pool__pool_03873": {
+      "status": "ok",
+      "relief_m": 550.6689432381186
+    },
+    "nobile_rim_1__pool__pool_01835": {
+      "status": "ok",
+      "relief_m": 685.3915296187948
+    },
+    "pool__pool_02705": {
+      "status": "ok",
+      "relief_m": 460.7218841404169
+    },
+    "pool__pool_03806": {
+      "status": "ok",
+      "relief_m": 662.0478589444303
+    },
+    "pool__pool_02174": {
+      "status": "ok",
+      "relief_m": 673.7526452750199
+    },
+    "pool__pool_03412": {
+      "status": "ok",
+      "relief_m": 615.7289473702008
+    },
+    "pool__pool_02410": {
+      "status": "ok",
+      "relief_m": 709.6238152644644
+    },
+    "pool__pool_03351": {
+      "status": "ok",
+      "relief_m": 527.0359972208037
+    },
+    "nobile_rim_2__pool__pool_00069": {
+      "status": "ok",
+      "relief_m": 646.5027116311823
+    },
+    "pool__pool_03327": {
+      "status": "ok",
+      "relief_m": 410.1744493511197
+    },
+    "nobile_rim_2__pool__pool_01549": {
+      "status": "ok",
+      "relief_m": 362.53532294505
+    },
+    "pool__pool_02255": {
+      "status": "ok",
+      "relief_m": 399.0856470662336
+    },
+    "pool__pool_04045": {
+      "status": "ok",
+      "relief_m": 446.87927388546905
+    },
+    "pool__pool_03937": {
+      "status": "ok",
+      "relief_m": 602.8408522843731
+    },
+    "pool__pool_03310": {
+      "status": "ok",
+      "relief_m": 372.55213403833017
+    },
+    "nobile_rim_2__pool__pool_00040": {
+      "status": "ok",
+      "relief_m": 364.20649438181886
+    },
+    "pool__pool_02099": {
+      "status": "ok",
+      "relief_m": 293.82157593582497
+    },
+    "de_gerlache_rim_2__pool__pool_00097": {
+      "status": "ok",
+      "relief_m": 571.9495645783246
+    },
+    "pool__pool_02041": {
+      "status": "ok",
+      "relief_m": 587.3535970034177
+    },
+    "pool__pool_02415": {
+      "status": "ok",
+      "relief_m": 456.8397589133831
+    },
+    "de_gerlache_rim_2__pool__pool_00045": {
+      "status": "ok",
+      "relief_m": 798.5327517752717
+    },
+    "pool__pool_02035": {
+      "status": "ok",
+      "relief_m": 426.5349951218673
+    },
+    "pool__pool_03836": {
+      "status": "ok",
+      "relief_m": 675.792233249482
+    },
+    "pool__pool_02089": {
+      "status": "ok",
+      "relief_m": 658.8097058297787
+    },
+    "pool__pool_02570": {
+      "status": "ok",
+      "relief_m": 513.9237762077021
+    },
+    "jezero__pool__pool_00226": {
+      "status": "ok",
+      "relief_m": 94.80435050403071
+    },
+    "jezero__pool__pool_01913": {
+      "status": "ok",
+      "relief_m": 78.45340803300938
+    },
+    "jezero__pool__pool_01676": {
+      "status": "ok",
+      "relief_m": 214.7479522525009
+    },
+    "jezero__pool__pool_01394": {
+      "status": "ok",
+      "relief_m": 80.86860541352306
+    },
+    "jezero__pool__pool_01583": {
+      "status": "ok",
+      "relief_m": 190.64234827568924
+    },
+    "pool__pool_03143": {
+      "status": "ok",
+      "relief_m": 173.66387772448394
+    },
+    "jezero__pool__pool_01413": {
+      "status": "ok",
+      "relief_m": 319.68859716822897
+    },
+    "jezero__pool__pool_01135": {
+      "status": "ok",
+      "relief_m": 90.6228350633919
+    },
+    "pool__pool_03022": {
+      "status": "ok",
+      "relief_m": 84.82819638609132
+    },
+    "pool__pool_03011": {
+      "status": "ok",
+      "relief_m": 168.74433586264155
+    },
+    "pool__pool_02402": {
+      "status": "ok",
+      "relief_m": 106.12177131082213
+    },
+    "gale__pool__pool_01893": {
+      "status": "ok",
+      "relief_m": 171.7170295867816
+    },
+    "gale__pool__pool_01156": {
+      "status": "ok",
+      "relief_m": 87.72898845750528
+    },
+    "gale__pool__pool_01838": {
+      "status": "ok",
+      "relief_m": 134.48655225151046
+    },
+    "gale__pool__pool_01287": {
+      "status": "ok",
+      "relief_m": 135.64576195749916
+    },
+    "gale__pool__pool_01674": {
+      "status": "ok",
+      "relief_m": 119.14801539225962
+    },
+    "pool__pool_02678": {
+      "status": "ok",
+      "relief_m": 92.92317044242039
+    },
+    "gale__pool__pool_00700": {
+      "status": "ok",
+      "relief_m": 76.08669027630464
+    },
+    "pool__pool_03676": {
+      "status": "ok",
+      "relief_m": 123.44495942985262
+    },
+    "pool__pool_02259": {
+      "status": "ok",
+      "relief_m": 128.09193255860697
+    },
+    "insight_elysium__pool__pool_00108": {
+      "status": "ok",
+      "relief_m": 51.127025373357874
+    },
+    "pool__pool_03134": {
+      "status": "ok",
+      "relief_m": 51.75478016987205
+    },
+    "insight_elysium__pool__pool_01650": {
+      "status": "ok",
+      "relief_m": 51.739731950995555
+    },
+    "insight_elysium__pool__pool_00075": {
+      "status": "ok",
+      "relief_m": 75.85750813036097
+    },
+    "insight_elysium__pool__pool_01524": {
+      "status": "ok",
+      "relief_m": 57.57759373111185
+    },
+    "insight_elysium__pool__pool_01806": {
+      "status": "ok",
+      "relief_m": 74.96514267172412
+    },
+    "insight_elysium__pool__pool_01857": {
+      "status": "ok",
+      "relief_m": 87.2188546074334
+    },
+    "insight_elysium__pool__pool_00176": {
+      "status": "ok",
+      "relief_m": 33.228906899394644
+    },
+    "pool__pool_03166": {
+      "status": "ok",
+      "relief_m": 35.04592354804515
+    },
+    "pool__pool_02787": {
+      "status": "ok",
+      "relief_m": 22.263652218580248
+    },
+    "spirit_columbia__pool__pool_01191": {
+      "status": "ok",
+      "relief_m": 41.63497059513962
+    },
+    "spirit_columbia__pool__pool_00516": {
+      "status": "ok",
+      "relief_m": 31.60466111169399
+    },
+    "spirit_columbia__pool__pool_00336": {
+      "status": "ok",
+      "relief_m": 52.56390480334623
+    },
+    "spirit_columbia__pool__pool_00961": {
+      "status": "ok",
+      "relief_m": 91.85492129469114
+    },
+    "spirit_columbia__pool__pool_00249": {
+      "status": "ok",
+      "relief_m": 52.10180008301392
+    },
+    "spirit_columbia__pool__pool_00616": {
+      "status": "ok",
+      "relief_m": 64.2772679602799
+    },
+    "spirit_columbia__pool__pool_01773": {
+      "status": "ok",
+      "relief_m": 27.488331859187667
+    },
+    "spirit_columbia__pool__pool_01042": {
+      "status": "ok",
+      "relief_m": 33.75047152126962
+    },
+    "spirit_columbia__pool__pool_00383": {
+      "status": "ok",
+      "relief_m": 63.165336717567925
+    },
+    "spirit_columbia__pool__pool_00409": {
+      "status": "ok",
+      "relief_m": 54.56041081086423
+    },
+    "zhurong__pool__pool_01441": {
+      "status": "ok",
+      "relief_m": 41.038189921042175
+    },
+    "zhurong__pool__pool_00955": {
+      "status": "ok",
+      "relief_m": 44.6916687718542
+    },
+    "zhurong__pool__pool_01756": {
+      "status": "ok",
+      "relief_m": 83.09320863654969
+    },
+    "zhurong__pool__pool_00436": {
+      "status": "ok",
+      "relief_m": 41.013771697057265
+    },
+    "zhurong__pool__pool_00435": {
+      "status": "ok",
+      "relief_m": 35.236069151328536
+    },
+    "zhurong__pool__pool_01666": {
+      "status": "ok",
+      "relief_m": 45.19635125009037
+    },
+    "zhurong__pool__pool_00748": {
+      "status": "ok",
+      "relief_m": 46.126174014431555
+    },
+    "zhurong__pool__pool_00727": {
+      "status": "ok",
+      "relief_m": 47.94262270686448
+    },
+    "zhurong__pool__pool_00980": {
+      "status": "ok",
+      "relief_m": 35.27035292576809
+    },
+    "zhurong__pool__pool_00061": {
+      "status": "ok",
+      "relief_m": 126.79395973105989
+    },
+    "oxia_planum__pool__pool_00100": {
+      "status": "ok",
+      "relief_m": 68.18232108740278
+    },
+    "oxia_planum__pool__pool_01843": {
+      "status": "ok",
+      "relief_m": 71.94000286814774
+    },
+    "oxia_planum__pool__pool_01294": {
+      "status": "ok",
+      "relief_m": 69.52215111288345
+    },
+    "oxia_planum__pool__pool_01226": {
+      "status": "ok",
+      "relief_m": 86.4837133495713
+    },
+    "oxia_planum__pool__pool_00162": {
+      "status": "ok",
+      "relief_m": 52.930115017140025
+    },
+    "pool__pool_02045": {
+      "status": "ok",
+      "relief_m": 56.22843234204322
+    },
+    "pool__pool_02899": {
+      "status": "ok",
+      "relief_m": 60.08495886103542
+    },
+    "oxia_planum__pool__pool_01881": {
+      "status": "ok",
+      "relief_m": 99.8229569814878
+    },
+    "pool__pool_02292": {
+      "status": "ok",
+      "relief_m": 59.370628990085635
+    },
+    "oxia_planum__pool__pool_01971": {
+      "status": "ok",
+      "relief_m": 102.97227682085676
+    },
+    "apollo17_taurus_littrow__pool__pool_01577": {
+      "status": "ok",
+      "relief_m": 404.945298448343
+    },
+    "apollo17_taurus_littrow__pool__pool_00004": {
+      "status": "ok",
+      "relief_m": 379.0168239361906
+    },
+    "apollo17_taurus_littrow__pool__pool_01552": {
+      "status": "ok",
+      "relief_m": 523.5436259210935
+    },
+    "apollo17_taurus_littrow__pool__pool_00151": {
+      "status": "ok",
+      "relief_m": 193.01222219743912
+    },
+    "apollo17_taurus_littrow__pool__pool_01549": {
+      "status": "ok",
+      "relief_m": 465.54502081322323
+    },
+    "apollo17_taurus_littrow__pool__pool_01301": {
+      "status": "ok",
+      "relief_m": 451.8310206294228
+    },
+    "pool__pool_04050": {
+      "status": "ok",
+      "relief_m": 245.44300882435053
+    },
+    "pool__pool_03956": {
+      "status": "ok",
+      "relief_m": 244.17539515782738
+    },
+    "apollo17_taurus_littrow__pool__pool_00040": {
+      "status": "ok",
+      "relief_m": 364.20649438181886
+    },
+    "apollo17_taurus_littrow__pool__pool_00078": {
+      "status": "ok",
+      "relief_m": 560.383041059772
+    },
+    "im1_odysseus__pool__pool_01516": {
+      "status": "ok",
+      "relief_m": 243.45779182521258
+    },
+    "pool__pool_03080": {
+      "status": "ok",
+      "relief_m": 355.8827224145564
+    },
+    "im1_odysseus__pool__pool_00063": {
+      "status": "ok",
+      "relief_m": 568.1485601081279
+    },
+    "pool__pool_03336": {
+      "status": "ok",
+      "relief_m": 460.48189110900375
+    },
+    "pool__pool_02257": {
+      "status": "ok",
+      "relief_m": 411.3961583943303
+    },
+    "pool__pool_02620": {
+      "status": "ok",
+      "relief_m": 253.3673785934394
+    },
+    "pool__pool_03055": {
+      "status": "ok",
+      "relief_m": 290.64312030101473
+    },
+    "pool__pool_03541": {
+      "status": "ok",
+      "relief_m": 451.3213193975045
+    },
+    "pool__pool_02156": {
+      "status": "ok",
+      "relief_m": 217.49365455713976
+    },
+    "im2_athena__pool__pool_00327": {
+      "status": "ok",
+      "relief_m": 94.41760932025218
+    },
+    "im2_athena__pool__pool_00831": {
+      "status": "ok",
+      "relief_m": 151.66372876827234
+    },
+    "pool__pool_02579": {
+      "status": "ok",
+      "relief_m": 180.1663073413315
+    },
+    "im2_athena__pool__pool_00084": {
+      "status": "ok",
+      "relief_m": 338.6415910036063
+    },
+    "pool__pool_04041": {
+      "status": "ok",
+      "relief_m": 263.62853393923206
+    },
+    "pool__pool_03717": {
+      "status": "ok",
+      "relief_m": 469.87319559864494
+    },
+    "pool__pool_02550": {
+      "status": "ok",
+      "relief_m": 203.70334530096457
+    },
+    "pool__pool_02663": {
+      "status": "ok",
+      "relief_m": 185.03831411602567
+    },
+    "pool__pool_02927": {
+      "status": "ok",
+      "relief_m": 173.1443321791136
+    },
+    "pool__pool_03552": {
+      "status": "ok",
+      "relief_m": 202.03143975528633
+    },
+    "cabeus_b_peak__pool__pool_00097": {
+      "status": "ok",
+      "relief_m": 571.9495645783246
+    },
+    "pool__pool_02997": {
+      "status": "ok",
+      "relief_m": 363.43044733345187
+    },
+    "pool__pool_03830": {
+      "status": "ok",
+      "relief_m": 394.0482980816489
+    },
+    "cabeus_b_peak__pool__pool_00045": {
+      "status": "ok",
+      "relief_m": 798.5327517752717
+    },
+    "pool__pool_04004": {
+      "status": "ok",
+      "relief_m": 473.7212160723832
+    },
+    "pool__pool_03196": {
+      "status": "ok",
+      "relief_m": 349.6376743781582
+    },
+    "pool__pool_02575": {
+      "status": "ok",
+      "relief_m": 528.7261589301925
+    },
+    "pool__pool_03634": {
+      "status": "ok",
+      "relief_m": 327.52454423581446
+    },
+    "pool__pool_03987": {
+      "status": "ok",
+      "relief_m": 510.5737085296232
+    },
+    "pool__pool_03614": {
+      "status": "ok",
+      "relief_m": 409.2033692383277
+    },
+    "pool__pool_03693": {
+      "status": "ok",
+      "relief_m": 372.8210901656581
+    },
+    "pool__pool_03330": {
+      "status": "ok",
+      "relief_m": 491.2933571089488
+    },
+    "pool__pool_02464": {
+      "status": "ok",
+      "relief_m": 574.5788519514588
+    },
+    "pool__pool_02633": {
+      "status": "ok",
+      "relief_m": 438.9232853793792
+    }
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:52:53Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "lola_5m_haworth_surf",
+        "path": "data/raw/moon/haworth/lola_5m_haworth_surf.tif",
+        "sha256": "387fd6e99bca266f4982f7256c4c185921105313882b4c2eee5b5ff1ef75016b"
+      },
+      {
+        "source_id": "lola_5m_site23_surf",
+        "path": "data/raw/moon/malapert_massif/lola_5m_site23_surf.tif",
+        "sha256": "12d280a59cd7580415f6bada638d0abe025ce6727541fddf68d5dc371a6c94cf"
+      },
+      {
+        "source_id": "lola_5m_site06_surf",
+        "path": "data/raw/moon/nobile_rim_1/lola_5m_site06_surf.tif",
+        "sha256": "cca17e8067601dd659b583f889204db6bce685bc30c60a9e62427a8bce36b03d"
+      },
+      {
+        "source_id": "lola_5m_dm2_surf",
+        "path": "data/raw/moon/nobile_rim_2/lola_5m_dm2_surf.tif",
+        "sha256": "d88677c21633683061117db0a577f0510e0948fe9db315d13be28782407ff604"
+      },
+      {
+        "source_id": "lola_5m_site11_surf",
+        "path": "data/raw/moon/de_gerlache_rim_2/lola_5m_site11_surf.tif",
+        "sha256": "58f3372c35bbd6baf38ffd5633c1c96b59bd89dbd252150581d12893a43136e5"
+      },
+      {
+        "source_id": "jezero_ctx_trn_dtm_20m",
+        "path": "data/raw/mars/jezero/jezero_ctx_trn_dtm_20m.tif",
+        "sha256": "16a1aa66c3f48c1bca252795827db7b417876217aff0f5e1aff18027fab2327b"
+      },
+      {
+        "source_id": "gale_ctx_dtm_tile_3_3",
+        "path": "data/raw/mars/gale/ctx_3_3/PG_Gale_CTX_3_3_AATE_20m.tif",
+        "sha256": "b1bb428ffcbd7c4b77de9291a4bd2ebf7f73ae3a854680eb950c2e22dc7228f8"
+      },
+      {
+        "source_id": "usgs_ctx_dtm_insight_n15_068239",
+        "path": "data/raw/mars/insight_elysium/usgs_ctx_dtm_insight_n15_068239_win6km.tif",
+        "sha256": "5ce6f5456f1ee5f4049f88971cd843f676f35ab0dd6db342809a990fd12117a1"
+      },
+      {
+        "source_id": "usgs_ctx_dtm_spirit_p22_009530",
+        "path": "data/raw/mars/spirit_columbia/usgs_ctx_dtm_spirit_p22_009530_win6km.tif",
+        "sha256": "718f4f4ace185de5a02250b27f9f97db5444a4d473424c49e94ce310aa3aaae6"
+      },
+      {
+        "source_id": "usgs_ctx_dtm_zhurong_n14_067844",
+        "path": "data/raw/mars/zhurong/usgs_ctx_dtm_zhurong_n14_067844_win6km.tif",
+        "sha256": "8a72cdcb179e201a60a7bf2b7ed143929ade0dc599d8cd8d850a992c2dc0433c"
+      },
+      {
+        "source_id": "usgs_ctx_dtm_oxia_n06_064538",
+        "path": "data/raw/mars/oxia_planum/usgs_ctx_dtm_oxia_n06_064538_win6km.tif",
+        "sha256": "4f20646c51e142897fee8682442d613f4b94db352c149e611d4aebd989902555"
+      },
+      {
+        "source_id": "lroc_nac_dtm_apollo17",
+        "path": "data/raw/moon/apollo17_taurus_littrow/lroc_nac_dtm_apollo17_win6km.tif",
+        "sha256": "5e73d926a28ea9468fbc483c597d84801470e18520e7e6635cc19aaa2992a553"
+      },
+      {
+        "source_id": "lola_20m_polar_ldem",
+        "path": "data/raw/moon/im1_odysseus/lola_20m_polar_ldem_win6km.tif",
+        "sha256": "8933f0d01e92e787c999766f6ba9649ebe8ad940de0f16acbf2e4e02fb7fac4a"
+      },
+      {
+        "source_id": "lola_20m_polar_ldem",
+        "path": "data/raw/moon/im2_athena/lola_20m_polar_ldem_win6km.tif",
+        "sha256": "a9634b7550956a957c1d480b066179cc6dc1f3d59f1b6ecc2957ec46c0593b71"
+      },
+      {
+        "source_id": "lola_20m_polar_ldem",
+        "path": "data/raw/moon/cabeus_b_peak/lola_20m_polar_ldem_win6km.tif",
+        "sha256": "1b77398f2b7b7f5a2fdd37a8a3b26142cdaedbc23da809c0997f19d195cf07b1"
+      },
+      {
+        "source_id": "lola_20m_polar_ldem",
+        "path": "data/raw/moon/mons_mouton_plateau/lola_20m_polar_ldem_win6km.tif",
+        "sha256": "11c44cd7630e5886c88ed5e431b4dc713bf7ff9084984f259a7d3b78470d03b5"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_02055.tif",
+        "sha256": "4709399f666d5843d4a202c63dcd7ac02601458fde39895d97eb9f2c709f3175"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01222.tif",
+        "sha256": "36c2eec4c9cd09e1a662073d8b0395081d5bc9e2d48603ef9f2b74ef7543ad96"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00072.tif",
+        "sha256": "4ddedd792c403f81df8c91bdbedbc3f020918b999e9b99d86d388e5a981c69b1"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01902.tif",
+        "sha256": "0bd9ace4c09011b223b07db9d2c911e3c21e8581647401a561e34400606c2577"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00842.tif",
+        "sha256": "14b181d440216bed74a7d7e7bbd8610df1a9fd3f7fedf1eb2fdad06ee9cf4b9f"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01532.tif",
+        "sha256": "7ebf5cf8d2ea4f168666724d2c28b8e43b1d6a3648d66e1d6fc0292e85812e90"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00834.tif",
+        "sha256": "f0c6531a6e841e64aa874e1f07e1992df30703211ae8d83762fe53f461e4c12f"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01684.tif",
+        "sha256": "62d13f667a17a0d55563127eb9986c758016589fd2dcff45c87e960d5eb27fe3"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00125.tif",
+        "sha256": "fef8e78d3ccb1669ea3f97b3f3333d6122dc8be652185af70e826411d7334e5f"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01843.tif",
+        "sha256": "93689be205f5abe1d4c789351bc2f0120029c51736cab4508b2af8edc502ffd1"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00378.tif",
+        "sha256": "4424ec2cf52d05d85d58afd319e72f128e341da5628dec34cc079c157535501e"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01724.tif",
+        "sha256": "67a4e64518a9dab4e20e8e6b66c801f423b9f8893182c8797eb0f9bf50013ab8"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00097.tif",
+        "sha256": "af5ba3adea1b77e80af3018a573edd608775fdc5b94ca4923c65e8c8b6c3557a"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00737.tif",
+        "sha256": "8824a71d2ba6647cbfb477f1af550ca9f68ab5458fa20f41bbc4d16a4676fa95"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01397.tif",
+        "sha256": "1a0437b2ff35241c8c7a15ee8a96749ebcb07a3bc4980f05476131ffda9e0822"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01445.tif",
+        "sha256": "af458089e5efccb4796c746f11175889e0504b7e3672518cb9445301560c805d"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01867.tif",
+        "sha256": "077dce3b9da75cf3d1413c947b7cf6f850dd03af8267a6a9060c10592804a849"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01900.tif",
+        "sha256": "8289b4857aaa1346d186eb35cb69856470e29332620e6f05148aaabd255dc177"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01121.tif",
+        "sha256": "f8b1e23087dc6da9bbb145572d74c9782ba41cc15e04d66d8e139ac6b2c2e6b0"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01828.tif",
+        "sha256": "2fd1caadb36a564ee15d8d42d07ae80eb74b003de425abd3ca541e9315f25907"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00972.tif",
+        "sha256": "a525de3980dd0e28703e94f6a28943bbf05b8fc9281ea7ddd85a114cd308295b"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01943.tif",
+        "sha256": "c88e60152c3f3f813d5f1b1c5c130fb4d5654393d63515841d8eeccec0baa345"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00091.tif",
+        "sha256": "17569d1cf0393dcbd12431621027acff0c521a1e244f9ddc38d9621f5741c5cf"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01873.tif",
+        "sha256": "15b40695ea90d29d71daa13c5e3d9972b345fa74eac3f8b9a90dc4b5e8fb14fa"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01835.tif",
+        "sha256": "127403a6d0721a85c6e6aeb7422157dc01a6d7a528ae484f0f880fbd2d8ffbed"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00705.tif",
+        "sha256": "807dfa8349170922911abd360bb2821d8d05f97118c358f563ef5e7515758e1c"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01806.tif",
+        "sha256": "22f17ef3af40a33fde7bc6fa7f2ef270be243feea1138da3d3465637941a0602"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00174.tif",
+        "sha256": "1dac67b511b1420e9ceacca087164c05a03bd0de1e7d784f900d01302bd87ff0"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01412.tif",
+        "sha256": "7aac9e6fa320de4e4be3e3cc2bb6a7aebbd83d2e9942327c8f00fa0fc8011807"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00410.tif",
+        "sha256": "d0337cd93b57c2add405532913484130f0fb73198848a93be2ad02d42dea7761"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01351.tif",
+        "sha256": "28e0587fa9c76e81d044a8effc1a27f661a7a28d4fb2ddf32adda4babafb74ee"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00069.tif",
+        "sha256": "96088b48e2e5e4d71637c0119c7afb5e6dc01e9075ed32399bdbe9bb128c9f28"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01327.tif",
+        "sha256": "42e4641c577a6e8287975c397c399edb9de73609a3f9156cc8ee9315bdf62035"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01549.tif",
+        "sha256": "8830749c33ecdd065bec64945048faca4f943e1e5f0567773d7bb2e85bbe644d"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00255.tif",
+        "sha256": "aa14790843aede87ddd5737f16d2fcd0e820029cd3340fd3a3ce267b14815c77"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_02045.tif",
+        "sha256": "422e677b1f17fced4dfddb9ec912187bfab33d9efaaa2e0939b51e4b2b58f0cb"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01937.tif",
+        "sha256": "8afc32bec7987d199f557c6030f7d15422b41f1a84798fff1a5f56675ee5b237"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01310.tif",
+        "sha256": "f99a84e20917ee85e254582f48848991891f88fe0a46b868086f3f6298f01e4c"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00040.tif",
+        "sha256": "e26910c46f364d12c9471586f2a08a1126f940948be5ef5ebf86170451c57b6d"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00099.tif",
+        "sha256": "dcb735ad8f618afeda46517fd4b1821cfd50ee987cd92d991f5c6323b7340abe"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00097.tif",
+        "sha256": "af5ba3adea1b77e80af3018a573edd608775fdc5b94ca4923c65e8c8b6c3557a"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00041.tif",
+        "sha256": "935e0c1394b888340b4da256d3c264b678d399f716222094a86324ee0fac34e4"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00415.tif",
+        "sha256": "725cc02de4b5b1ebfe9e1980f98d9cedc5ce7713c522edaa3ede61f3c9144ac6"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00045.tif",
+        "sha256": "a10861a7eef3806b490a149133afff6bb367e9748d0bbeece4c4129d2d52ef0e"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00035.tif",
+        "sha256": "a818595bccc6f60ec9e68c157f0deb507dc2bfdfe2d5fa3a809b13bdc3a0bd67"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01836.tif",
+        "sha256": "c9cfe20612be3b287660e05cc07b4f8cb2eb8da870bb9e854d8a5dddaaf063db"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00089.tif",
+        "sha256": "4d3045cff4c99b6d4958b9f5675fff971215e74cb50a9f2c8dcd2fea1caa03da"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00570.tif",
+        "sha256": "942816eaf9d8780a1df02a9284fa2bad943b58e3b06f8701ed44a0a75614f40a"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00226.tif",
+        "sha256": "6280f9852362ac8a3abd265475a20b1a0a1d1c485835556ed0ce0ec534fa8c5d"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01913.tif",
+        "sha256": "863700ccad776ce465eeea1dc7b70a96a66a04a9c60ce12f50bbb14a4d5ea5b8"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01676.tif",
+        "sha256": "5a01821a12bb7976fb12f266e3e7389d77893373cf52a6bc269439228ccec8c9"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01394.tif",
+        "sha256": "4bda1ef1052d6c3f17e7a0a31ff7ccaaca94dc29ea6af130817ef1b6643fea16"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01583.tif",
+        "sha256": "aebf4f4b915bcb339a78df7ed2ee85390938452d82bb98efc93c86cf47ea5697"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01143.tif",
+        "sha256": "fa6d6ac31b62fb68549e0165e6fd5d7aa46780dd548c6f0fd7969c982c8e1cdb"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01413.tif",
+        "sha256": "1de816faa48f17d3d0e32a930d4e7daeed762510589482d71f59543049cc7bb6"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01135.tif",
+        "sha256": "90cf04ed4278c18fd6c9f70ba670abe300897ea43cb79cef4eb01a240e643d52"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01022.tif",
+        "sha256": "657827f2da1628da6c26abaa0a891f35f5dc34e0f3b2879ea40fe961bfa8dfbb"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01011.tif",
+        "sha256": "5003892a832f1175be0ee78fdfebb2f92f24dec1c2cbb9b838f00b79b3f614cb"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00402.tif",
+        "sha256": "a56663f92f05bbeaff201cc3485a0552132b9c2a309288ff2eed833513e8960e"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01893.tif",
+        "sha256": "3d668797ea00b18bfb3725fd8380bc7299dbcd37df68a4a2e69b0c19883fb5b1"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01156.tif",
+        "sha256": "4a47d1ee53625dd895317add3bc6cdc7cf00bf13f30281d453b74e7c8c384b32"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01838.tif",
+        "sha256": "d1946e1f39d2e5203c285b90e4ab275fc9a2a239433fbb5231f0023d17c09135"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01287.tif",
+        "sha256": "7c1a85eba33284d4b25b28153be37c591af17c4b807a758f3d3daeb736137c35"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01674.tif",
+        "sha256": "06887f1110bf88cd0e25109f7aa362a5540986d9f937826e4788238fccd713c8"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00678.tif",
+        "sha256": "8f4fcae6aaf63de0cafd48fa71efcefe52515e2397d7c624f9e8ae0711c24ece"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00700.tif",
+        "sha256": "b9ad13b6a733ed6ca11e47dda4a342e8bb22c2b79bf018313d760401056f3e10"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01676.tif",
+        "sha256": "f5637c9184f2e25550d919ad78a791929130ff207d861b275bc835546b54e753"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00259.tif",
+        "sha256": "42e0dcb512e477e10b410e2f1d4108a5a046adec91b3ea90e3a79383a265f2bb"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00108.tif",
+        "sha256": "ffedb17e4399f90e5c8c88ee017bdb71f8849b82aeebd730d288bea62c9d5c7f"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01134.tif",
+        "sha256": "6c20f038aa717fafc6371cbf4958e6040bf7d5a7ea57b2b1b17a8d25620cf287"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01650.tif",
+        "sha256": "53f74479d016e1d970dd59d6003585439df259adff7b692bc5ab6531522c660d"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00075.tif",
+        "sha256": "6d5d529aff94c8193d87c3ea4a7e7e4b0a866b84b60e9e8ae81f97236701e65a"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01524.tif",
+        "sha256": "d352ca216bb4af3caccbef151e5da6eb5d5a52e4004d6aba1ddd913a58639647"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01806.tif",
+        "sha256": "76914ab087bfca47526a2d6327a6913d2a8400a9ea9302e4983e6aee0a95f35c"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01857.tif",
+        "sha256": "0b17ce499e38a0b35992a352a4db2055d107d0e4f7ec77d160ee11530c519e67"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00176.tif",
+        "sha256": "23c0288958d9ce516a865f7f9286856089bfe338994c94ae0f1c2f567d8d1456"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01166.tif",
+        "sha256": "7ff30a9972866d6b7c8f299f049712d03df9775b5e19155e9ba4b3fe44512dd5"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00787.tif",
+        "sha256": "4f33596b3469a8b76776b8b5b85d80f569cd64522d5cc034f8c1fa407ba9076a"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01191.tif",
+        "sha256": "007e490e8c7b8e4586167cd42d68fc2480f50f886ef9eba10dc420d95650cff1"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00516.tif",
+        "sha256": "6a798e30261f0ce49e80501d0dddcac1746b22ebbdbbafbf5d9303fce012350a"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00336.tif",
+        "sha256": "77129a96bfd13bd1cdb7b3f840566c50feb5499e493d2e1ed8eb823d11bb9e57"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00961.tif",
+        "sha256": "fad2eb59ead906cbf7f60dacb9a67da8866c528e793e60fa5b8c7b92be88702b"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00249.tif",
+        "sha256": "6977bbe74c7045bc2c2bc7d304c0a4f7246b0b7b879c5163cf30719b6e22cc82"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00616.tif",
+        "sha256": "ca2d3ba8b72c8c93dea3de6563796f619df212884fbbb2573c6f184a80bc3a0a"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01773.tif",
+        "sha256": "664ac1bdbe95470f1cbc93ff4aca129b8cd52b90e0fd553e80574dc202ff37ee"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01042.tif",
+        "sha256": "ac827b0d11f66e13206be8686354aa31450416069a96e25520e68aea893b1dcc"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00383.tif",
+        "sha256": "97a2fe865732946f5bf1a4611cdad1b2db4398ec2c696ab1d92f9180c5b384bc"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00409.tif",
+        "sha256": "e1953519e2f64121eb564aabb3885513eab75f7941b68b2a951a1e1473cff760"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01441.tif",
+        "sha256": "0fa1f56815d7136ae06eb05c28a9cba28b7859830dc9d87b3d3752e4fb53105b"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00955.tif",
+        "sha256": "066cdb2f6c8ea76c00f73066b11904c52900e3736920cd05606c519cb68bfa29"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01756.tif",
+        "sha256": "54f24d9c55777b10beacfe00a6a91d402478abed568422b772e6c47d1ea786e5"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00436.tif",
+        "sha256": "1fc20f9e2f5c110ee06159fc6bd95dd28fe1e596640144c49cd6c1e1428b0ec9"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00435.tif",
+        "sha256": "8645c9c027a77c46d08bf7a8e6a98b02065f8d7523ca781173934e6686fc29b6"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01666.tif",
+        "sha256": "9b3b56704a97e68453aac08de9024c6dde1687a344104a7aa41a48433dd08d72"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00748.tif",
+        "sha256": "dda853525492caaa827ee906ea5616f92bf8451866b91c75ac3c11c36c176f78"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00727.tif",
+        "sha256": "a064c34018a2fd1ca096e8ca57cf68a872705e2a4545f575acd9a0c95c975b47"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00980.tif",
+        "sha256": "34d0de7b9fc22b8620ed3ca089d4c27041f1c9c83a3081a7e90e5734b48a5728"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00061.tif",
+        "sha256": "4d044cb95d8e4f33c6d83c926d568d5a64fae6641118bfa9e7950796333deb36"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00100.tif",
+        "sha256": "8342459a34cd9a477f0273bfd575037227b562d09f8fb12087dc5e0e33fbd246"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01843.tif",
+        "sha256": "20cafa44b51cc402ed51d19c22194702a22e04c329a79d7d4d80a41d96aeadc0"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01294.tif",
+        "sha256": "4dc6fb7cbec8cc3a6a1083e9f632f662350865a4b4aa66636e4c9bc15dee6550"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01226.tif",
+        "sha256": "35c152b62e236ed3f2c34fe31a60fc6754da65b8d370aafcf07aa5acb1b81cb7"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00162.tif",
+        "sha256": "49ef666eae9616ec21a309effa372c87c9b286c93f2cedd0979d12426fbd2964"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00045.tif",
+        "sha256": "a573d4d77ea9aa331eb0e13f92a6383d3f6323b30a14b2fcb9d458faffac7aa2"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00899.tif",
+        "sha256": "882840b145f660b27177942c6353a54a91d877066553f6e02f13750f86435085"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01881.tif",
+        "sha256": "a8011f52b73ba473ed59cbe7f9438ab68cea3445107bcb0a06993428c8c0debf"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00292.tif",
+        "sha256": "42e0053be0d0c1498dca5ccd55803a3f77afc9687624534ecd6fe30f52d54b29"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01971.tif",
+        "sha256": "b248aee500b72504da3f1d619f08096da09ffe1b2957eb7bf11bb052ae0294b4"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01577.tif",
+        "sha256": "878a99b51731e0ec458f21c0ed83ddbeb72e5cebc008cc13ffaf8fb67c8eafbd"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00004.tif",
+        "sha256": "0df1a7f1ec5726ad9a35fcf11778562617c3b14ad728365c951a73e412d45326"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01552.tif",
+        "sha256": "3ecf5ffa0d3aac74b6130fb795c592cbcac4fee5e9d6868c7e20c24729a35fb7"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00151.tif",
+        "sha256": "ebb1b94ecbbd611c5593bdfe6e456070f244c844d260df617a2a1353bdbcbd16"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01549.tif",
+        "sha256": "8830749c33ecdd065bec64945048faca4f943e1e5f0567773d7bb2e85bbe644d"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01301.tif",
+        "sha256": "d764b944d57ef7ba343c10040bd065264788a7157e1da1cb9f0c7ec5ad74e904"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_02050.tif",
+        "sha256": "26d455c228172103493cbf4287baf66af28678027639f29ddfc5af225a617a73"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01956.tif",
+        "sha256": "9df826e10b1648ab246daf1dd6b5313e5fc1110c9c24b4e5a7c2a99f951b722f"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00040.tif",
+        "sha256": "e26910c46f364d12c9471586f2a08a1126f940948be5ef5ebf86170451c57b6d"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00078.tif",
+        "sha256": "7891e263ea239b18cad7e0c9655c7e36dd9e6fe6a213b3d85255300a79c6e994"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01516.tif",
+        "sha256": "67830da596d04f6e953a79dabb44d3713664f3410086fe751168a55aee67b3f1"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01080.tif",
+        "sha256": "e6ee552527f12f7a3e7fdbe922a7fbc4ca762844bd6961b6984db3b5b585a352"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00063.tif",
+        "sha256": "fde2d8c35ec5d114c1852747633e9dfb9e655899d4bdd95643943754dcaf1d7f"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01336.tif",
+        "sha256": "5ff6d07db44594a08196f40ba449920a09c87a21d59ec56a52a449eda233e3c8"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00257.tif",
+        "sha256": "89b5032acb4875e6e7036c3a4f3c67c3dcfbec4df04c9cd4bfd67bf082472411"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00620.tif",
+        "sha256": "2fa81efcb4b4d39525452a5882563caf4a8f815df97491e2bec760f7e812a7fa"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01055.tif",
+        "sha256": "50affb6657417e333a3240127f21ad0887b1ca64f72cef5a1c87de2358f6e0e5"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01541.tif",
+        "sha256": "c7ec8156aa96ac593bff164e2a4820c5644b2bd8ee194007fc9c39bafc376be4"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00156.tif",
+        "sha256": "0634b808fa670e8932f9405709a318736e27a633aebbdf51945a08da768da9c7"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00327.tif",
+        "sha256": "564609436ce99c3f6cb0f44acfb546545724049293e44922200fb1ae6c6401cc"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00831.tif",
+        "sha256": "6f2ea8c27e72e84e3f6f65dad4dce60621e9a102001edd292f5116f9c9bd0596"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00579.tif",
+        "sha256": "9fa16dc8ced7cb6b893f23ab2587b08fa44736ec686244280595520a50389b3e"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00084.tif",
+        "sha256": "6cec16c2dc638bf292c3d1d0cf36fa22af73e4834be5042869087bf288aace4a"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_02041.tif",
+        "sha256": "5c2aec98395bcb95d0fad2038bdcb7cd9285a89ab027d70a23467c57a6403cfc"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01717.tif",
+        "sha256": "3b8003da2fd11dd260daa9aa3c82724ba7401e99cdbe64ab5d93e47baad3d07a"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00550.tif",
+        "sha256": "19a7b8801e63e727a8910a5026376b8e2015208247e2501be71bea37a9df9474"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00663.tif",
+        "sha256": "f9c899a7b8e3ec6ffa44b5c69ba6fbb81750e15e391afaa3b460c30f26870135"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00927.tif",
+        "sha256": "a1b4b475cd2bbffd1c998b4015d81010ffdb5af290497dcc3687575536640982"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01552.tif",
+        "sha256": "c2fd4eb86d7dc0b2613ac54447f94809b1dbbc3e251252559175f70cd81826cc"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00097.tif",
+        "sha256": "af5ba3adea1b77e80af3018a573edd608775fdc5b94ca4923c65e8c8b6c3557a"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00997.tif",
+        "sha256": "9632a9d19e6d8d0469a4358493808af44eace47ae203b5376b73c1f9b678a9a6"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01830.tif",
+        "sha256": "3e6bf3378b08e72a3bf7474e54849b07e8d6cc7589f0db9aaee8b5ed54582def"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00045.tif",
+        "sha256": "a10861a7eef3806b490a149133afff6bb367e9748d0bbeece4c4129d2d52ef0e"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_02004.tif",
+        "sha256": "bf91adf82884430d46efac8cd8f44110eeece5cdce3ec34acc4805978842520d"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01196.tif",
+        "sha256": "efdf2d0d8caced9b6206ef220346a03203d222594d1f9f70da26af617bfb4397"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00575.tif",
+        "sha256": "8685734304c95f8f4cb62cb4844f048cc4337b725c0e93fe702fcc32e34341db"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01634.tif",
+        "sha256": "99900183f7f9c331e24fc4ae79457a3d0c7a5caa665efb46ea0e3e8a75528832"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01987.tif",
+        "sha256": "77ba5b280806a242ebcebc95c3b07d66bea10fb0b10ddb9eb5ca6bf208ba7255"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01614.tif",
+        "sha256": "576e795cb1ed54d5e81adba0f14ce3cbb41e972beb06b999885c10fc237fe1d3"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01693.tif",
+        "sha256": "8b1597c08b1222a3e9c49b094e15607acc7ab0784238e67528457fbfb3cf83c1"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01330.tif",
+        "sha256": "d46f0b334ab8394ffc0613aee20d57106c171163c3869722b770668358ce58af"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00464.tif",
+        "sha256": "d418131ba61e335f926823d426b76b586be880345f9530e7040e498464ec9475"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00633.tif",
+        "sha256": "07748ed8239c2cedff55b6238c7d01d10141e4a843b914966b67f19a427ccc27"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  }
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Common Ground · Rehearse Mars and the Moon on Earth</title>
+  <meta name="description" content="Common Ground: find Earth terrain that behaves like a Moon or Mars landing site, and see how much of it missions have already proven.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='%235ee7ff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/expedition.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/mars-first.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-name">COMMON <em>GROUND</em></span>
+      <span class="badge sample" id="sampleBadge" hidden="">SAMPLE DATA</span>
+    </div>
+    <nav class="nav" aria-label="Journey"><a href="#destination" data-nav="destination">Explore &amp; compare</a><a href="#ask" data-nav="ask">Ask the atlas</a><a href="#how" data-nav="how">Evidence &amp; method</a><a href="#about" data-nav="about">About</a></nav>
+  </header>
+
+  <div class="sample-banner" id="sampleBanner" role="note" hidden="">
+    <strong>SAMPLE DATA.</strong> The terrains are synthetic and every number marked SAMPLE is a placeholder. This is not a NASA result.
+  </div>
+
+  <div class="journey-bar"><button type="button" id="journeyBack" aria-label="Back to the previous step">Return to atlas</button><span id="journeyLocation">A field atlas of other worlds</span><span id="journeyStep">01 / EXPLORE</span></div>
+  <div id="routeStatus" role="status" hidden=""></div>
+  <main id="main" tabindex="-1">
+    <div class="error" id="globalError" role="alert" hidden=""></div>
+
+    <div id="explorationWorkspace" class="exploration-workspace"><header class="workspace-intro mf-hero"><div class="hero-copy"><p class="eyebrow">Common Ground · NASA Space Apps 2026</p><h1 class="hero-gap-line" id="heroGapText" aria-live="polite">Loading the Earth-gap figure...</h1><p class="hero-why">Before a landing on Mars or the Moon, crews and machines rehearse on Earth. We measured landing sites with NASA elevation models, then searched Earth for ground that behaves the same.</p><p class="atlas-counter" id="atlasCounter" aria-live="polite">Loading the atlas counters...</p></div><div class="hero-side"><div class="seg world-switch" role="group" aria-label="World"><button type="button" class="seg-btn" data-body="mars" aria-pressed="true">Mars</button><button type="button" class="seg-btn" data-body="moon" aria-pressed="false">Moon</button></div><button type="button" class="btn ghost" id="heroAskGap" disabled>Where Earth runs out →</button></div></header><section class="screen" id="screen-destination" aria-labelledby="h-destination">
+      <div class="atlas-layout">
+        <div class="atlas-scene">
+          <div class="atlas-caption"><p class="eyebrow">Step 1 · Choose a landing site</p><h2 id="h-destination" tabindex="-1">Start on <span class="pair-target" id="worldName">Mars.</span></h2></div>
+          <div class="layer-stack"><div class="layer-switch" role="group" aria-label="Globe layers" id="homeLayers"><button type="button" data-home-layer="sites" aria-pressed="true">Sites</button><button type="button" data-home-layer="cells" aria-pressed="false">Unlocked cells</button><button type="button" data-home-layer="coverage" aria-pressed="false">Coverage</button></div></div><div class="stage home-stage" id="homeGlobe" aria-label="Interactive planetary globe"><div class="pin-label" id="homePinLabel" hidden=""></div></div><svg class="link-line" id="linkLine" aria-hidden="true"><defs><linearGradient id="linkGrad" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ec9a6c"/><stop offset="1" stop-color="#a9cf9b"/></linearGradient></defs><line id="linkSeg" x1="0" y1="0" x2="0" y2="0" stroke="url(#linkGrad)" stroke-width="2" pathLength="1"/></svg><div class="earth-inset" id="earthInset" aria-label="Earth: where the candidates are"><div class="globe-wrap">
+          <div class="layer-stack"><div class="layer-switch" role="group" aria-label="Earth globe layers" id="earthLayers"><button type="button" data-earth-layer="sites" aria-pressed="true">Candidates</button><button type="button" data-earth-layer="coverage" aria-pressed="false">Coverage</button></div></div><div class="stage globe-stage" id="globeStage" aria-label="Globe with one pin per twin"></div>
+          <div class="pin-label" id="pinLabel" hidden=""></div>
+          <div class="globe-controls" role="group" aria-label="Earth globe controls"><button type="button" data-view="earth" data-action="left" aria-label="Orbit left">←</button><button type="button" data-view="earth" data-action="right" aria-label="Orbit right">→</button><button type="button" data-view="earth" data-action="in" aria-label="Zoom in">+</button><button type="button" data-view="earth" data-action="out" aria-label="Zoom out">−</button></div><p class="note" id="globeNote"></p><p class="note" id="earthCoverageNote"></p>
+        </div></div><p class="note layer-caption" id="homeLayerNote"></p>
+          <div class="atlas-footnote"><div class="globe-controls" role="group" aria-label="Planet controls"><button type="button" data-view="home" data-action="left" aria-label="Orbit left">←</button><button type="button" data-view="home" data-action="right" aria-label="Orbit right">→</button><button type="button" data-view="home" data-action="in" aria-label="Zoom in">+</button><button type="button" data-view="home" data-action="out" aria-label="Zoom out">−</button></div></div>
+        </div>
+        <aside class="atlas-index"><p class="eyebrow">Measured landing sites</p><h2>Choose a site</h2><p class="note">Select a region; Earth candidates appear alongside it.</p><div class="target-grid" id="targetCards"></div><div class="cell-card" id="cellCard" hidden=""></div><button type="button" class="toggle" id="regionalToggle" aria-pressed="false" hidden="">Exploratory regional layer</button>
+          <details class="legend"><summary>Map key &amp; coverage</summary><p>Blue: named sites. Green: Earth candidates. Coral: Mars places with no Earth twin. Warm points: Mars atlas cells. The teal outline marks ground with fine elevation data that is not measured yet. Shares are of the sphere, area-weighted by latitude, and cover only the datasets in this atlas.</p><div id="cellLegend" hidden=""><i class="swatch cell" aria-hidden="true"></i> Warm points: Mars atlas cells (zoom in to select one and load its Earth twins).</div><div class="coverage-row"><i class="swatch unlocked" aria-hidden="true"></i><strong id="labelUnlocked">Warm point: 1° cell containing a measured window (not measured area)</strong>: <span id="shareUnlocked">not in this export yet</span></div><div class="coverage-row" id="todoRow"><i class="swatch todo" aria-hidden="true"></i><strong id="labelTodo">Teal outline: fine elevation data exists — not measured yet</strong>: <span id="shareTodo">not in this export yet</span></div><div class="coverage-row"><i class="swatch fog" aria-hidden="true"></i><strong id="labelFog">Untouched: no elevation model fine enough (&lt;= 50 m)</strong>: <span id="shareFog">not in this export yet</span></div><div id="coverageNotes" class="coverage-notes" hidden=""></div></details>
+        </aside><aside class="panel earth-options" aria-label="Ranked analogs"><button type="button" class="back-sites" id="backToSites">← All sites</button><p class="eyebrow scan-for"><strong id="scanTarget">your selected site</strong></p>
+          <h2>Places on <span class="pair-earth">Earth</span> that behave the same</h2><p class="note rank-head" id="rankHead"></p><button type="button" class="btn primary compare-go" id="compareGo" hidden>Compare ↓</button>
+          <ol class="rank-list" id="rankList"></ol>
+          <div class="picked" id="picked" hidden=""></div>
+          <div class="actions legacy-actions">
+            <button class="btn primary" id="openTwin" type="button" disabled="" hidden="">Compare terrains →</button>
+            <button class="btn ghost" id="resetView" type="button">Reset view</button>
+          </div>
+        </aside>
+      </div>
+    </section><section class="screen" id="screen-scan" aria-labelledby="h-scan">
+      <div class="earth-caption"><p class="eyebrow">Step 2 · Then, Earth</p><h2 id="h-scan" tabindex="-1">Ground on <span class="pair-earth">Earth</span> that behaves the same.</h2></div>
+      
+      <div class="scan-layout">
+        
+      </div>
+    </section><section class="screen" id="screen-twin" aria-labelledby="h-twin"><div id="workspaceEmpty" class="workspace-empty"><span class="orbit-mark" aria-hidden="true">◎</span><div><p class="eyebrow">The comparison starts here</p><h2>One region. Many Earth connections.</h2><p>Choose a blue-world region above. Its candidates and terrain evidence will arrive together.</p></div></div>
+      <div class="needs" id="twinNeeds" hidden=""><p>Choose a region and an Earth analog to compare.</p><a class="btn primary" href="#destination">Explore regions</a></div>
+      <div id="twinBody" hidden="">
+        <div class="comparison-heading"><div><p class="eyebrow" id="h-twin" tabindex="-1">Inspect the connection</p><p class="kicker" id="twinKicker"></p><h2 id="twinTitle"></h2><p class="pair-caption"><span class="pair-target" id="pairTarget"></span><span aria-hidden="true">↔</span><span class="pair-earth">Earth</span><span id="pairScale"></span></p></div><a href="#scan" class="btn ghost" hidden="">Change Earth analog</a></div>
+        <ol class="dossier" aria-label="Mission dossier: five steps">
+          <li class="dossier-step" id="step-site" aria-labelledby="step-site-title">
+            <header class="dossier-head"><span class="dossier-num" aria-hidden="true">01</span><h2 id="step-site-title">The site</h2><p class="note">The target, its mission class, and the slope limits the mission needs.</p></header>
+            <div class="dossier-split">
+              <div><dl class="facts" id="siteFacts"></dl><p class="note" id="siteOutcome"></p></div>
+              <div><h3>What the mission needs</h3><dl class="mini-facts" id="siteNeeds"></dl><p class="note">Each limit is a slope in the 8 km circle, measured over a 100 m baseline. Step 02 shows the share of the circle within each limit.</p></div>
+            </div>
+          </li>
+          <li class="dossier-step" id="step-evidence" aria-labelledby="step-evidence-title">
+            <header class="dossier-head"><span class="dossier-num" aria-hidden="true">02</span><h2 id="step-evidence-title">The evidence</h2><p class="note">Measured terrain of both worlds, the share of each within the mission limits, and the light at the site.</p></header>
+        <div class="comparison-layout">
+          <div class="comparison-canvas">
+            <div class="compare-toolbar" role="group" aria-label="Comparison mode"><button type="button" data-mode="split" aria-pressed="true">Side by side</button><button type="button" data-mode="overlay" aria-pressed="false">Align &amp; inspect</button><button type="button" data-mode="swipe" aria-pressed="false">Swipe</button></div>
+            <div class="terrain-labels"><span class="pair-target" id="labelTarget"></span><span class="pair-earth" id="labelEarth"></span></div>
+            <div class="overlay-guide" id="overlayGuide" hidden=""><strong>Read the two surfaces</strong><span class="pair-target"><i class="mesh-key" aria-hidden="true"></i>Mesh: Mars or Moon terrain</span><span class="pair-earth"><i class="surface-key" aria-hidden="true"></i>Solid surface: Earth</span><p>Solid mesh lines are in front of Earth; faint dashed lines are behind it. Crossings are not matching regions. Compare the two height profiles below.</p></div>
+            <div class="stage" id="holoStage" aria-label="Interactive terrain comparison"><button type="button" id="swipeHandle" class="swipe-handle" role="slider" aria-label="Terrain reveal divider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" hidden=""><span aria-hidden="true">↔</span></button></div>
+            <div id="swipeControl" hidden=""><label for="swipePosition">Reveal terrain <span class="pair-target">← Target</span> / <span class="pair-earth">Earth →</span></label><input id="swipePosition" type="range" min="0" max="100" value="50" aria-label="Swipe divider position"></div>
+            <div class="view-tools"><button type="button" id="resetCamera">Reset view</button><button type="button" data-camera="in" aria-label="Zoom into terrain">+</button><button type="button" data-camera="out" aria-label="Zoom out of terrain">−</button><span>Drag to orbit 360° / scroll to zoom</span></div><div class="inspection-tools"><div class="inspection-tool"><span class="tool-label">Camera / full orbit</span><div class="camera-presets" role="group" aria-label="Camera viewpoint"><button type="button" data-camera-view="top">Above</button><button type="button" data-camera-view="profile">Profile</button><button type="button" data-camera-view="underside">Below</button><button type="button" data-camera-view="reset">Oblique</button></div></div><div class="inspection-tool"><span class="tool-label">Surfaces</span><div class="surface-isolation" role="group" aria-label="Visible terrain surfaces"><button type="button" data-overlay-layer="both" aria-pressed="true">Both</button><button type="button" data-overlay-layer="target" aria-pressed="false">Target only</button><button type="button" data-overlay-layer="earth" aria-pressed="false">Earth only</button></div></div><div class="inspection-tool layer-separation"><label for="layerSeparation">Separate layers <output id="separationValue" for="layerSeparation">0%</output></label><input type="range" id="layerSeparation" min="0" max="100" value="0" step="1"><p>Artificial offset for inspection.</p></div><div class="inspection-tool level-tool"><span class="tool-label">Orientation</span><div class="level-switch" role="group" aria-label="Terrain orientation"><button type="button" data-level="levelled" aria-pressed="true">Levelled</button><button type="button" data-level="true" aria-pressed="false">True orientation</button></div><p id="levelNote" class="note level-note" role="status"></p></div><p id="inspectionNote" class="note">Orbit a full 360 degrees and tilt below the horizon. Below shows the reverse of the measured surface, not the subsurface.</p></div><p class="note" id="holoStatus" role="status"></p>
+          </div>
+          <aside class="comparison-inspector"><p class="eyebrow">Read the evidence</p><h2>Why this analog?</h2><p id="whySummary"></p><div class="property-list" id="propertyList" role="group" aria-label="Scored terrain properties"></div><div id="propertyDetail" aria-live="polite"></div><p class="scope-note"><span class="match-dot" aria-hidden="true"></span>Gold marks similarity across the whole measured area. It does not identify matching points on the surface.</p><a class="text-link" href="#how">How was this tested? ↗</a>
+          <details class="view-settings"><summary>View settings</summary><label for="holoOpacity">Mesh visibility</label><input type="range" id="holoOpacity" min="0.3" max="1" step="0.05" value="0.85"><p class="note" id="rotNote"></p></details></aside>
+        </div>
+        <section class="profile-panel" aria-labelledby="profileHeading"><div class="profile-heading"><div><p class="eyebrow">Look beneath the surface</p><h2 id="profileHeading">Read a cross-section.</h2><p class="note">Compare the shapes along the same west-east cut in the aligned view.</p></div><button type="button" class="btn ghost" id="profileToggle" aria-expanded="false" aria-controls="profileControls">Show cross-section</button></div><div id="profileControls" hidden=""><label for="profilePosition">Move the cut from north to south</label><input id="profilePosition" type="range" min="10" max="90" value="50"><svg id="profileChart" viewBox="0 0 900 220" role="img" aria-label="Target and Earth elevation profiles"></svg><p class="note">Height relative to each disk's mean, in metres. Gaps are missing data; the profile does not alter the similarity score.</p></div></section>
+        <div class="dossier-split evidence-missions">
+          <section class="mission-block" id="mission-landing" aria-label="Landing"></section>
+          <section class="mission-block" id="mission-driving" aria-label="Driving"></section>
+        </div>
+        <p class="note">Not a success probability. Few missions have flown, and most failures were not caused by terrain.</p>
+        <section class="light-panel" id="lightPanel" aria-labelledby="lightHeading"><h3 id="lightHeading">Light at the site</h3><div id="lightBody"><p class="note">Choose a pair to read its light.</p></div></section>
+          </li>
+          <li class="dossier-step" id="step-twin" aria-labelledby="step-twin-title">
+            <header class="dossier-head"><span class="dossier-num" aria-hidden="true">03</span><h2 id="step-twin-title">The Earth twin</h2><p class="note">Where the twin is, how far it is from the target, and its Earth context. Context is not scored.</p></header>
+            <div class="dossier-split"><div><dl class="facts" id="twinPlace"></dl><div id="twinLight"></div></div><div id="context"></div></div>
+            <div id="useCaseSummary" class="use-case-summary" aria-live="polite"></div>
+          </li>
+          <li class="dossier-step" id="step-rehearse" aria-labelledby="step-rehearse-title">
+            <header class="dossier-head"><span class="dossier-num" aria-hidden="true">04</span><h2 id="step-rehearse-title">Rehearse here / This place cannot teach you</h2><p class="note">What this Earth place can rehearse for the target, and what no Earth place can. ✓ yes · ◐ partly · ✗ no.</p></header>
+            <div id="rehearsalBody" class="rehearsal-grid"><p class="note">Choose a pair to read its rehearsal plan.</p></div>
+            <p class="note dossier-footnote">Earth cannot reproduce reduced gravity, vacuum, a thin atmosphere or radiation. Terrain similarity alone does not establish geological equivalence.</p>
+          </li>
+          <li class="dossier-step" id="step-gap" aria-labelledby="step-gap-title">
+            <header class="dossier-head"><span class="dossier-num" aria-hidden="true">05</span><h2 id="step-gap-title">Where Earth runs out</h2><p class="note">The Earth gap for this world: places with no Earth window that matches within sensor noise.</p></header>
+            <div id="gapBody"><p class="note">Choose a pair to read the Earth gap.</p></div>
+          </li>
+        </ol>
+        <details class="evidence-drawer"><summary>All measurements, alignment &amp; sources</summary><p id="twinCode" class="twin-code"></p><dl class="facts" id="twinFacts"></dl><div class="feature-list" id="featureBars"></div></details>
+        
+      </div>
+      
+      
+</section>
+<details class="ask-panel" id="askPanel"><summary><span class="eyebrow">Ask the atlas</span><span>Five questions, answered from the exported tables. No free text, no model.</span></summary><div class="ask-body"><div class="ask-cards" data-role="cards" role="group" aria-label="Preset questions"></div><article class="ask-answer" data-role="answer" aria-live="polite"><p class="note">Choose a question. Each answer lists the table and columns it is computed from, and the strength of its evidence.</p></article><figure class="ask-globe" data-role="globe-wrap"><div class="stage ask-stage" id="askGlobe" aria-label="Globe with the results of the selected question"></div><figcaption class="note" id="askGlobeNote">Choose a question to mark its results here.</figcaption></figure></div></details><section class="screen" id="screen-region" aria-labelledby="h-region">
+      <div class="region-layout"><div class="region-viewport"><div id="regionStage" class="stage" aria-label="Measured target terrain"></div><div class="terrain-label"><span class="pair-target" id="regionTerrainLabel">Target terrain</span><span>8 km measured circle · north up before orbit</span></div><p id="regionStatus" role="status" class="note"></p><div class="view-tools"><button type="button" id="regionReset">Reset view</button></div></div><aside class="region-editorial"><p class="eyebrow">01 / On the ground</p><h1 id="h-region" tabindex="-1">The terrain</h1><div id="regionContent"></div><button class="btn primary" id="scanFromRegion" type="button" hidden="">Find Earth analogs →</button><p class="note">Compare the same terrain measures across two worlds.</p></aside></div>
+      <details class="evidence-drawer"><summary>Region measurements &amp; mission context</summary><div id="regionEvidence"></div></details>
+      <details class="evidence-drawer"><summary>Go directly to a comparison</summary><div id="regionTwins" class="region-twins"></div></details>
+    </section></div>
+    
+
+    <!-- 2. Scan Earth -->
+    
+
+    
+
+    <!-- 4. Mission test -->
+    
+
+    <!-- 5. How we know -->
+    <section class="screen" id="screen-how" aria-labelledby="h-how">
+      <h1 id="h-how" tabindex="-1">How we know</h1>
+      <p class="lead">The method, the two validation tests and the mission controls. Neither validation test passed. Their numbers are shown as they came out.</p>
+      <ol class="steps">
+        <li>
+          <h2>1 · Measure</h2>
+          <p>Six measures are computed on each 8 km circle from elevation models, on a 100 m grid: steepness, bumpiness across scales, bowl vs plateau, grain direction, ridges and hollows. The 3D view draws the same terrain on a 30 m grid.</p>
+        </li>
+        <li>
+          <h2>2 · Compare</h2>
+          <p>Each twin gets a distance D: the root mean square of the differences on the three scored measures (steepness, bowl vs plateau, bumpiness across scales), each divided by its sigma. Grain direction, ridges and hollows are context and do not change D. Twins closer than the sensor noise are tied, and the list says so.</p>
+        </li>
+        <li>
+          <h2>3 · Check</h2>
+          <p>The method was tested on whether it separates terrain types (impact craters, volcanic fields, dune fields, canyons, plains). Version 1.2 was tested on 20 regions. Version 1.3 was designed after looking at the 1.2 results, so it was tested on 15 new regions, measured once.</p>
+        </li>
+      </ol>
+
+      <h2>Validation</h2>
+      <p class="note" id="valStatus"></p>
+      <div id="valList"></div>
+
+      <h2>Mission controls</h2>
+      <p class="note">The landing limit must cover at least 50% of each of six reference sites with completed landings. Values come from their comparison cards.</p>
+      <div class="val-list" id="controlsList"></div>
+
+      <h2>Limits of this atlas</h2>
+      <ul class="plain">
+        <li>A close match in the measures does not mean the place is safe or the same. It means these measures agree.</li>
+        <li>The 3D view uses a 30 m grid; the measures use 100 m. A 100 m slope is gentler than the slope a lander sees at its own scale.</li>
+        <li>The twin is oriented for display only. Rotation does not change the score.</li>
+        <li>The search pool is mostly Sahara, Arabia, Central Asia and, since the Arctic was added, Greenland, Svalbard, Arctic Canada and Siberia. Most mission limits have no stated baseline. Hurst (bumpiness across scales) is comparative.</li>
+        <li>Earth cannot reproduce reduced gravity, vacuum or a thin atmosphere, or radiation.</li>
+      </ul>
+    </section>
+
+    <!-- About -->
+    <section class="screen" id="screen-about" aria-labelledby="h-about">
+      <h1 id="h-about" tabindex="-1">About</h1>
+      <h2>Team</h2>
+      <p>Team <strong>marsvia</strong> · NASA Space Apps 2026, local event San Salvador, El Salvador. <a href="https://www.spaceappschallenge.org/2026/find-a-team/marsvia/">Team page →</a></p>
+      <h2>NASA data used</h2>
+      <p>NASA and partner data products are listed in the references.</p>
+      <h2>References</h2>
+      <p><a href="references.html">Explore data sources and references →</a></p>
+      <h2>AI assistance</h2>
+      <p>Concept, design decisions and scientific choices by the team. Code written with AI assistance (Claude by Anthropic; Codex by OpenAI) under the team's direction. No AI-generated images.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p class="note">Data: NASA (NASADEM, LOLA, LROC, MRO CTX/USGS; Moon texture NASA SVS), ESA WorldCover (CC BY 4.0), K&ouml;ppen-Geiger Beck et al. 2018 (CC BY 4.0), Gale CTX tile (figshare, CC BY 4.0), Natural Earth. Arctic elevation: Copernicus DEM GLO-30, &copy; DLR e.V. 2010-2014 and &copy; Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. <a href="references.html">Full credits &rarr;</a></p>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+
+
+</body></html>

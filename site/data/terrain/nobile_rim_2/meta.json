@@ -1,0 +1,40 @@
+{
+  "id": "nobile_rim_2",
+  "kind": "target",
+  "body": "moon",
+  "name": "Nobile Rim 2 (NASA Artemis III candidate region)",
+  "lat": -83.954,
+  "lon": 58.8231,
+  "n": 269,
+  "L": 30.0,
+  "R": 4000.0,
+  "native_res_m": 5.0,
+  "z_min": -568.7661231033426,
+  "z_max": 452.63859023133807,
+  "relief_p99_p1_m": 877.6384839088629,
+  "vertical_exaggeration": 0.8,
+  "source_id": "lola_5m_dm2_surf",
+  "layers": {
+    "moon": "layers_moon.bin"
+  },
+  "files": {
+    "height": "height.bin",
+    "hillshade": "hillshade.png"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:51:48Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "lola_5m_dm2_surf",
+        "path": "data/raw/moon/nobile_rim_2/lola_5m_dm2_surf.tif",
+        "sha256": "d88677c21633683061117db0a577f0510e0948fe9db315d13be28782407ff604"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "version": "1.3",
+  "frozen": "2026-11-13",
+  "doc": "Definitions in STANDARDS.md sections 4 and 10. sigma null until pipelines/calibrate_sigma.py fills them from the search pool (1.4826*MAD). Frozen after that.",
+  "grid": {
+    "L_m": 100,
+    "R_m": 4000,
+    "min_coverage": 0.9,
+    "min_L_over_native": 2.0,
+    "resampling": "bilinear"
+  },
+  "features": {
+    "slope_p95_deg": {
+      "weight": 1.0,
+      "sigma": 3.040958854907633,
+      "in_distance": true
+    },
+    "hi": {
+      "weight": 1.0,
+      "sigma": 0.0640130775335565,
+      "in_distance": true
+    },
+    "coherence": {
+      "weight": 0.0,
+      "sigma": 0.15692308719399484,
+      "in_distance": false,
+      "note": "v1.3: excluded from D. Designed on v1.2 dev diagnostics: alone AUC 0.50 on dev classes; sensor noise 1.2-2.4 sigma on flat plains. Still computed and shown as context."
+    },
+    "hurst": {
+      "weight": 1.0,
+      "sigma": 0.20018510773032308,
+      "lags_px": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "in_distance": true
+    },
+    "ridge_pct": {
+      "weight": 0.0,
+      "sigma": 1.8239704739704736,
+      "in_distance": false,
+      "note": "Excluded from D by the pre-registered redundancy rule: Spearman with slope_p95_deg 0.955 (ridge) / 0.945 (valley) on the 2000-window pool. Still computed and shown as layers/context."
+    },
+    "valley_pct": {
+      "weight": 0.0,
+      "sigma": 0.6143900543900543,
+      "in_distance": false,
+      "note": "Excluded from D by the pre-registered redundancy rule: Spearman with slope_p95_deg 0.955 (ridge) / 0.945 (valley) on the 2000-window pool. Still computed and shown as layers/context."
+    }
+  },
+  "tpi": {
+    "radius_px": 5,
+    "threshold_deg": 1.0
+  },
+  "distance": {
+    "min_shared_features": 3,
+    "note": "min_shared_features counts only weight > 0 features; v1.3 uses slope_p95_deg, hi, hurst (all 3 required)."
+  },
+  "validation": {
+    "seed": 20261114,
+    "redundancy_max_abs_spearman": 0.8,
+    "classes": [
+      "impact_crater",
+      "volcanic_field",
+      "dune_field",
+      "canyon_valley",
+      "plain"
+    ],
+    "dev_regions_per_class": 3,
+    "reserved_regions_per_class": 1,
+    "auc_min": 0.7,
+    "p_max": 0.05,
+    "permutations": 9999,
+    "bootstrap": 2000,
+    "noise_floor": "dev regions, NASADEM vs Copernicus GLO-30",
+    "reserve_min_correct": 4,
+    "v13": {
+      "doc": "Pre-registered 2026-11-13 BEFORE the holdout regions exist. v1.2 failed V2/V2-R (kept and reported). v1.3 is designed on v1.2 dev results, so it is validated ONLY on a fresh holdout.",
+      "holdout_role": "holdout_v13",
+      "holdout_per_class": 3,
+      "flat_slope_p95_deg": 3.0,
+      "tie_rule": "tie threshold = p95 of D(NASADEM, Copernicus) over dev regions of the same relief class as the target (rugged: slope_p95 >= 3 deg; flat: < 3 deg)",
+      "pass": {
+        "auc_min": 0.7,
+        "auc_ci_lower_gt": 0.5,
+        "perm_p_max": 0.05,
+        "nn_against_dev_min_correct": 7,
+        "nn_note": "1-NN of each of the 15 holdout regions against the 15 dev regions; chance 1/5; P(X>=7|n=15,p=0.2)=0.018, P(X>=6)=0.061"
+      },
+      "runs_once": true
+    }
+  },
+  "search": {
+    "n_windows": 2000,
+    "coverage": "NASADEM 56S-60N",
+    "worldcover_classes": [
+      60,
+      70,
+      100
+    ],
+    "min_worldcover_share": 0.8,
+    "exclude_km_from_known_analogs": 25,
+    "top_k_per_target": 10
+  },
+  "visual": {
+    "L_m": 30,
+    "R_m": 4000,
+    "hillshade_azimuth_deg": 315,
+    "hillshade_altitude_deg": 45,
+    "rotation_step_deg": 10,
+    "rotation_inner_r_frac": 0.9
+  }
+}

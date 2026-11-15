@@ -1,0 +1,646 @@
+{
+  "v1.2": {
+    "schema": "analog.validation/1",
+    "config_version": "1.2",
+    "thresholds": {
+      "seed": 20261114,
+      "redundancy_max_abs_spearman": 0.8,
+      "classes": [
+        "impact_crater",
+        "volcanic_field",
+        "dune_field",
+        "canyon_valley",
+        "plain"
+      ],
+      "dev_regions_per_class": 3,
+      "reserved_regions_per_class": 1,
+      "auc_min": 0.7,
+      "p_max": 0.05,
+      "permutations": 9999,
+      "bootstrap": 2000,
+      "noise_floor": "dev regions, NASADEM vs Copernicus GLO-30",
+      "reserve_min_correct": 4
+    },
+    "sigma": {
+      "slope_p95_deg": 3.040958854907633,
+      "hi": 0.0640130775335565,
+      "coherence": 0.15692308719399484,
+      "hurst": 0.20018510773032308,
+      "ridge_pct": 1.8239704739704736,
+      "valley_pct": 0.6143900543900543
+    },
+    "measure_records_read": {
+      "n_records": 2037,
+      "sha256_of_record_hashes": "bf63faa3df6bc30959603c83f5c9261582990c2472d95dfd51df75323cc8b792"
+    },
+    "V0": {
+      "features": [
+        "slope_p95_deg",
+        "hi",
+        "coherence",
+        "hurst"
+      ],
+      "n_pool": 2000,
+      "pairs": [
+        {
+          "a": "slope_p95_deg",
+          "b": "hi",
+          "n": 1994,
+          "rho": -0.2481210499748645,
+          "flag": false
+        },
+        {
+          "a": "slope_p95_deg",
+          "b": "coherence",
+          "n": 2000,
+          "rho": 0.4087581514085083,
+          "flag": false
+        },
+        {
+          "a": "slope_p95_deg",
+          "b": "hurst",
+          "n": 2000,
+          "rho": 0.622525355864786,
+          "flag": false
+        },
+        {
+          "a": "hi",
+          "b": "coherence",
+          "n": 1994,
+          "rho": -0.20774685971226817,
+          "flag": false
+        },
+        {
+          "a": "hi",
+          "b": "hurst",
+          "n": 1994,
+          "rho": -0.22000653920307564,
+          "flag": false
+        },
+        {
+          "a": "coherence",
+          "b": "hurst",
+          "n": 2000,
+          "rho": 0.5605343703376003,
+          "flag": false
+        }
+      ],
+      "max_abs_rho_threshold": 0.8,
+      "flagged": [],
+      "pass": true
+    },
+    "V1": {
+      "n": 15,
+      "n_expected": 15,
+      "regions": [
+        {
+          "region_id": "tenoumer_crater",
+          "D": 0.06136074453672855,
+          "reason": null
+        },
+        {
+          "region_id": "gosses_bluff",
+          "D": 0.1892867793574334,
+          "reason": null
+        },
+        {
+          "region_id": "aorounga_crater",
+          "D": 0.17318011016779364,
+          "reason": null
+        },
+        {
+          "region_id": "harrat_khaybar",
+          "D": 0.07222878998230249,
+          "reason": null
+        },
+        {
+          "region_id": "payun_matru",
+          "D": 0.0923838276559792,
+          "reason": null
+        },
+        {
+          "region_id": "al_haruj",
+          "D": 0.02702806497123485,
+          "reason": null
+        },
+        {
+          "region_id": "namib_sand_sea",
+          "D": 0.25990625105926773,
+          "reason": null
+        },
+        {
+          "region_id": "badain_jaran",
+          "D": 0.22280937450722832,
+          "reason": null
+        },
+        {
+          "region_id": "algodones_dunes",
+          "D": 0.0746565978426076,
+          "reason": null
+        },
+        {
+          "region_id": "fish_river_canyon",
+          "D": 0.12535688540007103,
+          "reason": null
+        },
+        {
+          "region_id": "cotahuasi_canyon",
+          "D": 0.14066950038368023,
+          "reason": null
+        },
+        {
+          "region_id": "wadi_mujib",
+          "D": 0.0870609545273206,
+          "reason": null
+        },
+        {
+          "region_id": "nullarbor_plain",
+          "D": 0.647078135289001,
+          "reason": null
+        },
+        {
+          "region_id": "tenere_plain",
+          "D": 1.3367442973907537,
+          "reason": null
+        },
+        {
+          "region_id": "ustyurt_plateau",
+          "D": 1.1443936763959828,
+          "reason": null
+        }
+      ],
+      "median": 0.14066950038368023,
+      "p95": 1.2020988626944138
+    },
+    "V2": {
+      "n_regions": 15,
+      "n_regions_expected": 15,
+      "n_pairs_total": 105,
+      "n_pairs_null_D": 0,
+      "n_pairs_self": 0,
+      "n_pairs_used": 105,
+      "auc": 0.6925925925925925,
+      "bootstrap": {
+        "B": 2000,
+        "ci_lo": 0.4418631131131131,
+        "ci_hi": 0.912741914947797,
+        "n_valid": 2000,
+        "n_invalid": 0
+      },
+      "permutation": {
+        "B": 9999,
+        "p": 0.0059,
+        "n_undefined_perm": 0,
+        "reason": null
+      },
+      "thresholds": {
+        "auc_min": 0.7,
+        "ci_lo_min_exclusive": 0.5,
+        "p_max": 0.05
+      },
+      "pass": false
+    },
+    "V2R": {
+      "rows": [
+        {
+          "region_id": "roter_kamm_crater",
+          "true_class": "impact_crater",
+          "lat": -27.7667,
+          "lon": 16.2889,
+          "status": "ok",
+          "reason": null,
+          "features": {
+            "slope_p95_deg": 8.060053274995123,
+            "hi": 0.4688189436752475,
+            "coherence": 0.10087135421729339,
+            "hurst": 0.7920089697261093,
+            "ridge_pct": 8.262108262108262,
+            "valley_pct": 5.542605542605543
+          },
+          "nearest_dev": "algodones_dunes",
+          "D": 0.6223638797299151,
+          "predicted_class": "dune_field",
+          "correct": false
+        },
+        {
+          "region_id": "cima_volcanic_field",
+          "true_class": "volcanic_field",
+          "lat": 35.25,
+          "lon": -115.75,
+          "status": "ok",
+          "reason": null,
+          "features": {
+            "slope_p95_deg": 13.600918109826239,
+            "hi": 0.5282575366611122,
+            "coherence": 0.15747401769830327,
+            "hurst": 0.7249211395791576,
+            "ridge_pct": 14.763014763014763,
+            "valley_pct": 16.93861693861694
+          },
+          "nearest_dev": "harrat_khaybar",
+          "D": 0.5360983681456357,
+          "predicted_class": "volcanic_field",
+          "correct": true
+        },
+        {
+          "region_id": "rub_al_khali",
+          "true_class": "dune_field",
+          "lat": 20.0,
+          "lon": 50.0,
+          "status": "ok",
+          "reason": null,
+          "features": {
+            "slope_p95_deg": 6.360047084199528,
+            "hi": 0.5007823762549183,
+            "coherence": 0.21639363108819257,
+            "hurst": 0.2644560790961324,
+            "ridge_pct": 9.375809375809375,
+            "valley_pct": 9.22040922040922
+          },
+          "nearest_dev": "tenere_plain",
+          "D": 0.3934308716790782,
+          "predicted_class": "plain",
+          "correct": false
+        },
+        {
+          "region_id": "charyn_canyon",
+          "true_class": "canyon_valley",
+          "lat": 43.3581,
+          "lon": 79.0925,
+          "status": "ok",
+          "reason": null,
+          "features": {
+            "slope_p95_deg": 21.40611008031803,
+            "hi": 0.5535058009517955,
+            "coherence": 0.34201961643735307,
+            "hurst": 0.6736892532091283,
+            "ridge_pct": 21.96322196322196,
+            "valley_pct": 17.171717171717173
+          },
+          "nearest_dev": "badain_jaran",
+          "D": 0.7320335196259563,
+          "predicted_class": "dune_field",
+          "correct": false
+        },
+        {
+          "region_id": "calansho_desert_serir",
+          "true_class": "plain",
+          "lat": 27.8175,
+          "lon": 20.975,
+          "status": "ok",
+          "reason": null,
+          "features": {
+            "slope_p95_deg": 0.9687075955571461,
+            "hi": 0.46328704731425735,
+            "coherence": 0.08605258472706664,
+            "hurst": 0.3424362671374563,
+            "ridge_pct": 0.0,
+            "valley_pct": 0.0
+          },
+          "nearest_dev": "ustyurt_plateau",
+          "D": 0.22032757490935362,
+          "predicted_class": "plain",
+          "correct": true
+        }
+      ],
+      "k_correct": 2,
+      "n_computed": 5,
+      "n_expected": 5,
+      "wilson95": [
+        0.1176182311592533,
+        0.769280067791163
+      ],
+      "binomial_one_sided_p": 0.26272000000000006,
+      "chance": 0.2,
+      "reserve_min_correct": 4,
+      "pass": false
+    },
+    "summary": {
+      "V0_redundancy_pass": true,
+      "V1_noise_reported": true,
+      "V2_discrimination_pass": false,
+      "V2R_reserve_pass": false,
+      "all_pass": false,
+      "complete": true
+    },
+    "status": "failed",
+    "file": "data/derived/validation/v1.2.json",
+    "diagnosis": "The V1 sensor-noise p95 (1.20) is driven by three flat plains (tenere_plain D 1.34, ustyurt_plateau 1.14, nullarbor_plain 0.65). Single-feature AUC on the same dev pairs (|diff| / sigma, computed 2026-11-14): coherence 0.50 (no class information), hurst 0.82 (the strongest single feature), slope_p95 0.68, hi 0.60. The measure captures operability (how the surface behaves: slope, roughness texture) more than landform origin, which is why the landform classes are only partly recovered. This text is an interpretation; the numbers are in the v1.2 block."
+  },
+  "v1.3": {
+    "schema": "analog.validation/1",
+    "version": "1.3",
+    "config_version": "1.3",
+    "design": {
+      "holdout_role": "holdout_v13",
+      "holdout_per_class": 3,
+      "holdout_regions": [
+        "holdout_crater_upheaval_dome",
+        "holdout_crater_tin_bider",
+        "holdout_volcanic_lunar_crater",
+        "holdout_volcanic_pali_aike",
+        "holdout_volcanic_harrat_kishb",
+        "holdout_dune_sharqiya",
+        "holdout_canyon_talampaya",
+        "holdout_canyon_wadi_rum",
+        "holdout_plain_tanezrouft",
+        "holdout_plain_betpak_dala",
+        "holdout_crater_ouarkziz",
+        "holdout_dune_grand_erg_oriental",
+        "holdout_dune_taklamakan",
+        "holdout_canyon_buckskin_gulch",
+        "holdout_plain_tanami"
+      ],
+      "dev_regions": [
+        "tenoumer_crater",
+        "gosses_bluff",
+        "aorounga_crater",
+        "harrat_khaybar",
+        "payun_matru",
+        "al_haruj",
+        "namib_sand_sea",
+        "badain_jaran",
+        "algodones_dunes",
+        "fish_river_canyon",
+        "cotahuasi_canyon",
+        "wadi_mujib",
+        "nullarbor_plain",
+        "tenere_plain",
+        "ustyurt_plateau"
+      ]
+    },
+    "thresholds": {
+      "auc_min": 0.7,
+      "auc_ci_lower_gt": 0.5,
+      "perm_p_max": 0.05,
+      "nn_against_dev_min_correct": 7,
+      "nn_note": "1-NN of each of the 15 holdout regions against the 15 dev regions; chance 1/5; P(X>=7|n=15,p=0.2)=0.018, P(X>=6)=0.061"
+    },
+    "sigma": {
+      "slope_p95_deg": 3.040958854907633,
+      "hi": 0.0640130775335565,
+      "coherence": 0.15692308719399484,
+      "hurst": 0.20018510773032308,
+      "ridge_pct": 1.8239704739704736,
+      "valley_pct": 0.6143900543900543
+    },
+    "features_in_distance": [
+      "slope_p95_deg",
+      "hi",
+      "hurst"
+    ],
+    "measure_records_read": {
+      "n_records": 15,
+      "sha256_of_record_hashes": "f68630af08a04c4876d00950fe43675f7a69dee094d902e8c85e6bcaaf77a189"
+    },
+    "AUC": {
+      "n_regions": 15,
+      "n_regions_expected": 15,
+      "n_pairs_total": 105,
+      "n_pairs_null_D": 0,
+      "n_pairs_self": 0,
+      "n_pairs_used": 105,
+      "n_same_class_pairs": 15,
+      "auc": 0.6948148148148148,
+      "bootstrap": {
+        "B": 2000,
+        "ci_lo": 0.5058470437983622,
+        "ci_hi": 0.9223725364436103,
+        "n_valid": 2000,
+        "n_invalid": 0
+      },
+      "permutation": {
+        "B": 9999,
+        "p": 0.0068,
+        "n_undefined_perm": 0,
+        "reason": null
+      }
+    },
+    "NN": {
+      "summary": {
+        "k_correct": 6,
+        "n_computed": 15,
+        "n_expected": 15,
+        "wilson95": [
+          0.19824228082594664,
+          0.642535572434923
+        ],
+        "binomial_one_sided_p": 0.061051429617664056,
+        "chance": 0.2,
+        "min_correct": 7,
+        "pass": false
+      },
+      "rows": [
+        {
+          "region_id": "holdout_canyon_buckskin_gulch",
+          "true_class": "canyon_valley",
+          "n_dev_candidates": 15,
+          "nearest_dev": "payun_matru",
+          "D": 0.6492846397701206,
+          "predicted_class": "volcanic_field",
+          "correct": false
+        },
+        {
+          "region_id": "holdout_canyon_talampaya",
+          "true_class": "canyon_valley",
+          "n_dev_candidates": 15,
+          "nearest_dev": "badain_jaran",
+          "D": 0.8278683399607744,
+          "predicted_class": "dune_field",
+          "correct": false
+        },
+        {
+          "region_id": "holdout_canyon_wadi_rum",
+          "true_class": "canyon_valley",
+          "n_dev_candidates": 15,
+          "nearest_dev": "cotahuasi_canyon",
+          "D": 0.5098553847367441,
+          "predicted_class": "canyon_valley",
+          "correct": true
+        },
+        {
+          "region_id": "holdout_crater_ouarkziz",
+          "true_class": "impact_crater",
+          "n_dev_candidates": 15,
+          "nearest_dev": "harrat_khaybar",
+          "D": 0.7366811045952812,
+          "predicted_class": "volcanic_field",
+          "correct": false
+        },
+        {
+          "region_id": "holdout_crater_tin_bider",
+          "true_class": "impact_crater",
+          "n_dev_candidates": 15,
+          "nearest_dev": "harrat_khaybar",
+          "D": 0.6718952455772804,
+          "predicted_class": "volcanic_field",
+          "correct": false
+        },
+        {
+          "region_id": "holdout_crater_upheaval_dome",
+          "true_class": "impact_crater",
+          "n_dev_candidates": 15,
+          "nearest_dev": "cotahuasi_canyon",
+          "D": 0.8855712693507668,
+          "predicted_class": "canyon_valley",
+          "correct": false
+        },
+        {
+          "region_id": "holdout_dune_grand_erg_oriental",
+          "true_class": "dune_field",
+          "n_dev_candidates": 15,
+          "nearest_dev": "algodones_dunes",
+          "D": 0.7924995902398388,
+          "predicted_class": "dune_field",
+          "correct": true
+        },
+        {
+          "region_id": "holdout_dune_sharqiya",
+          "true_class": "dune_field",
+          "n_dev_candidates": 15,
+          "nearest_dev": "namib_sand_sea",
+          "D": 0.8773563552603518,
+          "predicted_class": "dune_field",
+          "correct": true
+        },
+        {
+          "region_id": "holdout_dune_taklamakan",
+          "true_class": "dune_field",
+          "n_dev_candidates": 15,
+          "nearest_dev": "al_haruj",
+          "D": 0.6364261687689664,
+          "predicted_class": "volcanic_field",
+          "correct": false
+        },
+        {
+          "region_id": "holdout_plain_betpak_dala",
+          "true_class": "plain",
+          "n_dev_candidates": 15,
+          "nearest_dev": "al_haruj",
+          "D": 0.5294067154576401,
+          "predicted_class": "volcanic_field",
+          "correct": false
+        },
+        {
+          "region_id": "holdout_plain_tanami",
+          "true_class": "plain",
+          "n_dev_candidates": 15,
+          "nearest_dev": "ustyurt_plateau",
+          "D": 0.8539553234235777,
+          "predicted_class": "plain",
+          "correct": true
+        },
+        {
+          "region_id": "holdout_plain_tanezrouft",
+          "true_class": "plain",
+          "n_dev_candidates": 15,
+          "nearest_dev": "ustyurt_plateau",
+          "D": 0.7943108258431877,
+          "predicted_class": "plain",
+          "correct": true
+        },
+        {
+          "region_id": "holdout_volcanic_harrat_kishb",
+          "true_class": "volcanic_field",
+          "n_dev_candidates": 15,
+          "nearest_dev": "al_haruj",
+          "D": 0.37616469402168523,
+          "predicted_class": "volcanic_field",
+          "correct": true
+        },
+        {
+          "region_id": "holdout_volcanic_lunar_crater",
+          "true_class": "volcanic_field",
+          "n_dev_candidates": 15,
+          "nearest_dev": "algodones_dunes",
+          "D": 1.179579537150072,
+          "predicted_class": "dune_field",
+          "correct": false
+        },
+        {
+          "region_id": "holdout_volcanic_pali_aike",
+          "true_class": "volcanic_field",
+          "n_dev_candidates": 15,
+          "nearest_dev": "algodones_dunes",
+          "D": 0.41403328313506615,
+          "predicted_class": "dune_field",
+          "correct": false
+        }
+      ]
+    },
+    "pass": {
+      "auc": false,
+      "auc_ci_lower": true,
+      "permutation_p": true,
+      "nn_against_dev": false,
+      "all": false
+    },
+    "summary": {
+      "AUC_pass": false,
+      "NN_pass": false,
+      "all_pass": false
+    },
+    "status": "failed",
+    "file": "data/derived/validation/v1.3.json"
+  },
+  "v1.3_noise": {
+    "status": "written",
+    "file": "data/derived/validation/noise_v1.3.json",
+    "flat_slope_p95_deg": 3.0,
+    "rule": "tie threshold = p95 of D(NASADEM, Copernicus) over dev regions of the same relief class as the target (rugged: slope_p95 >= 3 deg; flat: < 3 deg)",
+    "n_expected": 15,
+    "n_used": 15,
+    "classes": {
+      "rugged": {
+        "n": 13,
+        "median": 0.13409439802676038,
+        "p95": 0.4150468510682017,
+        "regions": [
+          "tenoumer_crater",
+          "gosses_bluff",
+          "aorounga_crater",
+          "harrat_khaybar",
+          "payun_matru",
+          "al_haruj",
+          "namib_sand_sea",
+          "badain_jaran",
+          "algodones_dunes",
+          "fish_river_canyon",
+          "cotahuasi_canyon",
+          "wadi_mujib",
+          "tenere_plain"
+        ]
+      },
+      "flat": {
+        "n": 2,
+        "median": 0.9332062409621402,
+        "p95": 1.1017189574465522,
+        "regions": [
+          "nullarbor_plain",
+          "ustyurt_plateau"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:51:37Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "validation_v1.2",
+        "path": "data/derived/validation/v1.2.json",
+        "sha256": "bdbeeecfb8535211ef445af8748192434dd9a42e3dc117a23530be25ebc76399"
+      },
+      {
+        "source_id": "validation_v1.3",
+        "path": "data/derived/validation/v1.3.json",
+        "sha256": "1070b921b60da6ebfdc545f82c22e95bedb47b3bae9c686e1b24d4fe9b5f9039"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  }
+}

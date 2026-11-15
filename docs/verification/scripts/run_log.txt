@@ -1,0 +1,24 @@
+umbral {'rugged': 0.4150468510682017, 'flat': 1.1017189574465522} {'rugged': {'recomputed': 0.4150468510682017, 'run_json': 0.4150468510682017, 'abs_diff': 0.0, 'n_dev_pairs': 13}, 'flat': {'recomputed': 1.1017189574465522, 'run_json': 1.1017189574465522, 'abs_diff': 0.0, 'n_dev_pairs': 2}}
+orient {'n_pairs': 2000, 'corr_north_up': 0.4660605269529769, 'corr_south_up': 0.3234183651480914, 'chosen': 'N'}
+C2 sets True True feat diff 0.0
+16 sitios medidos | 16 | 16 | True
+2,000 lugares de la Tierra | 2000 | 2000 | True
+1,838 celdas de Marte desbloqueadas | 1838 | 1838 | True
+1,276 gemelos nuevos | 1276 | 1276 | True
+71 conocidos | 71 | 71 | True
+Tierra puede ensayar 88.5% de Marte medido (211/1838) | 88.5% / 11.5% (211/1838) | gap=211/1838 = 11.48%; ensaya=88.52%; gap parquet=211; gap export=211; con umbral run.json=211 | True
+Luna: 3 de 7 sitios Artemis sin gemelo | 3 | 3 de 7 Artemis; 3 de 16 objetivos con gap | True
+Tierra contorno 0.9% de la esfera | 0.9 | 0.86 | True
+Tierra sin tocar 96.0% | 96.0 | 96.04 | True
+{'estrato': 'mars_cov_2_unlocked', 'n': 8, 'aciertos': 8, 'tasa': 1.0, 'wilson95': [0.6756, 1.0]}
+{'estrato': 'mars_cov_1_to_discover', 'n': 8, 'aciertos': 8, 'tasa': 1.0, 'wilson95': [0.6756, 1.0]}
+{'estrato': 'mars_cov_0_out_of_reach', 'n': 8, 'aciertos': 8, 'tasa': 1.0, 'wilson95': [0.6756, 1.0]}
+{'estrato': 'earth_cov_2_unlocked', 'n': 8, 'aciertos': 8, 'tasa': 1.0, 'wilson95': [0.6756, 1.0]}
+{'estrato': 'earth_cov_1_to_discover', 'n': 8, 'aciertos': 8, 'tasa': 1.0, 'wilson95': [0.6756, 1.0]}
+{'estrato': 'earth_cov_0_out_of_reach', 'n': 8, 'aciertos': 8, 'tasa': 1.0, 'wilson95': [0.6756, 1.0]}
+{'estrato': 'earth_gap_mars_gap1', 'n': 8, 'aciertos': 8, 'tasa': 1.0, 'wilson95': [0.6756, 1.0]}
+{'estrato': 'earth_gap_mars_gap0', 'n': 8, 'aciertos': 8, 'tasa': 1.0, 'wilson95': [0.6756, 1.0]}
+{'estrato': 'moon_artemis_census', 'n': 7, 'aciertos': 7, 'tasa': 1.0, 'wilson95': [0.6457, 1.0]}
+DISC 0
+novelty mismatch []
+artemis [('haworth', False, 0.3811, 'rugged'), ('malapert_massif', False, 0.3391, 'rugged'), ('nobile_rim_1', True, 0.4797, 'rugged'), ('nobile_rim_2', False, 0.3326, 'rugged'), ('de_gerlache_rim_2', True, 0.521, 'rugged'), ('cabeus_b_peak', False, 0.3628, 'rugged'), ('mons_mouton_plateau', True, 0.6562, 'rugged')]

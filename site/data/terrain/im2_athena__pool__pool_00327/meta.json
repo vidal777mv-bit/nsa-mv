@@ -1,0 +1,40 @@
+{
+  "id": "im2_athena__pool__pool_00327",
+  "kind": "analog",
+  "body": "earth",
+  "name": "pool__pool_00327 (refined for im2_athena)",
+  "lat": 18.05201356842439,
+  "lon": 47.77,
+  "n": 269,
+  "L": 30.0,
+  "R": 4000.0,
+  "native_res_m": 30.887522287092473,
+  "z_min": -53.25607914087368,
+  "z_max": 63.78736614476952,
+  "relief_p99_p1_m": 94.41760932025218,
+  "vertical_exaggeration": 0.8,
+  "source_id": "nasadem",
+  "layers": {
+    "moon": "layers_moon.bin"
+  },
+  "files": {
+    "height": "height.bin",
+    "hillshade": "hillshade.png"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:52:03Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00327.tif",
+        "sha256": "564609436ce99c3f6cb0f44acfb546545724049293e44922200fb1ae6c6401cc"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  }
+}

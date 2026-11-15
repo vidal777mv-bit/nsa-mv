@@ -1,0 +1,66 @@
+{
+  "doc": "Plain-English explanations shown by the site (hand-written content, checked against STANDARDS.md section 4 and config/measure.json v1.3). tools/export_site_facts.py validates the feature ids and in_distance flags against config/measure.json and writes site/data/explain.json.",
+  "similarity": {
+    "what": "Two places are twins when their ground behaves alike: as steep, as rough, and shaped the same way (bowl, slope or plateau). It is a match of terrain behaviour, not of individual hills: laid on top of each other, the mountains do not line up.",
+    "distance": "D combines three measures (steepness, bowl vs plateau, bumpiness), each scaled by how much it varies across the 2,000 Earth places. D = 0 means identical measures; smaller is closer.",
+    "ties": "Measuring the same place twice with two different elevation models does not give D = 0: that spread is the measurement noise. Places whose D differs by less than that noise are tied: none of them is 'the' twin."
+  },
+  "features": {
+    "slope_p95_deg": {
+      "label": "Steepness",
+      "unit": "deg",
+      "what": "The slope that 95% of the ground stays under, measured every 100 m.",
+      "see_it": "Turn on the slope layer: marked ground is steeper than the mission's landing (or driving) limit.",
+      "why": "Slopes are the first thing a landing or a traverse is checked against."
+    },
+    "hi": {
+      "label": "Bowl vs plateau",
+      "unit": "",
+      "what": "Where the average ground sits between the low and the high parts of the place (0 to 1). Low: mostly low ground with a few high spots, like a basin floor. High: mostly high ground cut by a few lows, like a plateau with channels.",
+      "see_it": "Draw a cross-section: a bowl stays low with raised edges, a plateau stays high with dips.",
+      "why": "It says whether a crew would mostly work on a floor, on slopes or on top."
+    },
+    "hurst": {
+      "label": "Bumpiness across scales",
+      "unit": "",
+      "what": "How height differences grow from 100 m to 800 m steps. Near 1: smooth, rolling ground that changes gradually. Lower: ground that is already rough over short distances.",
+      "see_it": "Look at the contour lines: long, gentle bends versus tight, broken ones.",
+      "why": "Two places can be equally steep and still drive and land very differently."
+    },
+    "coherence": {
+      "label": "Grain direction",
+      "unit": "",
+      "what": "Whether the slopes face one main direction (1, like rows of ridges or dunes) or every direction (0).",
+      "see_it": "Look for lines of ridges running the same way.",
+      "why": "Shown as context only: on flat ground the measurement noise is as large as the signal, so it is not used to rank twins."
+    },
+    "ridge_pct": {
+      "label": "Ridges",
+      "unit": "%",
+      "what": "Share of the ground standing more than about 9 m above the ground around it (within 500 m).",
+      "see_it": "Turn on the ridges layer.",
+      "why": "Shown as context only: it moves together with steepness, so counting it again would double-count."
+    },
+    "valley_pct": {
+      "label": "Hollows",
+      "unit": "%",
+      "what": "Share of the ground lying more than about 9 m below the ground around it (within 500 m).",
+      "see_it": "Turn on the hollows layer.",
+      "why": "Shown as context only: it moves together with steepness, so counting it again would double-count."
+    }
+  },
+  "layers": {
+    "doc": "Bits of terrain/<id>/layers_<body>.bin (STANDARDS 10.5): computed on the same 100 m grid as the measures and the mission percentages, so what is drawn is exactly what was counted.",
+    "bit0": {"label": "Too steep to land", "what": "Ground steeper than the landing slope limit of the site's world (limit and source in the card)."},
+    "bit1": {"label": "Too steep to drive", "what": "Ground steeper than the rover driving slope limit (limit and source in the card)."},
+    "bit2": {"label": "Ridges", "what": "Ground more than about 9 m above its surroundings (500 m radius)."},
+    "bit3": {"label": "Hollows", "what": "Ground more than about 9 m below its surroundings (500 m radius)."}
+  },
+  "mission_pct": {
+    "what": "Share of the ground under the landing (or driving) slope limit, measured every 100 m. The limit comes from a published mission document (linked). It compares ground with a published number; it is not a mission simulation."
+  },
+  "scope": {
+    "detail": "Full relief, layers and cross-sections exist for the 16 named sites and their 10 Earth candidates each. The 1,838 Mars places across the planet have measures and Earth twins, but no relief view.",
+    "earth_search": "The Earth search covers rock ground only: NASADEM from 56 S to 60 N, and Copernicus GLO-30 from 60 N to 84 N. Windows with 20% or more ice are left out."
+  }
+}

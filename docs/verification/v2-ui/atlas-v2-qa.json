@@ -1,0 +1,104 @@
+{
+  "checks": [
+    {
+      "initial": 10,
+      "ties": 10
+    },
+    {
+      "two": 2,
+      "metrics": "MEASURE\nJEZERO CRATER: OCTAVIA E. BUTLER LANDING (PERSEVERANCE)\nA · TAGANT, MAURITANIA\nB · ASH SHARQIYAH, SAUDI ARABIA"
+    },
+    {
+      "reload": true,
+      "two": 2,
+      "overlay": "true"
+    },
+    {
+      "backMode": "swipe"
+    },
+    {
+      "site": "haworth",
+      "candidates": 10,
+      "error": "Same horizontal scale and vertical exaggeration ×2.4 for both terrains. Earth rotation 270° is visual alignment and does not change the score. NASA elevation data."
+    },
+    {
+      "site": "malapert_massif",
+      "candidates": 10,
+      "error": "Same horizontal scale and vertical exaggeration ×1.2 for both terrains. Earth rotation 210° is visual alignment and does not change the score. NASA elevation data."
+    },
+    {
+      "site": "nobile_rim_1",
+      "candidates": 10,
+      "error": "Same horizontal scale and vertical exaggeration ×1 for both terrains. Earth rotation 210° is visual alignment and does not change the score. NASA elevation data."
+    },
+    {
+      "site": "nobile_rim_2",
+      "candidates": 10,
+      "error": "Same horizontal scale and vertical exaggeration ×1.8 for both terrains. Earth rotation 290° is visual alignment and does not change the score. NASA elevation data."
+    },
+    {
+      "site": "de_gerlache_rim_2",
+      "candidates": 10,
+      "error": "Same horizontal scale and vertical exaggeration ×1.1 for both terrains. Earth rotation 70° is visual alignment and does not change the score. NASA elevation data."
+    },
+    {
+      "site": "jezero",
+      "candidates": 10,
+      "error": "Same horizontal scale and vertical exaggeration ×8 for both terrains. Earth rotation 280° is visual alignment and does not change the score. NASA elevation data."
+    },
+    {
+      "site": "gale",
+      "candidates": 10,
+      "error": "Same horizontal scale and vertical exaggeration ×9.3 for both terrains. Earth rotation 20° is visual alignment and does not change the score. NASA elevation data."
+    },
+    {
+      "site": "insight_elysium",
+      "candidates": 10,
+      "error": "Same horizontal scale and vertical exaggeration ×10 for both terrains. Earth rotation 350° is visual alignment and does not change the score. NASA elevation data."
+    },
+    {
+      "site": "spirit_columbia",
+      "candidates": 10,
+      "error": "Same horizontal scale and vertical exaggeration ×10 for both terrains. Earth rotation 80° is visual alignment and does not change the score. NASA elevation data."
+    },
+    {
+      "site": "zhurong",
+      "candidates": 10,
+      "error": "Same horizontal scale and vertical exaggeration ×10 for both terrains. Earth rotation 50° is visual alignment and does not change the score. NASA elevation data."
+    },
+    {
+      "site": "oxia_planum",
+      "candidates": 10,
+      "error": "Same horizontal scale and vertical exaggeration ×10 for both terrains. Earth rotation 70° is visual alignment and does not change the score. NASA elevation data."
+    },
+    {
+      "site": "apollo17_taurus_littrow",
+      "candidates": 10,
+      "error": "Same horizontal scale and vertical exaggeration ×3.4 for both terrains. Earth rotation 290° is visual alignment and does not change the score. NASA elevation data."
+    },
+    {
+      "site": "im1_odysseus",
+      "candidates": 10,
+      "error": "Same horizontal scale and vertical exaggeration ×2.5 for both terrains. Earth rotation 320° is visual alignment and does not change the score. NASA elevation data."
+    },
+    {
+      "site": "im2_athena",
+      "candidates": 10,
+      "error": "Same horizontal scale and vertical exaggeration ×4.9 for both terrains. Earth rotation 0° is visual alignment and does not change the score. NASA elevation data."
+    },
+    {
+      "site": "cabeus_b_peak",
+      "candidates": 10,
+      "error": "Same horizontal scale and vertical exaggeration ×1.2 for both terrains. Earth rotation 40° is visual alignment and does not change the score. NASA elevation data."
+    },
+    {
+      "site": "mons_mouton_plateau",
+      "candidates": 10,
+      "error": "Same horizontal scale and vertical exaggeration ×1.9 for both terrains. Earth rotation 190° is visual alignment and does not change the score. NASA elevation data."
+    },
+    {
+      "mobileOverflow": false
+    }
+  ],
+  "errors": []
+}

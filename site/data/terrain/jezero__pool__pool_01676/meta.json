@@ -1,0 +1,40 @@
+{
+  "id": "jezero__pool__pool_01676",
+  "kind": "analog",
+  "body": "earth",
+  "name": "pool__pool_01676 (refined for jezero)",
+  "lat": 37.87,
+  "lon": 96.07,
+  "n": 269,
+  "L": 30.0,
+  "R": 4000.0,
+  "native_res_m": 30.887522287092473,
+  "z_min": -93.77973235210811,
+  "z_max": 163.31448712085466,
+  "relief_p99_p1_m": 214.7479522525009,
+  "vertical_exaggeration": 0.8,
+  "source_id": "nasadem",
+  "layers": {
+    "mars": "layers_mars.bin"
+  },
+  "files": {
+    "height": "height.bin",
+    "hillshade": "hillshade.png"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:51:56Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01676.tif",
+        "sha256": "5a01821a12bb7976fb12f266e3e7389d77893373cf52a6bc269439228ccec8c9"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  }
+}

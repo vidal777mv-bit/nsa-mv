@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Common Ground · NASA Space Apps 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Every number on these slides is copied from docs/slides.md, which is rendered from the facts ledger. */
+:root{--bg:#0b0b0c;--line:#2e2b28;--text:#f4efe7;--muted:#bcb3a7;--mars:#ec9a6c;--earth:#a9cf9b;--moon:#d5d1ca}
+@page{size:1920px 1080px;margin:0}
+*{box-sizing:border-box}html,body{margin:0;background:#000}
+body{font:400 30px/1.35 Barlow,sans-serif;color:var(--text)}
+.s{width:1920px;height:1080px;position:relative;overflow:hidden;page-break-after:always;break-after:page;
+  background:radial-gradient(1400px 800px at 20% 10%,#2a1a12 0%,transparent 60%),var(--bg);display:grid;grid-template-columns:720px 1fr;gap:56px;padding:84px 84px 96px}
+.s.full{grid-template-columns:1fr}
+.k{font:600 24px 'Barlow Condensed';letter-spacing:.16em;text-transform:uppercase;color:var(--mars);margin:0 0 18px}
+h1{font:600 84px/1 'Barlow Condensed';margin:0 0 34px;letter-spacing:-.005em}
+h1 em{font-style:normal;color:var(--mars)}h1 .e{color:var(--earth)}
+ul{margin:0;padding:0;list-style:none}li{margin:0 0 26px;padding-left:28px;position:relative;color:#e8e1d6}
+li:before{content:"";position:absolute;left:0;top:.55em;width:12px;height:12px;background:var(--mars)}
+li b{color:var(--text);font-weight:600}
+.big{font:600 150px/1 'Barlow Condensed';color:var(--mars);margin:0}
+.shot{align-self:center;justify-self:center;max-width:100%;max-height:880px;border:1px solid var(--line);box-shadow:0 30px 80px #000c}
+.foot{position:absolute;left:84px;right:84px;bottom:34px;display:flex;justify-content:space-between;font:500 20px 'Barlow Condensed';letter-spacing:.12em;color:#8f877c;text-transform:uppercase}
+.foot b{color:var(--mars);font-weight:600}
+.note{font-size:22px;color:var(--muted);margin-top:10px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.card{border:1px solid var(--line);padding:26px 30px;background:#151515}
+.card h3{font:600 34px 'Barlow Condensed';margin:0 0 14px}.card.y h3{color:var(--earth)}.card.n h3{color:var(--mars)}
+</style></head><body>
+
+<!-- 1 -->
+<section class="s"><div>
+ <p class="k">Common Ground · NASA Space Apps 2026</p>
+ <h1>Earth can rehearse <em>95.4%</em> of measured Mars.</h1>
+ <ul>
+  <li>We measured <b>1,838</b> places on Mars (8 km disks) and searched <b>2,730</b> bare-ground places on Earth for ground that behaves the same.</li>
+  <li>For <b>4.6%</b> of Mars, Earth has no twin within sensor noise. The coral points are that gap.</li>
+  <li>Start on Mars. Then find its ground on Earth, and see where Earth runs out.</li>
+ </ul></div>
+ <img class="shot" src="img/01_hero.png" alt="">
+ <div class="foot"><span>Common <b>Ground</b></span><span>Identify Earth analogs of Moon bases and Mars · Martian Map</span><span>1 / 7</span></div></section>
+
+<!-- 2 -->
+<section class="s"><div>
+ <p class="k">Step 1 · Mars or the Moon</p>
+ <h1>Pick a landing site. See what the mission needs.</h1>
+ <ul>
+  <li><b>16 sites:</b> 6 on Mars, 10 on the Moon, including 7 Artemis III candidate regions.</li>
+  <li>Limits come from NASA documents, each with its source: Mars landing <b>15°</b>, Moon landing <b>12°</b>.</li>
+  <li>Moon: Earth has ground like <b>9 of 10</b> sites. The low polar Sun is what no place on Earth can rehearse.</li>
+ </ul></div>
+ <img class="shot" src="img/02_moon.png" alt="">
+ <div class="foot"><span>Common <b>Ground</b></span><span>NASA LOLA · LROC · MRO CTX (USGS)</span><span>2 / 7</span></div></section>
+
+<!-- 3 -->
+<section class="s"><div>
+ <p class="k">Step 2 · Then, Earth</p>
+ <h1>Its ground on <span class="e">Earth</span>.</h1>
+ <ul>
+  <li>Exact nearest-neighbour search over <b>2,730</b> Earth places on 3 measures: steepness (slope p95), bowl vs plateau, bumpiness across scales.</li>
+  <li>Jezero → Tagant, Mauritania, <b>D = 0.057</b>. Places closer than sensor noise are shown as <b>tied</b>: no single "twin".</li>
+  <li><b>1,786</b> Earth places are a twin of some site or Mars place; <b>1,736</b> are outside the well-known analog regions.</li>
+ </ul></div>
+ <img class="shot" src="img/03_earth.png" alt="">
+ <div class="foot"><span>Common <b>Ground</b></span><span>NASA NASADEM · Copernicus GLO-30 (Arctic)</span><span>3 / 7</span></div></section>
+
+<!-- 4 -->
+<section class="s"><div>
+ <p class="k">Measured evidence, not a picture</p>
+ <h1>Same scale. Same measures. Two worlds.</h1>
+ <ul>
+  <li>Elevation models on a 100 m grid, measured the same way on Mars, the Moon and Earth.</li>
+  <li>Mission-proven share: Jezero <b>99.5%</b> within the landing limit, Apollo 17 <b>91.0%</b>. A reference, not a success probability.</li>
+  <li>Direction does not count: we compare how steep the ground is, not which way it faces.</li>
+ </ul></div>
+ <img class="shot" src="img/04_relief.png" alt="">
+ <div class="foot"><span>Common <b>Ground</b></span><span>Relief: NASA MRO CTX (USGS) · NASADEM</span><span>4 / 7</span></div></section>
+
+<!-- 5 -->
+<section class="s full"><div>
+ <p class="k">The dossier</p>
+ <h1>Rehearse here. <em>This place cannot teach you.</em></h1>
+ <div class="two">
+  <div class="card y"><h3>Rehearse here</h3><ul>
+   <li>Landing terrain and driving terrain: each line is a rule with a NASA source.</li>
+   <li>Jezero and Tagant: landing <b>yes</b>, driving <b>yes</b>, low sun <b>yes</b>, cold <b>no</b>.</li></ul></div>
+  <div class="card n"><h3>Earth cannot teach</h3><ul>
+   <li>Gravity: Mars <b>3.73</b> vs Earth <b>9.82 m/s²</b>. Pressure: <b>636 Pa</b> vs <b>101,400 Pa</b>.</li>
+   <li>Day length: Mars <b>24.7 h</b>, Moon <b>709 h</b>.</li>
+   <li>Low polar Sun: Haworth is in the grazing band <b>50%</b> of the time; Earth at most <b>18.6%</b>.</li></ul></div>
+ </div></div>
+ <div class="foot"><span>Common <b>Ground</b></span><span>NASA Planetary Fact Sheets</span><span>5 / 7</span></div></section>
+
+<!-- 6 -->
+<section class="s"><div>
+ <p class="k">The Martian map</p>
+ <h1>Where Earth runs out.</h1>
+ <ul>
+  <li><b>4.6%</b> of 1,838 measured Mars places have no Earth twin (95% interval <b>3.7–5.6%</b>).</li>
+  <li>Adding Arctic rock (60–84° N, ice left out) brought the Mars gap from <b>11.7%</b> to <b>4.6%</b>, and Moon sites without a twin from <b>3 to 1</b>.</li>
+  <li>Where there is no twin, rehearsal on Earth is not possible. Our reading: robots go first.</li>
+ </ul></div>
+ <img class="shot" src="img/06_gap.png" alt="">
+ <div class="foot"><span>Common <b>Ground</b></span><span>Ask the atlas: answers from the exported tables, no model</span><span>6 / 7</span></div></section>
+
+<!-- 7 -->
+<section class="s full"><div>
+ <p class="k">Honest by design</p>
+ <h1>A modest signal, <em>reported as it came out.</em></h1>
+ <div class="two">
+  <ul>
+   <li>Both pre-registered tests narrowly failed. v1.3 blind holdout (15 regions): AUC <b>0.695</b> (needed 0.70), nearest region <b>6 of 15</b> (needed 7).</li>
+   <li>The signal is real (permutation p <b>0.007</b>) but modest. It measures operability, not geological origin.</li>
+   <li>Every number is generated from a facts ledger; none is typed by hand.</li>
+  </ul>
+  <ul>
+   <li><b>Data:</b> NASA NASADEM, LRO LOLA &amp; LROC, MRO CTX (USGS); ESA Copernicus DEM &amp; WorldCover; Köppen-Geiger (Beck et al. 2018); Natural Earth.</li>
+   <li><b>AI:</b> code written with AI assistance (Claude, Anthropic) under the team's direction. The idea, the unlocked-atlas concept and the mission framing are the team's.</li>
+  </ul>
+ </div></div>
+ <div class="foot"><span>Common <b>Ground</b></span><span>Copernicus DEM © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018, provided under COPERNICUS by the EU and ESA</span><span>7 / 7</span></div></section>
+</body></html>

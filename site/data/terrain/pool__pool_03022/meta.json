@@ -1,0 +1,40 @@
+{
+  "id": "pool__pool_03022",
+  "kind": "analog",
+  "body": "earth",
+  "name": "pool__pool_03022",
+  "lat": 63.97,
+  "lon": -68.93,
+  "n": 269,
+  "L": 30.0,
+  "R": 4000.0,
+  "native_res_m": 30.887522287092473,
+  "z_min": -57.62880500625718,
+  "z_max": 58.671798761287306,
+  "relief_p99_p1_m": 84.82819638609132,
+  "vertical_exaggeration": 0.8,
+  "source_id": "cop_dem_glo30",
+  "layers": {
+    "mars": "layers_mars.bin"
+  },
+  "files": {
+    "height": "height.bin",
+    "hillshade": "hillshade.png"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:51:56Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01022.tif",
+        "sha256": "657827f2da1628da6c26abaa0a891f35f5dc34e0f3b2879ea40fe961bfa8dfbb"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  }
+}

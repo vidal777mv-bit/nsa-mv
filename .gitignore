@@ -1,0 +1,85 @@
+# Python virtual environment: machine-specific, about 490 MB, 9,981 files.
+.venv/
+
+# Python bytecode caches: regenerated on every run.
+__pycache__/
+*.pyc
+
+# pytest cache: regenerated on every run.
+.pytest_cache/
+
+# Raw downloaded source data: about 2.8 GB; 11 files over 50 MB, 3 over 100 MB (GitHub hard limit).
+# Re-fetch with the pipeline instead of committing it.
+data/raw/
+
+# Pipeline intermediates: about 111 MB, DuckDB files, run logs. Regenerated from data/raw.
+# The published copy is site/data/, which stays in the repo.
+data/derived/
+
+# Local UI backup snapshots: scratch copies, not part of the product.
+_ui_backups/
+
+# Archive of site/data files moved out as orphans (local only, see its MANIFEST.md).
+_archive/
+
+# Pre-restructure backup copies (local only).
+_backup_pre_arctic/
+
+# Verification caches (regenerated).
+docs/verification/**/cache/
+
+# Run and fetch logs (JSON lines). Named explicitly so no real data .jsonl is caught.
+**/run_log.jsonl
+**/fetch_log.jsonl
+
+# Any other log file.
+*.log
+
+# Local database files (DuckDB / SQLite intermediates).
+*.duckdb
+*.sqlite
+*.sqlite3
+
+# Browser-automation scratch output (not present today; guard).
+.playwright-mcp/
+
+# Secrets and local environment files (none present today; guard).
+.env
+.env.*
+*.pem
+*.key
+secrets/
+
+# Windows and editor noise.
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Proposal file used while preparing this .gitignore.
+.gitignore.proposed
+
+# Internal planning note: kept excluded, as in the existing .gitignore.
+PLAN.md
+
+# Internal agent briefs and handoffs: not published.
+CODEX_UI_BRIEF.md
+CODEX_UI_FEEDBACK_1.md
+docs/UI_REDESIGN_HANDOFF.md
+docs/UI_REDESIGN_DELIVERY.md
+docs/cleanup_candidates.md
+
+# Internal publishing notes (not published)
+docs/REPO_CHECKLIST.md
+docs/PUBLISH_STEPS.md
+
+# Video build artefacts (the MP4 goes to YouTube; sources stay)
+video/*.mp4
+video/snapshots/
+video/renders/
+video/node_modules/
+# Internal briefs
+docs/REDESIGN_V2.md
+
+# Pages is served from the gh-pages branch (contents of site/)
+.github/

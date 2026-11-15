@@ -1,0 +1,104 @@
+{
+  "checks": [
+    {
+      "start": 1,
+      "scene": "discover"
+    },
+    {
+      "scene": "site",
+      "visible": 1,
+      "overflow": false
+    },
+    {
+      "scene": "earth",
+      "visible": 1,
+      "overflow": false
+    },
+    {
+      "scene": "compare",
+      "visible": 1,
+      "overflow": false
+    },
+    {
+      "scene": "limits",
+      "visible": 1,
+      "overflow": false
+    },
+    {
+      "reload": "compare",
+      "selected": 2,
+      "url": true
+    },
+    {
+      "historyMode": "swipe"
+    },
+    {
+      "target": "haworth",
+      "rows": 10
+    },
+    {
+      "target": "malapert_massif",
+      "rows": 10
+    },
+    {
+      "target": "nobile_rim_1",
+      "rows": 10
+    },
+    {
+      "target": "nobile_rim_2",
+      "rows": 10
+    },
+    {
+      "target": "de_gerlache_rim_2",
+      "rows": 10
+    },
+    {
+      "target": "jezero",
+      "rows": 10
+    },
+    {
+      "target": "gale",
+      "rows": 10
+    },
+    {
+      "target": "insight_elysium",
+      "rows": 10
+    },
+    {
+      "target": "spirit_columbia",
+      "rows": 10
+    },
+    {
+      "target": "zhurong",
+      "rows": 10
+    },
+    {
+      "target": "oxia_planum",
+      "rows": 10
+    },
+    {
+      "target": "apollo17_taurus_littrow",
+      "rows": 10
+    },
+    {
+      "target": "im1_odysseus",
+      "rows": 10
+    },
+    {
+      "target": "im2_athena",
+      "rows": 10
+    },
+    {
+      "target": "cabeus_b_peak",
+      "rows": 10
+    },
+    {
+      "target": "mons_mouton_plateau",
+      "rows": 10
+    },
+    {
+      "mobileOverflow": false
+    }
+  ],
+  "errors": []
+}

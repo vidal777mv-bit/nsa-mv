@@ -1,0 +1,83 @@
+{
+  "version": "1.0",
+  "frozen": "2026-11-14",
+  "doc": "Rules of the rehearsal plan (STANDARDS section 10.15, P-P). Every threshold and set is here, not in code. A limit that has no source is not in this file. Limits that come from a mission (landing and driving slope) are NOT copied here: each card carries its own limit and source in mission_pct.<kind>.limit_deg and mission_pct.<kind>.source, and the evaluator reads them from the card. Body facts are read from config/bodies.json. Light values are read from data/derived/light/light.json (P-S). Status vocabulary: yes | partial | no | null (null = input missing, with a reason).",
+  "evidence_tags": ["derived observation", "reference comparison", "published"],
+  "landing": {
+    "label": "Landing: share of 100 m terrain under the landing slope limit, target vs twin",
+    "evidence": "reference comparison",
+    "unit": "percent",
+    "yes_max_points": 10,
+    "partial_max_points": 25,
+    "rule": "difference = |analog - target| in percentage points; yes if <= yes_max_points, partial if <= partial_max_points, else no",
+    "limit_source": "card mission_pct.landing.source (per body, from config/missions.json)",
+    "source": "STANDARDS.md section 10.15 (thresholds 10 and 25 points)"
+  },
+  "driving": {
+    "label": "Driving: share of 100 m terrain under the driving slope limit, target vs twin",
+    "evidence": "reference comparison",
+    "unit": "percent",
+    "yes_max_points": 10,
+    "partial_max_points": 25,
+    "rule": "difference = |analog - target| in percentage points; yes if <= yes_max_points, partial if <= partial_max_points, else no",
+    "limit_source": "card mission_pct.driving.source (per body, from config/missions.json)",
+    "source": "STANDARDS.md section 10.15 (thresholds 10 and 25 points)"
+  },
+  "cold": {
+    "label": "Cold: the twin's Koppen-Geiger class is a cold class (the target's temperature range is shown with it)",
+    "evidence": "reference comparison",
+    "unit": "K / Koppen class",
+    "cold_koppen_classes": ["BWk", "BSk", "ET", "EF", "Dfc", "Dfd", "Dwc", "Dwd", "Dsc", "Dsd"],
+    "best_status": "partial",
+    "rule": "analog class in cold_koppen_classes -> partial (best possible: no Earth climate reaches the body's temperature range, see temperature); otherwise no",
+    "class_source": "Beck et al. 2018/2023 Koppen-Geiger 1 km map (card context.sources.koppen); class names from data/raw/reference/koppen/legend.txt",
+    "source": "STANDARDS.md section 10.15 (cold set and best status partial)"
+  },
+  "low_sun": {
+    "label": "Low sun: share of samples with the Sun in the grazing band (0 to 10 deg elevation), target vs twin",
+    "evidence": "derived observation",
+    "unit": "percent",
+    "grazing_band_deg": [0, 10],
+    "yes_within_points": 10,
+    "partial_min_fraction_of_target": 0.5,
+    "rule": "yes if analog >= target - yes_within_points; partial if analog >= target * partial_min_fraction_of_target; else no. For no: the lowest |latitude| on Earth whose grazing_pct reaches the target is named (scan |lat| 0..90 in earth_scan_step_deg steps with analog.core.light, Earth obliquity from config/light.json), or the line says that no latitude on Earth reaches it, with the Earth maximum and its latitude",
+    "earth_scan_step_deg": 0.5,
+    "source": "STANDARDS.md section 10.15 (P-S light: grazing_pct = 100 * share of samples with 0 < e < 10 deg)"
+  },
+  "cannot": {
+    "gravity": {
+      "label": "Gravity: the twin's gravity is Earth's; the target's is lower or higher",
+      "body_key": "gravity_m_s2",
+      "unit": "m/s2",
+      "ratio": true,
+      "evidence": "published",
+      "source": "config/bodies.json (source_url of the target body, NASA Planetary Fact Sheet)"
+    },
+    "pressure": {
+      "label": "Atmospheric pressure: the twin has Earth's surface pressure; the target's is a fraction of it",
+      "body_key": "surface_pressure_pa",
+      "unit": "Pa",
+      "ratio": true,
+      "evidence": "published",
+      "source": "config/bodies.json (source_url of the target body, NASA Planetary Fact Sheet)"
+    },
+    "temperature": {
+      "label": "Temperature range: the twin's printed range does not reach the target's range",
+      "body_keys": ["temp_min_k", "temp_max_k"],
+      "unit": "K",
+      "ratio": false,
+      "evidence": "published",
+      "source": "config/bodies.json (source_url of the target body and of earth, NASA Planetary Fact Sheet)"
+    },
+    "day_length": {
+      "label": "Day length: the twin's day is 24 h; the target's is different",
+      "body_key": "day_length_h",
+      "unit": "h",
+      "ratio": true,
+      "evidence": "published",
+      "source": "config/bodies.json (source_url of the target body, NASA Planetary Fact Sheet)"
+    }
+  },
+  "twin_body": "earth",
+  "status_no_for_cannot": "no"
+}

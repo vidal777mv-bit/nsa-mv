@@ -1,0 +1,168 @@
+{
+  "source": "config/missions.json",
+  "reason": null,
+  "limits": {
+    "moon": {
+      "landing": {
+        "limit_deg": 12,
+        "source_url": "https://ntrs.nasa.gov/citations/19720018253",
+        "entry": "Apollo Lunar Module, effective slope 12 deg or less (NASA TN D-6850)",
+        "reason": "The only read value for lunar landing. No baseline stated, so 100 m cannot be confirmed; the value is the design effective slope, not a per-site measurement."
+      },
+      "driving": {
+        "limit_deg": 25,
+        "source_url": "https://ntrs.nasa.gov/citations/19730008090",
+        "entry": "Lunar Roving Vehicle, maximum slope about 25 deg (NASA TR R-401)",
+        "reason": "The only read value for lunar driving. Alternative 23 deg (upper end of the 20-23 deg negotiable range) if the lead wants a conservative choice. No baseline stated."
+      }
+    },
+    "mars": {
+      "landing": {
+        "limit_deg": 15,
+        "source_url": "https://marsoweb.nas.nasa.gov/landingsites/mer2003/doc/original.html",
+        "entry": "MER landing requirement, surface slopes generally less than 15 deg",
+        "reason": "No entry states a value at 100 m. The 15 deg MER requirement is a general landing-site limit; the MSL 30 deg value is at 2-5 m baseline (touchdown stability) and is not comparable. DECISION FOR THE LEAD."
+      },
+      "driving": {
+        "limit_deg": 30,
+        "source_url": "https://science.nasa.gov/mission/mars-2020-perseverance/rover-components/",
+        "entry": "Perseverance: drivers avoid terrain that would tilt the rover more than 30 deg",
+        "reason": "A tilt planning limit, not a slope at a baseline. No driving slope limit with a baseline was found for Curiosity. DECISION FOR THE LEAD."
+      }
+    }
+  },
+  "entries": [
+    {
+      "body": "moon",
+      "mission": "Apollo landings (Apollo 11-17 Lunar Module)",
+      "vehicle": "Apollo Lunar Module (LM)",
+      "kind": "landing",
+      "max_slope_deg": 12,
+      "baseline_m": null,
+      "source_url": "https://ntrs.nasa.gov/citations/19720018253",
+      "pdf_url": "https://ntrs.nasa.gov/api/citations/19720018253/downloads/19720018253.pdf",
+      "source_title": "Rogers, W. F., 'Apollo Experience Report: Lunar Module Landing Gear Subsystem', NASA TN D-6850, 1972",
+      "quote": "Topographical features consisted of a mean surface slope of 6° or less and an effective slope of 12° or less, including the effects of depressions or protuberances (or both) and footpad penetration.",
+      "quote_2": "the probability of attaining a stable landing on a slope of 12° or less is 0.998.",
+      "note": "Design specification of the lunar surface used to certify the LM landing gear (not a measured slope at any site). 'Effective slope' includes protuberances and depressions; no baseline length is stated."
+    },
+    {
+      "body": "moon",
+      "mission": "Apollo 15-17 (Lunar Roving Vehicle)",
+      "vehicle": "Lunar Roving Vehicle (LRV)",
+      "kind": "driving",
+      "max_slope_deg": 25,
+      "baseline_m": null,
+      "source_url": "https://ntrs.nasa.gov/citations/19730008090",
+      "pdf_url": "https://ntrs.nasa.gov/api/citations/19730008090/downloads/19730008090.pdf",
+      "source_title": "Costes, N. C., Farmer, J. E., George, E. B., 'Mobility performance of the lunar roving vehicle: Terrestrial studies: Apollo 15 results', NASA TR R-401, 1972",
+      "quote": "slopes with maximum slope angles along several vehicle lengths of approximately 25 deg",
+      "quote_2": "Slopes of the order of 20 to 23 deg can be negotiated in favorable circumstances, and the minimum turn radius is 3.05 m (10 ft).",
+      "note": "Design requirement for the vehicle, stated in the report introduction. The report gives no measured Apollo traverse maximum. The 'along several vehicle lengths' wording gives no baseline length. Apollo 15 traverse slopes measured from 2 m DEMs in a 2025 NASA abstract were not opened (secondary)."
+    },
+    {
+      "body": "moon",
+      "mission": "Apollo 15-17 (Lunar Roving Vehicle), negotiable slope",
+      "vehicle": "Lunar Roving Vehicle (LRV)",
+      "kind": "driving",
+      "max_slope_deg": 23,
+      "baseline_m": null,
+      "source_url": "https://ntrs.nasa.gov/citations/19730008090",
+      "pdf_url": "https://ntrs.nasa.gov/api/citations/19730008090/downloads/19730008090.pdf",
+      "source_title": "NASA TR R-401 (see above)",
+      "quote": "Slopes of the order of 20 to 23 deg can be negotiated in favorable circumstances, and the minimum turn radius is 3.05 m (10 ft).",
+      "quote_2": "The maximum slope-climbing capability of the LRV wheel on the simulated lunar soils ranges between 18 and 23 deg.",
+      "note": "Upper end of the capability stated for favourable circumstances, lower than the 25 deg design wording. No baseline length."
+    },
+    {
+      "body": "mars",
+      "mission": "MER (Spirit and Opportunity) landing sites",
+      "vehicle": "MER lander with airbags",
+      "kind": "landing",
+      "max_slope_deg": 15,
+      "baseline_m": null,
+      "source_url": "https://marsoweb.nas.nasa.gov/landingsites/mer2003/doc/original.html",
+      "pdf_url": null,
+      "source_title": "NASA Mars Exploration Rover landing site memorandum (2003), section on surface slopes; see Golombek et al. 2003, JGR Planets, DOI 10.1029/2003JE002074",
+      "quote": "As a result, surface slopes should generally be less than 15°.",
+      "quote_2": "Golombek et al. (2003) lists 'low 10-m-scale slopes to reduce airbag spin-up and bounce' as a criterion (USGS record https://pubs.usgs.gov/publication/70025013); no number in that record.",
+      "note": "Landing-site requirement stated generally; the text read gives no baseline. The 10-m-scale slope criterion of Golombek et al. (2003) has no number in the record read."
+    },
+    {
+      "body": "mars",
+      "mission": "MSL (Curiosity) landing site",
+      "vehicle": "MSL (sky crane)",
+      "kind": "landing",
+      "max_slope_deg": 30,
+      "baseline_m": null,
+      "source_url": "https://pubs.usgs.gov/publication/70047380",
+      "pdf_url": null,
+      "source_title": "Golombek, M. et al., 'Selection of the Mars Science Laboratory Landing Site', Space Science Reviews 170, 641-737, 2012, DOI 10.1007/s11214-012-9916-y (Crossref verified)",
+      "quote": "(4) slopes of <30° at baselines of 2-5 m for rover stability at touchdown",
+      "quote_2": null,
+      "note": "The baseline stated is 2-5 m, not 100 m: it is a touchdown stability criterion for the rover, not a 100 m terrain slope. Read from the USGS publication record (summary text). Not used as the 100 m limit."
+    },
+    {
+      "body": "mars",
+      "mission": "Mars 2020 (Perseverance) driving",
+      "vehicle": "Perseverance rover",
+      "kind": "driving",
+      "max_slope_deg": 30,
+      "baseline_m": null,
+      "source_url": "https://science.nasa.gov/mission/mars-2020-perseverance/rover-components/",
+      "pdf_url": null,
+      "source_title": "NASA Science, Mars 2020 Perseverance rover components",
+      "quote": "For added protection, rover drivers avoid terrains that would tilt the rover more than 30 degrees.",
+      "quote_2": "Perseverance is designed to withstand a 45-degree tilt in any direction without tipping over.",
+      "note": "This is a rover TILT planning limit, not a terrain slope at a stated baseline. Any use as a 100 m slope limit is a decision for the team lead."
+    }
+  ],
+  "not_found": [
+    {
+      "body": "moon",
+      "mission": "Chandrayaan-3 (Shiv Shakti site)",
+      "searched": "ISRO UN COPUOS slides and IAC paper listing; MNRAS Letters DOI 10.1093/mnrasl/slad106 not opened",
+      "result": "No degree limit read."
+    },
+    {
+      "body": "moon",
+      "mission": "Chang'e-3 and Chang'e-4",
+      "searched": "IAC-15 abstract (Chang'e-3 safety); Li et al. 2018 DOI 10.1029/2018ea000507",
+      "result": "No degree limit read. Chang'e-4 analysis uses a flat-area fraction threshold (> 0.6), not a slope in degrees, so it is not used."
+    },
+    {
+      "body": "mars",
+      "mission": "Phoenix",
+      "searched": "Arvidson et al. 2008, JGR Planets, DOI 10.1029/2007JE003021 (abstract read)",
+      "result": "Abstract gives rock and slope distributions as a criterion but no slope value in degrees."
+    },
+    {
+      "body": "mars",
+      "mission": "MSL (Curiosity) driving",
+      "searched": "JPL and NASA pages on Curiosity routes",
+      "result": "No stated drive limit. Measured peak pitch 25.22 deg appears in a JPL paper that was not opened as a primary source; not used."
+    },
+    {
+      "body": "mars",
+      "mission": "Mars 2020 landing site (Jezero)",
+      "searched": "NASA and JPL landing pages",
+      "result": "No landing slope limit read."
+    }
+  ],
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:51:37Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "config_missions",
+        "path": "config/missions.json",
+        "sha256": "f7892ff040989df8fae70812fd149c40a8119e3cf502acdbc88aa87bf0e25e72"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  }
+}

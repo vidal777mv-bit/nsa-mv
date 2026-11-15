@@ -1,0 +1,12 @@
+numpy==2.5.4
+scipy
+rasterio==1.5.2
+pyproj==3.8.0
+shapely==2.2.0
+affine==3.0.1
+requests==2.34.2
+pystac-client
+planetary-computer
+pytest
+duckdb
+pyarrow

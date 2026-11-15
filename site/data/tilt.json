@@ -1,0 +1,1791 @@
+{
+  "generated_by": "tools/export_tilt.py",
+  "method": "least-squares plane over valid disk pixels; x east, y north; downhill azimuth clockwise from north",
+  "terrains": {
+    "apollo17_taurus_littrow": {
+      "tilt_deg": 1.61,
+      "downhill_azimuth_deg": 138.9,
+      "downhill": "SE",
+      "rms_residual_m": 52.948,
+      "n_pixels": 55869
+    },
+    "apollo17_taurus_littrow__pool__pool_00004": {
+      "tilt_deg": 2.27,
+      "downhill_azimuth_deg": 50.9,
+      "downhill": "NE",
+      "rms_residual_m": 51.489,
+      "n_pixels": 55869
+    },
+    "apollo17_taurus_littrow__pool__pool_00040": {
+      "tilt_deg": 1.22,
+      "downhill_azimuth_deg": 207.7,
+      "downhill": "SW",
+      "rms_residual_m": 49.868,
+      "n_pixels": 55869
+    },
+    "apollo17_taurus_littrow__pool__pool_00078": {
+      "tilt_deg": 2.28,
+      "downhill_azimuth_deg": 322.2,
+      "downhill": "NW",
+      "rms_residual_m": 94.412,
+      "n_pixels": 55869
+    },
+    "apollo17_taurus_littrow__pool__pool_00151": {
+      "tilt_deg": 0.61,
+      "downhill_azimuth_deg": 25.3,
+      "downhill": "NE",
+      "rms_residual_m": 47.251,
+      "n_pixels": 55869
+    },
+    "apollo17_taurus_littrow__pool__pool_00712": {
+      "tilt_deg": 1.2,
+      "downhill_azimuth_deg": 9.0,
+      "downhill": "N",
+      "rms_residual_m": 43.089,
+      "n_pixels": 55869
+    },
+    "apollo17_taurus_littrow__pool__pool_01301": {
+      "tilt_deg": 2.8,
+      "downhill_azimuth_deg": 278.7,
+      "downhill": "W",
+      "rms_residual_m": 57.238,
+      "n_pixels": 55869
+    },
+    "apollo17_taurus_littrow__pool__pool_01514": {
+      "tilt_deg": 2.8,
+      "downhill_azimuth_deg": 176.3,
+      "downhill": "S",
+      "rms_residual_m": 51.424,
+      "n_pixels": 55869
+    },
+    "apollo17_taurus_littrow__pool__pool_01549": {
+      "tilt_deg": 2.49,
+      "downhill_azimuth_deg": 6.8,
+      "downhill": "N",
+      "rms_residual_m": 63.377,
+      "n_pixels": 55869
+    },
+    "apollo17_taurus_littrow__pool__pool_01552": {
+      "tilt_deg": 3.58,
+      "downhill_azimuth_deg": 184.0,
+      "downhill": "S",
+      "rms_residual_m": 51.313,
+      "n_pixels": 55869
+    },
+    "apollo17_taurus_littrow__pool__pool_01577": {
+      "tilt_deg": 2.69,
+      "downhill_azimuth_deg": 67.9,
+      "downhill": "E",
+      "rms_residual_m": 44.939,
+      "n_pixels": 55869
+    },
+    "cabeus_b_peak": {
+      "tilt_deg": 5.99,
+      "downhill_azimuth_deg": 277.6,
+      "downhill": "W",
+      "rms_residual_m": 232.709,
+      "n_pixels": 55869
+    },
+    "cabeus_b_peak__pool__pool_00045": {
+      "tilt_deg": 4.09,
+      "downhill_azimuth_deg": 301.1,
+      "downhill": "NW",
+      "rms_residual_m": 116.493,
+      "n_pixels": 55869
+    },
+    "cabeus_b_peak__pool__pool_00055": {
+      "tilt_deg": 2.52,
+      "downhill_azimuth_deg": 206.8,
+      "downhill": "SW",
+      "rms_residual_m": 125.265,
+      "n_pixels": 55869
+    },
+    "cabeus_b_peak__pool__pool_00077": {
+      "tilt_deg": 4.51,
+      "downhill_azimuth_deg": 308.9,
+      "downhill": "NW",
+      "rms_residual_m": 114.017,
+      "n_pixels": 55869
+    },
+    "cabeus_b_peak__pool__pool_00091": {
+      "tilt_deg": 2.97,
+      "downhill_azimuth_deg": 280.4,
+      "downhill": "W",
+      "rms_residual_m": 91.222,
+      "n_pixels": 55869
+    },
+    "cabeus_b_peak__pool__pool_00097": {
+      "tilt_deg": 2.13,
+      "downhill_azimuth_deg": 315.2,
+      "downhill": "NW",
+      "rms_residual_m": 136.375,
+      "n_pixels": 55869
+    },
+    "cabeus_b_peak__pool__pool_00138": {
+      "tilt_deg": 1.26,
+      "downhill_azimuth_deg": 172.8,
+      "downhill": "S",
+      "rms_residual_m": 63.981,
+      "n_pixels": 55869
+    },
+    "cabeus_b_peak__pool__pool_01035": {
+      "tilt_deg": 5.67,
+      "downhill_azimuth_deg": 201.2,
+      "downhill": "S",
+      "rms_residual_m": 156.97,
+      "n_pixels": 55869
+    },
+    "cabeus_b_peak__pool__pool_01247": {
+      "tilt_deg": 2.03,
+      "downhill_azimuth_deg": 311.3,
+      "downhill": "NW",
+      "rms_residual_m": 63.141,
+      "n_pixels": 55869
+    },
+    "cabeus_b_peak__pool__pool_01835": {
+      "tilt_deg": 1.84,
+      "downhill_azimuth_deg": 282.3,
+      "downhill": "W",
+      "rms_residual_m": 132.906,
+      "n_pixels": 55869
+    },
+    "cabeus_b_peak__pool__pool_01944": {
+      "tilt_deg": 1.8,
+      "downhill_azimuth_deg": 215.5,
+      "downhill": "SW",
+      "rms_residual_m": 70.252,
+      "n_pixels": 55869
+    },
+    "de_gerlache_rim_2": {
+      "tilt_deg": 5.11,
+      "downhill_azimuth_deg": 255.5,
+      "downhill": "W",
+      "rms_residual_m": 301.091,
+      "n_pixels": 55869
+    },
+    "de_gerlache_rim_2__pool__pool_00045": {
+      "tilt_deg": 4.09,
+      "downhill_azimuth_deg": 301.1,
+      "downhill": "NW",
+      "rms_residual_m": 116.493,
+      "n_pixels": 55869
+    },
+    "de_gerlache_rim_2__pool__pool_00055": {
+      "tilt_deg": 2.52,
+      "downhill_azimuth_deg": 206.8,
+      "downhill": "SW",
+      "rms_residual_m": 125.265,
+      "n_pixels": 55869
+    },
+    "de_gerlache_rim_2__pool__pool_00077": {
+      "tilt_deg": 5.05,
+      "downhill_azimuth_deg": 299.1,
+      "downhill": "NW",
+      "rms_residual_m": 116.809,
+      "n_pixels": 55869
+    },
+    "de_gerlache_rim_2__pool__pool_00091": {
+      "tilt_deg": 2.45,
+      "downhill_azimuth_deg": 271.8,
+      "downhill": "W",
+      "rms_residual_m": 94.763,
+      "n_pixels": 55869
+    },
+    "de_gerlache_rim_2__pool__pool_00097": {
+      "tilt_deg": 2.13,
+      "downhill_azimuth_deg": 315.2,
+      "downhill": "NW",
+      "rms_residual_m": 136.375,
+      "n_pixels": 55869
+    },
+    "de_gerlache_rim_2__pool__pool_00975": {
+      "tilt_deg": 5.2,
+      "downhill_azimuth_deg": 171.2,
+      "downhill": "S",
+      "rms_residual_m": 107.339,
+      "n_pixels": 55869
+    },
+    "de_gerlache_rim_2__pool__pool_01035": {
+      "tilt_deg": 5.67,
+      "downhill_azimuth_deg": 201.2,
+      "downhill": "S",
+      "rms_residual_m": 156.97,
+      "n_pixels": 55869
+    },
+    "de_gerlache_rim_2__pool__pool_01181": {
+      "tilt_deg": 2.28,
+      "downhill_azimuth_deg": 40.4,
+      "downhill": "NE",
+      "rms_residual_m": 129.524,
+      "n_pixels": 55869
+    },
+    "de_gerlache_rim_2__pool__pool_01247": {
+      "tilt_deg": 0.88,
+      "downhill_azimuth_deg": 309.3,
+      "downhill": "NW",
+      "rms_residual_m": 71.601,
+      "n_pixels": 55869
+    },
+    "de_gerlache_rim_2__pool__pool_01835": {
+      "tilt_deg": 1.84,
+      "downhill_azimuth_deg": 282.3,
+      "downhill": "W",
+      "rms_residual_m": 132.906,
+      "n_pixels": 55869
+    },
+    "gale": {
+      "tilt_deg": 0.38,
+      "downhill_azimuth_deg": 70.7,
+      "downhill": "E",
+      "rms_residual_m": 22.501,
+      "n_pixels": 55869
+    },
+    "gale__pool__pool_00001": {
+      "tilt_deg": 0.72,
+      "downhill_azimuth_deg": 349.7,
+      "downhill": "N",
+      "rms_residual_m": 21.183,
+      "n_pixels": 55869
+    },
+    "gale__pool__pool_00103": {
+      "tilt_deg": 0.56,
+      "downhill_azimuth_deg": 302.2,
+      "downhill": "NW",
+      "rms_residual_m": 15.986,
+      "n_pixels": 55869
+    },
+    "gale__pool__pool_00700": {
+      "tilt_deg": 0.13,
+      "downhill_azimuth_deg": 55.4,
+      "downhill": "NE",
+      "rms_residual_m": 13.139,
+      "n_pixels": 55869
+    },
+    "gale__pool__pool_01156": {
+      "tilt_deg": 0.67,
+      "downhill_azimuth_deg": 74.1,
+      "downhill": "E",
+      "rms_residual_m": 11.62,
+      "n_pixels": 55869
+    },
+    "gale__pool__pool_01287": {
+      "tilt_deg": 1.07,
+      "downhill_azimuth_deg": 15.5,
+      "downhill": "N",
+      "rms_residual_m": 15.043,
+      "n_pixels": 55869
+    },
+    "gale__pool__pool_01344": {
+      "tilt_deg": 0.76,
+      "downhill_azimuth_deg": 184.3,
+      "downhill": "S",
+      "rms_residual_m": 19.953,
+      "n_pixels": 55869
+    },
+    "gale__pool__pool_01488": {
+      "tilt_deg": 0.28,
+      "downhill_azimuth_deg": 250.8,
+      "downhill": "W",
+      "rms_residual_m": 15.126,
+      "n_pixels": 55869
+    },
+    "gale__pool__pool_01674": {
+      "tilt_deg": 0.72,
+      "downhill_azimuth_deg": 35.3,
+      "downhill": "NE",
+      "rms_residual_m": 18.649,
+      "n_pixels": 55869
+    },
+    "gale__pool__pool_01838": {
+      "tilt_deg": 0.83,
+      "downhill_azimuth_deg": 130.2,
+      "downhill": "SE",
+      "rms_residual_m": 17.957,
+      "n_pixels": 55869
+    },
+    "gale__pool__pool_01893": {
+      "tilt_deg": 1.15,
+      "downhill_azimuth_deg": 114.2,
+      "downhill": "SE",
+      "rms_residual_m": 13.452,
+      "n_pixels": 55869
+    },
+    "haworth": {
+      "tilt_deg": 3.59,
+      "downhill_azimuth_deg": 304.5,
+      "downhill": "NW",
+      "rms_residual_m": 82.234,
+      "n_pixels": 55869
+    },
+    "haworth__pool__pool_00063": {
+      "tilt_deg": 4.02,
+      "downhill_azimuth_deg": 286.4,
+      "downhill": "W",
+      "rms_residual_m": 52.987,
+      "n_pixels": 55869
+    },
+    "haworth__pool__pool_00072": {
+      "tilt_deg": 4.18,
+      "downhill_azimuth_deg": 277.1,
+      "downhill": "W",
+      "rms_residual_m": 64.413,
+      "n_pixels": 55869
+    },
+    "haworth__pool__pool_00080": {
+      "tilt_deg": 2.17,
+      "downhill_azimuth_deg": 239.3,
+      "downhill": "SW",
+      "rms_residual_m": 29.11,
+      "n_pixels": 55869
+    },
+    "haworth__pool__pool_00242": {
+      "tilt_deg": 0.74,
+      "downhill_azimuth_deg": 144.5,
+      "downhill": "SE",
+      "rms_residual_m": 31.164,
+      "n_pixels": 55869
+    },
+    "haworth__pool__pool_00357": {
+      "tilt_deg": 1.18,
+      "downhill_azimuth_deg": 198.5,
+      "downhill": "S",
+      "rms_residual_m": 28.009,
+      "n_pixels": 55869
+    },
+    "haworth__pool__pool_00603": {
+      "tilt_deg": 0.54,
+      "downhill_azimuth_deg": 309.9,
+      "downhill": "NW",
+      "rms_residual_m": 38.711,
+      "n_pixels": 55869
+    },
+    "haworth__pool__pool_00729": {
+      "tilt_deg": 1.16,
+      "downhill_azimuth_deg": 335.0,
+      "downhill": "NW",
+      "rms_residual_m": 35.583,
+      "n_pixels": 55869
+    },
+    "haworth__pool__pool_01222": {
+      "tilt_deg": 2.54,
+      "downhill_azimuth_deg": 223.9,
+      "downhill": "SW",
+      "rms_residual_m": 56.002,
+      "n_pixels": 55869
+    },
+    "haworth__pool__pool_01467": {
+      "tilt_deg": 1.53,
+      "downhill_azimuth_deg": 261.9,
+      "downhill": "W",
+      "rms_residual_m": 30.532,
+      "n_pixels": 55869
+    },
+    "haworth__pool__pool_01649": {
+      "tilt_deg": 1.64,
+      "downhill_azimuth_deg": 323.8,
+      "downhill": "NW",
+      "rms_residual_m": 49.785,
+      "n_pixels": 55869
+    },
+    "im1_odysseus": {
+      "tilt_deg": 1.74,
+      "downhill_azimuth_deg": 14.1,
+      "downhill": "N",
+      "rms_residual_m": 62.688,
+      "n_pixels": 55869
+    },
+    "im1_odysseus__pool__pool_00063": {
+      "tilt_deg": 4.02,
+      "downhill_azimuth_deg": 286.4,
+      "downhill": "W",
+      "rms_residual_m": 52.987,
+      "n_pixels": 55869
+    },
+    "im1_odysseus__pool__pool_00072": {
+      "tilt_deg": 4.55,
+      "downhill_azimuth_deg": 272.6,
+      "downhill": "W",
+      "rms_residual_m": 37.936,
+      "n_pixels": 55869
+    },
+    "im1_odysseus__pool__pool_00080": {
+      "tilt_deg": 2.17,
+      "downhill_azimuth_deg": 239.3,
+      "downhill": "SW",
+      "rms_residual_m": 29.11,
+      "n_pixels": 55869
+    },
+    "im1_odysseus__pool__pool_00225": {
+      "tilt_deg": 1.3,
+      "downhill_azimuth_deg": 273.9,
+      "downhill": "W",
+      "rms_residual_m": 43.613,
+      "n_pixels": 55869
+    },
+    "im1_odysseus__pool__pool_00669": {
+      "tilt_deg": 1.31,
+      "downhill_azimuth_deg": 253.3,
+      "downhill": "W",
+      "rms_residual_m": 37.081,
+      "n_pixels": 55869
+    },
+    "im1_odysseus__pool__pool_01516": {
+      "tilt_deg": 0.66,
+      "downhill_azimuth_deg": 98.5,
+      "downhill": "E",
+      "rms_residual_m": 53.411,
+      "n_pixels": 55869
+    },
+    "im1_odysseus__pool__pool_01517": {
+      "tilt_deg": 0.9,
+      "downhill_azimuth_deg": 280.1,
+      "downhill": "W",
+      "rms_residual_m": 48.823,
+      "n_pixels": 55869
+    },
+    "im1_odysseus__pool__pool_01649": {
+      "tilt_deg": 1.26,
+      "downhill_azimuth_deg": 7.0,
+      "downhill": "N",
+      "rms_residual_m": 59.913,
+      "n_pixels": 55869
+    },
+    "im1_odysseus__pool__pool_01731": {
+      "tilt_deg": 1.82,
+      "downhill_azimuth_deg": 211.6,
+      "downhill": "SW",
+      "rms_residual_m": 26.709,
+      "n_pixels": 55869
+    },
+    "im1_odysseus__pool__pool_01993": {
+      "tilt_deg": 2.83,
+      "downhill_azimuth_deg": 320.6,
+      "downhill": "NW",
+      "rms_residual_m": 117.013,
+      "n_pixels": 55869
+    },
+    "im2_athena": {
+      "tilt_deg": 0.98,
+      "downhill_azimuth_deg": 55.6,
+      "downhill": "NE",
+      "rms_residual_m": 71.164,
+      "n_pixels": 55869
+    },
+    "im2_athena__pool__pool_00053": {
+      "tilt_deg": 0.9,
+      "downhill_azimuth_deg": 270.9,
+      "downhill": "W",
+      "rms_residual_m": 24.636,
+      "n_pixels": 55869
+    },
+    "im2_athena__pool__pool_00084": {
+      "tilt_deg": 3.2,
+      "downhill_azimuth_deg": 340.4,
+      "downhill": "N",
+      "rms_residual_m": 39.586,
+      "n_pixels": 55869
+    },
+    "im2_athena__pool__pool_00327": {
+      "tilt_deg": 0.16,
+      "downhill_azimuth_deg": 7.2,
+      "downhill": "N",
+      "rms_residual_m": 27.219,
+      "n_pixels": 55869
+    },
+    "im2_athena__pool__pool_00737": {
+      "tilt_deg": 0.83,
+      "downhill_azimuth_deg": 271.6,
+      "downhill": "W",
+      "rms_residual_m": 30.651,
+      "n_pixels": 55869
+    },
+    "im2_athena__pool__pool_00831": {
+      "tilt_deg": 0.15,
+      "downhill_azimuth_deg": 104.8,
+      "downhill": "E",
+      "rms_residual_m": 37.882,
+      "n_pixels": 55869
+    },
+    "im2_athena__pool__pool_01357": {
+      "tilt_deg": 1.18,
+      "downhill_azimuth_deg": 192.4,
+      "downhill": "S",
+      "rms_residual_m": 26.205,
+      "n_pixels": 55869
+    },
+    "im2_athena__pool__pool_01485": {
+      "tilt_deg": 1.14,
+      "downhill_azimuth_deg": 188.0,
+      "downhill": "S",
+      "rms_residual_m": 30.645,
+      "n_pixels": 55869
+    },
+    "im2_athena__pool__pool_01571": {
+      "tilt_deg": 1.44,
+      "downhill_azimuth_deg": 261.4,
+      "downhill": "W",
+      "rms_residual_m": 32.389,
+      "n_pixels": 55869
+    },
+    "im2_athena__pool__pool_01604": {
+      "tilt_deg": 0.36,
+      "downhill_azimuth_deg": 308.9,
+      "downhill": "NW",
+      "rms_residual_m": 33.822,
+      "n_pixels": 55869
+    },
+    "im2_athena__pool__pool_01649": {
+      "tilt_deg": 0.59,
+      "downhill_azimuth_deg": 272.9,
+      "downhill": "W",
+      "rms_residual_m": 46.873,
+      "n_pixels": 55869
+    },
+    "insight_elysium": {
+      "tilt_deg": 0.53,
+      "downhill_azimuth_deg": 73.1,
+      "downhill": "E",
+      "rms_residual_m": 3.846,
+      "n_pixels": 55864
+    },
+    "insight_elysium__pool__pool_00075": {
+      "tilt_deg": 0.58,
+      "downhill_azimuth_deg": 271.7,
+      "downhill": "W",
+      "rms_residual_m": 5.26,
+      "n_pixels": 55869
+    },
+    "insight_elysium__pool__pool_00086": {
+      "tilt_deg": 0.81,
+      "downhill_azimuth_deg": 283.2,
+      "downhill": "W",
+      "rms_residual_m": 6.866,
+      "n_pixels": 55869
+    },
+    "insight_elysium__pool__pool_00108": {
+      "tilt_deg": 0.35,
+      "downhill_azimuth_deg": 75.4,
+      "downhill": "E",
+      "rms_residual_m": 5.845,
+      "n_pixels": 55869
+    },
+    "insight_elysium__pool__pool_00176": {
+      "tilt_deg": 0.1,
+      "downhill_azimuth_deg": 185.4,
+      "downhill": "S",
+      "rms_residual_m": 6.753,
+      "n_pixels": 55869
+    },
+    "insight_elysium__pool__pool_00524": {
+      "tilt_deg": 0.08,
+      "downhill_azimuth_deg": 284.2,
+      "downhill": "W",
+      "rms_residual_m": 6.415,
+      "n_pixels": 55869
+    },
+    "insight_elysium__pool__pool_01524": {
+      "tilt_deg": 0.31,
+      "downhill_azimuth_deg": 303.6,
+      "downhill": "NW",
+      "rms_residual_m": 5.784,
+      "n_pixels": 55869
+    },
+    "insight_elysium__pool__pool_01650": {
+      "tilt_deg": 0.24,
+      "downhill_azimuth_deg": 337.1,
+      "downhill": "NW",
+      "rms_residual_m": 7.719,
+      "n_pixels": 55869
+    },
+    "insight_elysium__pool__pool_01806": {
+      "tilt_deg": 0.52,
+      "downhill_azimuth_deg": 47.5,
+      "downhill": "NE",
+      "rms_residual_m": 6.386,
+      "n_pixels": 55869
+    },
+    "insight_elysium__pool__pool_01857": {
+      "tilt_deg": 0.62,
+      "downhill_azimuth_deg": 3.1,
+      "downhill": "N",
+      "rms_residual_m": 5.353,
+      "n_pixels": 55869
+    },
+    "insight_elysium__pool__pool_01862": {
+      "tilt_deg": 0.34,
+      "downhill_azimuth_deg": 241.2,
+      "downhill": "SW",
+      "rms_residual_m": 4.154,
+      "n_pixels": 55869
+    },
+    "jezero": {
+      "tilt_deg": 1.17,
+      "downhill_azimuth_deg": 123.4,
+      "downhill": "SE",
+      "rms_residual_m": 18.337,
+      "n_pixels": 55869
+    },
+    "jezero__pool__pool_00226": {
+      "tilt_deg": 0.4,
+      "downhill_azimuth_deg": 32.8,
+      "downhill": "NE",
+      "rms_residual_m": 16.782,
+      "n_pixels": 55869
+    },
+    "jezero__pool__pool_00374": {
+      "tilt_deg": 0.06,
+      "downhill_azimuth_deg": 51.7,
+      "downhill": "NE",
+      "rms_residual_m": 15.549,
+      "n_pixels": 55869
+    },
+    "jezero__pool__pool_01135": {
+      "tilt_deg": 0.4,
+      "downhill_azimuth_deg": 114.6,
+      "downhill": "SE",
+      "rms_residual_m": 19.164,
+      "n_pixels": 55869
+    },
+    "jezero__pool__pool_01394": {
+      "tilt_deg": 0.09,
+      "downhill_azimuth_deg": 319.5,
+      "downhill": "NW",
+      "rms_residual_m": 18.525,
+      "n_pixels": 55869
+    },
+    "jezero__pool__pool_01413": {
+      "tilt_deg": 2.26,
+      "downhill_azimuth_deg": 36.4,
+      "downhill": "NE",
+      "rms_residual_m": 16.843,
+      "n_pixels": 55869
+    },
+    "jezero__pool__pool_01583": {
+      "tilt_deg": 0.83,
+      "downhill_azimuth_deg": 60.8,
+      "downhill": "NE",
+      "rms_residual_m": 27.863,
+      "n_pixels": 55869
+    },
+    "jezero__pool__pool_01593": {
+      "tilt_deg": 0.5,
+      "downhill_azimuth_deg": 159.7,
+      "downhill": "S",
+      "rms_residual_m": 19.725,
+      "n_pixels": 55869
+    },
+    "jezero__pool__pool_01676": {
+      "tilt_deg": 1.47,
+      "downhill_azimuth_deg": 205.1,
+      "downhill": "SW",
+      "rms_residual_m": 15.534,
+      "n_pixels": 55869
+    },
+    "jezero__pool__pool_01824": {
+      "tilt_deg": 0.22,
+      "downhill_azimuth_deg": 257.4,
+      "downhill": "W",
+      "rms_residual_m": 15.107,
+      "n_pixels": 55869
+    },
+    "jezero__pool__pool_01913": {
+      "tilt_deg": 0.38,
+      "downhill_azimuth_deg": 351.4,
+      "downhill": "N",
+      "rms_residual_m": 13.884,
+      "n_pixels": 55869
+    },
+    "malapert_massif": {
+      "tilt_deg": 3.59,
+      "downhill_azimuth_deg": 207.0,
+      "downhill": "SW",
+      "rms_residual_m": 271.904,
+      "n_pixels": 55869
+    },
+    "malapert_massif__pool__pool_00024": {
+      "tilt_deg": 2.8,
+      "downhill_azimuth_deg": 225.6,
+      "downhill": "SW",
+      "rms_residual_m": 73.186,
+      "n_pixels": 55869
+    },
+    "malapert_massif__pool__pool_00045": {
+      "tilt_deg": 4.19,
+      "downhill_azimuth_deg": 72.0,
+      "downhill": "E",
+      "rms_residual_m": 109.439,
+      "n_pixels": 55869
+    },
+    "malapert_massif__pool__pool_00055": {
+      "tilt_deg": 6.47,
+      "downhill_azimuth_deg": 258.3,
+      "downhill": "W",
+      "rms_residual_m": 94.156,
+      "n_pixels": 55869
+    },
+    "malapert_massif__pool__pool_00097": {
+      "tilt_deg": 1.98,
+      "downhill_azimuth_deg": 242.5,
+      "downhill": "SW",
+      "rms_residual_m": 121.111,
+      "n_pixels": 55869
+    },
+    "malapert_massif__pool__pool_00972": {
+      "tilt_deg": 1.98,
+      "downhill_azimuth_deg": 31.2,
+      "downhill": "NE",
+      "rms_residual_m": 111.571,
+      "n_pixels": 55869
+    },
+    "malapert_massif__pool__pool_01035": {
+      "tilt_deg": 1.56,
+      "downhill_azimuth_deg": 109.8,
+      "downhill": "E",
+      "rms_residual_m": 196.255,
+      "n_pixels": 55869
+    },
+    "malapert_massif__pool__pool_01247": {
+      "tilt_deg": 2.03,
+      "downhill_azimuth_deg": 311.3,
+      "downhill": "NW",
+      "rms_residual_m": 63.141,
+      "n_pixels": 55869
+    },
+    "malapert_massif__pool__pool_01249": {
+      "tilt_deg": 2.58,
+      "downhill_azimuth_deg": 310.9,
+      "downhill": "NW",
+      "rms_residual_m": 84.366,
+      "n_pixels": 55869
+    },
+    "malapert_massif__pool__pool_01765": {
+      "tilt_deg": 0.3,
+      "downhill_azimuth_deg": 113.1,
+      "downhill": "SE",
+      "rms_residual_m": 53.645,
+      "n_pixels": 55869
+    },
+    "malapert_massif__pool__pool_01944": {
+      "tilt_deg": 1.65,
+      "downhill_azimuth_deg": 197.5,
+      "downhill": "S",
+      "rms_residual_m": 57.589,
+      "n_pixels": 55869
+    },
+    "mons_mouton_plateau": {
+      "tilt_deg": 4.92,
+      "downhill_azimuth_deg": 340.3,
+      "downhill": "N",
+      "rms_residual_m": 111.248,
+      "n_pixels": 55869
+    },
+    "mons_mouton_plateau__pool__pool_00063": {
+      "tilt_deg": 4.02,
+      "downhill_azimuth_deg": 286.4,
+      "downhill": "W",
+      "rms_residual_m": 52.987,
+      "n_pixels": 55869
+    },
+    "mons_mouton_plateau__pool__pool_00072": {
+      "tilt_deg": 3.3,
+      "downhill_azimuth_deg": 279.2,
+      "downhill": "W",
+      "rms_residual_m": 85.749,
+      "n_pixels": 55869
+    },
+    "mons_mouton_plateau__pool__pool_00117": {
+      "tilt_deg": 0.39,
+      "downhill_azimuth_deg": 188.5,
+      "downhill": "S",
+      "rms_residual_m": 80.117,
+      "n_pixels": 55869
+    },
+    "mons_mouton_plateau__pool__pool_00370": {
+      "tilt_deg": 0.45,
+      "downhill_azimuth_deg": 246.7,
+      "downhill": "SW",
+      "rms_residual_m": 46.199,
+      "n_pixels": 55869
+    },
+    "mons_mouton_plateau__pool__pool_00540": {
+      "tilt_deg": 1.6,
+      "downhill_azimuth_deg": 169.6,
+      "downhill": "S",
+      "rms_residual_m": 34.955,
+      "n_pixels": 55869
+    },
+    "mons_mouton_plateau__pool__pool_00545": {
+      "tilt_deg": 1.38,
+      "downhill_azimuth_deg": 268.7,
+      "downhill": "W",
+      "rms_residual_m": 35.231,
+      "n_pixels": 55869
+    },
+    "mons_mouton_plateau__pool__pool_01222": {
+      "tilt_deg": 2.4,
+      "downhill_azimuth_deg": 180.4,
+      "downhill": "S",
+      "rms_residual_m": 58.592,
+      "n_pixels": 55869
+    },
+    "mons_mouton_plateau__pool__pool_01765": {
+      "tilt_deg": 0.32,
+      "downhill_azimuth_deg": 56.0,
+      "downhill": "NE",
+      "rms_residual_m": 47.83,
+      "n_pixels": 55869
+    },
+    "mons_mouton_plateau__pool__pool_01945": {
+      "tilt_deg": 3.65,
+      "downhill_azimuth_deg": 14.9,
+      "downhill": "N",
+      "rms_residual_m": 63.296,
+      "n_pixels": 55869
+    },
+    "mons_mouton_plateau__pool__pool_01993": {
+      "tilt_deg": 2.2,
+      "downhill_azimuth_deg": 135.7,
+      "downhill": "SE",
+      "rms_residual_m": 107.647,
+      "n_pixels": 55869
+    },
+    "nobile_rim_1": {
+      "tilt_deg": 6.37,
+      "downhill_azimuth_deg": 117.2,
+      "downhill": "SE",
+      "rms_residual_m": 305.485,
+      "n_pixels": 55869
+    },
+    "nobile_rim_1__pool__pool_00045": {
+      "tilt_deg": 5.15,
+      "downhill_azimuth_deg": 292.4,
+      "downhill": "W",
+      "rms_residual_m": 152.254,
+      "n_pixels": 55869
+    },
+    "nobile_rim_1__pool__pool_00077": {
+      "tilt_deg": 6.25,
+      "downhill_azimuth_deg": 300.8,
+      "downhill": "NW",
+      "rms_residual_m": 113.984,
+      "n_pixels": 55869
+    },
+    "nobile_rim_1__pool__pool_00091": {
+      "tilt_deg": 2.6,
+      "downhill_azimuth_deg": 257.6,
+      "downhill": "W",
+      "rms_residual_m": 94.097,
+      "n_pixels": 55869
+    },
+    "nobile_rim_1__pool__pool_00112": {
+      "tilt_deg": 1.63,
+      "downhill_azimuth_deg": 94.2,
+      "downhill": "E",
+      "rms_residual_m": 126.465,
+      "n_pixels": 55869
+    },
+    "nobile_rim_1__pool__pool_00975": {
+      "tilt_deg": 5.32,
+      "downhill_azimuth_deg": 161.6,
+      "downhill": "S",
+      "rms_residual_m": 97.918,
+      "n_pixels": 55869
+    },
+    "nobile_rim_1__pool__pool_01470": {
+      "tilt_deg": 2.83,
+      "downhill_azimuth_deg": 8.3,
+      "downhill": "N",
+      "rms_residual_m": 146.517,
+      "n_pixels": 55869
+    },
+    "nobile_rim_1__pool__pool_01547": {
+      "tilt_deg": 1.57,
+      "downhill_azimuth_deg": 192.4,
+      "downhill": "S",
+      "rms_residual_m": 172.337,
+      "n_pixels": 55869
+    },
+    "nobile_rim_1__pool__pool_01613": {
+      "tilt_deg": 4.9,
+      "downhill_azimuth_deg": 227.1,
+      "downhill": "SW",
+      "rms_residual_m": 90.394,
+      "n_pixels": 55869
+    },
+    "nobile_rim_1__pool__pool_01675": {
+      "tilt_deg": 3.08,
+      "downhill_azimuth_deg": 237.9,
+      "downhill": "SW",
+      "rms_residual_m": 91.917,
+      "n_pixels": 55869
+    },
+    "nobile_rim_1__pool__pool_01835": {
+      "tilt_deg": 1.84,
+      "downhill_azimuth_deg": 282.3,
+      "downhill": "W",
+      "rms_residual_m": 132.906,
+      "n_pixels": 55869
+    },
+    "nobile_rim_2": {
+      "tilt_deg": 3.05,
+      "downhill_azimuth_deg": 358.3,
+      "downhill": "N",
+      "rms_residual_m": 132.975,
+      "n_pixels": 55869
+    },
+    "nobile_rim_2__pool__pool_00004": {
+      "tilt_deg": 1.63,
+      "downhill_azimuth_deg": 13.2,
+      "downhill": "N",
+      "rms_residual_m": 60.568,
+      "n_pixels": 55869
+    },
+    "nobile_rim_2__pool__pool_00040": {
+      "tilt_deg": 1.22,
+      "downhill_azimuth_deg": 207.7,
+      "downhill": "SW",
+      "rms_residual_m": 49.868,
+      "n_pixels": 55869
+    },
+    "nobile_rim_2__pool__pool_00047": {
+      "tilt_deg": 1.29,
+      "downhill_azimuth_deg": 247.1,
+      "downhill": "SW",
+      "rms_residual_m": 75.916,
+      "n_pixels": 55869
+    },
+    "nobile_rim_2__pool__pool_00069": {
+      "tilt_deg": 4.92,
+      "downhill_azimuth_deg": 287.1,
+      "downhill": "W",
+      "rms_residual_m": 51.26,
+      "n_pixels": 55869
+    },
+    "nobile_rim_2__pool__pool_00078": {
+      "tilt_deg": 2.28,
+      "downhill_azimuth_deg": 322.2,
+      "downhill": "NW",
+      "rms_residual_m": 94.412,
+      "n_pixels": 55869
+    },
+    "nobile_rim_2__pool__pool_01244": {
+      "tilt_deg": 1.13,
+      "downhill_azimuth_deg": 262.9,
+      "downhill": "W",
+      "rms_residual_m": 77.326,
+      "n_pixels": 55869
+    },
+    "nobile_rim_2__pool__pool_01514": {
+      "tilt_deg": 2.61,
+      "downhill_azimuth_deg": 182.4,
+      "downhill": "S",
+      "rms_residual_m": 41.006,
+      "n_pixels": 55869
+    },
+    "nobile_rim_2__pool__pool_01549": {
+      "tilt_deg": 2.29,
+      "downhill_azimuth_deg": 18.7,
+      "downhill": "N",
+      "rms_residual_m": 61.293,
+      "n_pixels": 55869
+    },
+    "nobile_rim_2__pool__pool_01552": {
+      "tilt_deg": 4.53,
+      "downhill_azimuth_deg": 174.4,
+      "downhill": "S",
+      "rms_residual_m": 58.505,
+      "n_pixels": 55869
+    },
+    "nobile_rim_2__pool__pool_01577": {
+      "tilt_deg": 2.49,
+      "downhill_azimuth_deg": 85.6,
+      "downhill": "E",
+      "rms_residual_m": 41.627,
+      "n_pixels": 55869
+    },
+    "oxia_planum": {
+      "tilt_deg": 0.36,
+      "downhill_azimuth_deg": 158.1,
+      "downhill": "S",
+      "rms_residual_m": 7.663,
+      "n_pixels": 55869
+    },
+    "oxia_planum__pool__pool_00100": {
+      "tilt_deg": 0.23,
+      "downhill_azimuth_deg": 228.2,
+      "downhill": "SW",
+      "rms_residual_m": 14.256,
+      "n_pixels": 55869
+    },
+    "oxia_planum__pool__pool_00128": {
+      "tilt_deg": 0.31,
+      "downhill_azimuth_deg": 236.3,
+      "downhill": "SW",
+      "rms_residual_m": 11.575,
+      "n_pixels": 55869
+    },
+    "oxia_planum__pool__pool_00162": {
+      "tilt_deg": 0.07,
+      "downhill_azimuth_deg": 168.5,
+      "downhill": "S",
+      "rms_residual_m": 9.99,
+      "n_pixels": 55869
+    },
+    "oxia_planum__pool__pool_00460": {
+      "tilt_deg": 0.29,
+      "downhill_azimuth_deg": 70.7,
+      "downhill": "E",
+      "rms_residual_m": 11.337,
+      "n_pixels": 55869
+    },
+    "oxia_planum__pool__pool_00786": {
+      "tilt_deg": 0.07,
+      "downhill_azimuth_deg": 267.9,
+      "downhill": "W",
+      "rms_residual_m": 13.655,
+      "n_pixels": 55869
+    },
+    "oxia_planum__pool__pool_01226": {
+      "tilt_deg": 0.58,
+      "downhill_azimuth_deg": 285.3,
+      "downhill": "W",
+      "rms_residual_m": 9.711,
+      "n_pixels": 55869
+    },
+    "oxia_planum__pool__pool_01294": {
+      "tilt_deg": 0.48,
+      "downhill_azimuth_deg": 104.9,
+      "downhill": "E",
+      "rms_residual_m": 11.268,
+      "n_pixels": 55869
+    },
+    "oxia_planum__pool__pool_01843": {
+      "tilt_deg": 0.15,
+      "downhill_azimuth_deg": 352.6,
+      "downhill": "N",
+      "rms_residual_m": 16.242,
+      "n_pixels": 55869
+    },
+    "oxia_planum__pool__pool_01881": {
+      "tilt_deg": 0.72,
+      "downhill_azimuth_deg": 203.9,
+      "downhill": "SW",
+      "rms_residual_m": 10.593,
+      "n_pixels": 55869
+    },
+    "oxia_planum__pool__pool_01971": {
+      "tilt_deg": 0.69,
+      "downhill_azimuth_deg": 222.2,
+      "downhill": "SW",
+      "rms_residual_m": 10.809,
+      "n_pixels": 55869
+    },
+    "pool__pool_02035": {
+      "tilt_deg": 2.44,
+      "downhill_azimuth_deg": 353.0,
+      "downhill": "N",
+      "rms_residual_m": 84.455,
+      "n_pixels": 55869
+    },
+    "pool__pool_02041": {
+      "tilt_deg": 1.8,
+      "downhill_azimuth_deg": 34.9,
+      "downhill": "NE",
+      "rms_residual_m": 159.331,
+      "n_pixels": 55869
+    },
+    "pool__pool_02045": {
+      "tilt_deg": 0.31,
+      "downhill_azimuth_deg": 231.0,
+      "downhill": "SW",
+      "rms_residual_m": 10.026,
+      "n_pixels": 55869
+    },
+    "pool__pool_02089": {
+      "tilt_deg": 1.91,
+      "downhill_azimuth_deg": 257.2,
+      "downhill": "W",
+      "rms_residual_m": 135.503,
+      "n_pixels": 55869
+    },
+    "pool__pool_02099": {
+      "tilt_deg": 1.37,
+      "downhill_azimuth_deg": 233.2,
+      "downhill": "SW",
+      "rms_residual_m": 84.552,
+      "n_pixels": 55869
+    },
+    "pool__pool_02125": {
+      "tilt_deg": 0.49,
+      "downhill_azimuth_deg": 143.0,
+      "downhill": "SE",
+      "rms_residual_m": 44.714,
+      "n_pixels": 55869
+    },
+    "pool__pool_02156": {
+      "tilt_deg": 0.99,
+      "downhill_azimuth_deg": 131.0,
+      "downhill": "SE",
+      "rms_residual_m": 43.506,
+      "n_pixels": 55869
+    },
+    "pool__pool_02174": {
+      "tilt_deg": 2.21,
+      "downhill_azimuth_deg": 358.2,
+      "downhill": "N",
+      "rms_residual_m": 150.36,
+      "n_pixels": 55869
+    },
+    "pool__pool_02255": {
+      "tilt_deg": 1.33,
+      "downhill_azimuth_deg": 280.5,
+      "downhill": "W",
+      "rms_residual_m": 88.494,
+      "n_pixels": 55869
+    },
+    "pool__pool_02257": {
+      "tilt_deg": 2.78,
+      "downhill_azimuth_deg": 197.7,
+      "downhill": "S",
+      "rms_residual_m": 44.907,
+      "n_pixels": 55869
+    },
+    "pool__pool_02259": {
+      "tilt_deg": 0.61,
+      "downhill_azimuth_deg": 315.1,
+      "downhill": "NW",
+      "rms_residual_m": 20.548,
+      "n_pixels": 55869
+    },
+    "pool__pool_02292": {
+      "tilt_deg": 0.33,
+      "downhill_azimuth_deg": 263.3,
+      "downhill": "W",
+      "rms_residual_m": 8.522,
+      "n_pixels": 55869
+    },
+    "pool__pool_02378": {
+      "tilt_deg": 3.75,
+      "downhill_azimuth_deg": 82.6,
+      "downhill": "E",
+      "rms_residual_m": 99.507,
+      "n_pixels": 55869
+    },
+    "pool__pool_02402": {
+      "tilt_deg": 0.41,
+      "downhill_azimuth_deg": 229.7,
+      "downhill": "SW",
+      "rms_residual_m": 18.13,
+      "n_pixels": 55869
+    },
+    "pool__pool_02410": {
+      "tilt_deg": 4.58,
+      "downhill_azimuth_deg": 221.8,
+      "downhill": "SW",
+      "rms_residual_m": 140.049,
+      "n_pixels": 55869
+    },
+    "pool__pool_02415": {
+      "tilt_deg": 1.28,
+      "downhill_azimuth_deg": 173.8,
+      "downhill": "S",
+      "rms_residual_m": 108.478,
+      "n_pixels": 55869
+    },
+    "pool__pool_02464": {
+      "tilt_deg": 2.67,
+      "downhill_azimuth_deg": 29.6,
+      "downhill": "NE",
+      "rms_residual_m": 93.488,
+      "n_pixels": 55869
+    },
+    "pool__pool_02550": {
+      "tilt_deg": 0.74,
+      "downhill_azimuth_deg": 182.3,
+      "downhill": "S",
+      "rms_residual_m": 44.909,
+      "n_pixels": 55869
+    },
+    "pool__pool_02570": {
+      "tilt_deg": 2.47,
+      "downhill_azimuth_deg": 311.8,
+      "downhill": "NW",
+      "rms_residual_m": 85.236,
+      "n_pixels": 55869
+    },
+    "pool__pool_02575": {
+      "tilt_deg": 0.98,
+      "downhill_azimuth_deg": 0.3,
+      "downhill": "N",
+      "rms_residual_m": 102.98,
+      "n_pixels": 55869
+    },
+    "pool__pool_02579": {
+      "tilt_deg": 0.17,
+      "downhill_azimuth_deg": 244.4,
+      "downhill": "SW",
+      "rms_residual_m": 41.739,
+      "n_pixels": 55869
+    },
+    "pool__pool_02620": {
+      "tilt_deg": 0.96,
+      "downhill_azimuth_deg": 287.0,
+      "downhill": "W",
+      "rms_residual_m": 56.416,
+      "n_pixels": 55869
+    },
+    "pool__pool_02633": {
+      "tilt_deg": 2.44,
+      "downhill_azimuth_deg": 289.3,
+      "downhill": "W",
+      "rms_residual_m": 81.263,
+      "n_pixels": 55869
+    },
+    "pool__pool_02663": {
+      "tilt_deg": 0.48,
+      "downhill_azimuth_deg": 285.2,
+      "downhill": "W",
+      "rms_residual_m": 44.691,
+      "n_pixels": 55869
+    },
+    "pool__pool_02678": {
+      "tilt_deg": 0.61,
+      "downhill_azimuth_deg": 44.6,
+      "downhill": "NE",
+      "rms_residual_m": 14.466,
+      "n_pixels": 55869
+    },
+    "pool__pool_02705": {
+      "tilt_deg": 0.92,
+      "downhill_azimuth_deg": 235.0,
+      "downhill": "SW",
+      "rms_residual_m": 120.59,
+      "n_pixels": 55869
+    },
+    "pool__pool_02737": {
+      "tilt_deg": 3.66,
+      "downhill_azimuth_deg": 302.9,
+      "downhill": "NW",
+      "rms_residual_m": 118.986,
+      "n_pixels": 55869
+    },
+    "pool__pool_02787": {
+      "tilt_deg": 0.09,
+      "downhill_azimuth_deg": 108.6,
+      "downhill": "E",
+      "rms_residual_m": 4.091,
+      "n_pixels": 55869
+    },
+    "pool__pool_02834": {
+      "tilt_deg": 0.96,
+      "downhill_azimuth_deg": 150.7,
+      "downhill": "SE",
+      "rms_residual_m": 40.091,
+      "n_pixels": 55869
+    },
+    "pool__pool_02842": {
+      "tilt_deg": 1.23,
+      "downhill_azimuth_deg": 38.1,
+      "downhill": "NE",
+      "rms_residual_m": 53.904,
+      "n_pixels": 55869
+    },
+    "pool__pool_02899": {
+      "tilt_deg": 0.17,
+      "downhill_azimuth_deg": 80.2,
+      "downhill": "E",
+      "rms_residual_m": 12.892,
+      "n_pixels": 55869
+    },
+    "pool__pool_02927": {
+      "tilt_deg": 0.18,
+      "downhill_azimuth_deg": 161.4,
+      "downhill": "S",
+      "rms_residual_m": 46.968,
+      "n_pixels": 55869
+    },
+    "pool__pool_02972": {
+      "tilt_deg": 3.65,
+      "downhill_azimuth_deg": 109.2,
+      "downhill": "E",
+      "rms_residual_m": 155.494,
+      "n_pixels": 55869
+    },
+    "pool__pool_02997": {
+      "tilt_deg": 0.98,
+      "downhill_azimuth_deg": 107.5,
+      "downhill": "E",
+      "rms_residual_m": 85.568,
+      "n_pixels": 55869
+    },
+    "pool__pool_03011": {
+      "tilt_deg": 0.7,
+      "downhill_azimuth_deg": 16.3,
+      "downhill": "N",
+      "rms_residual_m": 23.95,
+      "n_pixels": 55869
+    },
+    "pool__pool_03022": {
+      "tilt_deg": 0.34,
+      "downhill_azimuth_deg": 67.0,
+      "downhill": "NE",
+      "rms_residual_m": 19.785,
+      "n_pixels": 55869
+    },
+    "pool__pool_03055": {
+      "tilt_deg": 0.93,
+      "downhill_azimuth_deg": 315.0,
+      "downhill": "NW",
+      "rms_residual_m": 82.169,
+      "n_pixels": 55869
+    },
+    "pool__pool_03080": {
+      "tilt_deg": 1.69,
+      "downhill_azimuth_deg": 301.1,
+      "downhill": "NW",
+      "rms_residual_m": 54.849,
+      "n_pixels": 55869
+    },
+    "pool__pool_03121": {
+      "tilt_deg": 1.21,
+      "downhill_azimuth_deg": 181.8,
+      "downhill": "S",
+      "rms_residual_m": 84.734,
+      "n_pixels": 55869
+    },
+    "pool__pool_03134": {
+      "tilt_deg": 0.37,
+      "downhill_azimuth_deg": 40.5,
+      "downhill": "NE",
+      "rms_residual_m": 4.283,
+      "n_pixels": 55869
+    },
+    "pool__pool_03143": {
+      "tilt_deg": 0.58,
+      "downhill_azimuth_deg": 169.0,
+      "downhill": "S",
+      "rms_residual_m": 24.621,
+      "n_pixels": 55869
+    },
+    "pool__pool_03166": {
+      "tilt_deg": 0.2,
+      "downhill_azimuth_deg": 249.2,
+      "downhill": "W",
+      "rms_residual_m": 3.276,
+      "n_pixels": 55869
+    },
+    "pool__pool_03196": {
+      "tilt_deg": 1.45,
+      "downhill_azimuth_deg": 80.6,
+      "downhill": "E",
+      "rms_residual_m": 71.317,
+      "n_pixels": 55869
+    },
+    "pool__pool_03310": {
+      "tilt_deg": 1.37,
+      "downhill_azimuth_deg": 276.4,
+      "downhill": "W",
+      "rms_residual_m": 83.557,
+      "n_pixels": 55869
+    },
+    "pool__pool_03327": {
+      "tilt_deg": 1.6,
+      "downhill_azimuth_deg": 354.2,
+      "downhill": "N",
+      "rms_residual_m": 90.528,
+      "n_pixels": 55869
+    },
+    "pool__pool_03330": {
+      "tilt_deg": 2.89,
+      "downhill_azimuth_deg": 309.3,
+      "downhill": "NW",
+      "rms_residual_m": 93.805,
+      "n_pixels": 55869
+    },
+    "pool__pool_03336": {
+      "tilt_deg": 0.33,
+      "downhill_azimuth_deg": 41.8,
+      "downhill": "NE",
+      "rms_residual_m": 82.706,
+      "n_pixels": 55869
+    },
+    "pool__pool_03351": {
+      "tilt_deg": 3.86,
+      "downhill_azimuth_deg": 13.1,
+      "downhill": "N",
+      "rms_residual_m": 101.366,
+      "n_pixels": 55869
+    },
+    "pool__pool_03397": {
+      "tilt_deg": 2.35,
+      "downhill_azimuth_deg": 104.0,
+      "downhill": "E",
+      "rms_residual_m": 105.428,
+      "n_pixels": 55869
+    },
+    "pool__pool_03412": {
+      "tilt_deg": 3.66,
+      "downhill_azimuth_deg": 5.8,
+      "downhill": "N",
+      "rms_residual_m": 80.979,
+      "n_pixels": 55869
+    },
+    "pool__pool_03445": {
+      "tilt_deg": 2.4,
+      "downhill_azimuth_deg": 212.4,
+      "downhill": "SW",
+      "rms_residual_m": 85.644,
+      "n_pixels": 55869
+    },
+    "pool__pool_03532": {
+      "tilt_deg": 0.9,
+      "downhill_azimuth_deg": 169.9,
+      "downhill": "S",
+      "rms_residual_m": 40.16,
+      "n_pixels": 55869
+    },
+    "pool__pool_03541": {
+      "tilt_deg": 2.9,
+      "downhill_azimuth_deg": 46.9,
+      "downhill": "NE",
+      "rms_residual_m": 75.173,
+      "n_pixels": 55869
+    },
+    "pool__pool_03552": {
+      "tilt_deg": 0.83,
+      "downhill_azimuth_deg": 311.9,
+      "downhill": "NW",
+      "rms_residual_m": 44.234,
+      "n_pixels": 55869
+    },
+    "pool__pool_03614": {
+      "tilt_deg": 1.09,
+      "downhill_azimuth_deg": 193.8,
+      "downhill": "S",
+      "rms_residual_m": 81.272,
+      "n_pixels": 55869
+    },
+    "pool__pool_03634": {
+      "tilt_deg": 1.84,
+      "downhill_azimuth_deg": 82.3,
+      "downhill": "E",
+      "rms_residual_m": 64.832,
+      "n_pixels": 55869
+    },
+    "pool__pool_03676": {
+      "tilt_deg": 0.46,
+      "downhill_azimuth_deg": 31.5,
+      "downhill": "NE",
+      "rms_residual_m": 23.441,
+      "n_pixels": 55869
+    },
+    "pool__pool_03684": {
+      "tilt_deg": 0.49,
+      "downhill_azimuth_deg": 263.6,
+      "downhill": "W",
+      "rms_residual_m": 59.705,
+      "n_pixels": 55869
+    },
+    "pool__pool_03693": {
+      "tilt_deg": 1.35,
+      "downhill_azimuth_deg": 330.8,
+      "downhill": "NW",
+      "rms_residual_m": 61.874,
+      "n_pixels": 55869
+    },
+    "pool__pool_03717": {
+      "tilt_deg": 1.83,
+      "downhill_azimuth_deg": 239.1,
+      "downhill": "SW",
+      "rms_residual_m": 79.578,
+      "n_pixels": 55869
+    },
+    "pool__pool_03724": {
+      "tilt_deg": 1.24,
+      "downhill_azimuth_deg": 150.6,
+      "downhill": "SE",
+      "rms_residual_m": 103.985,
+      "n_pixels": 55869
+    },
+    "pool__pool_03806": {
+      "tilt_deg": 2.89,
+      "downhill_azimuth_deg": 290.7,
+      "downhill": "W",
+      "rms_residual_m": 95.157,
+      "n_pixels": 55869
+    },
+    "pool__pool_03828": {
+      "tilt_deg": 3.74,
+      "downhill_azimuth_deg": 36.1,
+      "downhill": "NE",
+      "rms_residual_m": 141.799,
+      "n_pixels": 55869
+    },
+    "pool__pool_03830": {
+      "tilt_deg": 2.29,
+      "downhill_azimuth_deg": 100.2,
+      "downhill": "E",
+      "rms_residual_m": 73.151,
+      "n_pixels": 55869
+    },
+    "pool__pool_03836": {
+      "tilt_deg": 4.56,
+      "downhill_azimuth_deg": 168.6,
+      "downhill": "S",
+      "rms_residual_m": 137.803,
+      "n_pixels": 55869
+    },
+    "pool__pool_03843": {
+      "tilt_deg": 0.86,
+      "downhill_azimuth_deg": 196.6,
+      "downhill": "S",
+      "rms_residual_m": 40.823,
+      "n_pixels": 55869
+    },
+    "pool__pool_03867": {
+      "tilt_deg": 2.19,
+      "downhill_azimuth_deg": 5.5,
+      "downhill": "N",
+      "rms_residual_m": 80.381,
+      "n_pixels": 55869
+    },
+    "pool__pool_03873": {
+      "tilt_deg": 3.38,
+      "downhill_azimuth_deg": 181.8,
+      "downhill": "S",
+      "rms_residual_m": 104.03,
+      "n_pixels": 55869
+    },
+    "pool__pool_03900": {
+      "tilt_deg": 5.33,
+      "downhill_azimuth_deg": 58.8,
+      "downhill": "NE",
+      "rms_residual_m": 105.336,
+      "n_pixels": 55869
+    },
+    "pool__pool_03902": {
+      "tilt_deg": 1.84,
+      "downhill_azimuth_deg": 77.9,
+      "downhill": "E",
+      "rms_residual_m": 91.334,
+      "n_pixels": 55869
+    },
+    "pool__pool_03937": {
+      "tilt_deg": 3.31,
+      "downhill_azimuth_deg": 170.2,
+      "downhill": "S",
+      "rms_residual_m": 93.729,
+      "n_pixels": 55869
+    },
+    "pool__pool_03943": {
+      "tilt_deg": 2.28,
+      "downhill_azimuth_deg": 209.2,
+      "downhill": "SW",
+      "rms_residual_m": 169.219,
+      "n_pixels": 55869
+    },
+    "pool__pool_03956": {
+      "tilt_deg": 1.53,
+      "downhill_azimuth_deg": 282.2,
+      "downhill": "W",
+      "rms_residual_m": 47.298,
+      "n_pixels": 55869
+    },
+    "pool__pool_03987": {
+      "tilt_deg": 1.02,
+      "downhill_azimuth_deg": 211.2,
+      "downhill": "SW",
+      "rms_residual_m": 132.126,
+      "n_pixels": 55869
+    },
+    "pool__pool_04004": {
+      "tilt_deg": 1.92,
+      "downhill_azimuth_deg": 225.5,
+      "downhill": "SW",
+      "rms_residual_m": 88.158,
+      "n_pixels": 55869
+    },
+    "pool__pool_04041": {
+      "tilt_deg": 1.32,
+      "downhill_azimuth_deg": 61.6,
+      "downhill": "NE",
+      "rms_residual_m": 42.567,
+      "n_pixels": 55869
+    },
+    "pool__pool_04045": {
+      "tilt_deg": 2.16,
+      "downhill_azimuth_deg": 9.4,
+      "downhill": "N",
+      "rms_residual_m": 82.543,
+      "n_pixels": 55869
+    },
+    "pool__pool_04050": {
+      "tilt_deg": 0.57,
+      "downhill_azimuth_deg": 296.3,
+      "downhill": "NW",
+      "rms_residual_m": 54.493,
+      "n_pixels": 55869
+    },
+    "pool__pool_04055": {
+      "tilt_deg": 1.46,
+      "downhill_azimuth_deg": 178.5,
+      "downhill": "S",
+      "rms_residual_m": 47.44,
+      "n_pixels": 55869
+    },
+    "spirit_columbia": {
+      "tilt_deg": 0.15,
+      "downhill_azimuth_deg": 111.0,
+      "downhill": "E",
+      "rms_residual_m": 11.057,
+      "n_pixels": 55869
+    },
+    "spirit_columbia__pool__pool_00249": {
+      "tilt_deg": 0.19,
+      "downhill_azimuth_deg": 153.4,
+      "downhill": "SE",
+      "rms_residual_m": 8.982,
+      "n_pixels": 55869
+    },
+    "spirit_columbia__pool__pool_00336": {
+      "tilt_deg": 0.35,
+      "downhill_azimuth_deg": 304.6,
+      "downhill": "NW",
+      "rms_residual_m": 9.392,
+      "n_pixels": 55869
+    },
+    "spirit_columbia__pool__pool_00383": {
+      "tilt_deg": 0.13,
+      "downhill_azimuth_deg": 164.7,
+      "downhill": "S",
+      "rms_residual_m": 9.878,
+      "n_pixels": 55869
+    },
+    "spirit_columbia__pool__pool_00409": {
+      "tilt_deg": 0.22,
+      "downhill_azimuth_deg": 270.5,
+      "downhill": "W",
+      "rms_residual_m": 7.658,
+      "n_pixels": 55869
+    },
+    "spirit_columbia__pool__pool_00516": {
+      "tilt_deg": 0.02,
+      "downhill_azimuth_deg": 56.2,
+      "downhill": "NE",
+      "rms_residual_m": 6.942,
+      "n_pixels": 55869
+    },
+    "spirit_columbia__pool__pool_00616": {
+      "tilt_deg": 0.08,
+      "downhill_azimuth_deg": 266.6,
+      "downhill": "W",
+      "rms_residual_m": 12.162,
+      "n_pixels": 55869
+    },
+    "spirit_columbia__pool__pool_00961": {
+      "tilt_deg": 0.67,
+      "downhill_azimuth_deg": 109.7,
+      "downhill": "E",
+      "rms_residual_m": 8.374,
+      "n_pixels": 55869
+    },
+    "spirit_columbia__pool__pool_01042": {
+      "tilt_deg": 0.01,
+      "downhill_azimuth_deg": 179.1,
+      "downhill": "S",
+      "rms_residual_m": 8.73,
+      "n_pixels": 55869
+    },
+    "spirit_columbia__pool__pool_01191": {
+      "tilt_deg": 0.1,
+      "downhill_azimuth_deg": 153.4,
+      "downhill": "SE",
+      "rms_residual_m": 8.179,
+      "n_pixels": 55869
+    },
+    "spirit_columbia__pool__pool_01773": {
+      "tilt_deg": 0.05,
+      "downhill_azimuth_deg": 336.3,
+      "downhill": "NW",
+      "rms_residual_m": 6.151,
+      "n_pixels": 55869
+    },
+    "zhurong": {
+      "tilt_deg": 0.54,
+      "downhill_azimuth_deg": 30.9,
+      "downhill": "NE",
+      "rms_residual_m": 7.465,
+      "n_pixels": 54357
+    },
+    "zhurong__pool__pool_00061": {
+      "tilt_deg": 0.87,
+      "downhill_azimuth_deg": 266.1,
+      "downhill": "W",
+      "rms_residual_m": 8.151,
+      "n_pixels": 55869
+    },
+    "zhurong__pool__pool_00435": {
+      "tilt_deg": 0.04,
+      "downhill_azimuth_deg": 57.7,
+      "downhill": "NE",
+      "rms_residual_m": 7.548,
+      "n_pixels": 55869
+    },
+    "zhurong__pool__pool_00436": {
+      "tilt_deg": 0.03,
+      "downhill_azimuth_deg": 40.7,
+      "downhill": "NE",
+      "rms_residual_m": 8.646,
+      "n_pixels": 55869
+    },
+    "zhurong__pool__pool_00727": {
+      "tilt_deg": 0.06,
+      "downhill_azimuth_deg": 282.4,
+      "downhill": "W",
+      "rms_residual_m": 9.145,
+      "n_pixels": 55869
+    },
+    "zhurong__pool__pool_00748": {
+      "tilt_deg": 0.09,
+      "downhill_azimuth_deg": 242.0,
+      "downhill": "SW",
+      "rms_residual_m": 10.195,
+      "n_pixels": 55869
+    },
+    "zhurong__pool__pool_00955": {
+      "tilt_deg": 0.09,
+      "downhill_azimuth_deg": 312.2,
+      "downhill": "NW",
+      "rms_residual_m": 9.621,
+      "n_pixels": 55869
+    },
+    "zhurong__pool__pool_00980": {
+      "tilt_deg": 0.09,
+      "downhill_azimuth_deg": 321.3,
+      "downhill": "NW",
+      "rms_residual_m": 7.395,
+      "n_pixels": 55869
+    },
+    "zhurong__pool__pool_01441": {
+      "tilt_deg": 0.04,
+      "downhill_azimuth_deg": 64.3,
+      "downhill": "NE",
+      "rms_residual_m": 7.901,
+      "n_pixels": 55869
+    },
+    "zhurong__pool__pool_01666": {
+      "tilt_deg": 0.17,
+      "downhill_azimuth_deg": 38.6,
+      "downhill": "NE",
+      "rms_residual_m": 7.936,
+      "n_pixels": 55869
+    },
+    "zhurong__pool__pool_01756": {
+      "tilt_deg": 0.52,
+      "downhill_azimuth_deg": 356.5,
+      "downhill": "N",
+      "rms_residual_m": 8.433,
+      "n_pixels": 55869
+    }
+  }
+}

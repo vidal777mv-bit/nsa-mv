@@ -1,0 +1,1426 @@
+{
+ "schema": "docs.verification.map_states/1",
+ "seed": 20261114,
+ "design": {
+  "mars_cov": "8 celdas por clase de site/data/coverage/mars.json (0,1,2), muestreo sin reemplazo con rng(20261114), orden 2,1,0 no; orden de estratos: mars 0,1,2 / earth 0,1,2 / gap1 / gap0",
+  "earth_cov": "8 celdas por clase de site/data/coverage/earth.json",
+  "mars_gap": "8 celdas gap=1 + 8 gap=0 (estrato por gap guardado en data/derived/neighbors/mars_cells.parquet), D por fuerza bruta contra 1994 ventanas validas del pool",
+  "moon_artemis": "censo: los 7 objetivos con mission 'Artemis III (candidate region)'"
+ },
+ "definitions": {
+  "niebla_STANDARDS_10_13": "2 = centro de ventana medida cae en la celda; 1 = bbox CTX DTM cubre la celda (Marte: centro dentro del bbox, regla de config/mars_coverage.json); 0 = resto. Luna: 1 solo 80S-90S; Tierra: 1 si share WorldCover >=0.8 (cache de tiles); 0 sin tile.",
+  "earth_gap_STANDARDS_10_14": "gap = D_nearest > umbral(clase de relieve); D = sqrt(sum_k((x_a-x_b)/sigma_k)^2 / K), K=3, features slope_p95_deg, hi, hurst; relieve rugged si slope_p95 >= 3 deg",
+  "celda_1grado": "fila r = floor(90-lat) (0..179), columna c = floor(lon+180) (0..359); centro (90-r-0.5, -180+c+0.5)"
+ },
+ "orientation_worldcover_cache": {
+  "n_pairs": 2000,
+  "corr_north_up": 0.4660605269529769,
+  "corr_south_up": 0.3234183651480914,
+  "chosen": "N"
+ },
+ "umbral": {
+  "dev_pairs": [
+   {
+    "region": "al_haruj",
+    "relief": "rugged",
+    "slope_p95_nasadem": 3.707465434591721,
+    "D": 0.030445900590381565
+   },
+   {
+    "region": "algodones_dunes",
+    "relief": "rugged",
+    "slope_p95_nasadem": 8.657510498968948,
+    "D": 0.03939744770462564
+   },
+   {
+    "region": "aorounga_crater",
+    "relief": "rugged",
+    "slope_p95_nasadem": 13.440713757793366,
+    "D": 0.1969229039199921
+   },
+   {
+    "region": "badain_jaran",
+    "relief": "rugged",
+    "slope_p95_nasadem": 20.09508061995613,
+    "D": 0.2094343633538012
+   },
+   {
+    "region": "cotahuasi_canyon",
+    "relief": "rugged",
+    "slope_p95_nasadem": 45.873633227983916,
+    "D": 0.13409439802676038
+   },
+   {
+    "region": "fish_river_canyon",
+    "relief": "rugged",
+    "slope_p95_nasadem": 32.22611491034838,
+    "D": 0.14427259230778153
+   },
+   {
+    "region": "gosses_bluff",
+    "relief": "rugged",
+    "slope_p95_nasadem": 20.033103855047717,
+    "D": 0.20572337849280056
+   },
+   {
+    "region": "harrat_khaybar",
+    "relief": "rugged",
+    "slope_p95_nasadem": 13.118081004561546,
+    "D": 0.0777283257205891
+   },
+   {
+    "region": "namib_sand_sea",
+    "relief": "rugged",
+    "slope_p95_nasadem": 12.372752481015892,
+    "D": 0.1874893611646603
+   },
+   {
+    "region": "nullarbor_plain",
+    "relief": "flat",
+    "slope_p95_nasadem": 0.9030120323588261,
+    "D": 0.7459698893127935
+   },
+   {
+    "region": "payun_matru",
+    "relief": "rugged",
+    "slope_p95_nasadem": 22.44065670135746,
+    "D": 0.10573983055753251
+   },
+   {
+    "region": "tenere_plain",
+    "relief": "rugged",
+    "slope_p95_nasadem": 5.677516852727612,
+    "D": 0.7234655826398042
+   },
+   {
+    "region": "tenoumer_crater",
+    "relief": "rugged",
+    "slope_p95_nasadem": 5.4298792316110704,
+    "D": 0.07065366985152019
+   },
+   {
+    "region": "ustyurt_plateau",
+    "relief": "flat",
+    "slope_p95_nasadem": 0.7369612843713883,
+    "D": 1.120442592611487
+   },
+   {
+    "region": "wadi_mujib",
+    "relief": "rugged",
+    "slope_p95_nasadem": 29.564740249295873,
+    "D": 0.09295737909123747
+   }
+  ],
+  "recomputed": {
+   "rugged": 0.4150468510682017,
+   "flat": 1.1017189574465522
+  },
+  "check": {
+   "rugged": {
+    "recomputed": 0.4150468510682017,
+    "run_json": 0.4150468510682017,
+    "abs_diff": 0.0,
+    "n_dev_pairs": 13
+   },
+   "flat": {
+    "recomputed": 1.1017189574465522,
+    "run_json": 1.1017189574465522,
+    "abs_diff": 0.0,
+    "n_dev_pairs": 2
+   }
+  }
+ },
+ "feature_consistency_atlas_vs_parquet_max_abs_diff": 0.0,
+ "grid_class2_set_equality": {
+  "mars": true,
+  "earth": true
+ },
+ "portada": [
+  {
+   "cifra": "16 sitios medidos",
+   "mostrado": 16,
+   "fuente_mostrado": "site/data/targets.json (unlocked)",
+   "recontado": 16,
+   "detalle": "targets.json tiene 16 entradas",
+   "ok": true
+  },
+  {
+   "cifra": "2,000 lugares de la Tierra",
+   "mostrado": 2000,
+   "fuente_mostrado": "site/data/validation.json v1.2.V0.n_pool",
+   "recontado": 2000,
+   "detalle": "filas data/derived/neighbors/earth_windows.parquet; indice pool index.json = 2000",
+   "ok": true
+  },
+  {
+   "cifra": "1,838 celdas de Marte desbloqueadas",
+   "mostrado": 1838,
+   "fuente_mostrado": "site/data/discoveries.json from.mars_cells",
+   "recontado": 1838,
+   "detalle": "site/data/atlas/mars_cells.json = 1838; mars_cells.parquet = 1838. OJO: son ventanas; coverage/mars.json cuenta 1621 celdas de 1 grado en clase 2 (1844 centros medidos = 1838 + 6 objetivos de Marte, en 1621 celdas)",
+   "ok": true
+  },
+  {
+   "cifra": "1,276 gemelos nuevos",
+   "mostrado": 1276,
+   "fuente_mostrado": "site/data/discoveries.json counts.new",
+   "recontado": 1276,
+   "detalle": "regla del archivo (clave = analog_id): 1347 ventanas (archivo 1347); mismatch de conjunto: False; mismatch de novedad: 0. Variante por ventana fisica del pool: 1301 unicas, nuevas=1244, conocidas=57; 39 entradas de objetivos con coordenada refinada distinta del pool",
+   "ok": true
+  },
+  {
+   "cifra": "71 conocidos",
+   "mostrado": 71,
+   "fuente_mostrado": "site/data/discoveries.json counts.known_region",
+   "recontado": 71,
+   "detalle": "dentro de circulo de config/known_analog_regions.json (regla del archivo)",
+   "ok": true
+  },
+  {
+   "cifra": "Tierra puede ensayar 88.5% de Marte medido (211/1838)",
+   "mostrado": "88.5% / 11.5% (211/1838)",
+   "fuente_mostrado": "data/derived/neighbors/run.json mars_cells.gap=211; query mars_cells gap.f32",
+   "recontado": "gap=211/1838 = 11.48%; ensaya=88.52%; gap parquet=211; gap export=211; con umbral run.json=211",
+   "ok": true
+  },
+  {
+   "cifra": "Luna: 3 de 7 sitios Artemis sin gemelo",
+   "mostrado": 3,
+   "fuente_mostrado": "run.json targets.gap (16 objetivos, 3 con gap)",
+   "recontado": "3 de 7 Artemis; 3 de 16 objetivos con gap",
+   "ok": true
+  },
+  {
+   "cifra": "Tierra contorno 0.9% de la esfera",
+   "mostrado": 0.9,
+   "fuente_mostrado": "site/data/coverage/earth.json clase 1 (area por cos(lat), como app.js)",
+   "recontado": 0.86,
+   "detalle": "clase 1 = 413 celdas",
+   "ok": true
+  },
+  {
+   "cifra": "Tierra sin tocar 96.0%",
+   "mostrado": 96.0,
+   "fuente_mostrado": "site/data/coverage/earth.json clase 0 (area por cos(lat))",
+   "recontado": 96.04,
+   "detalle": "clase 0 = 62909 celdas; clase 2 share = 3.10%",
+   "ok": true
+  }
+ ],
+ "mars_coverage_shares_pct": {
+  "unlocked": 3.67,
+  "to_discover": 15.27,
+  "fog": 81.06
+ },
+ "strata": [
+  {
+   "estrato": "mars_cov_2_unlocked",
+   "n": 8,
+   "aciertos": 8,
+   "tasa": 1.0,
+   "wilson95": [
+    0.6756,
+    1.0
+   ]
+  },
+  {
+   "estrato": "mars_cov_1_to_discover",
+   "n": 8,
+   "aciertos": 8,
+   "tasa": 1.0,
+   "wilson95": [
+    0.6756,
+    1.0
+   ]
+  },
+  {
+   "estrato": "mars_cov_0_out_of_reach",
+   "n": 8,
+   "aciertos": 8,
+   "tasa": 1.0,
+   "wilson95": [
+    0.6756,
+    1.0
+   ]
+  },
+  {
+   "estrato": "earth_cov_2_unlocked",
+   "n": 8,
+   "aciertos": 8,
+   "tasa": 1.0,
+   "wilson95": [
+    0.6756,
+    1.0
+   ]
+  },
+  {
+   "estrato": "earth_cov_1_to_discover",
+   "n": 8,
+   "aciertos": 8,
+   "tasa": 1.0,
+   "wilson95": [
+    0.6756,
+    1.0
+   ]
+  },
+  {
+   "estrato": "earth_cov_0_out_of_reach",
+   "n": 8,
+   "aciertos": 8,
+   "tasa": 1.0,
+   "wilson95": [
+    0.6756,
+    1.0
+   ]
+  },
+  {
+   "estrato": "earth_gap_mars_gap1",
+   "n": 8,
+   "aciertos": 8,
+   "tasa": 1.0,
+   "wilson95": [
+    0.6756,
+    1.0
+   ]
+  },
+  {
+   "estrato": "earth_gap_mars_gap0",
+   "n": 8,
+   "aciertos": 8,
+   "tasa": 1.0,
+   "wilson95": [
+    0.6756,
+    1.0
+   ]
+  },
+  {
+   "estrato": "moon_artemis_census",
+   "n": 7,
+   "aciertos": 7,
+   "tasa": 1.0,
+   "wilson95": [
+    0.6457,
+    1.0
+   ]
+  }
+ ],
+ "strata_sample_total": {
+  "n": 64,
+  "aciertos": 64
+ },
+ "records": {
+  "mars_cov": [
+   {
+    "cell": "r046c236",
+    "lat_centre": 43.5,
+    "lon_centre": 56.5,
+    "stored_class": 2,
+    "recomputed_class": 2,
+    "match": true,
+    "measured_window_in_cell": true,
+    "measured_ids": [
+     "mars_01294"
+    ],
+    "ctx_bbox_covers_centre": true,
+    "ctx_product_example": "G01_018448_2251_XI_45N303W__N01_062913_2251_XI_45N303W",
+    "n_ctx_centre": 1,
+    "alt_rule_overlap_class": 2,
+    "alt_rule_match": true,
+    "stratum": "mars_cov_2_unlocked",
+    "pass": true
+   },
+   {
+    "cell": "r065c086",
+    "lat_centre": 24.5,
+    "lon_centre": -93.5,
+    "stored_class": 2,
+    "recomputed_class": 2,
+    "match": true,
+    "measured_window_in_cell": true,
+    "measured_ids": [
+     "mars_00384"
+    ],
+    "ctx_bbox_covers_centre": true,
+    "ctx_product_example": "P21_009421_2070_XN_27N093W__J13_049956_2066_XI_26N093W",
+    "n_ctx_centre": 8,
+    "alt_rule_overlap_class": 2,
+    "alt_rule_match": true,
+    "stratum": "mars_cov_2_unlocked",
+    "pass": true
+   },
+   {
+    "cell": "r067c044",
+    "lat_centre": 22.5,
+    "lon_centre": -135.5,
+    "stored_class": 2,
+    "recomputed_class": 2,
+    "match": true,
+    "measured_window_in_cell": true,
+    "measured_ids": [
+     "mars_00175"
+    ],
+    "ctx_bbox_covers_centre": true,
+    "ctx_product_example": "P10_004887_2026_XN_22N135W__G06_020644_2026_XI_22N135W",
+    "n_ctx_centre": 12,
+    "alt_rule_overlap_class": 2,
+    "alt_rule_match": true,
+    "stratum": "mars_cov_2_unlocked",
+    "pass": true
+   },
+   {
+    "cell": "r071c080",
+    "lat_centre": 18.5,
+    "lon_centre": -99.5,
+    "stored_class": 2,
+    "recomputed_class": 2,
+    "match": true,
+    "measured_window_in_cell": true,
+    "measured_ids": [
+     "mars_01230"
+    ],
+    "ctx_bbox_covers_centre": true,
+    "ctx_product_example": "N15_068208_2009_XI_20N099W__N13_067535_2009_XI_20N099W",
+    "n_ctx_centre": 6,
+    "alt_rule_overlap_class": 2,
+    "alt_rule_match": true,
+    "stratum": "mars_cov_2_unlocked",
+    "pass": true
+   },
+   {
+    "cell": "r080c078",
+    "lat_centre": 9.5,
+    "lon_centre": -101.5,
+    "stored_class": 2,
+    "recomputed_class": 2,
+    "match": true,
+    "measured_window_in_cell": true,
+    "measured_ids": [
+     "mars_01034"
+    ],
+    "ctx_bbox_covers_centre": true,
+    "ctx_product_example": "F02_036585_1880_XN_08N101W__P06_003554_1922_XN_12N101W",
+    "n_ctx_centre": 3,
+    "alt_rule_overlap_class": 2,
+    "alt_rule_match": true,
+    "stratum": "mars_cov_2_unlocked",
+    "pass": true
+   },
+   {
+    "cell": "r101c111",
+    "lat_centre": -11.5,
+    "lon_centre": -68.5,
+    "stored_class": 2,
+    "recomputed_class": 2,
+    "match": true,
+    "measured_window_in_cell": true,
+    "measured_ids": [
+     "mars_01461"
+    ],
+    "ctx_bbox_covers_centre": true,
+    "ctx_product_example": "P19_008616_1689_XI_11S068W__P21_009051_1688_XN_11S068W",
+    "n_ctx_centre": 2,
+    "alt_rule_overlap_class": 2,
+    "alt_rule_match": true,
+    "stratum": "mars_cov_2_unlocked",
+    "pass": true
+   },
+   {
+    "cell": "r119c153",
+    "lat_centre": -29.5,
+    "lon_centre": -26.5,
+    "stored_class": 2,
+    "recomputed_class": 2,
+    "match": true,
+    "measured_window_in_cell": true,
+    "measured_ids": [
+     "mars_00352"
+    ],
+    "ctx_bbox_covers_centre": true,
+    "ctx_product_example": "J05_046565_1523_XN_27S026W__J03_045853_1524_XN_27S026W",
+    "n_ctx_centre": 1,
+    "alt_rule_overlap_class": 2,
+    "alt_rule_match": true,
+    "stratum": "mars_cov_2_unlocked",
+    "pass": true
+   },
+   {
+    "cell": "r122c327",
+    "lat_centre": -32.5,
+    "lon_centre": 147.5,
+    "stored_class": 2,
+    "recomputed_class": 2,
+    "match": true,
+    "measured_window_in_cell": true,
+    "measured_ids": [
+     "mars_01160"
+    ],
+    "ctx_bbox_covers_centre": false,
+    "ctx_product_example": null,
+    "n_ctx_centre": 0,
+    "alt_rule_overlap_class": 2,
+    "alt_rule_match": true,
+    "stratum": "mars_cov_2_unlocked",
+    "pass": true
+   },
+   {
+    "cell": "r034c028",
+    "lat_centre": 55.5,
+    "lon_centre": -151.5,
+    "stored_class": 1,
+    "recomputed_class": 1,
+    "match": true,
+    "measured_window_in_cell": false,
+    "measured_ids": [],
+    "ctx_bbox_covers_centre": true,
+    "ctx_product_example": "J03_045989_2363_XN_56N151W__J04_046213_2364_XN_56N151W",
+    "n_ctx_centre": 1,
+    "alt_rule_overlap_class": 1,
+    "alt_rule_match": true,
+    "stratum": "mars_cov_1_to_discover",
+    "pass": true
+   },
+   {
+    "cell": "r058c182",
+    "lat_centre": 31.5,
+    "lon_centre": 2.5,
+    "stored_class": 1,
+    "recomputed_class": 1,
+    "match": true,
+    "measured_window_in_cell": false,
+    "measured_ids": [],
+    "ctx_bbox_covers_centre": true,
+    "ctx_product_example": "K01_053829_2115_XN_31N357W__K02_054119_2114_XN_31N357W",
+    "n_ctx_centre": 1,
+    "alt_rule_overlap_class": 1,
+    "alt_rule_match": true,
+    "stratum": "mars_cov_1_to_discover",
+    "pass": true
+   },
+   {
+    "cell": "r073c029",
+    "lat_centre": 16.5,
+    "lon_centre": -150.5,
+    "stored_class": 1,
+    "recomputed_class": 1,
+    "match": true,
+    "measured_window_in_cell": false,
+    "measured_ids": [],
+    "ctx_bbox_covers_centre": true,
+    "ctx_product_example": "P12_005903_1965_XI_16N150W__P12_005837_1966_XI_16N150W",
+    "n_ctx_centre": 10,
+    "alt_rule_overlap_class": 1,
+    "alt_rule_match": true,
+    "stratum": "mars_cov_1_to_discover",
+    "pass": true
+   },
+   {
+    "cell": "r100c129",
+    "lat_centre": -10.5,
+    "lon_centre": -50.5,
+    "stored_class": 1,
+    "recomputed_class": 1,
+    "match": true,
+    "measured_window_in_cell": false,
+    "measured_ids": [],
+    "ctx_bbox_covers_centre": true,
+    "ctx_product_example": "P13_006229_1704_XN_09S050W__D13_032245_1703_XN_09S050W",
+    "n_ctx_centre": 1,
+    "alt_rule_overlap_class": 1,
+    "alt_rule_match": true,
+    "stratum": "mars_cov_1_to_discover",
+    "pass": true
+   },
+   {
+    "cell": "r104c319",
+    "lat_centre": -14.5,
+    "lon_centre": 139.5,
+    "stored_class": 1,
+    "recomputed_class": 1,
+    "match": true,
+    "measured_window_in_cell": false,
+    "measured_ids": [],
+    "ctx_bbox_covers_centre": true,
+    "ctx_product_example": "N05_064242_1669_XI_13S220W__F05_037829_1668_XN_13S220W",
+    "n_ctx_centre": 1,
+    "alt_rule_overlap_class": 1,
+    "alt_rule_match": true,
+    "stratum": "mars_cov_1_to_discover",
+    "pass": true
+   },
+   {
+    "cell": "r118c064",
+    "lat_centre": -28.5,
+    "lon_centre": -115.5,
+    "stored_class": 1,
+    "recomputed_class": 1,
+    "match": true,
+    "measured_window_in_cell": false,
+    "measured_ids": [],
+    "ctx_bbox_covers_centre": true,
+    "ctx_product_example": "N06_064858_1515_XI_28S115W__P06_003225_1522_XI_27S115W",
+    "n_ctx_centre": 1,
+    "alt_rule_overlap_class": 1,
+    "alt_rule_match": true,
+    "stratum": "mars_cov_1_to_discover",
+    "pass": true
+   },
+   {
+    "cell": "r123c090",
+    "lat_centre": -33.5,
+    "lon_centre": -89.5,
+    "stored_class": 1,
+    "recomputed_class": 1,
+    "match": true,
+    "measured_window_in_cell": false,
+    "measured_ids": [],
+    "ctx_bbox_covers_centre": true,
+    "ctx_product_example": "N07_065200_1449_XN_35S089W__N09_065899_1450_XN_35S089W",
+    "n_ctx_centre": 1,
+    "alt_rule_overlap_class": 1,
+    "alt_rule_match": true,
+    "stratum": "mars_cov_1_to_discover",
+    "pass": true
+   },
+   {
+    "cell": "r131c276",
+    "lat_centre": -41.5,
+    "lon_centre": 96.5,
+    "stored_class": 1,
+    "recomputed_class": 1,
+    "match": true,
+    "measured_window_in_cell": false,
+    "measured_ids": [],
+    "ctx_bbox_covers_centre": true,
+    "ctx_product_example": "N08_065391_1386_XN_41S263W__N06_064837_1386_XN_41S263W",
+    "n_ctx_centre": 1,
+    "alt_rule_overlap_class": 1,
+    "alt_rule_match": true,
+    "stratum": "mars_cov_1_to_discover",
+    "pass": true
+   },
+   {
+    "cell": "r009c169",
+    "lat_centre": 80.5,
+    "lon_centre": -10.5,
+    "stored_class": 0,
+    "recomputed_class": 0,
+    "match": true,
+    "measured_window_in_cell": false,
+    "measured_ids": [],
+    "ctx_bbox_covers_centre": false,
+    "ctx_product_example": null,
+    "n_ctx_centre": 0,
+    "alt_rule_overlap_class": 0,
+    "alt_rule_match": true,
+    "stratum": "mars_cov_0_out_of_reach",
+    "pass": true
+   },
+   {
+    "cell": "r017c327",
+    "lat_centre": 72.5,
+    "lon_centre": 147.5,
+    "stored_class": 0,
+    "recomputed_class": 0,
+    "match": true,
+    "measured_window_in_cell": false,
+    "measured_ids": [],
+    "ctx_bbox_covers_centre": false,
+    "ctx_product_example": null,
+    "n_ctx_centre": 0,
+    "alt_rule_overlap_class": 0,
+    "alt_rule_match": true,
+    "stratum": "mars_cov_0_out_of_reach",
+    "pass": true
+   },
+   {
+    "cell": "r031c090",
+    "lat_centre": 58.5,
+    "lon_centre": -89.5,
+    "stored_class": 0,
+    "recomputed_class": 0,
+    "match": true,
+    "measured_window_in_cell": false,
+    "measured_ids": [],
+    "ctx_bbox_covers_centre": false,
+    "ctx_product_example": null,
+    "n_ctx_centre": 0,
+    "alt_rule_overlap_class": 0,
+    "alt_rule_match": true,
+    "stratum": "mars_cov_0_out_of_reach",
+    "pass": true
+   },
+   {
+    "cell": "r041c016",
+    "lat_centre": 48.5,
+    "lon_centre": -163.5,
+    "stored_class": 0,
+    "recomputed_class": 0,
+    "match": true,
+    "measured_window_in_cell": false,
+    "measured_ids": [],
+    "ctx_bbox_covers_centre": false,
+    "ctx_product_example": null,
+    "n_ctx_centre": 0,
+    "alt_rule_overlap_class": 0,
+    "alt_rule_match": true,
+    "stratum": "mars_cov_0_out_of_reach",
+    "pass": true
+   },
+   {
+    "cell": "r065c016",
+    "lat_centre": 24.5,
+    "lon_centre": -163.5,
+    "stored_class": 0,
+    "recomputed_class": 0,
+    "match": true,
+    "measured_window_in_cell": false,
+    "measured_ids": [],
+    "ctx_bbox_covers_centre": false,
+    "ctx_product_example": null,
+    "n_ctx_centre": 0,
+    "alt_rule_overlap_class": 0,
+    "alt_rule_match": true,
+    "stratum": "mars_cov_0_out_of_reach",
+    "pass": true
+   },
+   {
+    "cell": "r101c150",
+    "lat_centre": -11.5,
+    "lon_centre": -29.5,
+    "stored_class": 0,
+    "recomputed_class": 0,
+    "match": true,
+    "measured_window_in_cell": false,
+    "measured_ids": [],
+    "ctx_bbox_covers_centre": false,
+    "ctx_product_example": null,
+    "n_ctx_centre": 0,
+    "alt_rule_overlap_class": 0,
+    "alt_rule_match": true,
+    "stratum": "mars_cov_0_out_of_reach",
+    "pass": true
+   },
+   {
+    "cell": "r132c010",
+    "lat_centre": -42.5,
+    "lon_centre": -169.5,
+    "stored_class": 0,
+    "recomputed_class": 0,
+    "match": true,
+    "measured_window_in_cell": false,
+    "measured_ids": [],
+    "ctx_bbox_covers_centre": false,
+    "ctx_product_example": null,
+    "n_ctx_centre": 0,
+    "alt_rule_overlap_class": 1,
+    "alt_rule_match": false,
+    "stratum": "mars_cov_0_out_of_reach",
+    "pass": true
+   },
+   {
+    "cell": "r139c102",
+    "lat_centre": -49.5,
+    "lon_centre": -77.5,
+    "stored_class": 0,
+    "recomputed_class": 0,
+    "match": true,
+    "measured_window_in_cell": false,
+    "measured_ids": [],
+    "ctx_bbox_covers_centre": false,
+    "ctx_product_example": null,
+    "n_ctx_centre": 0,
+    "alt_rule_overlap_class": 0,
+    "alt_rule_match": true,
+    "stratum": "mars_cov_0_out_of_reach",
+    "pass": true
+   }
+  ],
+  "earth_cov": [
+   {
+    "cell": "r049c259",
+    "lat_sw": 40,
+    "lon_sw": 79,
+    "stored_class": 2,
+    "recomputed_class": 2,
+    "match": true,
+    "stratum": "earth_cov_2_unlocked",
+    "pool_windows_in_cell": 1,
+    "worldcover_share_cell": 0.824,
+    "tile_cached": true,
+    "pass": true
+   },
+   {
+    "cell": "r059c205",
+    "lat_sw": 30,
+    "lon_sw": 25,
+    "stored_class": 2,
+    "recomputed_class": 2,
+    "match": true,
+    "stratum": "earth_cov_2_unlocked",
+    "pool_windows_in_cell": 2,
+    "worldcover_share_cell": 1.0,
+    "tile_cached": true,
+    "pass": true
+   },
+   {
+    "cell": "r062c188",
+    "lat_sw": 27,
+    "lon_sw": 8,
+    "stored_class": 2,
+    "recomputed_class": 2,
+    "match": true,
+    "stratum": "earth_cov_2_unlocked",
+    "pool_windows_in_cell": 2,
+    "worldcover_share_cell": 1.0,
+    "tile_cached": true,
+    "pass": true
+   },
+   {
+    "cell": "r068c216",
+    "lat_sw": 21,
+    "lon_sw": 36,
+    "stored_class": 2,
+    "recomputed_class": 2,
+    "match": true,
+    "stratum": "earth_cov_2_unlocked",
+    "pool_windows_in_cell": 2,
+    "worldcover_share_cell": 0.9484,
+    "tile_cached": true,
+    "pass": true
+   },
+   {
+    "cell": "r070c209",
+    "lat_sw": 19,
+    "lon_sw": 29,
+    "stored_class": 2,
+    "recomputed_class": 2,
+    "match": true,
+    "stratum": "earth_cov_2_unlocked",
+    "pool_windows_in_cell": 1,
+    "worldcover_share_cell": 1.0,
+    "tile_cached": true,
+    "pass": true
+   },
+   {
+    "cell": "r071c188",
+    "lat_sw": 18,
+    "lon_sw": 8,
+    "stored_class": 2,
+    "recomputed_class": 2,
+    "match": true,
+    "stratum": "earth_cov_2_unlocked",
+    "pool_windows_in_cell": 1,
+    "worldcover_share_cell": 0.9946,
+    "tile_cached": true,
+    "pass": true
+   },
+   {
+    "cell": "r073c187",
+    "lat_sw": 16,
+    "lon_sw": 7,
+    "stored_class": 2,
+    "recomputed_class": 2,
+    "match": true,
+    "stratum": "earth_cov_2_unlocked",
+    "pool_windows_in_cell": 1,
+    "worldcover_share_cell": 0.8113,
+    "tile_cached": true,
+    "pass": true
+   },
+   {
+    "cell": "r075c196",
+    "lat_sw": 14,
+    "lon_sw": 16,
+    "stored_class": 2,
+    "recomputed_class": 2,
+    "match": true,
+    "stratum": "earth_cov_2_unlocked",
+    "pool_windows_in_cell": 1,
+    "worldcover_share_cell": 0.3578,
+    "tile_cached": true,
+    "pass": true
+   },
+   {
+    "cell": "r028c136",
+    "lat_sw": 61,
+    "lon_sw": -44,
+    "stored_class": 1,
+    "recomputed_class": 1,
+    "match": true,
+    "stratum": "earth_cov_1_to_discover",
+    "pool_windows_in_cell": 0,
+    "worldcover_share_cell": 0.9697,
+    "tile_cached": true,
+    "pass": true
+   },
+   {
+    "cell": "r049c284",
+    "lat_sw": 40,
+    "lon_sw": 104,
+    "stored_class": 1,
+    "recomputed_class": 1,
+    "match": true,
+    "stratum": "earth_cov_1_to_discover",
+    "pool_windows_in_cell": 0,
+    "worldcover_share_cell": 0.9985,
+    "tile_cached": true,
+    "pass": true
+   },
+   {
+    "cell": "r055c231",
+    "lat_sw": 34,
+    "lon_sw": 51,
+    "stored_class": 1,
+    "recomputed_class": 1,
+    "match": true,
+    "stratum": "earth_cov_1_to_discover",
+    "pool_windows_in_cell": 0,
+    "worldcover_share_cell": 0.9481,
+    "tile_cached": true,
+    "pass": true
+   },
+   {
+    "cell": "r061c182",
+    "lat_sw": 28,
+    "lon_sw": 2,
+    "stored_class": 1,
+    "recomputed_class": 1,
+    "match": true,
+    "stratum": "earth_cov_1_to_discover",
+    "pool_windows_in_cell": 0,
+    "worldcover_share_cell": 1.0,
+    "tile_cached": true,
+    "pass": true
+   },
+   {
+    "cell": "r062c227",
+    "lat_sw": 27,
+    "lon_sw": 47,
+    "stored_class": 1,
+    "recomputed_class": 1,
+    "match": true,
+    "stratum": "earth_cov_1_to_discover",
+    "pool_windows_in_cell": 0,
+    "worldcover_share_cell": 0.9543,
+    "tile_cached": true,
+    "pass": true
+   },
+   {
+    "cell": "r066c167",
+    "lat_sw": 23,
+    "lon_sw": -13,
+    "stored_class": 1,
+    "recomputed_class": 1,
+    "match": true,
+    "stratum": "earth_cov_1_to_discover",
+    "pool_windows_in_cell": 0,
+    "worldcover_share_cell": 1.0,
+    "tile_cached": true,
+    "pass": true
+   },
+   {
+    "cell": "r070c184",
+    "lat_sw": 19,
+    "lon_sw": 4,
+    "stored_class": 1,
+    "recomputed_class": 1,
+    "match": true,
+    "stratum": "earth_cov_1_to_discover",
+    "pool_windows_in_cell": 0,
+    "worldcover_share_cell": 0.9984,
+    "tile_cached": true,
+    "pass": true
+   },
+   {
+    "cell": "r072c181",
+    "lat_sw": 17,
+    "lon_sw": 1,
+    "stored_class": 1,
+    "recomputed_class": 1,
+    "match": true,
+    "stratum": "earth_cov_1_to_discover",
+    "pool_windows_in_cell": 0,
+    "worldcover_share_cell": 0.874,
+    "tile_cached": true,
+    "pass": true
+   },
+   {
+    "cell": "r010c232",
+    "lat_sw": 79,
+    "lon_sw": 52,
+    "stored_class": 0,
+    "recomputed_class": 0,
+    "match": true,
+    "stratum": "earth_cov_0_out_of_reach",
+    "pool_windows_in_cell": 0,
+    "worldcover_share_cell": null,
+    "tile_cached": false,
+    "pass": true
+   },
+   {
+    "cell": "r041c159",
+    "lat_sw": 48,
+    "lon_sw": -21,
+    "stored_class": 0,
+    "recomputed_class": 0,
+    "match": true,
+    "stratum": "earth_cov_0_out_of_reach",
+    "pool_windows_in_cell": 0,
+    "worldcover_share_cell": null,
+    "tile_cached": false,
+    "pass": true
+   },
+   {
+    "cell": "r046c314",
+    "lat_sw": 43,
+    "lon_sw": 134,
+    "stored_class": 0,
+    "recomputed_class": 0,
+    "match": true,
+    "stratum": "earth_cov_0_out_of_reach",
+    "pool_windows_in_cell": 0,
+    "worldcover_share_cell": 0.0,
+    "tile_cached": true,
+    "pass": true
+   },
+   {
+    "cell": "r078c301",
+    "lat_sw": 11,
+    "lon_sw": 121,
+    "stored_class": 0,
+    "recomputed_class": 0,
+    "match": true,
+    "stratum": "earth_cov_0_out_of_reach",
+    "pool_windows_in_cell": 0,
+    "worldcover_share_cell": 0.0,
+    "tile_cached": true,
+    "pass": true
+   },
+   {
+    "cell": "r114c033",
+    "lat_sw": -25,
+    "lon_sw": -147,
+    "stored_class": 0,
+    "recomputed_class": 0,
+    "match": true,
+    "stratum": "earth_cov_0_out_of_reach",
+    "pool_windows_in_cell": 0,
+    "worldcover_share_cell": null,
+    "tile_cached": false,
+    "pass": true
+   },
+   {
+    "cell": "r120c206",
+    "lat_sw": -31,
+    "lon_sw": 26,
+    "stored_class": 0,
+    "recomputed_class": 0,
+    "match": true,
+    "stratum": "earth_cov_0_out_of_reach",
+    "pool_windows_in_cell": 0,
+    "worldcover_share_cell": 0.0,
+    "tile_cached": true,
+    "pass": true
+   },
+   {
+    "cell": "r129c077",
+    "lat_sw": -40,
+    "lon_sw": -103,
+    "stored_class": 0,
+    "recomputed_class": 0,
+    "match": true,
+    "stratum": "earth_cov_0_out_of_reach",
+    "pool_windows_in_cell": 0,
+    "worldcover_share_cell": null,
+    "tile_cached": false,
+    "pass": true
+   },
+   {
+    "cell": "r173c310",
+    "lat_sw": -84,
+    "lon_sw": 130,
+    "stored_class": 0,
+    "recomputed_class": 0,
+    "match": true,
+    "stratum": "earth_cov_0_out_of_reach",
+    "pool_windows_in_cell": 0,
+    "worldcover_share_cell": null,
+    "tile_cached": false,
+    "pass": true
+   }
+  ],
+  "mars_gap": [
+   {
+    "stratum": "earth_gap_mars_gap1",
+    "id": "mars_00091",
+    "relief": "rugged",
+    "D_recomputed": 0.5278409615964343,
+    "threshold_recomputed": 0.4150468510682017,
+    "gap_recomputed": true,
+    "gap_stored_parquet": true,
+    "gap_stored_export": 1,
+    "D_stored_parquet": 0.5278409615964343,
+    "D_match": true,
+    "nearest_recomputed": "pool__pool_00079",
+    "nearest_atlas_twin1": "pool__pool_00079",
+    "twin1_match": true,
+    "pass": true
+   },
+   {
+    "stratum": "earth_gap_mars_gap1",
+    "id": "mars_00557",
+    "relief": "rugged",
+    "D_recomputed": 0.43166139056243097,
+    "threshold_recomputed": 0.4150468510682017,
+    "gap_recomputed": true,
+    "gap_stored_parquet": true,
+    "gap_stored_export": 1,
+    "D_stored_parquet": 0.43166139056243097,
+    "D_match": true,
+    "nearest_recomputed": "pool__pool_00055",
+    "nearest_atlas_twin1": "pool__pool_00055",
+    "twin1_match": true,
+    "pass": true
+   },
+   {
+    "stratum": "earth_gap_mars_gap1",
+    "id": "mars_00589",
+    "relief": "rugged",
+    "D_recomputed": 0.6186550195423255,
+    "threshold_recomputed": 0.4150468510682017,
+    "gap_recomputed": true,
+    "gap_stored_parquet": true,
+    "gap_stored_export": 1,
+    "D_stored_parquet": 0.6186550195423256,
+    "D_match": true,
+    "nearest_recomputed": "pool__pool_00112",
+    "nearest_atlas_twin1": "pool__pool_00112",
+    "twin1_match": true,
+    "pass": true
+   },
+   {
+    "stratum": "earth_gap_mars_gap1",
+    "id": "mars_00737",
+    "relief": "rugged",
+    "D_recomputed": 0.5662446212334579,
+    "threshold_recomputed": 0.4150468510682017,
+    "gap_recomputed": true,
+    "gap_stored_parquet": true,
+    "gap_stored_export": 1,
+    "D_stored_parquet": 0.566244621233458,
+    "D_match": true,
+    "nearest_recomputed": "pool__pool_01622",
+    "nearest_atlas_twin1": "pool__pool_01622",
+    "twin1_match": true,
+    "pass": true
+   },
+   {
+    "stratum": "earth_gap_mars_gap1",
+    "id": "mars_00904",
+    "relief": "rugged",
+    "D_recomputed": 0.4583958096067668,
+    "threshold_recomputed": 0.4150468510682017,
+    "gap_recomputed": true,
+    "gap_stored_parquet": true,
+    "gap_stored_export": 1,
+    "D_stored_parquet": 0.45839580960676685,
+    "D_match": true,
+    "nearest_recomputed": "pool__pool_01778",
+    "nearest_atlas_twin1": "pool__pool_01778",
+    "twin1_match": true,
+    "pass": true
+   },
+   {
+    "stratum": "earth_gap_mars_gap1",
+    "id": "mars_01238",
+    "relief": "rugged",
+    "D_recomputed": 0.4849608457730603,
+    "threshold_recomputed": 0.4150468510682017,
+    "gap_recomputed": true,
+    "gap_stored_parquet": true,
+    "gap_stored_export": 1,
+    "D_stored_parquet": 0.48496084577306037,
+    "D_match": true,
+    "nearest_recomputed": "pool__pool_01589",
+    "nearest_atlas_twin1": "pool__pool_01589",
+    "twin1_match": true,
+    "pass": true
+   },
+   {
+    "stratum": "earth_gap_mars_gap1",
+    "id": "mars_01347",
+    "relief": "rugged",
+    "D_recomputed": 0.8610153000930306,
+    "threshold_recomputed": 0.4150468510682017,
+    "gap_recomputed": true,
+    "gap_stored_parquet": true,
+    "gap_stored_export": 1,
+    "D_stored_parquet": 0.8610153000930306,
+    "D_match": true,
+    "nearest_recomputed": "pool__pool_00083",
+    "nearest_atlas_twin1": "pool__pool_00083",
+    "twin1_match": true,
+    "pass": true
+   },
+   {
+    "stratum": "earth_gap_mars_gap1",
+    "id": "mars_01992",
+    "relief": "rugged",
+    "D_recomputed": 0.6113311806796351,
+    "threshold_recomputed": 0.4150468510682017,
+    "gap_recomputed": true,
+    "gap_stored_parquet": true,
+    "gap_stored_export": 1,
+    "D_stored_parquet": 0.6113311806796351,
+    "D_match": true,
+    "nearest_recomputed": "pool__pool_00267",
+    "nearest_atlas_twin1": "pool__pool_00267",
+    "twin1_match": true,
+    "pass": true
+   },
+   {
+    "stratum": "earth_gap_mars_gap0",
+    "id": "mars_00034",
+    "relief": "rugged",
+    "D_recomputed": 0.10136375388420293,
+    "threshold_recomputed": 0.4150468510682017,
+    "gap_recomputed": false,
+    "gap_stored_parquet": false,
+    "gap_stored_export": 0,
+    "D_stored_parquet": 0.10136375388420293,
+    "D_match": true,
+    "nearest_recomputed": "pool__pool_00001",
+    "nearest_atlas_twin1": "pool__pool_00001",
+    "twin1_match": true,
+    "pass": true
+   },
+   {
+    "stratum": "earth_gap_mars_gap0",
+    "id": "mars_00212",
+    "relief": "rugged",
+    "D_recomputed": 0.21738707468812024,
+    "threshold_recomputed": 0.4150468510682017,
+    "gap_recomputed": false,
+    "gap_stored_parquet": false,
+    "gap_stored_export": 0,
+    "D_stored_parquet": 0.21738707468812027,
+    "D_match": true,
+    "nearest_recomputed": "pool__pool_01603",
+    "nearest_atlas_twin1": "pool__pool_01603",
+    "twin1_match": true,
+    "pass": true
+   },
+   {
+    "stratum": "earth_gap_mars_gap0",
+    "id": "mars_00470",
+    "relief": "flat",
+    "D_recomputed": 0.06845668408469377,
+    "threshold_recomputed": 1.1017189574465522,
+    "gap_recomputed": false,
+    "gap_stored_parquet": false,
+    "gap_stored_export": 0,
+    "D_stored_parquet": 0.06845668408469378,
+    "D_match": true,
+    "nearest_recomputed": "pool__pool_01072",
+    "nearest_atlas_twin1": "pool__pool_01072",
+    "twin1_match": true,
+    "pass": true
+   },
+   {
+    "stratum": "earth_gap_mars_gap0",
+    "id": "mars_01439",
+    "relief": "flat",
+    "D_recomputed": 0.16349695857079263,
+    "threshold_recomputed": 1.1017189574465522,
+    "gap_recomputed": false,
+    "gap_stored_parquet": false,
+    "gap_stored_export": 0,
+    "D_stored_parquet": 0.16349695857079266,
+    "D_match": true,
+    "nearest_recomputed": "pool__pool_01520",
+    "nearest_atlas_twin1": "pool__pool_01520",
+    "twin1_match": true,
+    "pass": true
+   },
+   {
+    "stratum": "earth_gap_mars_gap0",
+    "id": "mars_01471",
+    "relief": "rugged",
+    "D_recomputed": 0.3333965351782259,
+    "threshold_recomputed": 0.4150468510682017,
+    "gap_recomputed": false,
+    "gap_stored_parquet": false,
+    "gap_stored_export": 0,
+    "D_stored_parquet": 0.3333965351782259,
+    "D_match": true,
+    "nearest_recomputed": "pool__pool_00069",
+    "nearest_atlas_twin1": "pool__pool_00069",
+    "twin1_match": true,
+    "pass": true
+   },
+   {
+    "stratum": "earth_gap_mars_gap0",
+    "id": "mars_01776",
+    "relief": "rugged",
+    "D_recomputed": 0.18871941856073762,
+    "threshold_recomputed": 0.4150468510682017,
+    "gap_recomputed": false,
+    "gap_stored_parquet": false,
+    "gap_stored_export": 0,
+    "D_stored_parquet": 0.18871941856073765,
+    "D_match": true,
+    "nearest_recomputed": "pool__pool_00055",
+    "nearest_atlas_twin1": "pool__pool_00055",
+    "twin1_match": true,
+    "pass": true
+   },
+   {
+    "stratum": "earth_gap_mars_gap0",
+    "id": "mars_01821",
+    "relief": "rugged",
+    "D_recomputed": 0.12388930221444262,
+    "threshold_recomputed": 0.4150468510682017,
+    "gap_recomputed": false,
+    "gap_stored_parquet": false,
+    "gap_stored_export": 0,
+    "D_stored_parquet": 0.12388930221444262,
+    "D_match": true,
+    "nearest_recomputed": "pool__pool_01706",
+    "nearest_atlas_twin1": "pool__pool_01706",
+    "twin1_match": true,
+    "pass": true
+   },
+   {
+    "stratum": "earth_gap_mars_gap0",
+    "id": "mars_01964",
+    "relief": "rugged",
+    "D_recomputed": 0.2949371833616448,
+    "threshold_recomputed": 0.4150468510682017,
+    "gap_recomputed": false,
+    "gap_stored_parquet": false,
+    "gap_stored_export": 0,
+    "D_stored_parquet": 0.2949371833616449,
+    "D_match": true,
+    "nearest_recomputed": "pool__pool_01830",
+    "nearest_atlas_twin1": "pool__pool_01830",
+    "twin1_match": true,
+    "pass": true
+   }
+  ],
+  "moon_artemis": [
+   {
+    "stratum": "moon_artemis_census",
+    "id": "haworth",
+    "relief": "rugged",
+    "D_recomputed": 0.3811370564003538,
+    "gap_recomputed": false,
+    "gap_stored_parquet": false,
+    "gap_stored_export": 0,
+    "D_stored_parquet": 0.38113705640035384,
+    "sin_gemelo_recomputed": false,
+    "pass": true
+   },
+   {
+    "stratum": "moon_artemis_census",
+    "id": "malapert_massif",
+    "relief": "rugged",
+    "D_recomputed": 0.33907177329287763,
+    "gap_recomputed": false,
+    "gap_stored_parquet": false,
+    "gap_stored_export": 0,
+    "D_stored_parquet": 0.33907177329287763,
+    "sin_gemelo_recomputed": false,
+    "pass": true
+   },
+   {
+    "stratum": "moon_artemis_census",
+    "id": "nobile_rim_1",
+    "relief": "rugged",
+    "D_recomputed": 0.4797353004899894,
+    "gap_recomputed": true,
+    "gap_stored_parquet": true,
+    "gap_stored_export": 1,
+    "D_stored_parquet": 0.47973530048998936,
+    "sin_gemelo_recomputed": true,
+    "pass": true
+   },
+   {
+    "stratum": "moon_artemis_census",
+    "id": "nobile_rim_2",
+    "relief": "rugged",
+    "D_recomputed": 0.33259659021719506,
+    "gap_recomputed": false,
+    "gap_stored_parquet": false,
+    "gap_stored_export": 0,
+    "D_stored_parquet": 0.33259659021719506,
+    "sin_gemelo_recomputed": false,
+    "pass": true
+   },
+   {
+    "stratum": "moon_artemis_census",
+    "id": "de_gerlache_rim_2",
+    "relief": "rugged",
+    "D_recomputed": 0.5210090011848487,
+    "gap_recomputed": true,
+    "gap_stored_parquet": true,
+    "gap_stored_export": 1,
+    "D_stored_parquet": 0.5210090011848487,
+    "sin_gemelo_recomputed": true,
+    "pass": true
+   },
+   {
+    "stratum": "moon_artemis_census",
+    "id": "cabeus_b_peak",
+    "relief": "rugged",
+    "D_recomputed": 0.36275469168523633,
+    "gap_recomputed": false,
+    "gap_stored_parquet": false,
+    "gap_stored_export": 0,
+    "D_stored_parquet": 0.3627546916852364,
+    "sin_gemelo_recomputed": false,
+    "pass": true
+   },
+   {
+    "stratum": "moon_artemis_census",
+    "id": "mons_mouton_plateau",
+    "relief": "rugged",
+    "D_recomputed": 0.6562439401352416,
+    "gap_recomputed": true,
+    "gap_stored_parquet": true,
+    "gap_stored_export": 1,
+    "D_stored_parquet": 0.6562439401352416,
+    "sin_gemelo_recomputed": true,
+    "pass": true
+   }
+  ]
+ },
+ "discrepancies_sample": [],
+ "novelty_mismatch": [],
+ "artemis_ids": [
+  "haworth",
+  "malapert_massif",
+  "nobile_rim_1",
+  "nobile_rim_2",
+  "de_gerlache_rim_2",
+  "cabeus_b_peak",
+  "mons_mouton_plateau"
+ ],
+ "targets_gap_recomputed": {
+  "haworth": false,
+  "malapert_massif": false,
+  "nobile_rim_1": true,
+  "nobile_rim_2": false,
+  "de_gerlache_rim_2": true,
+  "jezero": false,
+  "gale": false,
+  "insight_elysium": false,
+  "spirit_columbia": false,
+  "zhurong": false,
+  "oxia_planum": false,
+  "apollo17_taurus_littrow": false,
+  "im1_odysseus": false,
+  "im2_athena": false,
+  "cabeus_b_peak": false,
+  "mons_mouton_plateau": true
+ }
+}

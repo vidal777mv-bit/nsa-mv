@@ -1,0 +1,473 @@
+{
+  "target_id": "gale",
+  "ranking": [
+    {
+      "rank": 1,
+      "analog_id": "pool__pool_02402",
+      "D": 0.07842919206873995,
+      "tie_group": 0,
+      "lat": 79.87,
+      "lon": -23.03,
+      "card": "cards/gale__pool__pool_02402.json",
+      "analog_place": {
+        "name": "Nationalparken, Greenland",
+        "admin1": "Nationalparken",
+        "country": "Greenland",
+        "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+        "match": "inside",
+        "distance_km": 0.0,
+        "nearest_named_feature": null
+      },
+      "context": {
+        "koppen_class": "EF",
+        "koppen_label": "Polar, frost",
+        "koppen_code": 30,
+        "elevation_m": 503.936681538696,
+        "nearest_town": {
+          "name": "Nord",
+          "country": "Greenland",
+          "distance_km": 225.23
+        },
+        "sources": {
+          "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+          "elevation": "cop_dem_glo30 window mean over the 4 km disk (source_id of the window's measure record)",
+          "town": "Natural Earth 1:10m populated places (public domain)",
+          "novelty": "config/known_analog_regions.json (circle approximation)"
+        }
+      },
+      "novelty": "new",
+      "known_region_id": null,
+      "refined": {
+        "pool_id": "pool__pool_02402",
+        "rank_before": 1,
+        "D_before": 0.07842919206873995,
+        "D_clip_offset0": null,
+        "refined_offset_km": null
+      }
+    },
+    {
+      "rank": 2,
+      "analog_id": "gale__pool__pool_01893",
+      "D": 0.09131867269683935,
+      "tie_group": 0,
+      "lat": 43.834027136848775,
+      "lon": 92.81989896062083,
+      "card": "cards/gale__gale__pool__pool_01893.json",
+      "analog_place": {
+        "name": "Xinjiang, China",
+        "admin1": "Xinjiang",
+        "country": "China",
+        "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+        "match": "inside",
+        "distance_km": 0.0,
+        "nearest_named_feature": null
+      },
+      "context": {
+        "koppen_class": "BWk",
+        "koppen_label": "Arid, desert, cold",
+        "koppen_code": 5,
+        "elevation_m": 1717.4862703402578,
+        "nearest_town": {
+          "name": "Hami",
+          "country": "China",
+          "distance_km": 125.3
+        },
+        "sources": {
+          "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+          "elevation": "nasadem window mean over the 4 km disk (source_id of the window's measure record)",
+          "town": "Natural Earth 1:10m populated places (public domain)",
+          "novelty": "config/known_analog_regions.json (circle approximation)"
+        }
+      },
+      "novelty": "new",
+      "known_region_id": null,
+      "refined": {
+        "pool_id": "pool__pool_01893",
+        "rank_before": 8,
+        "D_before": 0.19588645681418043,
+        "D_clip_offset0": 0.2037017691648365,
+        "refined_offset_km": [
+          4.0,
+          -4.0
+        ]
+      }
+    },
+    {
+      "rank": 3,
+      "analog_id": "gale__pool__pool_01156",
+      "D": 0.09229264063895762,
+      "tie_group": 0,
+      "lat": 28.85201356842439,
+      "lon": 38.77,
+      "card": "cards/gale__gale__pool__pool_01156.json",
+      "analog_place": {
+        "name": "Al Jawf, Saudi Arabia",
+        "admin1": "Al Jawf",
+        "country": "Saudi Arabia",
+        "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+        "match": "inside",
+        "distance_km": 0.0,
+        "nearest_named_feature": null
+      },
+      "context": {
+        "koppen_class": "BWh",
+        "koppen_label": "Arid, desert, hot",
+        "koppen_code": 4,
+        "elevation_m": 803.8344525485809,
+        "nearest_town": {
+          "name": "Dawmat al Jandal",
+          "country": "Saudi Arabia",
+          "distance_km": 150.89
+        },
+        "sources": {
+          "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+          "elevation": "nasadem window mean over the 4 km disk (source_id of the window's measure record)",
+          "town": "Natural Earth 1:10m populated places (public domain)",
+          "novelty": "config/known_analog_regions.json (circle approximation)"
+        }
+      },
+      "novelty": "new",
+      "known_region_id": null,
+      "refined": {
+        "pool_id": "pool__pool_01156",
+        "rank_before": 7,
+        "D_before": 0.17127376611945602,
+        "D_clip_offset0": 0.16720980573891256,
+        "refined_offset_km": [
+          0.0,
+          -2.0
+        ]
+      }
+    },
+    {
+      "rank": 4,
+      "analog_id": "gale__pool__pool_01838",
+      "D": 0.11539405570682812,
+      "tie_group": 0,
+      "lat": 42.052013568424385,
+      "lon": 89.72154039377202,
+      "card": "cards/gale__gale__pool__pool_01838.json",
+      "analog_place": {
+        "name": "Xinjiang, China",
+        "admin1": "Xinjiang",
+        "country": "China",
+        "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+        "match": "inside",
+        "distance_km": 0.0,
+        "nearest_named_feature": null
+      },
+      "context": {
+        "koppen_class": "BWk",
+        "koppen_label": "Arid, desert, cold",
+        "koppen_code": 5,
+        "elevation_m": 877.3652696386007,
+        "nearest_town": {
+          "name": "Turpan",
+          "country": "China",
+          "distance_km": 108.3
+        },
+        "sources": {
+          "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+          "elevation": "nasadem window mean over the 4 km disk (source_id of the window's measure record)",
+          "town": "Natural Earth 1:10m populated places (public domain)",
+          "novelty": "config/known_analog_regions.json (circle approximation)"
+        }
+      },
+      "novelty": "new",
+      "known_region_id": null,
+      "refined": {
+        "pool_id": "pool__pool_01838",
+        "rank_before": 5,
+        "D_before": 0.13621655388415824,
+        "D_clip_offset0": 0.1366457231474764,
+        "refined_offset_km": [
+          -4.0,
+          -2.0
+        ]
+      }
+    },
+    {
+      "rank": 5,
+      "analog_id": "gale__pool__pool_01287",
+      "D": 0.13022806391212216,
+      "tie_group": 0,
+      "lat": 30.07,
+      "lon": 34.87,
+      "card": "cards/gale__gale__pool__pool_01287.json",
+      "analog_place": {
+        "name": "HaDarom, Israel",
+        "admin1": "HaDarom",
+        "country": "Israel",
+        "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+        "match": "inside",
+        "distance_km": 0.0,
+        "nearest_named_feature": null
+      },
+      "context": {
+        "koppen_class": "BWh",
+        "koppen_label": "Arid, desert, hot",
+        "koppen_code": 4,
+        "elevation_m": 463.3676801260837,
+        "nearest_town": {
+          "name": "Al Aqabah",
+          "country": "Jordan",
+          "distance_km": 63.62
+        },
+        "sources": {
+          "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+          "elevation": "nasadem window mean over the 4 km disk (source_id of the window's measure record)",
+          "town": "Natural Earth 1:10m populated places (public domain)",
+          "novelty": "config/known_analog_regions.json (circle approximation)"
+        }
+      },
+      "novelty": "new",
+      "known_region_id": null,
+      "refined": {
+        "pool_id": "pool__pool_01287",
+        "rank_before": 3,
+        "D_before": 0.1325377814093571,
+        "D_clip_offset0": 0.13022806391212216,
+        "refined_offset_km": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "rank": 6,
+      "analog_id": "gale__pool__pool_01674",
+      "D": 0.13154662466051933,
+      "tie_group": 0,
+      "lat": 37.87,
+      "lon": 91.87,
+      "card": "cards/gale__gale__pool__pool_01674.json",
+      "analog_place": {
+        "name": "Qinghai, China",
+        "admin1": "Qinghai",
+        "country": "China",
+        "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+        "match": "inside",
+        "distance_km": 0.0,
+        "nearest_named_feature": null
+      },
+      "context": {
+        "koppen_class": "BWk",
+        "koppen_label": "Arid, desert, cold",
+        "koppen_code": 5,
+        "elevation_m": 2868.043139314684,
+        "nearest_town": {
+          "name": "Golmud",
+          "country": "China",
+          "distance_km": 312.15
+        },
+        "sources": {
+          "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+          "elevation": "nasadem window mean over the 4 km disk (source_id of the window's measure record)",
+          "town": "Natural Earth 1:10m populated places (public domain)",
+          "novelty": "config/known_analog_regions.json (circle approximation)"
+        }
+      },
+      "novelty": "new",
+      "known_region_id": null,
+      "refined": {
+        "pool_id": "pool__pool_01674",
+        "rank_before": 2,
+        "D_before": 0.12198081805277068,
+        "D_clip_offset0": 0.13154662466051933,
+        "refined_offset_km": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "rank": 7,
+      "analog_id": "pool__pool_02678",
+      "D": 0.13378106456960304,
+      "tie_group": 0,
+      "lat": 72.07,
+      "lon": -114.23,
+      "card": "cards/gale__pool__pool_02678.json",
+      "analog_place": {
+        "name": "Northwest Territories, Canada",
+        "admin1": "Northwest Territories",
+        "country": "Canada",
+        "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+        "match": "inside",
+        "distance_km": 0.0,
+        "nearest_named_feature": null
+      },
+      "context": {
+        "koppen_class": "ET",
+        "koppen_label": "Polar, tundra",
+        "koppen_code": 29,
+        "elevation_m": 241.62022310649218,
+        "nearest_town": {
+          "name": "Holman",
+          "country": "Canada",
+          "distance_km": 194.03
+        },
+        "sources": {
+          "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+          "elevation": "cop_dem_glo30 window mean over the 4 km disk (source_id of the window's measure record)",
+          "town": "Natural Earth 1:10m populated places (public domain)",
+          "novelty": "config/known_analog_regions.json (circle approximation)"
+        }
+      },
+      "novelty": "new",
+      "known_region_id": null,
+      "refined": {
+        "pool_id": "pool__pool_02678",
+        "rank_before": 4,
+        "D_before": 0.13378106456960304,
+        "D_clip_offset0": null,
+        "refined_offset_km": null
+      }
+    },
+    {
+      "rank": 8,
+      "analog_id": "gale__pool__pool_00700",
+      "D": 0.1804964855272335,
+      "tie_group": 0,
+      "lat": 23.77,
+      "lon": -5.93,
+      "card": "cards/gale__gale__pool__pool_00700.json",
+      "analog_place": {
+        "name": "Timbuktu, Mali",
+        "admin1": "Timbuktu",
+        "country": "Mali",
+        "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+        "match": "inside",
+        "distance_km": 0.0,
+        "nearest_named_feature": null
+      },
+      "context": {
+        "koppen_class": "BWh",
+        "koppen_label": "Arid, desert, hot",
+        "koppen_code": 4,
+        "elevation_m": 325.31417185050236,
+        "nearest_town": {
+          "name": "Chegga",
+          "country": "Mauritania",
+          "distance_km": 179.71
+        },
+        "sources": {
+          "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+          "elevation": "nasadem window mean over the 4 km disk (source_id of the window's measure record)",
+          "town": "Natural Earth 1:10m populated places (public domain)",
+          "novelty": "config/known_analog_regions.json (circle approximation)"
+        }
+      },
+      "novelty": "new",
+      "known_region_id": null,
+      "refined": {
+        "pool_id": "pool__pool_00700",
+        "rank_before": 6,
+        "D_before": 0.1614415002841751,
+        "D_clip_offset0": 0.1804964855272335,
+        "refined_offset_km": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "rank": 9,
+      "analog_id": "pool__pool_03676",
+      "D": 0.1991702098754433,
+      "tie_group": 0,
+      "lat": 67.87,
+      "lon": -92.93,
+      "card": "cards/gale__pool__pool_03676.json",
+      "analog_place": {
+        "name": "Nunavut, Canada",
+        "admin1": "Nunavut",
+        "country": "Canada",
+        "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+        "match": "inside",
+        "distance_km": 0.0,
+        "nearest_named_feature": null
+      },
+      "context": {
+        "koppen_class": "ET",
+        "koppen_label": "Polar, tundra",
+        "koppen_code": 29,
+        "elevation_m": 258.32189713909554,
+        "nearest_town": {
+          "name": "Gjoa Haven",
+          "country": "Canada",
+          "distance_km": 149.46
+        },
+        "sources": {
+          "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+          "elevation": "cop_dem_glo30 window mean over the 4 km disk (source_id of the window's measure record)",
+          "town": "Natural Earth 1:10m populated places (public domain)",
+          "novelty": "config/known_analog_regions.json (circle approximation)"
+        }
+      },
+      "novelty": "new",
+      "known_region_id": null,
+      "refined": {
+        "pool_id": "pool__pool_03676",
+        "rank_before": 9,
+        "D_before": 0.1991702098754433,
+        "D_clip_offset0": null,
+        "refined_offset_km": null
+      }
+    },
+    {
+      "rank": 10,
+      "analog_id": "pool__pool_02259",
+      "D": 0.2055907670812696,
+      "tie_group": 0,
+      "lat": 73.87,
+      "lon": 88.87,
+      "card": "cards/gale__pool__pool_02259.json",
+      "analog_place": {
+        "name": "Krasnoyarsk, Russia",
+        "admin1": "Krasnoyarsk",
+        "country": "Russia",
+        "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+        "match": "inside",
+        "distance_km": 0.0,
+        "nearest_named_feature": null
+      },
+      "context": {
+        "koppen_class": "ET",
+        "koppen_label": "Polar, tundra",
+        "koppen_code": 29,
+        "elevation_m": 186.10191615502123,
+        "nearest_town": {
+          "name": "Mikhaylova",
+          "country": "Russia",
+          "distance_km": 147.32
+        },
+        "sources": {
+          "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+          "elevation": "cop_dem_glo30 window mean over the 4 km disk (source_id of the window's measure record)",
+          "town": "Natural Earth 1:10m populated places (public domain)",
+          "novelty": "config/known_analog_regions.json (circle approximation)"
+        }
+      },
+      "novelty": "new",
+      "known_region_id": null,
+      "refined": {
+        "pool_id": "pool__pool_02259",
+        "rank_before": 10,
+        "D_before": 0.2055907670812696,
+        "D_clip_offset0": null,
+        "refined_offset_km": null
+      }
+    }
+  ],
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:52:29Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  }
+}

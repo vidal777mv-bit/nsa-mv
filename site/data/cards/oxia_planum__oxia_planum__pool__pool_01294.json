@@ -1,0 +1,145 @@
+{
+  "target_id": "oxia_planum",
+  "analog_id": "oxia_planum__pool__pool_01294",
+  "rank": 3,
+  "D": 0.09471958640469928,
+  "tie_group": 0,
+  "features": {
+    "slope_p95_deg": {
+      "target": 2.9656858623150124,
+      "analog": 3.441530454760149,
+      "z_diff": 0.15647847114971566
+    },
+    "hi": {
+      "target": 0.5802342463173906,
+      "analog": 0.5821221925525503,
+      "z_diff": 0.029493133401842096
+    },
+    "coherence": {
+      "target": 0.03940856997404845,
+      "analog": 0.18971373488483967,
+      "z_diff": 0.957826968602636
+    },
+    "hurst": {
+      "target": 0.7379761113954753,
+      "analog": 0.7300693234460667,
+      "z_diff": -0.03949738339207585
+    },
+    "ridge_pct": {
+      "target": 0.518000518000518,
+      "analog": 1.2173012173012172,
+      "z_diff": 0.38339474749195934
+    },
+    "valley_pct": {
+      "target": 0.9842009842009842,
+      "analog": 0.0,
+      "z_diff": -1.6019155537569136
+    }
+  },
+  "vertical_exaggeration": 10.0,
+  "in_distance": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "context_features": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "similar": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "different": [],
+  "context_similar": [
+    "coherence",
+    "ridge_pct"
+  ],
+  "context_different": [
+    "valley_pct"
+  ],
+  "analog_place": {
+    "name": "Al Jawf, Saudi Arabia",
+    "admin1": "Al Jawf",
+    "country": "Saudi Arabia",
+    "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+    "match": "inside",
+    "distance_km": 0.0,
+    "nearest_named_feature": null
+  },
+  "mission_pct": {
+    "landing": {
+      "target": 100.0,
+      "analog": 100.0,
+      "limit_deg": 15.0,
+      "source": "https://marsoweb.nas.nasa.gov/landingsites/mer2003/doc/original.html",
+      "reason": null
+    },
+    "driving": {
+      "target": 100.0,
+      "analog": 100.0,
+      "limit_deg": 30.0,
+      "source": "https://science.nasa.gov/mission/mars-2020-perseverance/rover-components/",
+      "reason": null
+    }
+  },
+  "mission_baseline_m": 100,
+  "rotation_deg": 310.0,
+  "rotation_rms": 0.5544439667020081,
+  "files": {
+    "target": "terrain/oxia_planum/",
+    "analog": "terrain/oxia_planum__pool__pool_01294/"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:52:37Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "usgs_ctx_dtm_oxia_n06_064538",
+        "path": "data/raw/mars/oxia_planum/usgs_ctx_dtm_oxia_n06_064538_win6km.tif",
+        "sha256": "4f20646c51e142897fee8682442d613f4b94db352c149e611d4aebd989902555"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01294.tif",
+        "sha256": "4dc6fb7cbec8cc3a6a1083e9f632f662350865a4b4aa66636e4c9bc15dee6550"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  },
+  "context": {
+    "koppen_class": "BWh",
+    "koppen_label": "Arid, desert, hot",
+    "koppen_code": 4,
+    "elevation_m": 652.9874795505025,
+    "nearest_town": {
+      "name": "Sakakah",
+      "country": "Saudi Arabia",
+      "distance_km": 71.34
+    },
+    "sources": {
+      "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+      "elevation": "nasadem window mean over the 4 km disk (source_id of the window's measure record)",
+      "town": "Natural Earth 1:10m populated places (public domain)",
+      "novelty": "config/known_analog_regions.json (circle approximation)"
+    }
+  },
+  "novelty": "new",
+  "known_region_id": null,
+  "refined": {
+    "pool_id": "pool__pool_01294",
+    "rank_before": 3,
+    "D_before": 0.10120254353461867,
+    "D_clip_offset0": 0.09471958640469928,
+    "refined_offset_km": [
+      0.0,
+      0.0
+    ]
+  }
+}

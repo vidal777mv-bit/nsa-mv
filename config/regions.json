@@ -1,0 +1,943 @@
+{
+  "version": "1.1",
+  "doc": "Earth windows (STANDARDS sections 8, 10.1). Validation set: 5 classes x (3 dev + 1 reserved) = 20 entries, classes exactly as config/measure.json validation.classes. Replacements of PLAN v2 section 6 applied 2026-11-13. Status approved only after the ESA WorldCover check (60/70/100 share >= 0.8 in the 4 km disk; plains and canyons: share reported, not rejected). Two validation entries stay proposed (Gosses Bluff, Cima) with the reason in notes. Known analogs (role known_analog) are excluded from the search (25 km) and are not part of V2.",
+  "center_method": "Centre = the feature's coordinate from its Wikipedia article (coordinate template, read from the article HTML geo span or the Wikipedia API prop=coordinates), rounded to 4 decimals. center_source.url is the article. For large fields, seas and plains the centre is the article's coordinate and lies inside the landform; the WorldCover check is the test of that. Earth Impact Database and Global Volcanism Program pages were not usable from this environment (JavaScript redirect).",
+  "regions": [
+    {
+      "id": "tenoumer_crater",
+      "body": "earth",
+      "name": "Tenoumer crater (Mauritania)",
+      "lat": 22.9181,
+      "lon": -10.4075,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Tenoumer_crater",
+        "how": "Wikipedia article coordinate (geo-dec in the article HTML, read 2026-11-13): 22.91806 N, -10.40750 E. Crater centre. Earth Impact Database page not readable (JavaScript redirect)."
+      },
+      "dem_source_id": "nasadem",
+      "role": "dev",
+      "class": "impact_crater",
+      "status": "approved",
+      "notes": "Replaces Mistastin crater (PLAN v2 section 6). Crater centre; the 8 km circle holds crater plus surroundings (fine by the rule). WorldCover 60/70/100 share (4 km disk, 2026-11-13): 1.000.",
+      "worldcover_share": 1.0,
+      "worldcover_share_method": "coarse 300x300 per 3 deg tile (about 1.1 km), 4 km disk, classes 60/70/100"
+    },
+    {
+      "id": "gosses_bluff",
+      "body": "earth",
+      "name": "Gosses Bluff impact structure (Northern Territory, Australia)",
+      "lat": -23.8208,
+      "lon": 132.3078,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Gosses_Bluff_impact_structure",
+        "how": "Wikipedia coordinate (API prop=coordinates: -23.82083, 132.30778)"
+      },
+      "dem_source_id": "nasadem",
+      "role": "dev",
+      "class": "impact_crater",
+      "status": "approved",
+      "notes": "APPROVED by the lead 2026-11-13 (rule: no water, trees or crops in the 8 km disk; WorldCover share reported, not a criterion; CHANGELOG 'Region review'). Earlier note: About 22 km eroded impact ring with a central peak. Arid, sparse vegetation expected (check with WorldCover). WorldCover 60/70/100 share (4 km disk, 2026-11-13): 0.008. NOT APPROVED: WorldCover share 0.008 (classes 30 grass 62%, 20 shrub 35%); impact crater must be >= 0.8. Lead decides: keep, move the centre or replace.",
+      "worldcover_share": 0.0,
+      "worldcover_share_method": "coarse 300x300 per 3 deg tile (about 1.1 km), 4 km disk, classes 60/70/100"
+    },
+    {
+      "id": "aorounga_crater",
+      "body": "earth",
+      "name": "Aorounga impact crater (Chad)",
+      "lat": 19.1,
+      "lon": 19.25,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Aorounga",
+        "how": "Wikipedia article coordinate (geo-dec in the article HTML, read 2026-11-13): 19.100 N, 19.250 E. Article text: 'Aorounga Crater is an impact crater in Chad'. Earth Impact Database page not readable (JavaScript redirect)."
+      },
+      "dem_source_id": "nasadem",
+      "role": "dev",
+      "class": "impact_crater",
+      "status": "approved",
+      "notes": "Replaces Karakul impact crater (PLAN v2 section 6). Exposed remnant about 12.6 km across per the article. WorldCover 60/70/100 share (4 km disk, 2026-11-13): 1.000.",
+      "worldcover_share": 1.0,
+      "worldcover_share_method": "coarse 300x300 per 3 deg tile (about 1.1 km), 4 km disk, classes 60/70/100"
+    },
+    {
+      "id": "roter_kamm_crater",
+      "body": "earth",
+      "name": "Roter Kamm crater (Namibia)",
+      "lat": -27.7667,
+      "lon": 16.2889,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Roter_Kamm_crater",
+        "how": "Wikipedia article coordinate (geo-dec in the article HTML, read 2026-11-13): -27.76667 S, 16.28889 E. Crater centre."
+      },
+      "dem_source_id": "nasadem",
+      "role": "reserved",
+      "class": "impact_crater",
+      "status": "approved",
+      "notes": "Replaces Vredefort (reserved) (PLAN v2 section 6). Reserved: never measured before the final test. WorldCover 60/70/100 share (4 km disk, 2026-11-13): 1.000.",
+      "worldcover_share": 1.0,
+      "worldcover_share_method": "coarse 300x300 per 3 deg tile (about 1.1 km), 4 km disk, classes 60/70/100"
+    },
+    {
+      "id": "harrat_khaybar",
+      "body": "earth",
+      "name": "Harrat Khaybar volcanic field (Saudi Arabia)",
+      "lat": 25.7194,
+      "lon": 39.9428,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Harrat_Khaybar",
+        "how": "Wikipedia coordinate (API prop=coordinates: 25.71944, 39.94278)"
+      },
+      "dem_source_id": "nasadem",
+      "role": "dev",
+      "class": "volcanic_field",
+      "status": "approved",
+      "notes": "Basaltic lava field of very sparse vegetation. Asia continent for the dev set. WorldCover 60/70/100 share (4 km disk, 2026-11-13): 1.000.",
+      "worldcover_share": 1.0,
+      "worldcover_share_method": "coarse 300x300 per 3 deg tile (about 1.1 km), 4 km disk, classes 60/70/100"
+    },
+    {
+      "id": "payun_matru",
+      "body": "earth",
+      "name": "Payun Matru volcanic field (Mendoza, Argentina)",
+      "lat": -36.422,
+      "lon": -69.241,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Pay%C3%BAn_Matr%C3%BA",
+        "how": "Wikipedia coordinate (API prop=coordinates: -36.422, -69.241)"
+      },
+      "dem_source_id": "nasadem",
+      "role": "dev",
+      "class": "volcanic_field",
+      "status": "approved",
+      "notes": "Large Quaternary volcanic field with many cones and lava flows, arid steppe. South America for the dev set. WorldCover 60/70/100 share (4 km disk, 2026-11-13): 0.999.",
+      "worldcover_share": 1.0,
+      "worldcover_share_method": "coarse 300x300 per 3 deg tile (about 1.1 km), 4 km disk, classes 60/70/100"
+    },
+    {
+      "id": "al_haruj",
+      "body": "earth",
+      "name": "al-Haruj volcanic field (Libya)",
+      "lat": 27.1324,
+      "lon": 17.2929,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Haruj",
+        "how": "moved by the lead on visual landform identification, see docs/CHANGELOG.md"
+      },
+      "dem_source_id": "nasadem",
+      "role": "dev",
+      "class": "volcanic_field",
+      "status": "approved",
+      "notes": "Replaces Tibesti Mountains (PLAN v2 section 6). Basalt field; the centre is inside the field. WorldCover 60/70/100 share (4 km disk, 2026-11-13): 1.000.",
+      "worldcover_share": 1.0,
+      "worldcover_share_method": "coarse 300x300 per 3 deg tile (about 1.1 km), 4 km disk, classes 60/70/100"
+    },
+    {
+      "id": "cima_volcanic_field",
+      "body": "earth",
+      "name": "Cima volcanic field (Mojave Desert, California)",
+      "lat": 35.25,
+      "lon": -115.75,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Cima_volcanic_field",
+        "how": "Wikipedia coordinate (API prop=coordinates: 35.25, -115.75)"
+      },
+      "dem_source_id": "nasadem",
+      "role": "reserved",
+      "class": "volcanic_field",
+      "status": "approved",
+      "notes": "APPROVED by the lead 2026-11-13 (rule: no water, trees or crops in the 8 km disk; WorldCover share reported, not a criterion; CHANGELOG 'Region review'). Earlier note: Cinder cones and basalt flows in the Mojave, sparse desert scrub. Reserved: do not measure before the final test. WorldCover 60/70/100 share (4 km disk, 2026-11-13): 0.246. NOT APPROVED: WorldCover share 0.246 (classes 30 grass 46%, 20 shrub 29%, 60 bare 25%); volcanic field must be >= 0.8. Lead decides.",
+      "worldcover_share": 0.3542,
+      "worldcover_share_method": "coarse 300x300 per 3 deg tile (about 1.1 km), 4 km disk, classes 60/70/100"
+    },
+    {
+      "id": "namib_sand_sea",
+      "body": "earth",
+      "name": "Namib Sand Sea (Namibia)",
+      "lat": -24.6343,
+      "lon": 15.1775,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Namib",
+        "how": "moved by the lead on visual landform identification, see docs/CHANGELOG.md"
+      },
+      "dem_source_id": "nasadem",
+      "role": "dev",
+      "class": "dune_field",
+      "status": "approved",
+      "notes": "Replaces Erg Chebbi (PLAN v2 section 6). Sossusvlei clay pan lies near the centre (dry pan, not a lake). WorldCover 60/70/100 share (4 km disk, 2026-11-13): 0.996.",
+      "worldcover_share": 1.0,
+      "worldcover_share_method": "coarse 300x300 per 3 deg tile (about 1.1 km), 4 km disk, classes 60/70/100"
+    },
+    {
+      "id": "badain_jaran",
+      "body": "earth",
+      "name": "Badain Jaran Desert dune field (Inner Mongolia, China)",
+      "lat": 40.0725,
+      "lon": 102.21,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Badain_Jaran_Desert",
+        "how": "Wikipedia coordinate (API prop=coordinates: 40.0725, 102.21)"
+      },
+      "dem_source_id": "nasadem",
+      "role": "dev",
+      "class": "dune_field",
+      "status": "approved",
+      "notes": "Megadunes with interdune lakes in some basins. Asia for the dev set. Lakes are not dunes: masks will show them (check). WorldCover 60/70/100 share (4 km disk, 2026-11-13): 0.998.",
+      "worldcover_share": 1.0,
+      "worldcover_share_method": "coarse 300x300 per 3 deg tile (about 1.1 km), 4 km disk, classes 60/70/100"
+    },
+    {
+      "id": "simpson_desert",
+      "body": "earth",
+      "name": "Simpson Desert dune field (South Australia / Northern Territory)",
+      "lat": -24.57,
+      "lon": 137.42,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Simpson_Desert",
+        "how": "Wikipedia coordinate (API prop=coordinates: -24.57, 137.42)"
+      },
+      "dem_source_id": "nasadem",
+      "role": "dropped",
+      "class": "dune_field",
+      "status": "approved",
+      "notes": "DROPPED by the lead (CHANGELOG 'Region review' 2026-11-13): dunes not resolved at 30 m. Files kept in data/raw/earth/simpson_desert/ (not clipped again, not used). Parallel linear dunes with spinifex grass cover: sparse, not bare. Australia for the dev set. WorldCover 60/70/100 share (4 km disk, 2026-11-13): 0.942.",
+      "worldcover_share": 1.0,
+      "worldcover_share_method": "coarse 300x300 per 3 deg tile (about 1.1 km), 4 km disk, classes 60/70/100"
+    },
+    {
+      "id": "algodones_dunes",
+      "body": "earth",
+      "name": "Algodones Dunes (Imperial Sand Dunes, California, USA)",
+      "lat": 32.9077,
+      "lon": -115.0232,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Algodones_Dunes",
+        "how": "Wikipedia coordinate 32.9167, -115.05 shifted 2.5 km E and 1 km S onto the dune belt by the lead on visual landform identification, see docs/CHANGELOG.md"
+      },
+      "dem_source_id": "nasadem",
+      "role": "dev",
+      "class": "dune_field",
+      "status": "approved",
+      "notes": "Replaces Simpson Desert (CHANGELOG 'Region review'). Linear dune belt, sparse desert vegetation. North America for the dev set. Window clipped 2026-11-13; WorldCover share not recomputed."
+    },
+    {
+      "id": "rub_al_khali",
+      "body": "earth",
+      "name": "Rub' al Khali (Arabian Empty Quarter)",
+      "lat": 20.0,
+      "lon": 50.0,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Rub%27_al_Khali",
+        "how": "Wikipedia 'Rub' al Khali' article coordinate, 20 N, 50 E (read 2026-11-13). Large sea of dunes: centre inside the desert."
+      },
+      "dem_source_id": "nasadem",
+      "role": "reserved",
+      "class": "dune_field",
+      "status": "approved",
+      "notes": "Replaces Great Sand Dunes (reserved) (PLAN v2 section 6). Reserved. WorldCover 60/70/100 share (4 km disk, 2026-11-13): 1.000.",
+      "worldcover_share": 1.0,
+      "worldcover_share_method": "coarse 300x300 per 3 deg tile (about 1.1 km), 4 km disk, classes 60/70/100"
+    },
+    {
+      "id": "fish_river_canyon",
+      "body": "earth",
+      "name": "Fish River Canyon (Namibia)",
+      "lat": -27.5893,
+      "lon": 17.5976,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Fish_River_Canyon",
+        "how": "Wikipedia coordinate (API prop=coordinates: -27.589293, 17.597587)"
+      },
+      "dem_source_id": "nasadem",
+      "role": "dev",
+      "class": "canyon_valley",
+      "status": "approved",
+      "notes": "About 160 km long, arid, almost no vegetation. Africa for the dev set. WorldCover 60/70/100 share (4 km disk, 2026-11-13): 0.833. Canyon: share reported, not rejected.",
+      "worldcover_share": 0.9111,
+      "worldcover_share_method": "coarse 300x300 per 3 deg tile (about 1.1 km), 4 km disk, classes 60/70/100"
+    },
+    {
+      "id": "cotahuasi_canyon",
+      "body": "earth",
+      "name": "Cotahuasi Canyon (Arequipa, Peru)",
+      "lat": -15.2667,
+      "lon": -73.0333,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Cotahuasi_Canyon",
+        "how": "Wikipedia coordinate (API prop=coordinates: -15.26667, -73.03333)"
+      },
+      "dem_source_id": "nasadem",
+      "role": "dev",
+      "class": "canyon_valley",
+      "status": "approved",
+      "notes": "One of the deepest canyons. Terraced agriculture near the river in parts: check the WorldCover mask. South America for the dev set. WorldCover 60/70/100 share (4 km disk, 2026-11-13): 0.396. Canyon: share reported, not rejected.",
+      "worldcover_share": 0.4048,
+      "worldcover_share_method": "coarse 300x300 per 3 deg tile (about 1.1 km), 4 km disk, classes 60/70/100"
+    },
+    {
+      "id": "wadi_mujib",
+      "body": "earth",
+      "name": "Wadi Mujib gorge (Jordan)",
+      "lat": 31.4748,
+      "lon": 35.6997,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Wadi_Mujib",
+        "how": "moved by the lead on visual landform identification, see docs/CHANGELOG.md"
+      },
+      "dem_source_id": "nasadem",
+      "role": "dev",
+      "class": "canyon_valley",
+      "status": "approved",
+      "notes": "Deep gorge to the Dead Sea, arid, sparse shrub. Asia for the dev set. WorldCover 60/70/100 share (4 km disk, 2026-11-13): 0.576. Canyon: share reported, not rejected.",
+      "worldcover_share": 0.6122,
+      "worldcover_share_method": "coarse 300x300 per 3 deg tile (about 1.1 km), 4 km disk, classes 60/70/100"
+    },
+    {
+      "id": "charyn_canyon",
+      "body": "earth",
+      "name": "Charyn Canyon (Kazakhstan)",
+      "lat": 43.3581,
+      "lon": 79.0925,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Charyn_Canyon",
+        "how": "Wikipedia article coordinate (geo-dec in the article HTML, read 2026-11-13): 43.3581 N, 79.0925 E."
+      },
+      "dem_source_id": "nasadem",
+      "role": "reserved",
+      "class": "canyon_valley",
+      "status": "approved",
+      "notes": "Replaces Todgha Gorge (reserved) (PLAN v2 section 6). Canyon: WorldCover share reported, not rejected. Reserved. WorldCover 60/70/100 share (4 km disk, 2026-11-13): 0.367.",
+      "worldcover_share": 0.2982,
+      "worldcover_share_method": "coarse 300x300 per 3 deg tile (about 1.1 km), 4 km disk, classes 60/70/100"
+    },
+    {
+      "id": "nullarbor_plain",
+      "body": "earth",
+      "name": "Nullarbor Plain (South Australia / Western Australia)",
+      "lat": -30.3,
+      "lon": 129.0,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Nullarbor_Plain",
+        "how": "Wikipedia coordinate (API prop=coordinates: -30.3, 129)"
+      },
+      "dem_source_id": "nasadem",
+      "role": "dev",
+      "class": "plain",
+      "status": "approved",
+      "notes": "Flat limestone plain, sparse mallee scrub. Australia for the dev set. WorldCover 60/70/100 share (4 km disk, 2026-11-13): 0.000. Plain with share 0.000: 99.9% class 30 (grassland); reported, not rejected (plains exempt).",
+      "worldcover_share": 0.0,
+      "worldcover_share_method": "coarse 300x300 per 3 deg tile (about 1.1 km), 4 km disk, classes 60/70/100"
+    },
+    {
+      "id": "tenere_plain",
+      "body": "earth",
+      "name": "Tenere desert plain (Niger)",
+      "lat": 17.7009,
+      "lon": 10.7565,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/T%C3%A9n%C3%A9r%C3%A9",
+        "how": "moved by the lead on visual landform identification, see docs/CHANGELOG.md"
+      },
+      "dem_source_id": "nasadem",
+      "role": "dev",
+      "class": "plain",
+      "status": "approved",
+      "notes": "Gravel and rock plain of the Sahara. Africa for the dev set. Dunes are nearby: check the window. WorldCover 60/70/100 share (4 km disk, 2026-11-13): 1.000.",
+      "worldcover_share": 1.0,
+      "worldcover_share_method": "coarse 300x300 per 3 deg tile (about 1.1 km), 4 km disk, classes 60/70/100"
+    },
+    {
+      "id": "ustyurt_plateau",
+      "body": "earth",
+      "name": "Ustyurt Plateau (Kazakhstan / Uzbekistan)",
+      "lat": 43.2833,
+      "lon": 55.55,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Ustyurt_Plateau",
+        "how": "Wikipedia article coordinate (geo-dec in the article HTML, read 2026-11-13): 43.28333 N, 55.55 E. Plain: the share is reported, not rejected."
+      },
+      "dem_source_id": "nasadem",
+      "role": "dev",
+      "class": "plain",
+      "status": "approved",
+      "notes": "Replaces Pampa del Tamarugal (PLAN v2 section 6). WorldCover 60/70/100 share (4 km disk, 2026-11-13): 0.995.",
+      "worldcover_share": 1.0,
+      "worldcover_share_method": "coarse 300x300 per 3 deg tile (about 1.1 km), 4 km disk, classes 60/70/100"
+    },
+    {
+      "id": "calansho_desert_serir",
+      "body": "earth",
+      "name": "Calansho Desert (Calanscio Serir, Libya)",
+      "lat": 27.8175,
+      "lon": 20.975,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Calansho_Desert",
+        "how": "Wikipedia article coordinate (geo-dec in the article HTML, read 2026-11-13): 27.81750 N, 20.97500 E. Article (search snippet): 'a desert in eastern Libya in Al Wahat District', also titled Sarir Kalanshiyu / Calanscio Serir. Plain: share reported, not rejected. Calanshio Sand Sea (Wikidata Q41308, 27.1 N, 23.25 E) is an erg and was not used."
+      },
+      "dem_source_id": "nasadem",
+      "role": "reserved",
+      "class": "plain",
+      "status": "approved",
+      "notes": "Replaces Gobi Desert (reserved) (PLAN v2 section 6). Reserved. Gravel plain (serir), not dunes. WorldCover 60/70/100 share (4 km disk, 2026-11-13): 0.998.",
+      "worldcover_share": 1.0,
+      "worldcover_share_method": "coarse 300x300 per 3 deg tile (about 1.1 km), 4 km disk, classes 60/70/100"
+    },
+    {
+      "id": "meteor_crater",
+      "body": "earth",
+      "name": "Meteor Crater (Arizona, USA)",
+      "lat": 35.0281,
+      "lon": -111.0233,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Meteor_Crater",
+        "how": "Wikipedia coordinate (API prop=coordinates: 35.02806, -111.02333)"
+      },
+      "dem_source_id": "nasadem",
+      "role": "known_analog",
+      "class": null,
+      "status": "proposed",
+      "notes": "Known analog. Excluded from the search (25 km); used in V3 recovery for impact craters."
+    },
+    {
+      "id": "haughton_crater",
+      "body": "earth",
+      "name": "Haughton impact crater (Devon Island, Nunavut, Canada)",
+      "lat": 75.3833,
+      "lon": -89.6667,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Haughton_impact_crater",
+        "how": "Wikipedia coordinate (API prop=coordinates: 75.38333, -89.66667)"
+      },
+      "dem_source_id": "cop_dem_glo30",
+      "role": "known_analog",
+      "class": null,
+      "status": "proposed",
+      "notes": "Known analog. Latitude 75 N is outside NASADEM: Copernicus GLO-30 used."
+    },
+    {
+      "id": "devon_island",
+      "body": "earth",
+      "name": "Devon Island (Nunavut, Canada)",
+      "lat": 75.25,
+      "lon": -88.0,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Devon_Island",
+        "how": "Wikipedia coordinate of the island article (API prop=coordinates: 75.25, -88): island centroid, not a site"
+      },
+      "dem_source_id": "cop_dem_glo30",
+      "role": "known_analog",
+      "class": null,
+      "status": "proposed",
+      "notes": "Known analog (island-scale). Haughton lies on this island. Copernicus GLO-30 used (outside NASADEM)."
+    },
+    {
+      "id": "atacama_desert",
+      "body": "earth",
+      "name": "Atacama Desert (Chile)",
+      "lat": -24.5,
+      "lon": -69.25,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Atacama_Desert",
+        "how": "Wikipedia coordinate (API prop=coordinates: -24.5, -69.25): desert centroid"
+      },
+      "dem_source_id": "nasadem",
+      "role": "known_analog",
+      "class": null,
+      "status": "proposed",
+      "notes": "Known analog (region-scale). Excluded from the search (25 km)."
+    },
+    {
+      "id": "mcmurdo_dry_valleys",
+      "body": "earth",
+      "name": "McMurdo Dry Valleys (Antarctica)",
+      "lat": -77.4667,
+      "lon": 162.5167,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/McMurdo_Dry_Valleys",
+        "how": "Wikipedia coordinate (API prop=coordinates: -77.46667, 162.51667)"
+      },
+      "dem_source_id": "cop_dem_glo30",
+      "role": "known_analog",
+      "class": null,
+      "status": "proposed",
+      "notes": "Known analog. Outside NASADEM (south of 56S): Copernicus GLO-30 used."
+    },
+    {
+      "id": "mauna_kea",
+      "body": "earth",
+      "name": "Mauna Kea (Hawaii, USA)",
+      "lat": 19.8206,
+      "lon": -155.4681,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Mauna_Kea",
+        "how": "Wikipedia coordinate (API prop=coordinates: 19.82056, -155.46806): summit"
+      },
+      "dem_source_id": "nasadem",
+      "role": "known_analog",
+      "class": null,
+      "status": "proposed",
+      "notes": "Known analog (volcano summit). Excluded from the search."
+    },
+    {
+      "id": "craters_of_the_moon",
+      "body": "earth",
+      "name": "Craters of the Moon National Monument and Preserve (Idaho, USA)",
+      "lat": 43.4617,
+      "lon": -113.5627,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Craters_of_the_Moon_National_Monument_and_Preserve",
+        "how": "Wikipedia coordinate (API prop=coordinates: 43.46167, -113.56271)"
+      },
+      "dem_source_id": "nasadem",
+      "role": "known_analog",
+      "class": null,
+      "status": "proposed",
+      "notes": "Known analog (lava field). Excluded from the search."
+    },
+    {
+      "id": "ries_crater",
+      "body": "earth",
+      "name": "Nordlinger Ries impact crater (Germany)",
+      "lat": 48.8833,
+      "lon": 10.5667,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries",
+        "how": "Wikipedia coordinate (API prop=coordinates: 48.88333, 10.56667)"
+      },
+      "dem_source_id": "nasadem",
+      "role": "known_analog",
+      "class": null,
+      "status": "proposed",
+      "notes": "Known analog. Wikipedia 'Ries' is a disambiguation page; the impact structure article 'Nordlinger Ries' is used."
+    },
+    {
+      "id": "rio_tinto",
+      "body": "earth",
+      "name": "Rio Tinto (Huelva, Spain)",
+      "lat": 37.21,
+      "lon": -6.938,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/R%C3%ADo_Tinto",
+        "how": "Wikipedia coordinate (API prop=coordinates: 37.21, -6.938): river article"
+      },
+      "dem_source_id": "nasadem",
+      "role": "known_analog",
+      "class": null,
+      "status": "proposed",
+      "notes": "Known analog (acidic river and mine terrain). Centre is a point on the river, not a site."
+    },
+    {
+      "id": "holuhraun_lava_field",
+      "body": "earth",
+      "name": "Holuhraun lava field (Iceland)",
+      "lat": 64.85,
+      "lon": -16.83,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Holuhraun",
+        "how": "Wikipedia coordinate (API prop=coordinates: 64.85, -16.83)"
+      },
+      "dem_source_id": "cop_dem_glo30",
+      "role": "known_analog",
+      "class": null,
+      "status": "proposed",
+      "notes": "Known analog (Iceland lava fields; 2014-15 eruption). Latitude 64.85 N is outside NASADEM (band ends at 60 N), so Copernicus GLO-30 is used."
+    },
+    {
+      "id": "laki_lava_field",
+      "body": "earth",
+      "name": "Laki lava field (Iceland)",
+      "lat": 64.0647,
+      "lon": -18.2261,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Laki",
+        "how": "Wikipedia coordinate (API prop=coordinates: 64.06472, -18.22611)"
+      },
+      "dem_source_id": "cop_dem_glo30",
+      "role": "known_analog",
+      "class": null,
+      "status": "proposed",
+      "notes": "Known analog (Iceland lava fields). Second Iceland entry, 1783-84 fissure eruption. Outside NASADEM band (64 N)."
+    },
+    {
+      "id": "pavilion_lake",
+      "body": "earth",
+      "name": "Pavilion Lake (British Columbia, Canada)",
+      "lat": 50.8668,
+      "lon": -121.7419,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Pavilion_Lake",
+        "how": "Wikipedia coordinate (API prop=coordinates: 50.86677, -121.74191)"
+      },
+      "dem_source_id": "nasadem",
+      "role": "known_analog",
+      "class": null,
+      "status": "proposed",
+      "notes": "Known analog (lake-floor microbialites, underwater analog). Centre is the lake, not a land window."
+    },
+    {
+      "id": "mars_desert_research_station",
+      "body": "earth",
+      "name": "Mars Desert Research Station (Utah, USA)",
+      "lat": 38.4065,
+      "lon": -110.7919,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Mars_Desert_Research_Station",
+        "how": "Wikipedia coordinate (API prop=coordinates: 38.40646, -110.79190)"
+      },
+      "dem_source_id": "nasadem",
+      "role": "known_analog",
+      "class": null,
+      "status": "proposed",
+      "notes": "Known analog (habitat analog). Excluded from the search."
+    },
+    {
+      "id": "pinacate_peaks",
+      "body": "earth",
+      "name": "Pinacate Peaks volcanic field (northwest Mexico)",
+      "lat": 31.77,
+      "lon": -113.49,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Pinacate_Peaks",
+        "how": "Wikipedia article coordinate (geo-dec in the article HTML, read 2026-11-13): 31.77 N, 113.49 W."
+      },
+      "dem_source_id": "nasadem",
+      "role": "known_analog",
+      "class": null,
+      "status": "proposed",
+      "notes": "New known analog (PLAN v2 section 6). Excluded from the search within 25 km; not in V2. WorldCover share (2026-11-13): 0.073."
+    },
+    {
+      "id": "kilbourne_hole",
+      "body": "earth",
+      "name": "Kilbourne Hole maar (New Mexico, USA)",
+      "lat": 31.9719,
+      "lon": -106.9647,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Kilbourne_Hole",
+        "how": "Wikipedia article coordinate (geo-dec in the article HTML, read 2026-11-13): 31.97194 N, 106.96472 W. Article category: 'Maars of New Mexico'."
+      },
+      "dem_source_id": "nasadem",
+      "role": "known_analog",
+      "class": null,
+      "status": "proposed",
+      "notes": "New known analog (PLAN v2 section 6). Excluded from the search within 25 km; not in V2. WorldCover share (2026-11-13): 0.385."
+    },
+    {
+      "id": "holdout_crater_upheaval_dome",
+      "body": "earth",
+      "name": "Upheaval Dome (Utah, USA)",
+      "lat": 38.4369,
+      "lon": -109.9292,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Upheaval_Dome",
+        "how": "Wikipedia article coordinate (wikitext coord template, API action=parse, read 2026-11-14): 38 26 13 N, 109 55 45 W = 38.4369, -109.9292. Centre of the dome."
+      },
+      "dem_source_id": "nasadem",
+      "role": "holdout_v13",
+      "class": "impact_crater",
+      "status": "approved",
+      "notes": "v1.3 blind holdout (STANDARDS 10.11). Diameter about 10 km (article infobox: circa 10 km), larger than 3-8 km: the centre sits on the central dome (rugged uplifted sector) and the 8 km disk lies inside the structure. Land cover disk 4 km: tree/crop/water/wetland share 0.0002. Not measured."
+    },
+    {
+      "id": "holdout_crater_tin_bider",
+      "body": "earth",
+      "name": "Tin Bider crater (Algeria)",
+      "lat": 27.6019,
+      "lon": 5.1122,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Tin_Bider_crater",
+        "how": "Wikipedia article coordinate (wikitext coord template, API action=parse, read 2026-11-14): 27 36 07 N, 5 06 44 E = 27.6019, 5.1122. Crater centre."
+      },
+      "dem_source_id": "nasadem",
+      "role": "holdout_v13",
+      "class": "impact_crater",
+      "status": "approved",
+      "notes": "v1.3 blind holdout. Diameter about 6 km (infobox: circa 6 km), inside 3-8 km. Sahara, bare. Land cover disk 4 km: tree/crop/water/wetland share 0.0. Not measured."
+    },
+    {
+      "id": "holdout_crater_gweni_fada",
+      "body": "earth",
+      "name": "Gweni-Fada crater (Chad)",
+      "lat": 17.4186,
+      "lon": 21.7522,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Gweni-Fada_crater",
+        "how": "Wikipedia article coordinate (wikitext coord template, API action=parse, read 2026-11-14): 17 25 07 N, 21 45 08 E = 17.4186, 21.7522."
+      },
+      "dem_source_id": "nasadem",
+      "role": "holdout_rejected",
+      "class": "impact_crater",
+      "status": "proposed",
+      "notes": "REJECTED by lead visual check 2026-11-14 (kept, not used): v1.3 blind holdout. Diameter about 14 km (above 8 km): the centre lies in the inner zone of rugged hills, which the article describes as remnants of the central uplift; the inner zone is about 10 km across, so the 8 km disk lies mostly within it. Sahara. Land cover disk 4 km: tree/crop/water/wetland share 0.0. Not measured."
+    },
+    {
+      "id": "holdout_volcanic_lunar_crater",
+      "body": "earth",
+      "name": "Lunar Crater volcanic field (Nevada, USA)",
+      "lat": 38.4,
+      "lon": -116.05,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Lunar_Crater_volcanic_field",
+        "how": "Wikipedia article coordinate (API prop=coordinates, read 2026-11-14, via redirect from 'Lunar Crater Volcanic Field'): 38.4, -116.05. Field centre."
+      },
+      "dem_source_id": "nasadem",
+      "role": "holdout_v13",
+      "class": "volcanic_field",
+      "status": "approved",
+      "notes": "v1.3 blind holdout. Basalt cones and lava flows in the Great Basin desert; sparse shrub. Land cover disk 4 km: tree/crop/water/wetland share 0.0004. Not measured."
+    },
+    {
+      "id": "holdout_volcanic_pali_aike",
+      "body": "earth",
+      "name": "Pali-Aike volcanic field (Patagonia, Chile / Argentina)",
+      "lat": -52.082,
+      "lon": -69.698,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Pali-Aike_volcanic_field",
+        "how": "Wikipedia article coordinate (API prop=coordinates, read 2026-11-14): -52.082, -69.698. Field centre."
+      },
+      "dem_source_id": "nasadem",
+      "role": "holdout_v13",
+      "class": "volcanic_field",
+      "status": "approved",
+      "notes": "v1.3 blind holdout. Maars, scoria cones and lava flows on the Patagonian steppe. Land cover disk 4 km: tree/crop/water/wetland share 0.0042. Not measured."
+    },
+    {
+      "id": "holdout_volcanic_harrat_kishb",
+      "body": "earth",
+      "name": "Harrat Kishb volcanic field (Saudi Arabia)",
+      "lat": 22.8,
+      "lon": 41.38,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Harrat_Kishb",
+        "how": "Wikipedia article coordinate (API prop=coordinates, read 2026-11-14): 22.8, 41.38. Field centre."
+      },
+      "dem_source_id": "nasadem",
+      "role": "holdout_v13",
+      "class": "volcanic_field",
+      "status": "approved",
+      "notes": "v1.3 blind holdout. Basalt lava field of the Arabian desert. Land cover disk 4 km: tree/crop/water/wetland share 0.0008. Not measured."
+    },
+    {
+      "id": "holdout_dune_erg_chech",
+      "body": "earth",
+      "name": "Erg Chech sand sea (Algeria / Mali)",
+      "lat": 24.5833,
+      "lon": -2.5833,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Erg_Chech",
+        "how": "Wikipedia article coordinate (API prop=coordinates, read 2026-11-14): 24.58333, -2.58333. Sand sea centre."
+      },
+      "dem_source_id": "nasadem",
+      "role": "holdout_rejected",
+      "class": "dune_field",
+      "status": "proposed",
+      "notes": "REJECTED by lead visual check 2026-11-14 (kept, not used): v1.3 blind holdout. Sand sea, one of the largest in the Sahara. Land cover disk 4 km: tree/crop/water/wetland share 0.0. Not measured."
+    },
+    {
+      "id": "holdout_dune_sharqiya",
+      "body": "earth",
+      "name": "Sharqiya Sands (Wahiba Sands, Oman)",
+      "lat": 22.0,
+      "lon": 58.8333,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Sharqiya_Sands",
+        "how": "Wikipedia article coordinate (API prop=coordinates, read 2026-11-14; article reached by redirect from 'Wahiba Sands'): 22, 58.83333. Dune field centre."
+      },
+      "dem_source_id": "nasadem",
+      "role": "holdout_v13",
+      "class": "dune_field",
+      "status": "approved",
+      "notes": "v1.3 blind holdout. Longitudinal dunes, Oman. Land cover disk 4 km: tree/crop/water/wetland share 0.0. Not measured."
+    },
+    {
+      "id": "holdout_dune_great_victoria",
+      "body": "earth",
+      "name": "Great Victoria Desert, dune sandplains (Western Australia / South Australia)",
+      "lat": -29.15,
+      "lon": 129.26,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Great_Victoria_Desert",
+        "how": "Wikipedia article coordinate (API prop=coordinates, read 2026-11-14): -29.15, 129.26. Desert centre, inside the dune sandplain."
+      },
+      "dem_source_id": "nasadem",
+      "role": "holdout_rejected",
+      "class": "dune_field",
+      "status": "proposed",
+      "notes": "REJECTED by lead visual check 2026-11-14 (kept, not used): v1.3 blind holdout. Parallel dunes with spinifex cover (grass class, not excluded). Land cover disk 4 km: tree/crop/water/wetland share 0.0006. Not measured."
+    },
+    {
+      "id": "holdout_canyon_talampaya",
+      "body": "earth",
+      "name": "Talampaya canyon (Talampaya National Park, Argentina)",
+      "lat": -29.8,
+      "lon": -67.8333,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Talampaya_National_Park",
+        "how": "Wikipedia article coordinate (API prop=coordinates, read 2026-11-14): -29.8, -67.83333. Park centre, in the canyon."
+      },
+      "dem_source_id": "nasadem",
+      "role": "holdout_v13",
+      "class": "canyon_valley",
+      "status": "approved",
+      "notes": "v1.3 blind holdout. Red sandstone canyon, arid, almost no vegetation. Land cover disk 4 km: tree/crop/water/wetland share 0.0. Not measured."
+    },
+    {
+      "id": "holdout_canyon_wadi_rum",
+      "body": "earth",
+      "name": "Wadi Rum (Jordan)",
+      "lat": 29.5931,
+      "lon": 35.42,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Wadi_Rum",
+        "how": "Wikipedia article coordinate (API prop=coordinates, read 2026-11-14): 29.59306, 35.42. Valley centre."
+      },
+      "dem_source_id": "nasadem",
+      "role": "holdout_v13",
+      "class": "canyon_valley",
+      "status": "approved",
+      "notes": "v1.3 blind holdout. Sandstone canyons and valleys, desert. Land cover disk 4 km: tree/crop/water/wetland share 0.0. Not measured."
+    },
+    {
+      "id": "holdout_canyon_monument_valley",
+      "body": "earth",
+      "name": "Monument Valley (Utah / Arizona, USA)",
+      "lat": 36.9833,
+      "lon": -110.1,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Monument_Valley",
+        "how": "Wikipedia article coordinate (API prop=coordinates, read 2026-11-14): 36.98333, -110.1. Valley centre."
+      },
+      "dem_source_id": "nasadem",
+      "role": "holdout_rejected",
+      "class": "canyon_valley",
+      "status": "proposed",
+      "notes": "REJECTED by lead visual check 2026-11-14 (kept, not used): v1.3 blind holdout. Sandstone buttes and valley floor, desert. Land cover disk 4 km: tree/crop/water/wetland share 0.0018. Not measured. Canyon class is a valley with buttes: lead to confirm at the visual check."
+    },
+    {
+      "id": "holdout_plain_tanezrouft",
+      "body": "earth",
+      "name": "Tanezrouft (Algeria / Mali)",
+      "lat": 22.251,
+      "lon": -2.246,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Tanezrouft",
+        "how": "Wikipedia article coordinate (API prop=coordinates, read 2026-11-14): 22.251, -2.246. Region centre."
+      },
+      "dem_source_id": "nasadem",
+      "role": "holdout_v13",
+      "class": "plain",
+      "status": "approved",
+      "notes": "v1.3 blind holdout. Gravel and rock plain (hamada), not a salt flat. Land cover disk 4 km: tree/crop/water/wetland share 0.0. Not measured."
+    },
+    {
+      "id": "holdout_plain_betpak_dala",
+      "body": "earth",
+      "name": "Betpak-Dala (Kazakhstan)",
+      "lat": 46.033,
+      "lon": 70.2,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Betpak-Dala",
+        "how": "Wikipedia article coordinate (geo-dec in the article HTML, API action=parse, read 2026-11-14): 46.033 N, 70.200 E. Semi-desert plain centre."
+      },
+      "dem_source_id": "nasadem",
+      "role": "holdout_v13",
+      "class": "plain",
+      "status": "approved",
+      "notes": "v1.3 blind holdout. Semi-desert plain. RISK: saline depressions are possible in the disk; land cover bare share 0.27 (WorldCover, not a criterion); tree/crop/water/wetland share 0.0. Lead to check at the visual check that the disk has no salt flat or lake bed."
+    },
+    {
+      "id": "holdout_plain_sturt_stony",
+      "body": "earth",
+      "name": "Sturt Stony Desert (South Australia)",
+      "lat": -27.0,
+      "lon": 140.0,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Sturt_Stony_Desert",
+        "how": "Wikipedia article coordinate (API prop=coordinates, read 2026-11-14): -27, 140. Desert centre."
+      },
+      "dem_source_id": "nasadem",
+      "role": "holdout_rejected",
+      "class": "plain",
+      "status": "proposed",
+      "notes": "REJECTED by lead visual check 2026-11-14 (kept, not used): v1.3 blind holdout. Gibber (stony) plain, flat, not a salt flat. Land cover disk 4 km: tree/crop/water/wetland share 0.0. Not measured."
+    },
+    {
+      "id": "holdout_crater_ouarkziz",
+      "body": "earth",
+      "name": "Ouarkziz crater (Algeria)",
+      "lat": 29.0117,
+      "lon": -7.5522,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Ouarkziz_crater",
+        "how": "Wikipedia article coordinate (wikitext coord template 29 0 42 N, 7 33 8 W; API prop=coordinates, read 2026-11-14): 29.01167, -7.55222. Crater centre."
+      },
+      "dem_source_id": "nasadem",
+      "role": "holdout_v13",
+      "class": "impact_crater",
+      "status": "approved",
+      "notes": "v1.3 blind holdout. Replacement for holdout_crater_gweni_fada (lead visual check 2026-11-14). Diameter 3.5 km (infobox), inside 2-8 km; rim inside the 8 km disk. Sahara, bare. Land cover disk 4 km: tree/crop/water/wetland share 0.0. Not measured."
+    },
+    {
+      "id": "holdout_dune_grand_erg_oriental",
+      "body": "earth",
+      "name": "Grand Erg Oriental (Algeria / Tunisia)",
+      "lat": 30.0,
+      "lon": 6.0,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Grand_Erg_Oriental",
+        "how": "Wikipedia article coordinate (API prop=coordinates, read 2026-11-14): 30, 6 (whole degrees). Megadune sand sea centre."
+      },
+      "dem_source_id": "nasadem",
+      "role": "holdout_v13",
+      "class": "dune_field",
+      "status": "approved",
+      "notes": "v1.3 blind holdout. Replacement for holdout_dune_erg_chech (lead visual check 2026-11-14): megadune sand sea. Land cover disk 4 km: tree/crop/water/wetland share 0.0. Not measured."
+    },
+    {
+      "id": "holdout_dune_taklamakan",
+      "body": "earth",
+      "name": "Taklamakan Desert (Xinjiang, China)",
+      "lat": 38.9452,
+      "lon": 82.4309,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Taklamakan_Desert",
+        "how": "moved by the lead onto the linear megadune belt by visual landform identification, see docs/CHANGELOG.md"
+      },
+      "dem_source_id": "nasadem",
+      "role": "holdout_v13",
+      "class": "dune_field",
+      "status": "approved",
+      "notes": "v1.3 blind holdout. Replacement for holdout_dune_great_victoria (lead visual check 2026-11-14): megadune sand sea. Land cover disk 4 km: tree/crop/water/wetland share 0.0. Not measured."
+    },
+    {
+      "id": "holdout_canyon_buckskin_gulch",
+      "body": "earth",
+      "name": "Buckskin Gulch (Utah, USA)",
+      "lat": 37.0017,
+      "lon": -111.8661,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Buckskin_Gulch",
+        "how": "Wikipedia article coordinate (API prop=coordinates, read 2026-11-14): 37.00167, -111.86611. Gulch centre."
+      },
+      "dem_source_id": "nasadem",
+      "role": "holdout_v13",
+      "class": "canyon_valley",
+      "status": "approved",
+      "notes": "v1.3 blind holdout. Replacement for holdout_canyon_monument_valley (lead visual check 2026-11-14): deep arid slot canyon. Land cover disk 4 km: tree/crop/water/wetland share 0.0008. Not measured."
+    },
+    {
+      "id": "holdout_plain_tanami",
+      "body": "earth",
+      "name": "Tanami Desert (Northern Territory / Western Australia)",
+      "lat": -20.0,
+      "lon": 130.0,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Tanami_Desert",
+        "how": "Wikipedia article coordinate (API prop=coordinates, read 2026-11-14): -20, 130 (whole degrees). Desert centre."
+      },
+      "dem_source_id": "nasadem",
+      "role": "holdout_v13",
+      "class": "plain",
+      "status": "approved",
+      "notes": "v1.3 blind holdout. Replacement for holdout_plain_sturt_stony (lead visual check 2026-11-14); Selima has no coordinate in the API. Sandy plain with spinifex (grass class), no lake bed in the check. RISK: dunes possible in the disk; lead to confirm flatness. Land cover disk 4 km: tree/crop/water/wetland share 0.0. Not measured."
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+  /* Common Ground demo, 30 s. Screens are real captures of the site; the landing is a dramatization drawn over
+     the real Jezero relief (NASA MRO CTX DTM via USGS). Every number on screen is from the site's facts. */
+  @font-face { font-family: "Bahnschrift"; src: local("Bahnschrift"); }
+  :root { --bg:#0b0b0c; --ink:#f4efe7; --muted:#bcb3a7; --mars:#ec9a6c; --earth:#a9cf9b; --line:#2e2b28; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1920px; height:1080px; overflow:hidden; background:var(--bg); color:var(--ink);
+    font-family:"Bahnschrift", "Segoe UI", sans-serif; }
+  #root { position:relative; width:1920px; height:1080px; overflow:hidden;
+    background:radial-gradient(1400px 800px at 25% 15%, #2a1a12 0%, transparent 60%), var(--bg); }
+  .clip { position:absolute; inset:0; overflow:hidden; }
+  .shot { position:absolute; left:0; top:0; width:1920px; height:1080px; transform-origin:50% 50%; }
+  .cap { position:absolute; left:72px; bottom:64px; max-width:1180px; padding:26px 34px 28px; background:#0b0b0cE6;
+    border-left:6px solid var(--mars); box-shadow:0 20px 60px #000a; }
+  .cap .k { font-weight:600; font-stretch:condensed; font-size:24px; letter-spacing:.16em; text-transform:uppercase; color:var(--mars); margin-bottom:8px; }
+  .cap .t { font-weight:600; font-stretch:semi-condensed; font-size:46px; line-height:1.12; }
+  .cap .t b { color:var(--mars); font-weight:700; } .cap .t i { font-style:normal; color:var(--earth); }
+  .cap.earth { border-left-color:var(--earth); } .cap.earth .k { color:var(--earth); }
+  .tag { position:absolute; top:40px; right:48px; font-size:22px; letter-spacing:.14em; text-transform:uppercase; color:#cfc6ba;
+    border:1px solid #6b635a; padding:6px 14px; background:#0b0b0caa; }
+  .panel { position:absolute; border:1px solid var(--line); box-shadow:0 30px 80px #000c; background:#0b0b0c; overflow:hidden; }
+
+  /* landing */
+  #s5 { perspective:1500px; perspective-origin:50% 18%; background:radial-gradient(1200px 600px at 50% 0%, #3a2418, #0b0b0c 70%); }
+  .ground { position:absolute; left:50%; top:52%; width:1500px; height:1500px; margin:-750px 0 0 -750px;
+    transform-style:preserve-3d; transform:rotateX(60deg) scale(.62); transform-origin:50% 50%; }
+  .ground img { position:absolute; inset:0; width:100%; height:100%; }
+  .ring { position:absolute; left:50%; top:50%; width:180px; height:180px; margin:-90px 0 0 -90px; border-radius:50%;
+    border:6px solid var(--earth); box-shadow:0 0 30px var(--earth), inset 0 0 30px #a9cf9b66; }
+  .shadow { position:absolute; left:50%; top:50%; width:150px; height:150px; margin:-75px 0 0 -75px; border-radius:50%;
+    background:radial-gradient(circle, #000c 0%, #0000 70%); }
+  .dust { position:absolute; left:50%; top:50%; width:200px; height:200px; margin:-100px 0 0 -100px; border-radius:50%;
+    border:30px solid #e9b48f; filter:blur(10px); opacity:0; }
+  .lander { position:absolute; left:50%; top:0; width:260px; margin-left:-130px; }
+  .flame { transform-origin:50% 0%; }
+  .label { position:absolute; font-size:30px; font-weight:600; font-stretch:semi-condensed; }
+  .tagant { position:absolute; right:72px; top:150px; width:360px; text-align:center; }
+  .tagant img { width:280px; height:280px; border-radius:50%; border:4px solid var(--earth); box-shadow:0 0 0 8px #0b0b0c, 0 20px 50px #000c; }
+  .tagant div { margin-top:14px; font-size:28px; color:var(--earth); font-weight:600; letter-spacing:.04em; }
+  .legend { position:absolute; left:72px; top:150px; font-size:28px; display:flex; align-items:center; gap:14px; color:#f3d6c4; }
+  .legend i { width:28px; height:28px; background:#ff785a; display:inline-block; }
+
+  /* end */
+  #s6 .touch { position:absolute; left:0; right:0; top:390px; text-align:center; font-weight:700; font-stretch:condensed; font-size:150px; letter-spacing:.02em; }
+  #s6 .ok { position:absolute; left:0; right:0; top:560px; text-align:center; font-size:40px; color:var(--earth); font-weight:600; }
+  #s6 .card { position:absolute; inset:0; background:radial-gradient(1400px 800px at 30% 20%, #2a1a12 0%, transparent 60%), #0b0b0c; }
+  #s6 .logo { position:absolute; left:0; right:0; top:330px; text-align:center; font-weight:700; font-stretch:condensed; font-size:120px; letter-spacing:.14em; }
+  #s6 .logo span { color:var(--mars); }
+  #s6 .rule { position:absolute; left:50%; top:490px; width:520px; height:4px; margin-left:-260px; background:var(--mars); transform-origin:50% 50%; }
+  #s6 .sub { position:absolute; left:0; right:0; top:530px; text-align:center; font-size:48px; font-weight:600; font-stretch:semi-condensed; }
+  #s6 .sub b { color:var(--mars); } #s6 .sub i { font-style:normal; color:var(--earth); }
+  #s6 .data { position:absolute; left:0; right:0; top:640px; text-align:center; font-size:28px; color:var(--muted); letter-spacing:.04em; }
+  #s6 .event { position:absolute; left:0; right:0; top:700px; text-align:center; font-size:24px; color:#8f877c; letter-spacing:.16em; text-transform:uppercase; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="30" data-width="1920" data-height="1080">
+
+  <!-- 1 · 0-4 s: the mission -->
+  <section id="s1" class="clip" data-start="0" data-duration="4.2" data-track-index="0">
+    <img class="shot" src="assets/a_hero.png" alt="">
+    <div class="cap"><div class="k">Mission planning</div><div class="t">A crew is preparing to land at <b>Jezero crater, Mars.</b></div></div>
+  </section>
+
+  <!-- 2 · 4-9 s: measure the landing ground -->
+  <section id="s2" class="clip" data-start="4" data-duration="5.2" data-track-index="1">
+    <img class="shot" src="assets/b_jezero.png" alt="">
+    <div class="panel" style="right:70px;top:120px;width:700px;"><img src="assets/g_landing.png" style="width:100%;display:block" alt=""></div>
+    <div class="cap"><div class="k">Step 1 · Measure the landing ground</div><div class="t"><b>99.5%</b> of the site is within the <b>15°</b> landing limit.</div></div>
+  </section>
+
+  <!-- 3 · 9-14 s: the same ground on Earth -->
+  <section id="s3" class="clip" data-start="9" data-duration="5.2" data-track-index="0">
+    <img class="shot" src="assets/c_earth.png" alt="">
+    <div class="cap earth"><div class="k">Step 2 · Find the same ground on Earth</div><div class="t">Common Ground finds it in <i>Tagant, Mauritania</i>.</div></div>
+  </section>
+
+  <!-- 4 · 14-19 s: compare, then rehearse -->
+  <section id="s4" class="clip" data-start="14" data-duration="5.2" data-track-index="1">
+    <div class="panel p1" style="left:70px;top:70px;width:1180px;height:700px;"><img src="assets/e_overlay.png" style="width:100%;height:100%;object-fit:cover" alt=""></div>
+    <div class="panel p2" style="right:70px;top:70px;width:900px;height:900px;"><img src="assets/f_rehearse.png" style="width:1810px;margin:-6px 0 0 -2px" alt=""></div>
+    <div class="cap c1"><div class="k">Step 3 · Compare, then rehearse</div><div class="t">Same steepness: <b>6.8°</b> on Mars, <i>6.6°</i> on Earth.</div></div>
+    <div class="cap c2 earth"><div class="k">Rehearse here / cannot teach you</div><div class="t">They practise landing and driving there. Gravity and pressure, they plan another way.</div></div>
+  </section>
+
+  <!-- 5 · 19-26 s: landing day (dramatization) -->
+  <section id="s5" class="clip" data-start="19" data-duration="7.2" data-track-index="0">
+    <div class="ground">
+      <img src="assets/ground.png" alt="">
+      <img class="steep" src="assets/steep.png" alt="">
+      <div class="shadow"></div>
+      <div class="ring"></div>
+      <div class="dust"></div>
+    </div>
+    <svg class="lander" viewBox="0 0 260 300" aria-hidden="true">
+      <g class="flame"><path d="M112 196 L130 290 L148 196 Z" fill="#ffd27a" opacity=".9"/><path d="M120 196 L130 250 L140 196 Z" fill="#fff4d6"/></g>
+      <path d="M70 150 L40 230 M190 150 L220 230 M100 168 L86 232 M160 168 L174 232" stroke="#d9d4cc" stroke-width="8" stroke-linecap="round"/>
+      <rect x="22" y="226" width="40" height="8" rx="4" fill="#d9d4cc"/><rect x="198" y="226" width="40" height="8" rx="4" fill="#d9d4cc"/>
+      <path d="M80 90 L180 90 L200 170 L60 170 Z" fill="#c9a24a"/><path d="M80 90 L180 90 L190 130 L70 130 Z" fill="#e2c06a"/>
+      <rect x="104" y="44" width="52" height="48" rx="8" fill="#e8e3da"/><rect x="114" y="56" width="32" height="16" rx="4" fill="#3a4a5a"/>
+      <rect x="114" y="170" width="32" height="26" fill="#6b6259"/>
+    </svg>
+    <div class="legend"><i></i>Steeper than the 15° landing limit (NASA CTX relief)</div>
+    <div class="tagant"><img src="assets/tagant.png" alt=""><div>Rehearsed at Tagant, Mauritania</div></div>
+    <div class="tag">Dramatization</div>
+    <div class="cap"><div class="k">Landing day</div><div class="t">They have already practised on this ground.</div></div>
+  </section>
+
+  <!-- 6 · 26-30 s: touchdown, end card -->
+  <section id="s6" class="clip" data-start="26" data-duration="4" data-track-index="1">
+    <div class="touch">TOUCHDOWN.</div>
+    <div class="ok">Landed inside the ground they rehearsed.</div>
+    <div class="card">
+      <div class="logo">COMMON <span>GROUND</span></div>
+      <div class="rule"></div>
+      <div class="sub">Rehearse <b>Mars</b> and the Moon on <i>Earth</i>.</div>
+      <div class="data">Data: NASA MRO CTX (USGS) · NASADEM · LRO LOLA &amp; LROC · ESA Copernicus DEM</div>
+      <div class="event">NASA Space Apps Challenge 2026 · Dramatization of the intended use</div>
+    </div>
+  </section>
+</div>
+
+<script>
+  const tl = gsap.timeline({ paused: true });
+  const E = "power3.out", I = "power2.in";
+
+  // 1
+  tl.fromTo("#s1 .shot", { scale: 1.0, transformOrigin: "58% 50%" }, { scale: 1.06, duration: 4.2, ease: "none" }, 0);
+  tl.fromTo("#s1 .cap", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: E }, 0.4);
+  tl.to("#s1 .cap", { opacity: 0, duration: 0.3 }, 3.8);
+
+  // 2
+  const s2 = 4;
+  tl.fromTo("#s2", { opacity: 0 }, { opacity: 1, duration: 0.4 }, s2);
+  tl.fromTo("#s2 .shot", { scale: 1.05 }, { scale: 1.0, duration: 5.2, ease: "none" }, s2);
+  tl.fromTo("#s2 .panel", { opacity: 0, x: 120 }, { opacity: 1, x: 0, duration: 0.7, ease: E }, s2 + 1.4);
+  tl.fromTo("#s2 .cap", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: E }, s2 + 0.6);
+
+  // 3: push toward the Earth inset (lower right of the Mars view)
+  const s3 = 9;
+  tl.fromTo("#s3", { opacity: 0 }, { opacity: 1, duration: 0.4 }, s3);
+  tl.fromTo("#s3 .shot", { scale: 1.0, transformOrigin: "68% 70%" }, { scale: 1.28, duration: 5.2, ease: "power1.inOut" }, s3);
+  tl.fromTo("#s3 .cap", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: E }, s3 + 0.8);
+
+  // 4
+  const s4 = 14;
+  tl.fromTo("#s4", { opacity: 0 }, { opacity: 1, duration: 0.4 }, s4);
+  tl.fromTo("#s4 .p1", { opacity: 0, scale: 0.94 }, { opacity: 1, scale: 1, duration: 0.7, ease: E }, s4 + 0.1);
+  tl.fromTo("#s4 .c1", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: E }, s4 + 0.5);
+  tl.to("#s4 .p1, #s4 .c1", { opacity: 0, duration: 0.4, ease: I }, s4 + 2.4);
+  tl.fromTo("#s4 .p2", { opacity: 0, x: 140 }, { opacity: 1, x: 0, duration: 0.7, ease: E }, s4 + 2.5);
+  tl.fromTo("#s4 .p2 img", { y: 0 }, { y: -40, duration: 2.6, ease: "none" }, s4 + 2.5);
+  tl.fromTo("#s4 .c2", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: E }, s4 + 2.8);
+
+  // 5: landing (dramatization)
+  const s5 = 19;
+  tl.fromTo("#s5", { opacity: 0 }, { opacity: 1, duration: 0.5 }, s5);
+  tl.fromTo("#s5 .ground", { scale: 0.62 }, { scale: 1.25, duration: 7.0, ease: "power1.in" }, s5);
+  tl.fromTo("#s5 .steep", { opacity: 0 }, { opacity: 1, duration: 0.8 }, s5 + 1.0);
+  tl.fromTo("#s5 .legend", { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.5, ease: E }, s5 + 1.2);
+  tl.fromTo("#s5 .ring", { opacity: 0, scale: 2.2 }, { opacity: 1, scale: 1, duration: 0.7, ease: E }, s5 + 1.8);
+  tl.fromTo("#s5 .tagant", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.6, ease: "back.out(1.6)" }, s5 + 2.2);
+  tl.fromTo("#s5 .cap", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: E }, s5 + 0.4);
+  tl.fromTo("#s5 .tag", { opacity: 0 }, { opacity: 1, duration: 0.5 }, s5 + 0.3);
+  // descent: fast, then the burn slows it; slight sway corrected before touchdown
+  tl.fromTo("#s5 .lander", { y: -320, scale: 0.55, rotation: -6 }, { y: 330, scale: 1, rotation: 0, duration: 6.6, ease: "power3.out" }, s5 + 0.2);
+  tl.fromTo("#s5 .shadow", { scale: 3, opacity: 0 }, { scale: 1, opacity: 1, duration: 6.4, ease: "power2.in" }, s5 + 0.4);
+  tl.fromTo("#s5 .flame", { scaleY: 1.2 }, { scaleY: 0.7, duration: 0.12, ease: "none", repeat: 52, yoyo: true }, s5 + 0.2);
+  tl.to("#s5 .flame", { scaleY: 0, opacity: 0, duration: 0.25 }, s5 + 6.75);
+  tl.fromTo("#s5 .dust", { opacity: 0.9, scale: 0.4 }, { opacity: 0, scale: 2.6, duration: 1.1, ease: "power2.out" }, s5 + 6.6);
+  tl.to("#s5 .ring", { borderColor: "#d9f5c9", duration: 0.3 }, s5 + 6.7);
+
+  // 6
+  const s6 = 26;
+  tl.fromTo("#s6 .touch", { opacity: 0, scale: 1.3 }, { opacity: 1, scale: 1, duration: 0.45, ease: "power4.out" }, s6 + 0.05);
+  tl.fromTo("#s6 .ok", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, ease: E }, s6 + 0.4);
+  tl.to("#s6 .touch, #s6 .ok", { opacity: 0, duration: 0.35 }, s6 + 1.35);
+  tl.fromTo("#s6 .card", { opacity: 0 }, { opacity: 1, duration: 0.6 }, s6 + 1.6);
+  tl.fromTo("#s6 .logo", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: E }, s6 + 1.9);
+  tl.fromTo("#s6 .rule", { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: E }, s6 + 2.2);
+  tl.fromTo("#s6 .sub", { opacity: 0 }, { opacity: 1, duration: 0.5 }, s6 + 2.4);
+  tl.fromTo("#s6 .data, #s6 .event", { opacity: 0 }, { opacity: 1, duration: 0.5 }, s6 + 2.7);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines["main"] = tl;
+  tl.seek(0);
+</script>
+</body>
+</html>

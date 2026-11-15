@@ -1,0 +1,142 @@
+{
+  "target_id": "im1_odysseus",
+  "analog_id": "pool__pool_02156",
+  "rank": 10,
+  "D": 0.38188700322848645,
+  "tie_group": 0,
+  "features": {
+    "slope_p95_deg": {
+      "target": 13.646055813183684,
+      "analog": 12.514388654110409,
+      "z_diff": -0.3721415556961389
+    },
+    "hi": {
+      "target": 0.5336012081943191,
+      "analog": 0.5199392538166783,
+      "z_diff": -0.21342442675840825
+    },
+    "coherence": {
+      "target": 0.3083817835250455,
+      "analog": 0.3047775081357665,
+      "z_diff": -0.02296842009501947
+    },
+    "hurst": {
+      "target": 0.8992253781339624,
+      "analog": 0.7984398349476053,
+      "z_diff": -0.5034617426293725
+    },
+    "ridge_pct": {
+      "target": 21.08262108262108,
+      "analog": 17.793317793317794,
+      "z_diff": -1.8033752937584748
+    },
+    "valley_pct": {
+      "target": 14.115514115514115,
+      "analog": 14.555814555814555,
+      "z_diff": 0.7166464319438823
+    }
+  },
+  "vertical_exaggeration": 3.9,
+  "in_distance": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "context_features": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "similar": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "different": [],
+  "context_similar": [
+    "coherence",
+    "valley_pct"
+  ],
+  "context_different": [
+    "ridge_pct"
+  ],
+  "analog_place": {
+    "name": "Northwest Territories, Canada",
+    "admin1": "Northwest Territories",
+    "country": "Canada",
+    "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+    "match": "inside",
+    "distance_km": 0.0,
+    "nearest_named_feature": null
+  },
+  "mission_pct": {
+    "landing": {
+      "target": 91.71006040408248,
+      "analog": 94.23036867319308,
+      "limit_deg": 12.0,
+      "source": "https://ntrs.nasa.gov/citations/19720018253",
+      "reason": null
+    },
+    "driving": {
+      "target": 100.0,
+      "analog": 99.95834201208082,
+      "limit_deg": 25.0,
+      "source": "https://ntrs.nasa.gov/citations/19730008090",
+      "reason": null
+    }
+  },
+  "mission_baseline_m": 100,
+  "rotation_deg": 120.0,
+  "rotation_rms": 0.9593021043546647,
+  "files": {
+    "target": "terrain/im1_odysseus/",
+    "analog": "terrain/pool__pool_02156/"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:52:44Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "lola_20m_polar_ldem",
+        "path": "data/raw/moon/im1_odysseus/lola_20m_polar_ldem_win6km.tif",
+        "sha256": "8933f0d01e92e787c999766f6ba9649ebe8ad940de0f16acbf2e4e02fb7fac4a"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00156.tif",
+        "sha256": "0634b808fa670e8932f9405709a318736e27a633aebbdf51945a08da768da9c7"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  },
+  "context": {
+    "koppen_class": "ET",
+    "koppen_label": "Polar, tundra",
+    "koppen_code": 29,
+    "elevation_m": 439.28204095725397,
+    "nearest_town": {
+      "name": "Holman",
+      "country": "Canada",
+      "distance_km": 274.65
+    },
+    "sources": {
+      "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+      "elevation": "cop_dem_glo30 window mean over the 4 km disk (source_id of the window's measure record)",
+      "town": "Natural Earth 1:10m populated places (public domain)",
+      "novelty": "config/known_analog_regions.json (circle approximation)"
+    }
+  },
+  "novelty": "new",
+  "known_region_id": null,
+  "refined": {
+    "pool_id": "pool__pool_02156",
+    "rank_before": 10,
+    "D_before": 0.38188700322848645,
+    "D_clip_offset0": null,
+    "refined_offset_km": null
+  }
+}

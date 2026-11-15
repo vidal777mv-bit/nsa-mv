@@ -1,0 +1,230 @@
+{
+  "version": "1.1-proposed",
+  "doc": "PROPOSED planetary targets from agent D (target data inventory), same entry format as config/sites.json (STANDARDS section 8). Every entry is status 'proposed' and must be approved by the team lead before use. Longitudes east-positive in [-180, 180). dem_source_id values name sources that are NOT yet in config/sources.json; the lead must add them with verified fields. Coverage numbers in notes are the disk (4 km radius) coverage estimated on a 200x200 px read of the 8 km box (about 40 m effective pixels), not a full-resolution count. A null lat/lon means no sourced centre was found. Details and failed tests: docs/target_inventory.md.",
+  "sites": [
+    {
+      "id": "apollo15_hadley",
+      "body": "moon",
+      "name": "Apollo 15 landing site, Hadley-Apennine (control site)",
+      "lat": 26.13239,
+      "lon": 3.6333,
+      "center_source": {
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_sites.html",
+        "how": "NSSDC Apollo landing-site table, 'Lunar Module' row, planetocentric Mean Earth/Polar Axis frame, DE421 (page read 2026-11-13). Cross-checked against the 2016 LROC coordinates list (search snippet only)."
+      },
+      "dem_source_id": "lroc_nac_dtm_apollo15",
+      "role": "target",
+      "class": null,
+      "status": "proposed",
+      "notes": "DEM: LROC NAC_DTM_APOLLO15.TIF, 2.00 m/px, 146,373,579 bytes, range requests OK; product bounds lon 3.50-3.69, lat 25.59-26.54 (LROC product page). Disk coverage 0.885 (BELOW 0.90): the strip is ~5 km wide and cuts the east side of the disk. Not usable as is. Full-resolution coverage test read a 4000 x 4000 px box (outside the 200 x 200 px rule; 25 s)."
+    },
+    {
+      "id": "apollo16_descartes",
+      "body": "moon",
+      "name": "Apollo 16 landing site, Descartes (control site)",
+      "lat": -8.9734,
+      "lon": 15.5011,
+      "center_source": {
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_sites.html",
+        "how": "NSSDC Apollo landing-site table, 'Lunar Module' row, planetocentric Mean Earth/Polar Axis frame, DE421 (page read 2026-11-13)."
+      },
+      "dem_source_id": null,
+      "role": "target",
+      "class": null,
+      "status": "proposed",
+      "notes": "No LROC NAC DTM product for Apollo 16 found (PDS folder listing not reachable; LROC search returned none). Needs a product ID before any coverage can be claimed."
+    },
+    {
+      "id": "apollo17_taurus_littrow",
+      "body": "moon",
+      "name": "Apollo 17 landing site, Taurus-Littrow (control site)",
+      "lat": 20.1911,
+      "lon": 30.7723,
+      "center_source": {
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_sites.html",
+        "how": "NSSDC Apollo landing-site table, 'Lunar Module' row, planetocentric Mean Earth/Polar Axis frame, DE421 (page read 2026-11-13). LROC 2016 coordinate list gives the same value (search snippet only)."
+      },
+      "dem_source_id": "lroc_nac_dtm_apollo17",
+      "role": "target",
+      "class": null,
+      "status": "proposed",
+      "notes": "DEM: LROC NAC_DTM_APOLLO17.TIF, 5.00 m/px, 463,397,471 bytes, range requests OK, window read 2.8 s for 200 x 200 px. Product bounds lon 29.91-31.66, lat 19.39-21.30. Disk coverage 1.00. A 2 m/px version exists (LROC page 1112) but was not tested."
+    },
+    {
+      "id": "im2_athena",
+      "body": "moon",
+      "name": "Intuitive Machines IM-2 Athena landing site, Mons Mouton area",
+      "lat": -84.78,
+      "lon": 29.13,
+      "center_source": {
+        "url": "https://lroc.im-ldi.com/images/1401",
+        "how": "LROC 'IM-2 Landing Region' page (mirror of lroc.asu.edu/images/1401), published by M. Robinson 26 Feb 2025: 'intended landing site (-84.78, 29.13E)'. This is the INTENDED site. Athena landed about 250 m away per the company (press, not opened). Wikipedia gives 84.7906 S, 29.1957 E as the actual touchdown (secondary)."
+      },
+      "dem_source_id": "lola_20m_polar_ldem",
+      "role": "target",
+      "class": null,
+      "status": "proposed",
+      "notes": "DEM: LOLA LDEM_80S_20MPP_ADJ.TIF (PGDA product 90), 20 m/px, 2,696,082,051 bytes, range requests OK, native 200 x 200 window 0.7 s. Disk coverage 1.00 (est.). The 250 m offset is negligible for a 4 km disk."
+    },
+    {
+      "id": "im1_odysseus",
+      "body": "moon",
+      "name": "Intuitive Machines IM-1 Odysseus landing site, Malapert A area",
+      "lat": -80.13,
+      "lon": 1.44,
+      "center_source": {
+        "url": "https://www.nasa.gov/missions/lro/nasas-lro-images-intuitive-machines-odysseus-lander/",
+        "how": "NASA LRO release, 26 Feb 2024, quoted: 'Odysseus came to rest at 80.13 degrees south latitude, 1.44 degrees east longitude, 8,461 feet (2,579 meters) elevation'."
+      },
+      "dem_source_id": "lola_20m_polar_ldem",
+      "role": "target",
+      "class": null,
+      "status": "proposed",
+      "notes": "DEM: LOLA 20 m polar LDEM (see im2_athena). Disk coverage 1.00 (est.); the disk lies about 60 m inside the north edge of the 80-90 S tile. Latitude sits at the tile's outer edge, so check the edge margin when reading."
+    },
+    {
+      "id": "cabeus_b_peak",
+      "body": "moon",
+      "name": "Peak near Cabeus B (NASA Artemis III candidate region)",
+      "lat": -83.6,
+      "lon": -68.8,
+      "center_source": {
+        "url": "https://data.lroc.im-ldi.com/lroc/view_rdr/NAC_ROI_CABEUSPKLO2",
+        "how": "LROC NAC ROI page 'NAC_ROI_CABEUSPKLO2_P836S2912' (preliminary Artemis III mosaic), 'Center Lat -83.6', 'Center Lon 291.2' (east-positive 291.2 converted to -68.8 by agent D). NOT an official NASA landing coordinate: the NASA release (28 Oct 2024) gives no coordinates."
+      },
+      "dem_source_id": "lola_20m_polar_ldem",
+      "role": "target",
+      "class": null,
+      "status": "proposed",
+      "notes": "Proxy centre (mosaic centre). DEM: LOLA 20 m, disk coverage 1.00 (est.). Lead to confirm the centre before use."
+    },
+    {
+      "id": "mons_mouton_plateau",
+      "body": "moon",
+      "name": "Mons Mouton Plateau (NASA Artemis III candidate region)",
+      "lat": -84.3,
+      "lon": 30.6,
+      "center_source": {
+        "url": "https://data.lroc.im-ldi.com/lroc/view_rdr/NAC_ROI_MOUTNPLTLO1",
+        "how": "LROC NAC ROI page 'NAC_ROI_MOUTNPLTLO1_P843S0306' (Artemis III candidate mosaic), 'Center Lat -84.3', 'Center Lon 30.6'. NOT an official NASA coordinate."
+      },
+      "dem_source_id": "lola_20m_polar_ldem",
+      "role": "target",
+      "class": null,
+      "status": "proposed",
+      "notes": "Proxy centre (mosaic centre). DEM: LOLA 20 m, disk coverage 1.00 (est.). Lead to confirm."
+    },
+    {
+      "id": "mons_mouton",
+      "body": "moon",
+      "name": "Mons Mouton (NASA Artemis III candidate region)",
+      "lat": -84.6,
+      "lon": 31.0,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Mons_Mouton",
+        "how": "Wikipedia 'Mons Mouton' listed centre 84 deg 36 min S, 31 deg 00 min E = -84.6, 31.0 (seen in a search snippet from a Wikipedia mirror; article not opened). Describes the mountain as a whole, not a landing point. NOT an official NASA coordinate."
+      },
+      "dem_source_id": "lola_20m_polar_ldem",
+      "role": "target",
+      "class": null,
+      "status": "proposed",
+      "notes": "Low-confidence proxy centre. DEM: LOLA 20 m, disk coverage 1.00 at this proxy point (est.). Lead to decide whether to use the plateau centre instead."
+    },
+    {
+      "id": "slater_plain",
+      "body": "moon",
+      "name": "Slater Plain (NASA Artemis III candidate region)",
+      "lat": null,
+      "lon": null,
+      "center_source": {
+        "url": "https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/",
+        "how": "NASA release (28 Oct 2024) names the region but gives no coordinates. Search found no coordinates for the plain. Slater crater (88 deg 05 min S, 111 deg 17 min E, Wikipedia) is a different feature and was NOT used."
+      },
+      "dem_source_id": null,
+      "role": "target",
+      "class": null,
+      "status": "proposed",
+      "notes": "No sourced centre. Needs a centre from NASA Artemis III materials or an LROC ROI page before any DEM test. Note: PGDA product 78 (5 m) has no Slater or SL-named DEM, but SL2 is 'de Gerlache rim', not Slater."
+    },
+    {
+      "id": "insight_elysium",
+      "body": "mars",
+      "name": "InSight landing site, Elysium Planitia",
+      "lat": 4.5024,
+      "lon": 135.6234,
+      "center_source": {
+        "url": "https://doi.org/10.1029/2020EA001248",
+        "how": "Golombek et al. 2020, Earth and Space Science: lander position 4.502384 N, 135.623447 E, seen in a search snippet. The publisher page returned 403 and was not read directly. The USGS CTX DTM page text also gives 4.5024 N, 135.6234 E (snippet). Pre-landing JPL target about 4.5 N, 135.9 E (not used)."
+      },
+      "dem_source_id": "usgs_ctx_dtm_insight_n15_068239",
+      "role": "target",
+      "class": null,
+      "status": "proposed",
+      "notes": "DEM: USGS CTX DTM N15_068239_1823_XN_02N224W__N03_063385_1867_XI_06N224W-DEM.tif (STAC collection mro_ctx_controlled_usgs_dtms), 20 m/px, Mars 2015 sphere, equirectangular, 13,535,232 bytes (HEAD only, not downloaded), windowed read 0.9 s, disk coverage 1.00. HiRISE alternative 1.01 m: coverage 0.72 (too narrow)."
+    },
+    {
+      "id": "oxia_planum",
+      "body": "mars",
+      "name": "Oxia Planum, ExoMars Rosalind Franklin landing site (favoured ellipse)",
+      "lat": 18.2,
+      "lon": -24.55,
+      "center_source": {
+        "url": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/ExoMars_rover",
+        "how": "Wikipedia 'Rosalind Franklin (rover)' article (mirror): favoured Oxia Planum landing ellipse 18.20 N, 335.45 E (= -24.55). Secondary source only. ESA primary not found. Wikipedia 'Oxia Planum' plain centre 18.275 N, 335.368 E is not the landing ellipse and was not used."
+      },
+      "dem_source_id": "usgs_ctx_dtm_oxia_n06_064538",
+      "role": "target",
+      "class": null,
+      "status": "proposed",
+      "notes": "DEM: USGS CTX DTM N06_064538_1963_XN_16N024W__N06_064828_1963_XN_16N024W_dtm.tif, 20.04 m/px, 54,254,269 bytes (HEAD only), windowed read OK (0.7 s), disk coverage 1.00 at this centre. Open University 'Geography of Oxia Planum' CTX DEM mosaic (about 301 MB, 20 m) also exists (not verified). HiRISE alternative coverage about 0.71 at the plain centre."
+    },
+    {
+      "id": "opportunity_eagle",
+      "body": "mars",
+      "name": "Meridiani Planum, Opportunity landing site (Eagle crater)",
+      "lat": -1.9462,
+      "lon": -5.5266,
+      "center_source": {
+        "url": "https://en.wikipedia.org/wiki/Opportunity_(rover)",
+        "how": "Wikipedia 'Opportunity' landing site 1 deg 56 min 46 s S, 354 deg 28 min 24 s E = -1.9462, 354.4734 (secondary). Search snippet also cites a triangulated lander position in IAU 2000 areocentric coordinates, which matches (paper not opened)."
+      },
+      "dem_source_id": "usgs_ctx_dtm_opportunity_g01_018701",
+      "role": "target",
+      "class": null,
+      "status": "proposed",
+      "notes": "Best CTX DTM tested: G01_018701_1776_XN_02S005W__G02_018846_1791_XN_00S005W_dtm.tif, 20.00 m/px, 11,831,833 bytes (HEAD only). Disk coverage 0.78 (BELOW 0.90), not usable. Other tested CTX DTMs: 0.71, 0.30 (HiRISE), 0.15, 0.16. Not feasible with what was found."
+    },
+    {
+      "id": "spirit_columbia",
+      "body": "mars",
+      "name": "Gusev crater, Spirit landing site (Columbia Memorial Station)",
+      "lat": -14.5692,
+      "lon": 175.4729,
+      "center_source": {
+        "url": "https://science.nasa.gov/mission/mer-spirit/",
+        "how": "NASA science page 'In Depth: Spirit', page dated 19 Dec 2024, quoted: 'Landing coordinates were 14.5692 degrees south latitude and 175.4729 degrees east longitude.'"
+      },
+      "dem_source_id": "usgs_ctx_dtm_spirit_p22_009530",
+      "role": "target",
+      "class": null,
+      "status": "proposed",
+      "notes": "DEM: USGS CTX DTM P22_009530_1653_XI_14S184W__P06_003333_1652_XI_14S184W-DEM.tif, 20 m/px, 11,662,394 bytes (HEAD only), windowed read OK (0.5 s), disk coverage 1.00. HiRISE alternative 1.02 m: coverage 0.70."
+    },
+    {
+      "id": "zhurong",
+      "body": "mars",
+      "name": "Utopia Planitia, Zhurong landing site (Tianwen-1)",
+      "lat": 25.066,
+      "lon": 109.925,
+      "center_source": {
+        "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41561-022-00905-6/MediaObjects/41561_2022_905_MOESM1_ESM.pdf",
+        "how": "Springer Nature supplementary file for s41561-022-00905-6 gives 109.925 E, 25.066 N (search snippet; PDF not opened). Wikipedia Tianwen-1 gives 25 deg 03 min 58 s N, 109 deg 55 min 30 s E = 25.066, 109.925 (consistent)."
+      },
+      "dem_source_id": "usgs_ctx_dtm_zhurong_n14_067844",
+      "role": "target",
+      "class": null,
+      "status": "proposed",
+      "notes": "DEM: USGS CTX DTM N14_067844_2054_XN_25N250W__N13_067580_2051_XN_25N249W_dtm.tif, 20.73 m/px, 7,731,144 bytes (HEAD only), windowed read OK (0.2 s), disk coverage 0.99. HiRISE alternative 1.03 m: coverage 0.75."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "doc": "Rules that decide which Earth windows are in the search pool. ONE place for every rule; pipelines read it, nothing hard-codes it. Decided 2026-11-14 (Mario: the Arctic goes inside the analysis; Claude proposed the numbers below). The measure, sigma and tie thresholds stay frozen (config/measure.json v1.3, data/derived/validation/noise_v1.3.json).",
+  "version": "1.0",
+  "bands": [
+    {
+      "id": "nasadem",
+      "lat_min": -56.0,
+      "lat_max": 60.0,
+      "source_id": "nasadem",
+      "sensor": "nasadem",
+      "built_by": "pipelines/build_pool_index.py (frozen: 2,000 windows, pool_00001..pool_02000)"
+    },
+    {
+      "id": "arctic",
+      "lat_min": 60.0,
+      "lat_max": 84.0,
+      "source_id": "cop_dem_glo30",
+      "sensor": "copdem",
+      "built_by": "pipelines/pool_add_arctic.py (rows pool_02001.., id = 2000 + arctic probe number; probe_id kept)",
+      "why": "NASADEM ends at 60N; ESA WorldCover ends at 84N. Copernicus GLO-30 is the only open 30 m DEM there. The tie threshold IS the p95 of D(NASADEM, Copernicus), so mixing the two sensors is inside the stated noise."
+    }
+  ],
+  "bare_classes": [60, 70, 100],
+  "bare_share_min": 0.8,
+  "bare_share_disk": "full 4 km radius disk around the centre (not the +-5 px coarse window, which narrows in km at high latitude)",
+  "ice_class": 70,
+  "ice_share_max": 0.2,
+  "ice_rule_why": "Rehearsable ground is rock or soil, not an ice sheet: windows with 20% or more WorldCover class 70 (snow and ice) in the 4 km disk are kept out of the pool and listed with their reason. Check 2026-11-14: half of the Arctic windows that closed Mars gaps were ice sheets (docs/verification/arctic_ice/).",
+  "known_analog_exclusion_km": 25,
+  "known_analog_list": "config/regions.json role known_analog (same list and distance as the NASADEM pool)",
+  "worldcover_source_id": "esa_worldcover"
+}

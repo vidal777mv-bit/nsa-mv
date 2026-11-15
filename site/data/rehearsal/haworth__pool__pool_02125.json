@@ -1,0 +1,183 @@
+{
+  "provenance": {
+    "schema": "analog.rehearsal/1",
+    "created": "2026-11-15T03:54:07Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "card",
+        "path": "data/derived/cards/haworth__pool__pool_02125.json",
+        "sha256": "c77a39e63c3adbf6fe968bdd2e996e32921b7a1fdd7b5221ce8dddbdfd5f2c9b"
+      },
+      {
+        "source_id": "bodies",
+        "path": "config/bodies.json",
+        "sha256": "2d457fd39470aefbf89a812be8621ce252beef330dae84251a4a65ce3dd54987"
+      },
+      {
+        "source_id": "rules",
+        "path": "config/rehearsal_rules.json",
+        "sha256": "196505d5a7f12681d42c98cfc518fcc09535430cde4315ea6dfe1b57b99d4542"
+      },
+      {
+        "source_id": "targets",
+        "path": "site/data/targets.json",
+        "sha256": "2b8b79a5765aab6b50672cdf17ddc548e2ccfe8ab03702b72bfd47b8e2b5e64d"
+      },
+      {
+        "source_id": "light",
+        "path": "data/derived/light/light.json",
+        "sha256": "480f3550f68f3ed04611b6d8bae4dee9da61b15906f3a7801b435b926c387427"
+      },
+      {
+        "source_id": "light_config",
+        "path": "config/light.json",
+        "sha256": "6c55a62b50bd2a48998a89910071217e55b55a7079a81922f18bf9b3e6d3ba88"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  },
+  "target_id": "haworth",
+  "analog_id": "pool__pool_02125",
+  "lines": [
+    {
+      "id": "landing",
+      "group": "rehearse",
+      "label": "Landing: share of 100 m terrain under the landing slope limit, target vs twin",
+      "status": "yes",
+      "target_value": 90.6477817121433,
+      "analog_value": 95.10518641949594,
+      "unit": "percent",
+      "rule": "|analog - target| = 4.46 points; yes if <= 10, partial if <= 25; limit 12 deg (card)",
+      "evidence": "reference comparison",
+      "source": "https://ntrs.nasa.gov/citations/19720018253",
+      "reason": null,
+      "ratio": null,
+      "lowest_abs_lat_deg": null,
+      "earth_max_grazing_pct": null,
+      "earth_max_abs_lat_deg": null
+    },
+    {
+      "id": "driving",
+      "group": "rehearse",
+      "label": "Driving: share of 100 m terrain under the driving slope limit, target vs twin",
+      "status": "yes",
+      "target_value": 100.0,
+      "analog_value": 100.0,
+      "unit": "percent",
+      "rule": "|analog - target| = 0.00 points; yes if <= 10, partial if <= 25; limit 25 deg (card)",
+      "evidence": "reference comparison",
+      "source": "https://ntrs.nasa.gov/citations/19730008090",
+      "reason": null,
+      "ratio": null,
+      "lowest_abs_lat_deg": null,
+      "earth_max_grazing_pct": null,
+      "earth_max_abs_lat_deg": null
+    },
+    {
+      "id": "cold",
+      "group": "rehearse",
+      "label": "Cold: the twin's Koppen-Geiger class is a cold class (the target's temperature range is shown with it)",
+      "status": "partial",
+      "target_value": "95-390",
+      "analog_value": "ET",
+      "unit": "K / Koppen class",
+      "rule": "twin class ET in the cold set; best possible status is partial; target range 95-390 K from bodies.json",
+      "evidence": "reference comparison",
+      "source": "STANDARDS.md section 10.15 (cold set and best status partial)",
+      "reason": null,
+      "ratio": null,
+      "lowest_abs_lat_deg": null,
+      "earth_max_grazing_pct": null,
+      "earth_max_abs_lat_deg": null
+    },
+    {
+      "id": "low_sun",
+      "group": "rehearse",
+      "label": "Low sun: share of samples with the Sun in the grazing band (0 to 10 deg elevation), target vs twin",
+      "status": "no",
+      "target_value": 49.98070987654321,
+      "analog_value": 18.547453703703702,
+      "unit": "percent",
+      "rule": "yes if analog >= target - 10 (39.98); partial if analog >= 0.5 x target (24.99); grazing band 0-10 deg; no latitude on Earth reaches the target 49.98 %: Earth maximum 18.64 % at |lat| 72.5 deg (scan 0-90 deg, step 0.5 deg, obliquity 23.44 deg)",
+      "evidence": "derived observation",
+      "source": "STANDARDS.md section 10.15 (P-S light: grazing_pct = 100 * share of samples with 0 < e < 10 deg)",
+      "reason": null,
+      "ratio": null,
+      "lowest_abs_lat_deg": null,
+      "earth_max_grazing_pct": 18.643904320987655,
+      "earth_max_abs_lat_deg": 72.5
+    },
+    {
+      "id": "gravity",
+      "group": "cannot",
+      "label": "Gravity: the twin's gravity is Earth's; the target's is lower or higher",
+      "status": "no",
+      "target_value": 1.62,
+      "analog_value": 9.82,
+      "unit": "m/s2",
+      "rule": "ratio target / Earth = 1.62 / 9.82 = 0.164969 (config/bodies.json)",
+      "evidence": "published",
+      "source": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
+      "reason": null,
+      "ratio": 0.164969450101833,
+      "lowest_abs_lat_deg": null,
+      "earth_max_grazing_pct": null,
+      "earth_max_abs_lat_deg": null
+    },
+    {
+      "id": "pressure",
+      "group": "cannot",
+      "label": "Atmospheric pressure: the twin has Earth's surface pressure; the target's is a fraction of it",
+      "status": "no",
+      "target_value": 3e-10,
+      "analog_value": 101400.0,
+      "unit": "Pa",
+      "rule": "ratio target / Earth = 3e-10 / 101400 = 2.95858e-15 (config/bodies.json)",
+      "evidence": "published",
+      "source": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
+      "reason": null,
+      "ratio": 2.9585798816568048e-15,
+      "lowest_abs_lat_deg": null,
+      "earth_max_grazing_pct": null,
+      "earth_max_abs_lat_deg": null
+    },
+    {
+      "id": "temperature",
+      "group": "cannot",
+      "label": "Temperature range: the twin's printed range does not reach the target's range",
+      "status": "no",
+      "target_value": "95-390",
+      "analog_value": "283-293",
+      "unit": "K",
+      "rule": "target range 95-390 K vs Earth printed range 283-293 K (config/bodies.json); cannot group: status no by definition",
+      "evidence": "published",
+      "source": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
+      "reason": null,
+      "ratio": null,
+      "lowest_abs_lat_deg": null,
+      "earth_max_grazing_pct": null,
+      "earth_max_abs_lat_deg": null
+    },
+    {
+      "id": "day_length",
+      "group": "cannot",
+      "label": "Day length: the twin's day is 24 h; the target's is different",
+      "status": "no",
+      "target_value": 708.72,
+      "analog_value": 24.0,
+      "unit": "h",
+      "rule": "ratio target / Earth = 708.72 / 24 = 29.53 (config/bodies.json)",
+      "evidence": "published",
+      "source": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
+      "reason": null,
+      "ratio": 29.53,
+      "lowest_abs_lat_deg": null,
+      "earth_max_grazing_pct": null,
+      "earth_max_abs_lat_deg": null
+    }
+  ]
+}

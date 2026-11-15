@@ -1,0 +1,113 @@
+{
+  "schema": "analog.query.questions/1",
+  "created": "2026-11-15T03:53:10Z",
+  "questions": [
+    {
+      "id": "mars_no_twin",
+      "title": "Mars terrain with no Earth twin",
+      "note": "Mars cells whose nearest Earth window is farther than the tie threshold (the Earth gap).",
+      "filter": {
+        "table": "mars_cells",
+        "all": [
+          {
+            "col": "gap",
+            "op": "eq",
+            "value": 1
+          }
+        ]
+      },
+      "rows": 84,
+      "table_rows": 1838
+    },
+    {
+      "id": "new_cold_desert_twins",
+      "title": "New Earth twins in cold deserts (Köppen BWk)",
+      "note": "Earth windows not inside a known analog region, Köppen code 5 (BWk, arid cold). BSk (cold steppe) not included.",
+      "filter": {
+        "table": "earth_windows",
+        "all": [
+          {
+            "col": "novelty",
+            "op": "eq",
+            "value": "new"
+          },
+          {
+            "col": "koppen_code",
+            "op": "in",
+            "value": [
+              5
+            ]
+          }
+        ]
+      },
+      "rows": 372,
+      "table_rows": 2730
+    },
+    {
+      "id": "jezero_rehearsal_50km",
+      "title": "Jezero rehearsal sites within 50 km of a town",
+      "note": "Top-10 Earth twins of Jezero whose nearest town (Natural Earth populated places) is within 50 km.",
+      "filter": {
+        "table": "twins",
+        "all": [
+          {
+            "col": "query_id",
+            "op": "eq",
+            "value": "jezero"
+          },
+          {
+            "col": "nearest_town_km",
+            "op": "le",
+            "value": 50
+          }
+        ]
+      },
+      "rows": 2,
+      "table_rows": 18540
+    },
+    {
+      "id": "landable_like_twins",
+      "title": "Earth twins at least 90% under the target's landing limit",
+      "note": "Top-10 Earth twins of the targets whose landing share under their own body's limit is >= 90%. Only the windows with a persisted mission record have a value; the rest never match.",
+      "filter": {
+        "table": "twins",
+        "all": [
+          {
+            "col": "query_kind",
+            "op": "eq",
+            "value": "target"
+          },
+          {
+            "col": "landing_pct",
+            "op": "ge",
+            "value": 90
+          }
+        ]
+      },
+      "rows": 95,
+      "table_rows": 18540
+    },
+    {
+      "id": "artemis_no_twin",
+      "title": "Artemis III candidate regions with no Earth twin",
+      "note": "Targets whose mission is the Artemis III candidate region, with an Earth gap.",
+      "filter": {
+        "table": "targets",
+        "all": [
+          {
+            "col": "mission",
+            "op": "eq",
+            "value": "Artemis III (candidate region)"
+          },
+          {
+            "col": "gap",
+            "op": "eq",
+            "value": 1
+          }
+        ]
+      },
+      "rows": 1,
+      "table_rows": 16
+    }
+  ]
+}

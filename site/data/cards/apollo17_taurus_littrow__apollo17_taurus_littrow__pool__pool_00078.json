@@ -1,0 +1,144 @@
+{
+  "target_id": "apollo17_taurus_littrow",
+  "analog_id": "apollo17_taurus_littrow__pool__pool_00078",
+  "rank": 10,
+  "D": 0.34584388411121963,
+  "tie_group": 0,
+  "features": {
+    "slope_p95_deg": {
+      "target": 17.04587613773639,
+      "analog": 16.21360763341133,
+      "z_diff": -0.2736862101839719
+    },
+    "hi": {
+      "target": 0.4433735742767097,
+      "analog": 0.47506923383095845,
+      "z_diff": 0.49514350466330037
+    },
+    "coherence": {
+      "target": 0.5949768658765503,
+      "analog": 0.15839163860913788,
+      "z_diff": -2.782160579900443
+    },
+    "hurst": {
+      "target": 0.7631407809345614,
+      "analog": 0.8025486543604833,
+      "z_diff": 0.19685716821158208
+    },
+    "ridge_pct": {
+      "target": 7.588707588707589,
+      "analog": 12.95001295001295,
+      "z_diff": 2.9393597307716886
+    },
+    "valley_pct": {
+      "target": 11.085211085211085,
+      "analog": 15.514115514115515,
+      "z_diff": 7.2086199919061125
+    }
+  },
+  "vertical_exaggeration": 2.8,
+  "in_distance": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "context_features": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "similar": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "different": [],
+  "context_similar": [],
+  "context_different": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "analog_place": {
+    "name": "Antofagasta, Chile",
+    "admin1": "Antofagasta",
+    "country": "Chile",
+    "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+    "match": "inside",
+    "distance_km": 0.0,
+    "nearest_named_feature": null
+  },
+  "mission_pct": {
+    "landing": {
+      "target": 91.02270360341595,
+      "analog": 88.10664444907312,
+      "limit_deg": 12.0,
+      "source": "https://ntrs.nasa.gov/citations/19720018253",
+      "reason": null
+    },
+    "driving": {
+      "target": 99.72922307852531,
+      "analog": 99.85419704228286,
+      "limit_deg": 25.0,
+      "source": "https://ntrs.nasa.gov/citations/19730008090",
+      "reason": null
+    }
+  },
+  "mission_baseline_m": 100,
+  "rotation_deg": 200.0,
+  "rotation_rms": 0.714226646216934,
+  "files": {
+    "target": "terrain/apollo17_taurus_littrow/",
+    "analog": "terrain/apollo17_taurus_littrow__pool__pool_00078/"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:52:42Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "lroc_nac_dtm_apollo17",
+        "path": "data/raw/moon/apollo17_taurus_littrow/lroc_nac_dtm_apollo17_win6km.tif",
+        "sha256": "5e73d926a28ea9468fbc483c597d84801470e18520e7e6635cc19aaa2992a553"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00078.tif",
+        "sha256": "7891e263ea239b18cad7e0c9655c7e36dd9e6fe6a213b3d85255300a79c6e994"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  },
+  "context": {
+    "koppen_class": "BWk",
+    "koppen_label": "Arid, desert, cold",
+    "koppen_code": 5,
+    "elevation_m": 3136.46744712319,
+    "nearest_town": {
+      "name": "Chuquicamata",
+      "country": "Chile",
+      "distance_km": 21.13
+    },
+    "sources": {
+      "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+      "elevation": "nasadem window mean over the 4 km disk (source_id of the window's measure record)",
+      "town": "Natural Earth 1:10m populated places (public domain)",
+      "novelty": "config/known_analog_regions.json (circle approximation)"
+    }
+  },
+  "novelty": "known_region",
+  "known_region_id": "atacama_desert",
+  "refined": {
+    "pool_id": "pool__pool_00078",
+    "rank_before": 10,
+    "D_before": 0.37315715337655847,
+    "D_clip_offset0": 0.34584388411121963,
+    "refined_offset_km": [
+      0.0,
+      0.0
+    ]
+  }
+}

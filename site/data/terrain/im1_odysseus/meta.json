@@ -1,0 +1,40 @@
+{
+  "id": "im1_odysseus",
+  "kind": "target",
+  "body": "moon",
+  "name": "Intuitive Machines IM-1 Odysseus landing site, Malapert A area",
+  "lat": -80.13,
+  "lon": 1.44,
+  "n": 269,
+  "L": 30.0,
+  "R": 4000.0,
+  "native_res_m": 20.0,
+  "z_min": -412.2163428034087,
+  "z_max": 156.68140117053736,
+  "relief_p99_p1_m": 402.3866747064399,
+  "vertical_exaggeration": 0.8,
+  "source_id": "lola_20m_polar_ldem",
+  "layers": {
+    "moon": "layers_moon.bin"
+  },
+  "files": {
+    "height": "height.bin",
+    "hillshade": "hillshade.png"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:51:51Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "lola_20m_polar_ldem",
+        "path": "data/raw/moon/im1_odysseus/lola_20m_polar_ldem_win6km.tif",
+        "sha256": "8933f0d01e92e787c999766f6ba9649ebe8ad940de0f16acbf2e4e02fb7fac4a"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  }
+}

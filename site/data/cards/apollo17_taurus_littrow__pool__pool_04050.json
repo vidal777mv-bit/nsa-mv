@@ -1,0 +1,141 @@
+{
+  "target_id": "apollo17_taurus_littrow",
+  "analog_id": "pool__pool_04050",
+  "rank": 7,
+  "D": 0.2182794776073733,
+  "tie_group": 0,
+  "features": {
+    "slope_p95_deg": {
+      "target": 17.04587613773639,
+      "analog": 16.304056591236375,
+      "z_diff": -0.24394264503211993
+    },
+    "hi": {
+      "target": 0.4433735742767097,
+      "analog": 0.4251187049195312,
+      "z_diff": -0.2851740622470318
+    },
+    "coherence": {
+      "target": 0.5949768658765503,
+      "analog": 0.0838359857383721,
+      "z_diff": -3.2572701014114296
+    },
+    "hurst": {
+      "target": 0.7631407809345614,
+      "analog": 0.7539550735703062,
+      "z_diff": -0.04588606749224114
+    },
+    "ridge_pct": {
+      "target": 7.588707588707589,
+      "analog": 18.803418803418804,
+      "z_diff": 6.148515765334016
+    },
+    "valley_pct": {
+      "target": 11.085211085211085,
+      "analog": 22.947422947422947,
+      "z_diff": 19.30729799001754
+    }
+  },
+  "vertical_exaggeration": 3.4,
+  "in_distance": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "context_features": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "similar": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "different": [],
+  "context_similar": [],
+  "context_different": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "analog_place": {
+    "name": "Sakha (Yakutia), Russia",
+    "admin1": "Sakha (Yakutia)",
+    "country": "Russia",
+    "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+    "match": "inside",
+    "distance_km": 0.0,
+    "nearest_named_feature": null
+  },
+  "mission_pct": {
+    "landing": {
+      "target": 91.02270360341595,
+      "analog": 87.27348469068944,
+      "limit_deg": 12.0,
+      "source": "https://ntrs.nasa.gov/citations/19720018253",
+      "reason": null
+    },
+    "driving": {
+      "target": 99.72922307852531,
+      "analog": 99.93751301812122,
+      "limit_deg": 25.0,
+      "source": "https://ntrs.nasa.gov/citations/19730008090",
+      "reason": null
+    }
+  },
+  "mission_baseline_m": 100,
+  "rotation_deg": 190.0,
+  "rotation_rms": 1.0716737643290475,
+  "files": {
+    "target": "terrain/apollo17_taurus_littrow/",
+    "analog": "terrain/pool__pool_04050/"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:52:41Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "lroc_nac_dtm_apollo17",
+        "path": "data/raw/moon/apollo17_taurus_littrow/lroc_nac_dtm_apollo17_win6km.tif",
+        "sha256": "5e73d926a28ea9468fbc483c597d84801470e18520e7e6635cc19aaa2992a553"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_02050.tif",
+        "sha256": "26d455c228172103493cbf4287baf66af28678027639f29ddfc5af225a617a73"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  },
+  "context": {
+    "koppen_class": "ET",
+    "koppen_label": "Polar, tundra",
+    "koppen_code": 29,
+    "elevation_m": 238.37024345654845,
+    "nearest_town": {
+      "name": "Tiksi",
+      "country": "Russia",
+      "distance_km": 59.54
+    },
+    "sources": {
+      "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+      "elevation": "cop_dem_glo30 window mean over the 4 km disk (source_id of the window's measure record)",
+      "town": "Natural Earth 1:10m populated places (public domain)",
+      "novelty": "config/known_analog_regions.json (circle approximation)"
+    }
+  },
+  "novelty": "new",
+  "known_region_id": null,
+  "refined": {
+    "pool_id": "pool__pool_04050",
+    "rank_before": 3,
+    "D_before": 0.2182794776073733,
+    "D_clip_offset0": null,
+    "refined_offset_km": null
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "zhurong",
+  "kind": "target",
+  "body": "mars",
+  "name": "Utopia Planitia, Zhurong landing site (Tianwen-1)",
+  "lat": 25.066,
+  "lon": 109.925,
+  "n": 269,
+  "L": 30.0,
+  "R": 4000.0,
+  "native_res_m": 20.72562575547742,
+  "z_min": -92.1307768327797,
+  "z_max": 65.5532749673539,
+  "relief_p99_p1_m": 83.76871403583894,
+  "vertical_exaggeration": 0.8,
+  "source_id": "usgs_ctx_dtm_zhurong_n14_067844",
+  "layers": {
+    "mars": "layers_mars.bin"
+  },
+  "files": {
+    "height": "height.bin",
+    "hillshade": "hillshade.png"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:51:50Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "usgs_ctx_dtm_zhurong_n14_067844",
+        "path": "data/raw/mars/zhurong/usgs_ctx_dtm_zhurong_n14_067844_win6km.tif",
+        "sha256": "8a72cdcb179e201a60a7bf2b7ed143929ade0dc599d8cd8d850a992c2dc0433c"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  }
+}
