@@ -1,0 +1,40 @@
+{
+  "id": "mons_mouton_plateau",
+  "kind": "target",
+  "body": "moon",
+  "name": "Mons Mouton Plateau (NASA Artemis III candidate region)",
+  "lat": -84.3,
+  "lon": 30.6,
+  "n": 269,
+  "L": 30.0,
+  "R": 4000.0,
+  "native_res_m": 20.0,
+  "z_min": -538.0765198802092,
+  "z_max": 338.2279097900009,
+  "relief_p99_p1_m": 819.0367829859536,
+  "vertical_exaggeration": 0.8,
+  "source_id": "lola_20m_polar_ldem",
+  "layers": {
+    "moon": "layers_moon.bin"
+  },
+  "files": {
+    "height": "height.bin",
+    "hillshade": "hillshade.png"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:51:52Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "lola_20m_polar_ldem",
+        "path": "data/raw/moon/mons_mouton_plateau/lola_20m_polar_ldem_win6km.tif",
+        "sha256": "11c44cd7630e5886c88ed5e431b4dc713bf7ff9084984f259a7d3b78470d03b5"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  }
+}

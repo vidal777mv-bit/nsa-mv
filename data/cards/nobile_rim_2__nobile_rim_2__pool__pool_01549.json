@@ -1,0 +1,145 @@
+{
+  "target_id": "nobile_rim_2",
+  "analog_id": "nobile_rim_2__pool__pool_01549",
+  "rank": 4,
+  "D": 0.3094908988631615,
+  "tie_group": 0,
+  "features": {
+    "slope_p95_deg": {
+      "target": 16.744024118691062,
+      "analog": 15.72798824168474,
+      "z_diff": -0.334116943202503
+    },
+    "hi": {
+      "target": 0.43859299142371433,
+      "analog": 0.42687144979370123,
+      "z_diff": -0.18311167157786643
+    },
+    "coherence": {
+      "target": 0.2663123021976634,
+      "analog": 0.6620282659487232,
+      "z_diff": 2.521719211793605
+    },
+    "hurst": {
+      "target": 0.9503004459155807,
+      "analog": 0.8748145109049607,
+      "z_diff": -0.37708067231609466
+    },
+    "ridge_pct": {
+      "target": 17.042217042217043,
+      "analog": 17.8969178969179,
+      "z_diff": 0.4685935802679507
+    },
+    "valley_pct": {
+      "target": 13.468013468013469,
+      "analog": 23.646723646723647,
+      "z_diff": 16.56717927964387
+    }
+  },
+  "vertical_exaggeration": 1.8,
+  "in_distance": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "context_features": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "similar": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "different": [],
+  "context_similar": [
+    "ridge_pct"
+  ],
+  "context_different": [
+    "coherence",
+    "valley_pct"
+  ],
+  "analog_place": {
+    "name": "Xizang, China",
+    "admin1": "Xizang",
+    "country": "China",
+    "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+    "match": "inside",
+    "distance_km": 0.0,
+    "nearest_named_feature": null
+  },
+  "mission_pct": {
+    "landing": {
+      "target": 76.40074984378255,
+      "analog": 83.89918766923557,
+      "limit_deg": 12.0,
+      "source": "https://ntrs.nasa.gov/citations/19720018253",
+      "reason": null
+    },
+    "driving": {
+      "target": 100.0,
+      "analog": 100.0,
+      "limit_deg": 25.0,
+      "source": "https://ntrs.nasa.gov/citations/19730008090",
+      "reason": null
+    }
+  },
+  "mission_baseline_m": 100,
+  "rotation_deg": 80.0,
+  "rotation_rms": 1.0058996585483706,
+  "files": {
+    "target": "terrain/nobile_rim_2/",
+    "analog": "terrain/nobile_rim_2__pool__pool_01549/"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:52:17Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "lola_5m_dm2_surf",
+        "path": "data/raw/moon/nobile_rim_2/lola_5m_dm2_surf.tif",
+        "sha256": "d88677c21633683061117db0a577f0510e0948fe9db315d13be28782407ff604"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01549.tif",
+        "sha256": "8830749c33ecdd065bec64945048faca4f943e1e5f0567773d7bb2e85bbe644d"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  },
+  "context": {
+    "koppen_class": "BSk",
+    "koppen_label": "Arid, steppe, cold",
+    "koppen_code": 7,
+    "elevation_m": 5119.901059250821,
+    "nearest_town": {
+      "name": "Quiemo",
+      "country": "China",
+      "distance_km": 462.11
+    },
+    "sources": {
+      "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+      "elevation": "nasadem window mean over the 4 km disk (source_id of the window's measure record)",
+      "town": "Natural Earth 1:10m populated places (public domain)",
+      "novelty": "config/known_analog_regions.json (circle approximation)"
+    }
+  },
+  "novelty": "new",
+  "known_region_id": null,
+  "refined": {
+    "pool_id": "pool__pool_01549",
+    "rank_before": 3,
+    "D_before": 0.3325965902171951,
+    "D_clip_offset0": 0.33156603244030597,
+    "refined_offset_km": [
+      2.0,
+      2.0
+    ]
+  }
+}

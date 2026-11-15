@@ -1,0 +1,40 @@
+{
+  "id": "zhurong__pool__pool_00435",
+  "kind": "analog",
+  "body": "earth",
+  "name": "pool__pool_00435 (refined for zhurong)",
+  "lat": 19.87,
+  "lon": 49.90825003213295,
+  "n": 269,
+  "L": 30.0,
+  "R": 4000.0,
+  "native_res_m": 30.887522287092473,
+  "z_min": -27.94281111590334,
+  "z_max": 38.54598061955983,
+  "relief_p99_p1_m": 35.236069151328536,
+  "vertical_exaggeration": 0.8,
+  "source_id": "nasadem",
+  "layers": {
+    "mars": "layers_mars.bin"
+  },
+  "files": {
+    "height": "height.bin",
+    "hillshade": "hillshade.png"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:52:00Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00435.tif",
+        "sha256": "8645c9c027a77c46d08bf7a8e6a98b02065f8d7523ca781173934e6686fc29b6"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  }
+}

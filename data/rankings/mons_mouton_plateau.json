@@ -1,0 +1,455 @@
+{
+  "target_id": "mons_mouton_plateau",
+  "ranking": [
+    {
+      "rank": 1,
+      "analog_id": "pool__pool_03196",
+      "D": 0.2751814497152868,
+      "tie_group": 0,
+      "lat": 81.97,
+      "lon": -64.13,
+      "card": "cards/mons_mouton_plateau__pool__pool_03196.json",
+      "analog_place": {
+        "name": "Nunavut, Canada",
+        "admin1": "Nunavut",
+        "country": "Canada",
+        "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+        "match": "inside",
+        "distance_km": 0.0,
+        "nearest_named_feature": null
+      },
+      "context": {
+        "koppen_class": "ET",
+        "koppen_label": "Polar, tundra",
+        "koppen_code": 29,
+        "elevation_m": 738.5683745845851,
+        "nearest_town": {
+          "name": "Alert",
+          "country": "Canada",
+          "distance_km": 63.69
+        },
+        "sources": {
+          "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+          "elevation": "cop_dem_glo30 window mean over the 4 km disk (source_id of the window's measure record)",
+          "town": "Natural Earth 1:10m populated places (public domain)",
+          "novelty": "config/known_analog_regions.json (circle approximation)"
+        }
+      },
+      "novelty": "new",
+      "known_region_id": null,
+      "refined": {
+        "pool_id": "pool__pool_03196",
+        "rank_before": 1,
+        "D_before": 0.2751814497152868,
+        "D_clip_offset0": null,
+        "refined_offset_km": null
+      }
+    },
+    {
+      "rank": 2,
+      "analog_id": "pool__pool_02575",
+      "D": 0.30216674924724746,
+      "tie_group": 0,
+      "lat": 68.77,
+      "lon": 92.77,
+      "card": "cards/mons_mouton_plateau__pool__pool_02575.json",
+      "analog_place": {
+        "name": "Krasnoyarsk, Russia",
+        "admin1": "Krasnoyarsk",
+        "country": "Russia",
+        "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+        "match": "inside",
+        "distance_km": 0.0,
+        "nearest_named_feature": null
+      },
+      "context": {
+        "koppen_class": "ET",
+        "koppen_label": "Polar, tundra",
+        "koppen_code": 29,
+        "elevation_m": 1127.6177845695058,
+        "nearest_town": {
+          "name": "Norilsk",
+          "country": "Russia",
+          "distance_km": 191.4
+        },
+        "sources": {
+          "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+          "elevation": "cop_dem_glo30 window mean over the 4 km disk (source_id of the window's measure record)",
+          "town": "Natural Earth 1:10m populated places (public domain)",
+          "novelty": "config/known_analog_regions.json (circle approximation)"
+        }
+      },
+      "novelty": "new",
+      "known_region_id": null,
+      "refined": {
+        "pool_id": "pool__pool_02575",
+        "rank_before": 2,
+        "D_before": 0.30216674924724746,
+        "D_clip_offset0": null,
+        "refined_offset_km": null
+      }
+    },
+    {
+      "rank": 3,
+      "analog_id": "pool__pool_03634",
+      "D": 0.43905565863540996,
+      "tie_group": 0,
+      "lat": 63.07,
+      "lon": -69.23,
+      "card": "cards/mons_mouton_plateau__pool__pool_03634.json",
+      "analog_place": {
+        "name": "Nunavut, Canada",
+        "admin1": "Nunavut",
+        "country": "Canada",
+        "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+        "match": "inside",
+        "distance_km": 0.0,
+        "nearest_named_feature": null
+      },
+      "context": {
+        "koppen_class": "ET",
+        "koppen_label": "Polar, tundra",
+        "koppen_code": 29,
+        "elevation_m": 453.1392008083186,
+        "nearest_town": {
+          "name": "Kimmirut",
+          "country": "Canada",
+          "distance_km": 41.1
+        },
+        "sources": {
+          "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+          "elevation": "cop_dem_glo30 window mean over the 4 km disk (source_id of the window's measure record)",
+          "town": "Natural Earth 1:10m populated places (public domain)",
+          "novelty": "config/known_analog_regions.json (circle approximation)"
+        }
+      },
+      "novelty": "new",
+      "known_region_id": null,
+      "refined": {
+        "pool_id": "pool__pool_03634",
+        "rank_before": 3,
+        "D_before": 0.43905565863540996,
+        "D_clip_offset0": null,
+        "refined_offset_km": null
+      }
+    },
+    {
+      "rank": 4,
+      "analog_id": "pool__pool_03902",
+      "D": 0.4659748836269488,
+      "tie_group": 0,
+      "lat": 68.77,
+      "lon": 95.77,
+      "card": "cards/mons_mouton_plateau__pool__pool_03902.json",
+      "analog_place": {
+        "name": "Krasnoyarsk, Russia",
+        "admin1": "Krasnoyarsk",
+        "country": "Russia",
+        "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+        "match": "inside",
+        "distance_km": 0.0,
+        "nearest_named_feature": null
+      },
+      "context": {
+        "koppen_class": "ET",
+        "koppen_label": "Polar, tundra",
+        "koppen_code": 29,
+        "elevation_m": 1271.6361115294808,
+        "nearest_town": {
+          "name": "Boyarka",
+          "country": "Russia",
+          "distance_km": 231.78
+        },
+        "sources": {
+          "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+          "elevation": "cop_dem_glo30 window mean over the 4 km disk (source_id of the window's measure record)",
+          "town": "Natural Earth 1:10m populated places (public domain)",
+          "novelty": "config/known_analog_regions.json (circle approximation)"
+        }
+      },
+      "novelty": "new",
+      "known_region_id": null,
+      "refined": {
+        "pool_id": "pool__pool_03902",
+        "rank_before": 4,
+        "D_before": 0.4659748836269488,
+        "D_clip_offset0": null,
+        "refined_offset_km": null
+      }
+    },
+    {
+      "rank": 5,
+      "analog_id": "pool__pool_03987",
+      "D": 0.5421569812406503,
+      "tie_group": 0,
+      "lat": 67.87,
+      "lon": 93.97,
+      "card": "cards/mons_mouton_plateau__pool__pool_03987.json",
+      "analog_place": {
+        "name": "Krasnoyarsk, Russia",
+        "admin1": "Krasnoyarsk",
+        "country": "Russia",
+        "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+        "match": "inside",
+        "distance_km": 0.0,
+        "nearest_named_feature": null
+      },
+      "context": {
+        "koppen_class": "Dfc",
+        "koppen_label": "Cold, no dry season, cold summer",
+        "koppen_code": 27,
+        "elevation_m": 886.0008105396876,
+        "nearest_town": {
+          "name": "Norilsk",
+          "country": "Russia",
+          "distance_km": 284.47
+        },
+        "sources": {
+          "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+          "elevation": "cop_dem_glo30 window mean over the 4 km disk (source_id of the window's measure record)",
+          "town": "Natural Earth 1:10m populated places (public domain)",
+          "novelty": "config/known_analog_regions.json (circle approximation)"
+        }
+      },
+      "novelty": "new",
+      "known_region_id": null,
+      "refined": {
+        "pool_id": "pool__pool_03987",
+        "rank_before": 5,
+        "D_before": 0.5421569812406503,
+        "D_clip_offset0": null,
+        "refined_offset_km": null
+      }
+    },
+    {
+      "rank": 6,
+      "analog_id": "pool__pool_03614",
+      "D": 0.5482873479145608,
+      "tie_group": 0,
+      "lat": 81.07,
+      "lon": -26.93,
+      "card": "cards/mons_mouton_plateau__pool__pool_03614.json",
+      "analog_place": {
+        "name": "Nationalparken, Greenland",
+        "admin1": "Nationalparken",
+        "country": "Greenland",
+        "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+        "match": "inside",
+        "distance_km": 0.0,
+        "nearest_named_feature": null
+      },
+      "context": {
+        "koppen_class": "EF",
+        "koppen_label": "Polar, frost",
+        "koppen_code": 30,
+        "elevation_m": 778.1270978819906,
+        "nearest_town": {
+          "name": "Nord",
+          "country": "Greenland",
+          "distance_km": 167.84
+        },
+        "sources": {
+          "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+          "elevation": "cop_dem_glo30 window mean over the 4 km disk (source_id of the window's measure record)",
+          "town": "Natural Earth 1:10m populated places (public domain)",
+          "novelty": "config/known_analog_regions.json (circle approximation)"
+        }
+      },
+      "novelty": "new",
+      "known_region_id": null,
+      "refined": {
+        "pool_id": "pool__pool_03614",
+        "rank_before": 6,
+        "D_before": 0.5482873479145608,
+        "D_clip_offset0": null,
+        "refined_offset_km": null
+      }
+    },
+    {
+      "rank": 7,
+      "analog_id": "pool__pool_03693",
+      "D": 0.5567455156704973,
+      "tie_group": 0,
+      "lat": 61.87,
+      "lon": -73.13,
+      "card": "cards/mons_mouton_plateau__pool__pool_03693.json",
+      "analog_place": {
+        "name": "Québec, Canada",
+        "admin1": "Québec",
+        "country": "Canada",
+        "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+        "match": "inside",
+        "distance_km": 0.0,
+        "nearest_named_feature": null
+      },
+      "context": {
+        "koppen_class": "ET",
+        "koppen_label": "Polar, tundra",
+        "koppen_code": 29,
+        "elevation_m": 508.016141151827,
+        "nearest_town": {
+          "name": "Salluit",
+          "country": "Canada",
+          "distance_km": 136.43
+        },
+        "sources": {
+          "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+          "elevation": "cop_dem_glo30 window mean over the 4 km disk (source_id of the window's measure record)",
+          "town": "Natural Earth 1:10m populated places (public domain)",
+          "novelty": "config/known_analog_regions.json (circle approximation)"
+        }
+      },
+      "novelty": "new",
+      "known_region_id": null,
+      "refined": {
+        "pool_id": "pool__pool_03693",
+        "rank_before": 7,
+        "D_before": 0.5567455156704973,
+        "D_clip_offset0": null,
+        "refined_offset_km": null
+      }
+    },
+    {
+      "rank": 8,
+      "analog_id": "pool__pool_03330",
+      "D": 0.5683865170701138,
+      "tie_group": 0,
+      "lat": 71.77,
+      "lon": -80.03,
+      "card": "cards/mons_mouton_plateau__pool__pool_03330.json",
+      "analog_place": {
+        "name": "Nunavut, Canada",
+        "admin1": "Nunavut",
+        "country": "Canada",
+        "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+        "match": "inside",
+        "distance_km": 0.0,
+        "nearest_named_feature": null
+      },
+      "context": {
+        "koppen_class": "ET",
+        "koppen_label": "Polar, tundra",
+        "koppen_code": 29,
+        "elevation_m": 558.4748038591366,
+        "nearest_town": {
+          "name": "Pond Inlet",
+          "country": "Canada",
+          "distance_km": 122.86
+        },
+        "sources": {
+          "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+          "elevation": "cop_dem_glo30 window mean over the 4 km disk (source_id of the window's measure record)",
+          "town": "Natural Earth 1:10m populated places (public domain)",
+          "novelty": "config/known_analog_regions.json (circle approximation)"
+        }
+      },
+      "novelty": "new",
+      "known_region_id": null,
+      "refined": {
+        "pool_id": "pool__pool_03330",
+        "rank_before": 8,
+        "D_before": 0.5683865170701138,
+        "D_clip_offset0": null,
+        "refined_offset_km": null
+      }
+    },
+    {
+      "rank": 9,
+      "analog_id": "pool__pool_02464",
+      "D": 0.6073599968122934,
+      "tie_group": 0,
+      "lat": 71.77,
+      "lon": -78.23,
+      "card": "cards/mons_mouton_plateau__pool__pool_02464.json",
+      "analog_place": {
+        "name": "Nunavut, Canada",
+        "admin1": "Nunavut",
+        "country": "Canada",
+        "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+        "match": "inside",
+        "distance_km": 0.0,
+        "nearest_named_feature": null
+      },
+      "context": {
+        "koppen_class": "ET",
+        "koppen_label": "Polar, tundra",
+        "koppen_code": 29,
+        "elevation_m": 491.98307010501213,
+        "nearest_town": {
+          "name": "Pond Inlet",
+          "country": "Canada",
+          "distance_km": 102.04
+        },
+        "sources": {
+          "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+          "elevation": "cop_dem_glo30 window mean over the 4 km disk (source_id of the window's measure record)",
+          "town": "Natural Earth 1:10m populated places (public domain)",
+          "novelty": "config/known_analog_regions.json (circle approximation)"
+        }
+      },
+      "novelty": "new",
+      "known_region_id": null,
+      "refined": {
+        "pool_id": "pool__pool_02464",
+        "rank_before": 9,
+        "D_before": 0.6073599968122934,
+        "D_clip_offset0": null,
+        "refined_offset_km": null
+      }
+    },
+    {
+      "rank": 10,
+      "analog_id": "pool__pool_02633",
+      "D": 0.618804212907688,
+      "tie_group": 0,
+      "lat": 81.97,
+      "lon": -62.93,
+      "card": "cards/mons_mouton_plateau__pool__pool_02633.json",
+      "analog_place": {
+        "name": "Nunavut, Canada",
+        "admin1": "Nunavut",
+        "country": "Canada",
+        "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+        "match": "inside",
+        "distance_km": 0.0,
+        "nearest_named_feature": null
+      },
+      "context": {
+        "koppen_class": "ET",
+        "koppen_label": "Polar, tundra",
+        "koppen_code": 29,
+        "elevation_m": 456.88254122631486,
+        "nearest_town": {
+          "name": "Alert",
+          "country": "Canada",
+          "distance_km": 57.99
+        },
+        "sources": {
+          "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+          "elevation": "cop_dem_glo30 window mean over the 4 km disk (source_id of the window's measure record)",
+          "town": "Natural Earth 1:10m populated places (public domain)",
+          "novelty": "config/known_analog_regions.json (circle approximation)"
+        }
+      },
+      "novelty": "new",
+      "known_region_id": null,
+      "refined": {
+        "pool_id": "pool__pool_02633",
+        "rank_before": 10,
+        "D_before": 0.618804212907688,
+        "D_clip_offset0": null,
+        "refined_offset_km": null
+      }
+    }
+  ],
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:52:52Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  }
+}

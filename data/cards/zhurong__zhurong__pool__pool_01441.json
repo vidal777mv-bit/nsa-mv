@@ -1,0 +1,144 @@
+{
+  "target_id": "zhurong",
+  "analog_id": "zhurong__pool__pool_01441",
+  "rank": 1,
+  "D": 0.02383051478520374,
+  "tie_group": 0,
+  "features": {
+    "slope_p95_deg": {
+      "target": 5.044981476596844,
+      "analog": 5.103098854042313,
+      "z_diff": 0.019111530348947827
+    },
+    "hi": {
+      "target": 0.49084377913154975,
+      "analog": 0.4896302025226441,
+      "z_diff": -0.018958260650247118
+    },
+    "coherence": {
+      "target": 0.05441030348949051,
+      "analog": 0.36034173346057546,
+      "z_diff": 1.9495629065268123
+    },
+    "hurst": {
+      "target": 0.352350685637532,
+      "analog": 0.3460870536720245,
+      "z_diff": -0.031289200463130724
+    },
+    "ridge_pct": {
+      "target": 2.8039977790116604,
+      "analog": 5.542605542605543,
+      "z_diff": 1.5014539997637126
+    },
+    "valley_pct": {
+      "target": 3.331482509716824,
+      "analog": 4.869204869204869,
+      "z_diff": 2.5028438343043224
+    }
+  },
+  "vertical_exaggeration": 10.0,
+  "in_distance": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "context_features": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "similar": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "different": [],
+  "context_similar": [],
+  "context_different": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "analog_place": {
+    "name": "Ouargla, Algeria",
+    "admin1": "Ouargla",
+    "country": "Algeria",
+    "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+    "match": "inside",
+    "distance_km": 0.0,
+    "nearest_named_feature": null
+  },
+  "mission_pct": {
+    "landing": {
+      "target": 99.82762335703512,
+      "analog": 100.0,
+      "limit_deg": 15.0,
+      "source": "https://marsoweb.nas.nasa.gov/landingsites/mer2003/doc/original.html",
+      "reason": null
+    },
+    "driving": {
+      "target": 100.0,
+      "analog": 100.0,
+      "limit_deg": 30.0,
+      "source": "https://science.nasa.gov/mission/mars-2020-perseverance/rover-components/",
+      "reason": null
+    }
+  },
+  "mission_baseline_m": 100,
+  "rotation_deg": 50.0,
+  "rotation_rms": 1.3415542004535277,
+  "files": {
+    "target": "terrain/zhurong/",
+    "analog": "terrain/zhurong__pool__pool_01441/"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:52:34Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "usgs_ctx_dtm_zhurong_n14_067844",
+        "path": "data/raw/mars/zhurong/usgs_ctx_dtm_zhurong_n14_067844_win6km.tif",
+        "sha256": "8a72cdcb179e201a60a7bf2b7ed143929ade0dc599d8cd8d850a992c2dc0433c"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01441.tif",
+        "sha256": "0fa1f56815d7136ae06eb05c28a9cba28b7859830dc9d87b3d3752e4fb53105b"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  },
+  "context": {
+    "koppen_class": "BWh",
+    "koppen_label": "Arid, desert, hot",
+    "koppen_code": 4,
+    "elevation_m": 106.1083505769947,
+    "nearest_town": {
+      "name": "Touggourt",
+      "country": "Algeria",
+      "distance_km": 36.71
+    },
+    "sources": {
+      "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+      "elevation": "nasadem window mean over the 4 km disk (source_id of the window's measure record)",
+      "town": "Natural Earth 1:10m populated places (public domain)",
+      "novelty": "config/known_analog_regions.json (circle approximation)"
+    }
+  },
+  "novelty": "new",
+  "known_region_id": null,
+  "refined": {
+    "pool_id": "pool__pool_01441",
+    "rank_before": 4,
+    "D_before": 0.13818537138927592,
+    "D_clip_offset0": 0.14285013028448348,
+    "refined_offset_km": [
+      -2.0,
+      0.0
+    ]
+  }
+}

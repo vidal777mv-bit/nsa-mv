@@ -1,0 +1,141 @@
+{
+  "target_id": "mons_mouton_plateau",
+  "analog_id": "pool__pool_03987",
+  "rank": 5,
+  "D": 0.5421569812406503,
+  "tie_group": 0,
+  "features": {
+    "slope_p95_deg": {
+      "target": 16.53752081521792,
+      "analog": 18.843362647650075,
+      "z_diff": 0.7582614374117181
+    },
+    "hi": {
+      "target": 0.6248752663613812,
+      "analog": 0.5901425130259196,
+      "z_diff": -0.542588400272652
+    },
+    "coherence": {
+      "target": 0.37512814624030255,
+      "analog": 0.6368707173490521,
+      "z_diff": 1.6679672557370255
+    },
+    "hurst": {
+      "target": 0.9676236944291208,
+      "analog": 0.9452961012754292,
+      "z_diff": -0.11153473605923743
+    },
+    "ridge_pct": {
+      "target": 22.999222999223,
+      "analog": 26.832426832426833,
+      "z_diff": 2.101571208474444
+    },
+    "valley_pct": {
+      "target": 15.72131572131572,
+      "analog": 21.16032116032116,
+      "z_diff": 8.852691218130314
+    }
+  },
+  "vertical_exaggeration": 1.9,
+  "in_distance": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "context_features": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "similar": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "different": [],
+  "context_similar": [],
+  "context_different": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "analog_place": {
+    "name": "Krasnoyarsk, Russia",
+    "admin1": "Krasnoyarsk",
+    "country": "Russia",
+    "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+    "match": "inside",
+    "distance_km": 0.0,
+    "nearest_named_feature": null
+  },
+  "mission_pct": {
+    "landing": {
+      "target": 80.89981253905437,
+      "analog": 69.36054988544053,
+      "limit_deg": 12.0,
+      "source": "https://ntrs.nasa.gov/citations/19720018253",
+      "reason": null
+    },
+    "driving": {
+      "target": 100.0,
+      "analog": 100.0,
+      "limit_deg": 25.0,
+      "source": "https://ntrs.nasa.gov/citations/19730008090",
+      "reason": null
+    }
+  },
+  "mission_baseline_m": 100,
+  "rotation_deg": 220.0,
+  "rotation_rms": 1.0500108681741795,
+  "files": {
+    "target": "terrain/mons_mouton_plateau/",
+    "analog": "terrain/pool__pool_03987/"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:52:51Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "lola_20m_polar_ldem",
+        "path": "data/raw/moon/mons_mouton_plateau/lola_20m_polar_ldem_win6km.tif",
+        "sha256": "11c44cd7630e5886c88ed5e431b4dc713bf7ff9084984f259a7d3b78470d03b5"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01987.tif",
+        "sha256": "77ba5b280806a242ebcebc95c3b07d66bea10fb0b10ddb9eb5ca6bf208ba7255"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  },
+  "context": {
+    "koppen_class": "Dfc",
+    "koppen_label": "Cold, no dry season, cold summer",
+    "koppen_code": 27,
+    "elevation_m": 886.0008105396876,
+    "nearest_town": {
+      "name": "Norilsk",
+      "country": "Russia",
+      "distance_km": 284.47
+    },
+    "sources": {
+      "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+      "elevation": "cop_dem_glo30 window mean over the 4 km disk (source_id of the window's measure record)",
+      "town": "Natural Earth 1:10m populated places (public domain)",
+      "novelty": "config/known_analog_regions.json (circle approximation)"
+    }
+  },
+  "novelty": "new",
+  "known_region_id": null,
+  "refined": {
+    "pool_id": "pool__pool_03987",
+    "rank_before": 5,
+    "D_before": 0.5421569812406503,
+    "D_clip_offset0": null,
+    "refined_offset_km": null
+  }
+}

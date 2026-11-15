@@ -1,0 +1,301 @@
+/* Mars first (2026-11-15). Loaded last: the destination world is the hero, Earth answers second.
+   Only presentation: no data, ids or logic depend on this file. Rollback = remove the <link>. */
+
+:root {
+  --bg: #0b0b0c;
+  --bg-2: #121213;
+  --panel: #151515;
+  --panel-2: #1c1b1a;
+  --line: #2e2b28;
+  --text: #f4efe7;
+  --muted: #bcb3a7;
+  --accent: #ec9a6c;        /* Mars ochre: the destination */
+  --accent-ink: #1b0f08;
+  --gold: #f1c56e;
+  --ok: #f1c56e;
+  --c-target: #ec9a6c;
+  --c-analog: #a9cf9b;      /* Earth: muted sage, always second */
+  --c-moon: #d5d1ca;
+  --focus: #f1c56e;
+  --track: #2a2725;
+  --radius: 4px;
+  --f-head: "Barlow Condensed", "Arial Narrow", "Segoe UI", sans-serif;
+  --f-body: "Barlow", "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  background: radial-gradient(1200px 700px at 30% 18%, #2a1a12 0%, transparent 60%), var(--bg);
+  font-family: var(--f-body);
+  color: var(--text);
+}
+
+/* Typography: one condensed sans for headings, one sans for text. No serif italics, no tiny mono. */
+h1, h2, h3, .screen h1, .workspace-intro h1, #screen-how h1, #screen-about h1,
+#explorationWorkspace .atlas-caption h2, #explorationWorkspace .earth-caption h2,
+#explorationWorkspace .comparison-heading h2, .dossier-head h2 {
+  font-family: var(--f-head); font-style: normal; font-weight: 600; letter-spacing: -0.01em;
+}
+.workspace-intro h1 em, .screen h1 em { font: inherit; color: var(--accent); }
+.eyebrow, #explorationWorkspace .eyebrow {
+  font: 600 13px/1.4 var(--f-head); letter-spacing: .14em; text-transform: uppercase; color: var(--accent);
+}
+.atlas-counter { font: 500 15px/1.6 var(--f-body); color: var(--muted); letter-spacing: 0; }
+.atlas-counter .sep { color: #6d655c; }
+.brand-name { font-family: var(--f-head); font-size: 1.15rem; letter-spacing: .18em; }
+.brand-name em { color: var(--accent); font-style: normal; }
+.nav a { font-family: var(--f-head); font-size: 15px; letter-spacing: .08em; text-transform: uppercase; }
+.target-copy small, #explorationWorkspace .target-copy small, .rank-meta, .rank-code, .kicker, .terrain-labels span,
+.tool-label, .holo-stage:before {
+  font-family: var(--f-body); letter-spacing: .02em;
+}
+.btn, .toggle, .seg-btn { font-family: var(--f-head); letter-spacing: .1em; }
+.btn.primary { background: var(--accent); color: var(--accent-ink); }
+a { color: #f0b48f; }
+
+/* ---------------------------------------------------------------- first screen: copy | Mars | sites */
+.journey-bar { display: none; }
+@media (min-width: 1100px) {
+  #explorationWorkspace.exploration-workspace {
+    grid-template-columns: minmax(340px, 0.78fr) minmax(0, 2.4fr) !important; column-gap: 32px;
+  }
+  #explorationWorkspace .workspace-intro.mf-hero { grid-column: 1; grid-row: 1; }
+  #explorationWorkspace #screen-destination { grid-column: 2; grid-row: 1; padding-top: 22px; }
+  #explorationWorkspace #screen-scan, #explorationWorkspace #screen-twin, #explorationWorkspace .ask-panel { grid-column: 1 / -1; }
+}
+#explorationWorkspace .workspace-intro.mf-hero {
+  display: flex; flex-direction: column; justify-content: center; gap: 18px; padding: 28px 0 22px; border-bottom: 0; min-width: 0;
+}
+.mf-hero .hero-gap-line {
+  font: 600 clamp(38px, 3.6vw, 68px)/1 var(--f-head); letter-spacing: -0.01em; margin: 8px 0 0;
+}
+.mf-hero .hero-main { display: block; }
+.mf-hero .hero-sub-line { display: block; font-size: .5em; line-height: 1.2; font-weight: 500; color: var(--accent); margin-top: .45em; letter-spacing: 0; }
+.mf-hero .hero-why { color: var(--muted); font-size: 17px; line-height: 1.6; margin: 0; max-width: 46ch; }
+.mf-hero .atlas-counter { margin: 0; }
+.mf-hero .hero-side { display: flex; flex-direction: column; gap: 10px; width: 100%; align-self: stretch; }
+.world-switch { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--line); margin: 0; width: 100%; }
+.world-switch .seg-btn {
+  min-height: 56px; font: 600 20px/1 var(--f-head); letter-spacing: .12em; text-transform: uppercase;
+  background: transparent; color: var(--muted); border: 0; border-radius: 0; cursor: pointer;
+}
+.world-switch .seg-btn[data-body="mars"][aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
+.world-switch .seg-btn[data-body="moon"][aria-pressed="true"] { background: var(--c-moon); color: #151412; }
+.world-switch .seg-btn:hover { color: var(--text); }
+#heroAskGap { min-height: 48px; }
+
+#explorationWorkspace .atlas-layout {
+  display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 0 28px; min-height: 0;
+}
+#explorationWorkspace .atlas-scene,
+#explorationWorkspace:has(#twinBody:not([hidden])) .atlas-scene {
+  position: relative; height: clamp(560px, calc(100svh - 110px), 980px); min-height: 0;
+}
+#explorationWorkspace .atlas-caption { position: absolute; top: 0; left: 0; z-index: 2; max-width: none; }
+#explorationWorkspace .atlas-caption h2 { font-size: clamp(30px, 2.4vw, 42px); margin: 2px 0 0; }
+#explorationWorkspace .atlas-caption h2 .pair-target { color: var(--accent); }
+#explorationWorkspace .atlas-scene .layer-stack { position: absolute; top: 14px; right: 0; left: auto; bottom: auto; z-index: 3; }
+.layer-switch button { color: var(--muted); }
+.layer-switch button[aria-pressed="true"] { color: var(--text); border-color: var(--accent); }
+#explorationWorkspace #homeGlobe {
+  position: absolute; inset: 70px 0 56px; height: auto; min-height: 0;
+  background: radial-gradient(ellipse at 50% 52%, #4a24124d, transparent 60%);
+}
+#explorationWorkspace .layer-caption { position: absolute; top: auto; bottom: 14px; left: 0; max-width: 46ch; margin: 0; z-index: 2; }
+#explorationWorkspace .atlas-footnote { position: absolute; top: auto; left: auto; right: 0; bottom: 4px; z-index: 2; }
+#explorationWorkspace #homeGlobe, #explorationWorkspace .globe-stage { border: 0; }
+#explorationWorkspace .atlas-index { border-left: 1px solid var(--line); border-top: 0; padding: 24px 0 20px 24px; }
+#explorationWorkspace .atlas-index > h2 { display: block; font-size: 28px; margin: 0 0 10px; }
+#explorationWorkspace .atlas-index > .eyebrow { display: block; }
+#explorationWorkspace .target-grid,
+#explorationWorkspace:has(#twinBody:not([hidden])) .target-grid {
+  grid-template-columns: minmax(0, 1fr); max-height: clamp(380px, calc(100svh - 290px), 760px); overflow: auto;
+}
+#explorationWorkspace .target-card { min-height: 64px; padding: 12px 8px 12px 0; }
+#explorationWorkspace .target-number { color: var(--accent); font-family: var(--f-head); }
+
+/* ---------------------------------------------------------------- Step 2: Earth, second */
+#explorationWorkspace #screen-scan { border-top: 1px solid var(--line); margin-top: 28px; padding-top: 28px; }
+#explorationWorkspace .earth-caption h2 { font-size: clamp(28px, 2.4vw, 40px); margin: 2px 0 14px; }
+#explorationWorkspace .scan-layout { display: grid; grid-template-columns: minmax(0, 1fr) 380px; gap: 0 36px; }
+#explorationWorkspace .globe-wrap { height: auto; padding-top: 44px; }
+#explorationWorkspace .globe-stage,
+#explorationWorkspace:has(#twinBody:not([hidden])) .globe-stage {
+  height: clamp(340px, 46svh, 520px); background: radial-gradient(ellipse at 50% 55%, #1c2c1a55, transparent 62%);
+}
+#explorationWorkspace .scan-layout > .panel { border-left: 1px solid var(--line); border-top: 0; padding: 0 0 20px 28px; }
+#explorationWorkspace .rank-list { max-height: clamp(340px, 46svh, 520px); }
+#explorationWorkspace .scan-layout .panel > h2 { color: var(--c-analog); }
+.pair-earth { color: var(--c-analog); }
+.pair-target { color: var(--c-target); }
+
+/* ---------------------------------------------------------------- dossier: lighter */
+#explorationWorkspace #screen-twin { border-top: 1px solid var(--line); margin-top: 28px; padding-top: 12px; }
+.dossier-num { font-family: var(--f-head); color: var(--accent); }
+.dossier-head h2 { font-size: 34px; }
+.holo-stage:before { display: none; }
+/* Mission gauges: compact, they read as a line of evidence, not a chart wall. */
+.gauges { grid-template-columns: repeat(2, auto); justify-content: start; gap: 8px 28px; }
+.gauge { width: 84px; }
+.gauge::after { inset: 8px; }
+.gauge-value { font: 600 17px/1 var(--f-head); }
+.gauge-wrap figcaption { font-size: 13px; font-weight: 600; max-width: 22ch; }
+#explorationWorkspace .mission-block { padding: 18px 20px; }
+.rehearsal-col h3 { font-family: var(--f-head); font-size: 24px; }
+
+/* Ask the atlas keeps its Mars globe; give it the same palette. */
+.ask-panel summary { font-family: var(--f-head); }
+
+/* ---------------------------------------------------------------- smaller screens */
+@media (max-width: 1099px) {
+  #explorationWorkspace .atlas-layout, #explorationWorkspace .scan-layout { grid-template-columns: minmax(0, 1fr); }
+  #explorationWorkspace .atlas-scene, #explorationWorkspace:has(#twinBody:not([hidden])) .atlas-scene { height: clamp(380px, 92vw, 640px); }
+  #explorationWorkspace .atlas-index, #explorationWorkspace .scan-layout > .panel { border-left: 0; border-top: 1px solid var(--line); padding: 18px 0; }
+  #explorationWorkspace .target-grid { max-height: 420px; }
+}
+@media (max-width: 640px) {
+  .mf-hero .hero-gap-line { font-size: 40px; }
+  .mf-hero .hero-why { font-size: 15px; }
+  .world-switch .seg-btn { min-height: 48px; font-size: 18px; }
+  .layer-caption { position: static; }
+  .gauge { width: 72px; }
+}
+
+/* Overlay layout for the home globe: beats the consolidated flow rules (expedition.css ~721) on purpose. */
+body #explorationWorkspace .atlas-scene { display: block !important; position: relative; height: clamp(560px, calc(100svh - 110px), 980px) !important; }
+body #explorationWorkspace .atlas-caption { position: absolute !important; top: 0; left: 0; z-index: 3; }
+body #explorationWorkspace #homeGlobe { position: absolute !important; inset: 70px 0 56px !important; width: auto; height: auto !important; aspect-ratio: auto; background: transparent; }
+body #explorationWorkspace .atlas-scene > .layer-stack { position: absolute !important; top: 18px; right: 0; z-index: 4; }
+body #explorationWorkspace .atlas-scene > .layer-caption { position: absolute !important; left: 0; bottom: 16px; max-width: 46ch; z-index: 3; }
+body #explorationWorkspace .atlas-footnote { position: absolute !important; right: 0; bottom: 4px; z-index: 3; pointer-events: none; }
+@media (max-width: 1099px) {
+  body #explorationWorkspace .atlas-scene { height: clamp(440px, 100vw, 700px) !important; }
+  body #explorationWorkspace .atlas-scene > .layer-stack { top: 64px; left: 0; right: auto; }
+  body #explorationWorkspace #homeGlobe { inset: 110px 0 60px !important; }
+}
+
+/* Step 2 (Mario 2026-11-15): Earth small, only to orient; the options are the protagonists. */
+@media (min-width: 900px) {
+  body #explorationWorkspace .scan-layout { display: grid !important; grid-template-columns: 300px minmax(0, 1fr); gap: 0 32px; align-items: start; }
+  body #explorationWorkspace .globe-wrap { width: 300px; }
+  body #explorationWorkspace .globe-stage, body #explorationWorkspace:has(#twinBody:not([hidden])) .globe-stage { width: 300px; height: 300px !important; aspect-ratio: 1 / 1; }
+  body #explorationWorkspace .scan-layout > .panel { border-left: 0; padding: 0; }
+  body #explorationWorkspace .rank-list, body #explorationWorkspace:has(#twinBody:not([hidden])) .rank-list {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; max-height: none !important; overflow: visible; padding: 0; list-style: none;
+  }
+}
+#explorationWorkspace .rank-list li { margin: 0; }
+#explorationWorkspace .rank-btn {
+  width: 100%; height: 100%; text-align: left; border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel);
+  padding: 14px 14px 12px; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 2px 10px; align-content: start;
+}
+#explorationWorkspace .rank-btn:hover { border-color: #5d6b55; }
+#explorationWorkspace .rank-btn[aria-pressed="true"] { border-color: var(--c-analog); background: #1a2117; box-shadow: inset 3px 0 0 var(--c-analog); }
+#explorationWorkspace .rank-num { grid-row: span 2; font: 600 15px/1.3 var(--f-head); color: var(--c-analog); }
+#explorationWorkspace .rank-name { font: 600 19px/1.25 var(--f-head); letter-spacing: .01em; }
+#explorationWorkspace .rank-code { display: none; }
+#explorationWorkspace .rank-meta { font-size: 13px; color: var(--muted); }
+#explorationWorkspace .scan-layout .panel > h2 { margin: 0 0 12px; }
+#explorationWorkspace .globe-wrap .layer-stack { margin-bottom: 4px; }
+#explorationWorkspace .rank-head { margin: -6px 0 14px; font-size: 14px; color: var(--muted); max-width: 80ch; }
+#explorationWorkspace .comparison-inspector h2, .comparison-inspector h2, #propertyDetail h3, .profile-panel h2, .light-panel h3, .ask-answer h3 {
+  font-family: var(--f-head) !important; font-style: normal; font-weight: 600; letter-spacing: .01em; text-transform: none;
+}
+#propertyDetail h3 { font-size: 24px; }
+#holoStage, .holo-stage, #regionStage { background: radial-gradient(ellipse at 50% 55%, #1d1612, #0b0b0c 70%) !important; }
+.compare-toolbar button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
+.feature, .feature-summary, .breaks, .context-block, .mission-block, .steps li, .val-row, .diagnosis, #explorationWorkspace .mission-block { background: var(--panel) !important; border-color: var(--line); }
+.light-panel h3 { font-size: 24px !important; margin-bottom: 10px; }
+.mission-block .eyebrow, .mission-block .tag, .mission-block [class*="tag"] { font-family: var(--f-head); letter-spacing: .1em; }
+@media (max-width: 640px) {
+  body .world-switch .seg-btn { font-size: 18px !important; letter-spacing: .12em; }
+  body #explorationWorkspace .eyebrow { font-size: 12px !important; }
+}
+
+/* ================= Layout B (Mario 2026-11-15): Earth floats over Mars, linked to the chosen site ================= */
+#explorationWorkspace #screen-scan { display: none !important; }
+#explorationWorkspace .atlas-layout > .earth-options { display: none; }
+#explorationWorkspace.has-options:not(.show-sites) .atlas-layout > .atlas-index { display: none; }
+#explorationWorkspace.has-options:not(.show-sites) .atlas-layout > .earth-options {
+  display: block; border-left: 1px solid var(--line); padding: 18px 0 20px 24px; min-width: 0;
+}
+.earth-options .back-sites {
+  background: none; border: 0; color: var(--muted); font: 600 15px var(--f-head); letter-spacing: .1em; text-transform: uppercase;
+  padding: 6px 0; min-height: 40px; cursor: pointer;
+}
+.earth-options .back-sites:hover { color: var(--text); }
+.earth-options .scan-for { margin: 2px 0 2px; }
+.earth-options .scan-for strong { font-weight: 600; }
+#explorationWorkspace .earth-options > h2 { font: 600 28px/1.1 var(--f-head); color: var(--text); text-transform: none; letter-spacing: 0; margin: 4px 0 6px; }
+#explorationWorkspace .earth-options .rank-list,
+body #explorationWorkspace .earth-options .rank-list {
+  display: grid !important; grid-template-columns: minmax(0, 1fr) !important; gap: 8px;
+  max-height: clamp(360px, calc(100svh - 330px), 720px) !important; overflow: auto !important; padding: 0 6px 0 0; list-style: none;
+}
+#explorationWorkspace .earth-options .rank-btn { min-height: 0; padding: 10px 12px; }
+#explorationWorkspace .earth-options .rank-name { font-size: 18px; }
+
+/* the small Earth, over Mars */
+#explorationWorkspace .earth-inset {
+  display: none; position: absolute; z-index: 5; right: 4%; bottom: 64px;
+  width: clamp(200px, 17vw, 270px); aspect-ratio: 1 / 1; border-radius: 50%; overflow: hidden;
+  border: 2px solid var(--c-analog); box-shadow: 0 0 0 6px #0b0b0c, 0 10px 40px #000c; background: #0b0b0c;
+}
+#explorationWorkspace.has-options:not(.show-sites) .earth-inset { display: block; }
+#explorationWorkspace .earth-inset .globe-wrap { position: absolute !important; inset: -12% !important; width: auto !important; height: auto !important; padding: 0 !important; display: block !important; }
+#explorationWorkspace .earth-inset .globe-stage,
+body #explorationWorkspace .earth-inset .globe-stage { width: 100% !important; height: 100% !important; aspect-ratio: auto !important; background: transparent !important; }
+#explorationWorkspace .earth-inset .layer-stack,
+#explorationWorkspace .earth-inset .globe-controls,
+#explorationWorkspace .earth-inset .note { display: none !important; }
+#explorationWorkspace .earth-inset .pin-label { font-size: 12px; }
+#explorationWorkspace .link-line { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 4; opacity: 0; transition: opacity .3s; overflow: visible; }
+#explorationWorkspace .link-line line { stroke-linecap: round; filter: drop-shadow(0 0 4px #ec9a6c88); }
+@media (max-width: 1099px) {
+  #explorationWorkspace.has-options:not(.show-sites) .atlas-layout > .earth-options { border-left: 0; border-top: 1px solid var(--line); padding: 16px 0; }
+  #explorationWorkspace .earth-inset { width: 150px; right: 8px; bottom: 60px; }
+}
+/* The hero keeps its size when a comparison is open (overrides expedition.css :has(#twinBody) rules). */
+body #explorationWorkspace .workspace-intro.mf-hero .hero-gap-line { font-size: clamp(38px, 3.6vw, 68px) !important; margin: 8px 0 0 !important; }
+body #explorationWorkspace .workspace-intro.mf-hero .eyebrow { display: block !important; }
+body #explorationWorkspace .workspace-intro.mf-hero { padding-block: 28px 22px !important; align-items: stretch !important; }
+#explorationWorkspace .earth-inset .pin-label small { display: none; }
+#explorationWorkspace .compare-go { width: 100%; min-height: 48px; margin: 0 0 12px; font-size: 15px; letter-spacing: .06em; text-transform: none; white-space: normal; line-height: 1.25; }
+body #explorationWorkspace .workspace-intro.mf-hero { justify-content: flex-start !important; padding-top: 34px !important; gap: 14px; }
+.mf-hero .hero-why { font-size: 16px; }
+
+/* ---- Entrance of Earth (Mario 2026-11-15): Mars turns (1.3 s, globe.js), the line draws, Earth grows, cards arrive. */
+@keyframes cgInsetIn { from { opacity: 0; transform: scale(.18); } 60% { opacity: 1; } to { opacity: 1; transform: scale(1); } }
+@keyframes cgDraw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes cgPanelIn { from { opacity: 0; transform: translateX(28px); } to { opacity: 1; transform: none; } }
+@keyframes cgCardIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+@keyframes cgFade { from { opacity: 0; } to { opacity: 1; } }
+#explorationWorkspace.has-options:not(.show-sites) .earth-inset {
+  transform-origin: 18% 12%;   /* grows out of the side the line arrives from */
+  animation: cgInsetIn .75s cubic-bezier(.2,.85,.25,1) 1.15s both;
+}
+#explorationWorkspace #linkSeg { stroke-dasharray: 1; stroke-dashoffset: 1; }
+#explorationWorkspace #linkSeg.draw { animation: cgDraw .6s ease-out .75s both; }
+#explorationWorkspace.has-options:not(.show-sites) .atlas-layout > .earth-options { animation: cgPanelIn .5s ease-out .2s both; }
+#explorationWorkspace.entering.has-options:not(.show-sites) .earth-options .rank-list li { animation: cgCardIn .4s ease-out both; }
+#explorationWorkspace .earth-options .rank-list li:nth-child(1)  { animation-delay: 1.30s; }
+#explorationWorkspace .earth-options .rank-list li:nth-child(2)  { animation-delay: 1.36s; }
+#explorationWorkspace .earth-options .rank-list li:nth-child(3)  { animation-delay: 1.42s; }
+#explorationWorkspace .earth-options .rank-list li:nth-child(4)  { animation-delay: 1.48s; }
+#explorationWorkspace .earth-options .rank-list li:nth-child(5)  { animation-delay: 1.54s; }
+#explorationWorkspace .earth-options .rank-list li:nth-child(6)  { animation-delay: 1.60s; }
+#explorationWorkspace .earth-options .rank-list li:nth-child(7)  { animation-delay: 1.66s; }
+#explorationWorkspace .earth-options .rank-list li:nth-child(8)  { animation-delay: 1.72s; }
+#explorationWorkspace .earth-options .rank-list li:nth-child(9)  { animation-delay: 1.78s; }
+#explorationWorkspace .earth-options .rank-list li:nth-child(n+10) { animation-delay: 1.84s; }
+#explorationWorkspace.show-sites .atlas-index, #explorationWorkspace:not(.has-options) .atlas-index { animation: cgFade .35s ease-out both; }
+#explorationWorkspace .link-line { transition: opacity .25s; }
+@media (prefers-reduced-motion: reduce) {
+  #explorationWorkspace .earth-inset, #explorationWorkspace #linkSeg.draw, #explorationWorkspace .earth-options,
+  #explorationWorkspace .earth-options .rank-list li, #explorationWorkspace .atlas-index { animation: none !important; }
+  #explorationWorkspace #linkSeg { stroke-dasharray: none; stroke-dashoffset: 0; }
+}
+#explorationWorkspace .overlay-guide { background: var(--panel-2) !important; border-color: var(--line) !important; }
+
+/* Levelled | True orientation (display only; Mario 2026-11-15). Buttons reuse .inspection-tools button styling. */
+.level-switch { display: flex; flex-wrap: wrap; gap: 4px; }
+.level-tool .level-note { margin: 8px 0 0; }

@@ -1,0 +1,141 @@
+{
+  "target_id": "de_gerlache_rim_2",
+  "analog_id": "pool__pool_02415",
+  "rank": 3,
+  "D": 0.5123149385741178,
+  "tie_group": 0,
+  "features": {
+    "slope_p95_deg": {
+      "target": 25.154080415616654,
+      "analog": 26.633930156782117,
+      "z_diff": 0.48663918578747506
+    },
+    "hi": {
+      "target": 0.5964931094645225,
+      "analog": 0.6226468623395646,
+      "z_diff": 0.4085689031484531
+    },
+    "coherence": {
+      "target": 0.7390803529466434,
+      "analog": 0.19426630204958323,
+      "z_diff": -3.4718540186731
+    },
+    "hurst": {
+      "target": 0.9915860900021338,
+      "analog": 0.8675918894753845,
+      "z_diff": -0.6193977260975209
+    },
+    "ridge_pct": {
+      "target": 27.42812742812743,
+      "analog": 34.88733488733489,
+      "z_diff": 4.089543973247567
+    },
+    "valley_pct": {
+      "target": 4.765604765604766,
+      "analog": 31.52033152033152,
+      "z_diff": 43.54680965870768
+    }
+  },
+  "vertical_exaggeration": 1.1,
+  "in_distance": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "context_features": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "similar": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "different": [],
+  "context_similar": [],
+  "context_different": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "analog_place": {
+    "name": "Nunavut, Canada",
+    "admin1": "Nunavut",
+    "country": "Canada",
+    "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+    "match": "inside",
+    "distance_km": 0.0,
+    "nearest_named_feature": null
+  },
+  "mission_pct": {
+    "landing": {
+      "target": 29.24390751926682,
+      "analog": 67.38179545927932,
+      "limit_deg": 12.0,
+      "source": "https://ntrs.nasa.gov/citations/19720018253",
+      "reason": null
+    },
+    "driving": {
+      "target": 93.81378879400125,
+      "analog": 93.79295980004166,
+      "limit_deg": 25.0,
+      "source": "https://ntrs.nasa.gov/citations/19730008090",
+      "reason": null
+    }
+  },
+  "mission_baseline_m": 100,
+  "rotation_deg": 250.0,
+  "rotation_rms": 1.087600415253501,
+  "files": {
+    "target": "terrain/de_gerlache_rim_2/",
+    "analog": "terrain/pool__pool_02415/"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:52:20Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "lola_5m_site11_surf",
+        "path": "data/raw/moon/de_gerlache_rim_2/lola_5m_site11_surf.tif",
+        "sha256": "58f3372c35bbd6baf38ffd5633c1c96b59bd89dbd252150581d12893a43136e5"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00415.tif",
+        "sha256": "725cc02de4b5b1ebfe9e1980f98d9cedc5ce7713c522edaa3ede61f3c9144ac6"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  },
+  "context": {
+    "koppen_class": "ET",
+    "koppen_label": "Polar, tundra",
+    "koppen_code": 29,
+    "elevation_m": 539.7866217651009,
+    "nearest_town": {
+      "name": "Kimmirut",
+      "country": "Canada",
+      "distance_km": 54.04
+    },
+    "sources": {
+      "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+      "elevation": "cop_dem_glo30 window mean over the 4 km disk (source_id of the window's measure record)",
+      "town": "Natural Earth 1:10m populated places (public domain)",
+      "novelty": "config/known_analog_regions.json (circle approximation)"
+    }
+  },
+  "novelty": "new",
+  "known_region_id": null,
+  "refined": {
+    "pool_id": "pool__pool_02415",
+    "rank_before": 2,
+    "D_before": 0.5123149385741178,
+    "D_clip_offset0": null,
+    "refined_offset_km": null
+  }
+}

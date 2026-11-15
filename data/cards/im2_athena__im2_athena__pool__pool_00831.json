@@ -1,0 +1,144 @@
+{
+  "target_id": "im2_athena",
+  "analog_id": "im2_athena__pool__pool_00831",
+  "rank": 2,
+  "D": 0.21953730382915745,
+  "tie_group": 0,
+  "features": {
+    "slope_p95_deg": {
+      "target": 10.284246783936814,
+      "analog": 10.427102472348508,
+      "z_diff": 0.04697718556143827
+    },
+    "hi": {
+      "target": 0.504962100674973,
+      "analog": 0.509435746002676,
+      "z_diff": 0.06988642789995306
+    },
+    "coherence": {
+      "target": 0.03660932471054652,
+      "analog": 0.22960542683808974,
+      "z_diff": 1.2298770409031872
+    },
+    "hurst": {
+      "target": 0.9052650782711986,
+      "analog": 0.8310347466124091,
+      "z_diff": -0.37080846073119506
+    },
+    "ridge_pct": {
+      "target": 9.142709142709142,
+      "analog": 19.036519036519035,
+      "z_diff": 5.424325686738092
+    },
+    "valley_pct": {
+      "target": 11.4996114996115,
+      "analog": 16.86091686091686,
+      "z_diff": 8.726224200728447
+    }
+  },
+  "vertical_exaggeration": 4.9,
+  "in_distance": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "context_features": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "similar": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "different": [],
+  "context_similar": [],
+  "context_different": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "analog_place": {
+    "name": "Murzuq, Libya",
+    "admin1": "Murzuq",
+    "country": "Libya",
+    "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+    "match": "inside",
+    "distance_km": 0.0,
+    "nearest_named_feature": null
+  },
+  "mission_pct": {
+    "landing": {
+      "target": 97.95875859196,
+      "analog": 98.2295355134347,
+      "limit_deg": 12.0,
+      "source": "https://ntrs.nasa.gov/citations/19720018253",
+      "reason": null
+    },
+    "driving": {
+      "target": 100.0,
+      "analog": 100.0,
+      "limit_deg": 25.0,
+      "source": "https://ntrs.nasa.gov/citations/19730008090",
+      "reason": null
+    }
+  },
+  "mission_baseline_m": 100,
+  "rotation_deg": 230.0,
+  "rotation_rms": 1.410240366461215,
+  "files": {
+    "target": "terrain/im2_athena/",
+    "analog": "terrain/im2_athena__pool__pool_00831/"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:52:45Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "lola_20m_polar_ldem",
+        "path": "data/raw/moon/im2_athena/lola_20m_polar_ldem_win6km.tif",
+        "sha256": "a9634b7550956a957c1d480b066179cc6dc1f3d59f1b6ecc2957ec46c0593b71"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00831.tif",
+        "sha256": "6f2ea8c27e72e84e3f6f65dad4dce60621e9a102001edd292f5116f9c9bd0596"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  },
+  "context": {
+    "koppen_class": "BWh",
+    "koppen_label": "Arid, desert, hot",
+    "koppen_code": 4,
+    "elevation_m": 693.3547550367502,
+    "nearest_town": {
+      "name": "Marzuq",
+      "country": "Libya",
+      "distance_km": 141.01
+    },
+    "sources": {
+      "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+      "elevation": "nasadem window mean over the 4 km disk (source_id of the window's measure record)",
+      "town": "Natural Earth 1:10m populated places (public domain)",
+      "novelty": "config/known_analog_regions.json (circle approximation)"
+    }
+  },
+  "novelty": "new",
+  "known_region_id": null,
+  "refined": {
+    "pool_id": "pool__pool_00831",
+    "rank_before": 4,
+    "D_before": 0.2662128521256379,
+    "D_clip_offset0": 0.2704431393406161,
+    "refined_offset_km": [
+      0.0,
+      -2.0
+    ]
+  }
+}

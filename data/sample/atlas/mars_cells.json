@@ -1,0 +1,5802 @@
+[
+  {
+    "id": "sample_mars_cell_000",
+    "lat": -15.171,
+    "lon": -122.359,
+    "features": {
+      "slope_p95_deg": 9.4032,
+      "hurst": 0.665,
+      "hi": 0.2578,
+      "coherence": 0.2573,
+      "ridge_pct": 27.4509,
+      "valley_pct": 5.678
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.1618,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.4048,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.4648,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 62.52,
+      "driving": 83.4
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_001",
+    "lat": 27.829,
+    "lon": 137.795,
+    "features": {
+      "slope_p95_deg": 13.18,
+      "hurst": 0.7182,
+      "hi": 0.2379,
+      "coherence": 0.3856,
+      "ridge_pct": 4.6461,
+      "valley_pct": 5.042
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.1339,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.262,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.5728,
+        "tie_group": 1,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 94.21,
+      "driving": 87.32
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_002",
+    "lat": -38.368,
+    "lon": 104.488,
+    "features": {
+      "slope_p95_deg": 15.1673,
+      "hurst": 0.6319,
+      "hi": 0.496,
+      "coherence": 0.5931,
+      "ridge_pct": 7.9951,
+      "valley_pct": 8.2806
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.1537,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.2322,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.5068,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 58.96,
+      "driving": 89.49
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_003",
+    "lat": 59.803,
+    "lon": 32.755,
+    "features": {
+      "slope_p95_deg": 5.4311,
+      "hurst": 0.8238,
+      "hi": 0.5718,
+      "coherence": 0.1879,
+      "ridge_pct": 20.0356,
+      "valley_pct": 29.1501
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.1537,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_ridges",
+        "D": 0.24,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: ridge field",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 36.0,
+        "lon": -111.5,
+        "context": {
+          "koppen_class": "Cfb",
+          "koppen_label": "Oceanic",
+          "elevation_m": 2140,
+          "nearest_town": {
+            "name": "SAMPLE Town E",
+            "distance_km": 3.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.5614,
+        "tie_group": 1,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 91.33,
+      "driving": 95.46
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_004",
+    "lat": -50.156,
+    "lon": -50.242,
+    "features": {
+      "slope_p95_deg": 10.5236,
+      "hurst": 0.4303,
+      "hi": 0.2284,
+      "coherence": 0.5082,
+      "ridge_pct": 4.9912,
+      "valley_pct": 21.4791
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.0795,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.461,
+        "tie_group": 1,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.5438,
+        "tie_group": 1,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 75.35,
+      "driving": 99.68
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_005",
+    "lat": 3.647,
+    "lon": 170.288,
+    "features": {
+      "slope_p95_deg": 16.3571,
+      "hurst": 0.8403,
+      "hi": 0.359,
+      "coherence": 0.4297,
+      "ridge_pct": 10.7668,
+      "valley_pct": 26.259
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.1564,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.2733,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.3766,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 43.39,
+      "driving": 93.02
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_006",
+    "lat": -6.596,
+    "lon": 91.146,
+    "features": {
+      "slope_p95_deg": 14.0237,
+      "hurst": 0.4586,
+      "hi": 0.3327,
+      "coherence": 0.197,
+      "ridge_pct": 14.0051,
+      "valley_pct": 13.2285
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_ridges",
+        "D": 0.2003,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: ridge field",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 36.0,
+        "lon": -111.5,
+        "context": {
+          "koppen_class": "Cfb",
+          "koppen_label": "Oceanic",
+          "elevation_m": 2140,
+          "nearest_town": {
+            "name": "SAMPLE Town E",
+            "distance_km": 3.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.3281,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.3898,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 60.36,
+      "driving": 94.07
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_007",
+    "lat": -16.968,
+    "lon": 160.472,
+    "features": {
+      "slope_p95_deg": 3.5546,
+      "hurst": 0.8746,
+      "hi": 0.5401,
+      "coherence": 0.128,
+      "ridge_pct": 19.5766,
+      "valley_pct": 16.8383
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.1612,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.2774,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.5254,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 42.41,
+      "driving": 83.08
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_008",
+    "lat": -30.388,
+    "lon": 58.353,
+    "features": {
+      "slope_p95_deg": 11.6051,
+      "hurst": 0.5243,
+      "hi": 0.4756,
+      "coherence": 0.4935,
+      "ridge_pct": 23.2578,
+      "valley_pct": 10.8433
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.1983,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.4084,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.5636,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 53.58,
+      "driving": 91.86
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_009",
+    "lat": 11.322,
+    "lon": -124.009,
+    "features": {
+      "slope_p95_deg": 16.0121,
+      "hurst": 0.734,
+      "hi": 0.3703,
+      "coherence": 0.2549,
+      "ridge_pct": 20.6878,
+      "valley_pct": 20.177
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.1529,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.1829,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_ridges",
+        "D": 0.3562,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: ridge field",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 36.0,
+        "lon": -111.5,
+        "context": {
+          "koppen_class": "Cfb",
+          "koppen_label": "Oceanic",
+          "elevation_m": 2140,
+          "nearest_town": {
+            "name": "SAMPLE Town E",
+            "distance_km": 3.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 57.41,
+      "driving": 98.46
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_010",
+    "lat": 17.269,
+    "lon": 41.424,
+    "features": {
+      "slope_p95_deg": 8.0392,
+      "hurst": 0.6095,
+      "hi": 0.3789,
+      "coherence": 0.4751,
+      "ridge_pct": 27.087,
+      "valley_pct": 28.1245
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.1437,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_ridges",
+        "D": 0.4026,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: ridge field",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 36.0,
+        "lon": -111.5,
+        "context": {
+          "koppen_class": "Cfb",
+          "koppen_label": "Oceanic",
+          "elevation_m": 2140,
+          "nearest_town": {
+            "name": "SAMPLE Town E",
+            "distance_km": 3.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.4878,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 98.44,
+      "driving": 85.54
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_011",
+    "lat": 44.939,
+    "lon": -27.201,
+    "features": {
+      "slope_p95_deg": 6.609,
+      "hurst": 0.8147,
+      "hi": 0.4831,
+      "coherence": 0.5491,
+      "ridge_pct": 5.4399,
+      "valley_pct": 13.8245
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_ridges",
+        "D": 0.102,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: ridge field",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 36.0,
+        "lon": -111.5,
+        "context": {
+          "koppen_class": "Cfb",
+          "koppen_label": "Oceanic",
+          "elevation_m": 2140,
+          "nearest_town": {
+            "name": "SAMPLE Town E",
+            "distance_km": 3.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.1961,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.2377,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 77.66,
+      "driving": 98.67
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_012",
+    "lat": 0.065,
+    "lon": -82.61,
+    "features": {
+      "slope_p95_deg": 5.5941,
+      "hurst": 0.5359,
+      "hi": 0.4657,
+      "coherence": 0.1688,
+      "ridge_pct": 24.8904,
+      "valley_pct": 29.9176
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_ridges",
+        "D": 0.3977,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: ridge field",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 36.0,
+        "lon": -111.5,
+        "context": {
+          "koppen_class": "Cfb",
+          "koppen_label": "Oceanic",
+          "elevation_m": 2140,
+          "nearest_town": {
+            "name": "SAMPLE Town E",
+            "distance_km": 3.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.4835,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.5429,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 58.21,
+      "driving": 80.73
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_013",
+    "lat": -14.775,
+    "lon": 118.372,
+    "features": {
+      "slope_p95_deg": 3.0862,
+      "hurst": 0.4158,
+      "hi": 0.467,
+      "coherence": 0.5685,
+      "ridge_pct": 4.4684,
+      "valley_pct": 16.2459
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_ridges",
+        "D": 0.1643,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: ridge field",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 36.0,
+        "lon": -111.5,
+        "context": {
+          "koppen_class": "Cfb",
+          "koppen_label": "Oceanic",
+          "elevation_m": 2140,
+          "nearest_town": {
+            "name": "SAMPLE Town E",
+            "distance_km": 3.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.3073,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.4926,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 99.13,
+      "driving": 88.21
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_014",
+    "lat": -46.025,
+    "lon": 94.054,
+    "features": {
+      "slope_p95_deg": 9.6302,
+      "hurst": 0.6769,
+      "hi": 0.3666,
+      "coherence": 0.4642,
+      "ridge_pct": 2.588,
+      "valley_pct": 24.2481
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_ridges",
+        "D": 0.1866,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: ridge field",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 36.0,
+        "lon": -111.5,
+        "context": {
+          "koppen_class": "Cfb",
+          "koppen_label": "Oceanic",
+          "elevation_m": 2140,
+          "nearest_town": {
+            "name": "SAMPLE Town E",
+            "distance_km": 3.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.3226,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.5957,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 57.88,
+      "driving": 95.04
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_015",
+    "lat": -44.189,
+    "lon": -103.072,
+    "features": {
+      "slope_p95_deg": 13.4337,
+      "hurst": 0.8194,
+      "hi": 0.3645,
+      "coherence": 0.565,
+      "ridge_pct": 3.6805,
+      "valley_pct": 18.0274
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.1736,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.3972,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.5355,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 67.28,
+      "driving": 85.32
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_016",
+    "lat": 9.448,
+    "lon": -7.709,
+    "features": {
+      "slope_p95_deg": 3.3574,
+      "hurst": 0.6549,
+      "hi": 0.3192,
+      "coherence": 0.5989,
+      "ridge_pct": 29.2261,
+      "valley_pct": 3.29
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.1435,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.3437,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.4223,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 75.73,
+      "driving": 95.14
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_017",
+    "lat": 20.569,
+    "lon": 55.834,
+    "features": {
+      "slope_p95_deg": 17.4399,
+      "hurst": 0.4887,
+      "hi": 0.3323,
+      "coherence": 0.1688,
+      "ridge_pct": 26.8788,
+      "valley_pct": 25.5454
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_ridges",
+        "D": 0.0707,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: ridge field",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 36.0,
+        "lon": -111.5,
+        "context": {
+          "koppen_class": "Cfb",
+          "koppen_label": "Oceanic",
+          "elevation_m": 2140,
+          "nearest_town": {
+            "name": "SAMPLE Town E",
+            "distance_km": 3.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.1783,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.4066,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 42.65,
+      "driving": 89.18
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_018",
+    "lat": 39.813,
+    "lon": -123.67,
+    "features": {
+      "slope_p95_deg": 14.6979,
+      "hurst": 0.7382,
+      "hi": 0.5862,
+      "coherence": 0.5319,
+      "ridge_pct": 12.5028,
+      "valley_pct": 12.4284
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.1201,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.2865,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.4436,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 78.45,
+      "driving": 86.47
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_019",
+    "lat": 41.849,
+    "lon": 33.15,
+    "features": {
+      "slope_p95_deg": 13.8428,
+      "hurst": 0.414,
+      "hi": 0.3664,
+      "coherence": 0.431,
+      "ridge_pct": 15.7162,
+      "valley_pct": 15.115
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_ridges",
+        "D": 0.0592,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: ridge field",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 36.0,
+        "lon": -111.5,
+        "context": {
+          "koppen_class": "Cfb",
+          "koppen_label": "Oceanic",
+          "elevation_m": 2140,
+          "nearest_town": {
+            "name": "SAMPLE Town E",
+            "distance_km": 3.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.1623,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.4841,
+        "tie_group": 1,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 85.62,
+      "driving": 97.76
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_020",
+    "lat": -34.829,
+    "lon": -125.156,
+    "features": {
+      "slope_p95_deg": 4.9204,
+      "hurst": 0.4911,
+      "hi": 0.391,
+      "coherence": 0.3694,
+      "ridge_pct": 27.0982,
+      "valley_pct": 7.2608
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.0564,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.1739,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_ridges",
+        "D": 0.5439,
+        "tie_group": 1,
+        "analog_place": {
+          "name": "SAMPLE site: ridge field",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 36.0,
+        "lon": -111.5,
+        "context": {
+          "koppen_class": "Cfb",
+          "koppen_label": "Oceanic",
+          "elevation_m": 2140,
+          "nearest_town": {
+            "name": "SAMPLE Town E",
+            "distance_km": 3.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 87.65,
+      "driving": 82.49
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_021",
+    "lat": 24.567,
+    "lon": -25.666,
+    "features": {
+      "slope_p95_deg": 12.7749,
+      "hurst": 0.424,
+      "hi": 0.5774,
+      "coherence": 0.1736,
+      "ridge_pct": 28.7207,
+      "valley_pct": 6.0584
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.3471,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.5274,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.5541,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 82.86,
+      "driving": 96.11
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_022",
+    "lat": -50.626,
+    "lon": 93.914,
+    "features": {
+      "slope_p95_deg": 17.0279,
+      "hurst": 0.6488,
+      "hi": 0.3112,
+      "coherence": 0.3024,
+      "ridge_pct": 27.9262,
+      "valley_pct": 20.6167
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.15,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.4118,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.5913,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 59.79,
+      "driving": 91.09
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_023",
+    "lat": 41.757,
+    "lon": 41.075,
+    "features": {
+      "slope_p95_deg": 2.6412,
+      "hurst": 0.7975,
+      "hi": 0.3382,
+      "coherence": 0.1615,
+      "ridge_pct": 8.4333,
+      "valley_pct": 9.5447
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_ridges",
+        "D": 0.1075,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: ridge field",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 36.0,
+        "lon": -111.5,
+        "context": {
+          "koppen_class": "Cfb",
+          "koppen_label": "Oceanic",
+          "elevation_m": 2140,
+          "nearest_town": {
+            "name": "SAMPLE Town E",
+            "distance_km": 3.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.1558,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.536,
+        "tie_group": 1,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 55.15,
+      "driving": 98.94
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_024",
+    "lat": -40.649,
+    "lon": 11.89,
+    "features": {
+      "slope_p95_deg": 18.5444,
+      "hurst": 0.4523,
+      "hi": 0.2841,
+      "coherence": 0.3636,
+      "ridge_pct": 19.4164,
+      "valley_pct": 17.2633
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.2484,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.3546,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_ridges",
+        "D": 0.5337,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: ridge field",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 36.0,
+        "lon": -111.5,
+        "context": {
+          "koppen_class": "Cfb",
+          "koppen_label": "Oceanic",
+          "elevation_m": 2140,
+          "nearest_town": {
+            "name": "SAMPLE Town E",
+            "distance_km": 3.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 95.89,
+      "driving": 95.68
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_025",
+    "lat": -11.655,
+    "lon": 112.483,
+    "features": {
+      "slope_p95_deg": 11.1614,
+      "hurst": 0.5121,
+      "hi": 0.518,
+      "coherence": 0.1077,
+      "ridge_pct": 29.8062,
+      "valley_pct": 7.4364
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.087,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.3845,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.512,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 63.06,
+      "driving": 94.11
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_026",
+    "lat": 22.352,
+    "lon": 127.89,
+    "features": {
+      "slope_p95_deg": 2.9244,
+      "hurst": 0.8,
+      "hi": 0.3155,
+      "coherence": 0.1353,
+      "ridge_pct": 29.1124,
+      "valley_pct": 9.2248
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.0893,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.4316,
+        "tie_group": 1,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_ridges",
+        "D": 0.4768,
+        "tie_group": 1,
+        "analog_place": {
+          "name": "SAMPLE site: ridge field",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 36.0,
+        "lon": -111.5,
+        "context": {
+          "koppen_class": "Cfb",
+          "koppen_label": "Oceanic",
+          "elevation_m": 2140,
+          "nearest_town": {
+            "name": "SAMPLE Town E",
+            "distance_km": 3.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 42.91,
+      "driving": 95.19
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_027",
+    "lat": 6.848,
+    "lon": 111.006,
+    "features": {
+      "slope_p95_deg": 5.9988,
+      "hurst": 0.515,
+      "hi": 0.3465,
+      "coherence": 0.3669,
+      "ridge_pct": 20.5276,
+      "valley_pct": 20.1044
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.057,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.0609,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.421,
+        "tie_group": 1,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 75.71,
+      "driving": 95.74
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_028",
+    "lat": -12.114,
+    "lon": 121.396,
+    "features": {
+      "slope_p95_deg": 13.4387,
+      "hurst": 0.7374,
+      "hi": 0.4693,
+      "coherence": 0.5438,
+      "ridge_pct": 3.6735,
+      "valley_pct": 16.0396
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.2271,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.39,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.4129,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 98.96,
+      "driving": 83.41
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_029",
+    "lat": 8.516,
+    "lon": 123.761,
+    "features": {
+      "slope_p95_deg": 3.4017,
+      "hurst": 0.7783,
+      "hi": 0.4298,
+      "coherence": 0.2566,
+      "ridge_pct": 20.841,
+      "valley_pct": 21.3217
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.4631,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.4779,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.4909,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 45.91,
+      "driving": 90.22
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_030",
+    "lat": 18.044,
+    "lon": 76.61,
+    "features": {
+      "slope_p95_deg": 11.3803,
+      "hurst": 0.7318,
+      "hi": 0.4862,
+      "coherence": 0.5411,
+      "ridge_pct": 14.4842,
+      "valley_pct": 26.0267
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.1421,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_ridges",
+        "D": 0.2509,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: ridge field",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 36.0,
+        "lon": -111.5,
+        "context": {
+          "koppen_class": "Cfb",
+          "koppen_label": "Oceanic",
+          "elevation_m": 2140,
+          "nearest_town": {
+            "name": "SAMPLE Town E",
+            "distance_km": 3.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.2717,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 90.24,
+      "driving": 89.99
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_031",
+    "lat": 26.167,
+    "lon": 136.427,
+    "features": {
+      "slope_p95_deg": 2.8465,
+      "hurst": 0.883,
+      "hi": 0.3774,
+      "coherence": 0.4851,
+      "ridge_pct": 16.848,
+      "valley_pct": 18.208
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.224,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.3057,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_ridges",
+        "D": 0.3537,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: ridge field",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 36.0,
+        "lon": -111.5,
+        "context": {
+          "koppen_class": "Cfb",
+          "koppen_label": "Oceanic",
+          "elevation_m": 2140,
+          "nearest_town": {
+            "name": "SAMPLE Town E",
+            "distance_km": 3.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 76.19,
+      "driving": 91.24
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_032",
+    "lat": -12.766,
+    "lon": -117.067,
+    "features": {
+      "slope_p95_deg": 6.7338,
+      "hurst": 0.708,
+      "hi": 0.2992,
+      "coherence": 0.3339,
+      "ridge_pct": 23.2128,
+      "valley_pct": 3.6236
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.0554,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.1166,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.1928,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 82.64,
+      "driving": 90.29
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_033",
+    "lat": -27.047,
+    "lon": 58.326,
+    "features": {
+      "slope_p95_deg": 8.5783,
+      "hurst": 0.5715,
+      "hi": 0.4145,
+      "coherence": 0.2612,
+      "ridge_pct": 21.9323,
+      "valley_pct": 11.5832
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.1081,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.1589,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.278,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 49.21,
+      "driving": 89.89
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_034",
+    "lat": -42.954,
+    "lon": -86.257,
+    "features": {
+      "slope_p95_deg": 19.9754,
+      "hurst": 0.8539,
+      "hi": 0.3614,
+      "coherence": 0.2655,
+      "ridge_pct": 26.8877,
+      "valley_pct": 27.4465
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.0545,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.0893,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_ridges",
+        "D": 0.2723,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: ridge field",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 36.0,
+        "lon": -111.5,
+        "context": {
+          "koppen_class": "Cfb",
+          "koppen_label": "Oceanic",
+          "elevation_m": 2140,
+          "nearest_town": {
+            "name": "SAMPLE Town E",
+            "distance_km": 3.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 41.44,
+      "driving": 88.88
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_035",
+    "lat": -1.209,
+    "lon": 24.118,
+    "features": {
+      "slope_p95_deg": 18.891,
+      "hurst": 0.4673,
+      "hi": 0.2658,
+      "coherence": 0.3607,
+      "ridge_pct": 24.4236,
+      "valley_pct": 4.2499
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.4945,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_ridges",
+        "D": 0.5378,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: ridge field",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 36.0,
+        "lon": -111.5,
+        "context": {
+          "koppen_class": "Cfb",
+          "koppen_label": "Oceanic",
+          "elevation_m": 2140,
+          "nearest_town": {
+            "name": "SAMPLE Town E",
+            "distance_km": 3.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.5919,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 86.75,
+      "driving": 81.1
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_036",
+    "lat": -35.873,
+    "lon": 98.055,
+    "features": {
+      "slope_p95_deg": 12.791,
+      "hurst": 0.5592,
+      "hi": 0.5377,
+      "coherence": 0.2916,
+      "ridge_pct": 2.2893,
+      "valley_pct": 14.2843
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_ridges",
+        "D": 0.1634,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: ridge field",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 36.0,
+        "lon": -111.5,
+        "context": {
+          "koppen_class": "Cfb",
+          "koppen_label": "Oceanic",
+          "elevation_m": 2140,
+          "nearest_town": {
+            "name": "SAMPLE Town E",
+            "distance_km": 3.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.3252,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.4753,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 51.18,
+      "driving": 84.9
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_037",
+    "lat": 0.789,
+    "lon": -120.37,
+    "features": {
+      "slope_p95_deg": 15.6556,
+      "hurst": 0.7634,
+      "hi": 0.5086,
+      "coherence": 0.1937,
+      "ridge_pct": 2.1659,
+      "valley_pct": 26.6569
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_ridges",
+        "D": 0.1035,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: ridge field",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 36.0,
+        "lon": -111.5,
+        "context": {
+          "koppen_class": "Cfb",
+          "koppen_label": "Oceanic",
+          "elevation_m": 2140,
+          "nearest_town": {
+            "name": "SAMPLE Town E",
+            "distance_km": 3.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.3181,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.3809,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 91.63,
+      "driving": 95.22
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_038",
+    "lat": -58.612,
+    "lon": 14.075,
+    "features": {
+      "slope_p95_deg": 16.3661,
+      "hurst": 0.4038,
+      "hi": 0.2561,
+      "coherence": 0.244,
+      "ridge_pct": 16.7877,
+      "valley_pct": 12.2465
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.2628,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_ridges",
+        "D": 0.3518,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: ridge field",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 36.0,
+        "lon": -111.5,
+        "context": {
+          "koppen_class": "Cfb",
+          "koppen_label": "Oceanic",
+          "elevation_m": 2140,
+          "nearest_town": {
+            "name": "SAMPLE Town E",
+            "distance_km": 3.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.5542,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 86.38,
+      "driving": 86.7
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_039",
+    "lat": 12.289,
+    "lon": -81.622,
+    "features": {
+      "slope_p95_deg": 4.1513,
+      "hurst": 0.5768,
+      "hi": 0.2972,
+      "coherence": 0.2521,
+      "ridge_pct": 12.265,
+      "valley_pct": 10.7292
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.1146,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.4343,
+        "tie_group": 1,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.5877,
+        "tie_group": 1,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 60.09,
+      "driving": 85.39
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_040",
+    "lat": 15.15,
+    "lon": -101.735,
+    "features": {
+      "slope_p95_deg": 7.1958,
+      "hurst": 0.7717,
+      "hi": 0.5198,
+      "coherence": 0.4674,
+      "ridge_pct": 13.2541,
+      "valley_pct": 25.8258
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.0649,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.4696,
+        "tie_group": 1,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.5858,
+        "tie_group": 1,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 55.1,
+      "driving": 81.85
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_041",
+    "lat": 54.679,
+    "lon": 37.844,
+    "features": {
+      "slope_p95_deg": 12.936,
+      "hurst": 0.7929,
+      "hi": 0.2688,
+      "coherence": 0.1551,
+      "ridge_pct": 27.4142,
+      "valley_pct": 21.1221
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.1391,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.3032,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_ridges",
+        "D": 0.3483,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: ridge field",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 36.0,
+        "lon": -111.5,
+        "context": {
+          "koppen_class": "Cfb",
+          "koppen_label": "Oceanic",
+          "elevation_m": 2140,
+          "nearest_town": {
+            "name": "SAMPLE Town E",
+            "distance_km": 3.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 67.63,
+      "driving": 81.97
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_042",
+    "lat": 49.941,
+    "lon": -127.98,
+    "features": {
+      "slope_p95_deg": 16.7316,
+      "hurst": 0.4093,
+      "hi": 0.5412,
+      "coherence": 0.5594,
+      "ridge_pct": 4.232,
+      "valley_pct": 20.9084
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.3793,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_ridges",
+        "D": 0.5624,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: ridge field",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 36.0,
+        "lon": -111.5,
+        "context": {
+          "koppen_class": "Cfb",
+          "koppen_label": "Oceanic",
+          "elevation_m": 2140,
+          "nearest_town": {
+            "name": "SAMPLE Town E",
+            "distance_km": 3.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.5875,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 44.16,
+      "driving": 92.32
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_043",
+    "lat": -37.24,
+    "lon": -68.324,
+    "features": {
+      "slope_p95_deg": 6.6223,
+      "hurst": 0.7173,
+      "hi": 0.2894,
+      "coherence": 0.4968,
+      "ridge_pct": 21.7043,
+      "valley_pct": 22.1331
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.2536,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.2724,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.5163,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 90.57,
+      "driving": 95.15
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_044",
+    "lat": 44.879,
+    "lon": 30.945,
+    "features": {
+      "slope_p95_deg": 15.0471,
+      "hurst": 0.8907,
+      "hi": 0.3749,
+      "coherence": 0.3961,
+      "ridge_pct": 22.305,
+      "valley_pct": 17.9965
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.3214,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.4129,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_ridges",
+        "D": 0.4831,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: ridge field",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 36.0,
+        "lon": -111.5,
+        "context": {
+          "koppen_class": "Cfb",
+          "koppen_label": "Oceanic",
+          "elevation_m": 2140,
+          "nearest_town": {
+            "name": "SAMPLE Town E",
+            "distance_km": 3.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 63.1,
+      "driving": 93.39
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_045",
+    "lat": 9.072,
+    "lon": -141.414,
+    "features": {
+      "slope_p95_deg": 6.7261,
+      "hurst": 0.6451,
+      "hi": 0.277,
+      "coherence": 0.4038,
+      "ridge_pct": 19.1845,
+      "valley_pct": 24.7373
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.3244,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.358,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.4223,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 91.16,
+      "driving": 82.67
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_046",
+    "lat": -33.539,
+    "lon": -25.938,
+    "features": {
+      "slope_p95_deg": 6.6118,
+      "hurst": 0.7133,
+      "hi": 0.3102,
+      "coherence": 0.2258,
+      "ridge_pct": 15.3735,
+      "valley_pct": 2.4862
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.1828,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.2392,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.2572,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 99.84,
+      "driving": 99.53
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_047",
+    "lat": 4.983,
+    "lon": -175.005,
+    "features": {
+      "slope_p95_deg": 12.8223,
+      "hurst": 0.5673,
+      "hi": 0.3731,
+      "coherence": 0.2268,
+      "ridge_pct": 29.0345,
+      "valley_pct": 23.4408
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.4874,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.5075,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_ridges",
+        "D": 0.5586,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: ridge field",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 36.0,
+        "lon": -111.5,
+        "context": {
+          "koppen_class": "Cfb",
+          "koppen_label": "Oceanic",
+          "elevation_m": 2140,
+          "nearest_town": {
+            "name": "SAMPLE Town E",
+            "distance_km": 3.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 55.04,
+      "driving": 85.87
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_048",
+    "lat": 54.185,
+    "lon": -103.076,
+    "features": {
+      "slope_p95_deg": 8.3307,
+      "hurst": 0.6328,
+      "hi": 0.3279,
+      "coherence": 0.4044,
+      "ridge_pct": 28.1229,
+      "valley_pct": 26.2176
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.054,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.1425,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_bowl_b",
+        "D": 0.4993,
+        "tie_group": 1,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim (second)",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": -6.8,
+        "lon": 44.1,
+        "context": {
+          "koppen_class": "Cfa",
+          "koppen_label": "Humid subtropical",
+          "elevation_m": 310,
+          "nearest_town": {
+            "name": "SAMPLE Town B",
+            "distance_km": 8.1
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 65.23,
+      "driving": 86.16
+    },
+    "sample": true
+  },
+  {
+    "id": "sample_mars_cell_049",
+    "lat": 34.047,
+    "lon": 170.384,
+    "features": {
+      "slope_p95_deg": 7.0364,
+      "hurst": 0.6296,
+      "hi": 0.4593,
+      "coherence": 0.3159,
+      "ridge_pct": 5.2222,
+      "valley_pct": 19.1166
+    },
+    "twins": [
+      {
+        "analog_id": "sample_earth_bowl",
+        "D": 0.0834,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: bowl with rim",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "known_region",
+        "known_region_id": "sample_known_bowl",
+        "lat": 23.4,
+        "lon": 13.9,
+        "context": {
+          "koppen_class": "BWh",
+          "koppen_label": "Hot desert",
+          "elevation_m": 412,
+          "nearest_town": {
+            "name": "SAMPLE Town A",
+            "distance_km": 22.5
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_plain",
+        "D": 0.1822,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: flat plain",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 28.7,
+        "lon": -28.9,
+        "context": {
+          "koppen_class": "BWk",
+          "koppen_label": "Cold desert",
+          "elevation_m": 1120,
+          "nearest_town": {
+            "name": "SAMPLE Town C",
+            "distance_km": 54.0
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      },
+      {
+        "analog_id": "sample_earth_volcanic",
+        "D": 0.4569,
+        "tie_group": 0,
+        "analog_place": {
+          "name": "SAMPLE site: rough volcanic surface",
+          "admin1": null,
+          "country": null,
+          "source": "SAMPLE placeholder: not a reverse-geocode of the window centre",
+          "match": "sample",
+          "distance_km": null,
+          "nearest_named_feature": null
+        },
+        "novelty": "new",
+        "known_region_id": null,
+        "lat": 1.9,
+        "lon": -17.2,
+        "context": {
+          "koppen_class": "BSk",
+          "koppen_label": "Cold semi-arid",
+          "elevation_m": 1950,
+          "nearest_town": {
+            "name": "SAMPLE Town D",
+            "distance_km": 12.4
+          },
+          "sources": [
+            "SAMPLE placeholder: Koppen-Geiger 1 km (Beck et al.), not computed",
+            "SAMPLE placeholder: Natural Earth populated places 1:10m, not computed"
+          ],
+          "sample": true
+        }
+      }
+    ],
+    "mission_pct": {
+      "landing": 64.87,
+      "driving": 92.65
+    },
+    "sample": true
+  }
+]

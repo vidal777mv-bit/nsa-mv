@@ -1,0 +1,145 @@
+{
+  "target_id": "oxia_planum",
+  "analog_id": "oxia_planum__pool__pool_01881",
+  "rank": 8,
+  "D": 0.15064490833530297,
+  "tie_group": 0,
+  "features": {
+    "slope_p95_deg": {
+      "target": 2.9656858623150124,
+      "analog": 3.581144683681648,
+      "z_diff": 0.2023897233510348
+    },
+    "hi": {
+      "target": 0.5802342463173906,
+      "analog": 0.573256553750924,
+      "z_diff": -0.10900417282404258
+    },
+    "coherence": {
+      "target": 0.03940856997404845,
+      "analog": 0.11894313741578577,
+      "z_diff": 0.5068378966022595
+    },
+    "hurst": {
+      "target": 0.7379761113954753,
+      "analog": 0.713264676416621,
+      "z_diff": -0.12344292369712144
+    },
+    "ridge_pct": {
+      "target": 0.518000518000518,
+      "analog": 2.4346024346024344,
+      "z_diff": 1.0507856042372221
+    },
+    "valley_pct": {
+      "target": 0.9842009842009842,
+      "analog": 0.0777000777000777,
+      "z_diff": -1.475448536355052
+    }
+  },
+  "vertical_exaggeration": 10.0,
+  "in_distance": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "context_features": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "similar": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "different": [],
+  "context_similar": [
+    "coherence"
+  ],
+  "context_different": [
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "analog_place": {
+    "name": "Inner Mongol, China",
+    "admin1": "Inner Mongol",
+    "country": "China",
+    "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+    "match": "inside",
+    "distance_km": 0.0,
+    "nearest_named_feature": null
+  },
+  "mission_pct": {
+    "landing": {
+      "target": 100.0,
+      "analog": 100.0,
+      "limit_deg": 15.0,
+      "source": "https://marsoweb.nas.nasa.gov/landingsites/mer2003/doc/original.html",
+      "reason": null
+    },
+    "driving": {
+      "target": 100.0,
+      "analog": 100.0,
+      "limit_deg": 30.0,
+      "source": "https://science.nasa.gov/mission/mars-2020-perseverance/rover-components/",
+      "reason": null
+    }
+  },
+  "mission_baseline_m": 100,
+  "rotation_deg": 50.0,
+  "rotation_rms": 0.5110662085836525,
+  "files": {
+    "target": "terrain/oxia_planum/",
+    "analog": "terrain/oxia_planum__pool__pool_01881/"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:52:38Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "usgs_ctx_dtm_oxia_n06_064538",
+        "path": "data/raw/mars/oxia_planum/usgs_ctx_dtm_oxia_n06_064538_win6km.tif",
+        "sha256": "4f20646c51e142897fee8682442d613f4b94db352c149e611d4aebd989902555"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01881.tif",
+        "sha256": "a8011f52b73ba473ed59cbe7f9438ab68cea3445107bcb0a06993428c8c0debf"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  },
+  "context": {
+    "koppen_class": "BWk",
+    "koppen_label": "Arid, desert, cold",
+    "koppen_code": 5,
+    "elevation_m": 1083.1605251694843,
+    "nearest_town": {
+      "name": "Erenhot",
+      "country": "China",
+      "distance_km": 125.12
+    },
+    "sources": {
+      "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+      "elevation": "nasadem window mean over the 4 km disk (source_id of the window's measure record)",
+      "town": "Natural Earth 1:10m populated places (public domain)",
+      "novelty": "config/known_analog_regions.json (circle approximation)"
+    }
+  },
+  "novelty": "new",
+  "known_region_id": null,
+  "refined": {
+    "pool_id": "pool__pool_01881",
+    "rank_before": 7,
+    "D_before": 0.17276253075971737,
+    "D_clip_offset0": 0.17800337991098705,
+    "refined_offset_km": [
+      -2.0,
+      0.0
+    ]
+  }
+}

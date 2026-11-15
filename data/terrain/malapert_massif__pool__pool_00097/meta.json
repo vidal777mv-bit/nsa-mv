@@ -1,0 +1,40 @@
+{
+  "id": "malapert_massif__pool__pool_00097",
+  "kind": "analog",
+  "body": "earth",
+  "name": "pool__pool_00097 (refined for malapert_massif)",
+  "lat": -18.23,
+  "lon": -70.14893690548016,
+  "n": 269,
+  "L": 30.0,
+  "R": 4000.0,
+  "native_res_m": 30.887522287092473,
+  "z_min": -373.98915307570417,
+  "z_max": 239.37923860998308,
+  "relief_p99_p1_m": 545.4366557780297,
+  "vertical_exaggeration": 0.8,
+  "source_id": "nasadem",
+  "layers": {
+    "moon": "layers_moon.bin"
+  },
+  "files": {
+    "height": "height.bin",
+    "hillshade": "hillshade.png"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:51:53Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00097.tif",
+        "sha256": "af5ba3adea1b77e80af3018a573edd608775fdc5b94ca4923c65e8c8b6c3557a"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  }
+}

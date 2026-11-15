@@ -1,0 +1,40 @@
+{
+  "id": "pool__pool_03836",
+  "kind": "analog",
+  "body": "earth",
+  "name": "pool__pool_03836",
+  "lat": 81.07,
+  "lon": -26.03,
+  "n": 269,
+  "L": 30.0,
+  "R": 4000.0,
+  "native_res_m": 30.887522287092473,
+  "z_min": -413.24785952925424,
+  "z_max": 290.9146349288411,
+  "relief_p99_p1_m": 675.792233249482,
+  "vertical_exaggeration": 0.8,
+  "source_id": "cop_dem_glo30",
+  "layers": {
+    "moon": "layers_moon.bin"
+  },
+  "files": {
+    "height": "height.bin",
+    "hillshade": "hillshade.png"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:51:56Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01836.tif",
+        "sha256": "c9cfe20612be3b287660e05cc07b4f8cb2eb8da870bb9e854d8a5dddaaf063db"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  }
+}

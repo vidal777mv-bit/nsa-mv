@@ -1,0 +1,193 @@
+{
+  "generated_by": "tools/export_site_facts.py",
+  "generated_at": "2026-11-15T03:54:46Z",
+  "ledger": "data/derived/facts/facts.duckdb",
+  "rule": "Public figures are read from this file only. 'display' is the rounding to show; 'value' is exact.",
+  "figures": {
+    "sites_measured": {
+      "value": 16.0,
+      "display": "16",
+      "unit": "sites",
+      "ledger_view": "n_targets",
+      "definition": "Mars and Moon landing sites whose ground we measured from NASA elevation models."
+    },
+    "sites_mars": {
+      "value": 6.0,
+      "display": "6",
+      "unit": "sites",
+      "ledger_view": "n_targets_mars",
+      "definition": "Mars sites measured (NASA MRO CTX elevation models, 20 m)."
+    },
+    "sites_moon": {
+      "value": 10.0,
+      "display": "10",
+      "unit": "sites",
+      "ledger_view": "n_targets_moon",
+      "definition": "Moon sites measured (NASA LRO LOLA 5 m / 20 m and LROC NAC elevation models)."
+    },
+    "earth_places_searched": {
+      "value": 2730.0,
+      "display": "2,730",
+      "unit": "places",
+      "ledger_view": "n_pool_windows",
+      "definition": "Bare-ground places on Earth (8 km discs) searched for twins: NASA NASADEM from 56 S to 60 N, Copernicus GLO-30 from 60 N to 84 N. Places with 20% or more ice are left out."
+    },
+    "earth_places_nasadem": {
+      "value": 1965.0,
+      "display": "1,965",
+      "unit": "places",
+      "ledger_view": "n_pool_windows_nasadem",
+      "definition": "Bare-ground Earth places searched from NASA NASADEM elevation, 56 S to 60 N."
+    },
+    "earth_places_arctic": {
+      "value": 765.0,
+      "display": "765",
+      "unit": "places",
+      "ledger_view": "n_pool_windows_arctic",
+      "definition": "Bare-ground Earth places searched from Copernicus GLO-30 elevation, 60 N to 84 N (the Arctic)."
+    },
+    "earth_places_excluded": {
+      "value": 1335.0,
+      "display": "1,335",
+      "unit": "places",
+      "ledger_view": "n_pool_excluded",
+      "definition": "Earth places left out of the search: ice covers 20% or more of the disc, or bare ground covers less than 80% of it."
+    },
+    "window_diameter_km": {
+      "value": 8.0,
+      "display": "8 km",
+      "unit": "km",
+      "ledger_view": "window_diameter_km",
+      "definition": "Every place, on every world, is a disc of this diameter, measured the same way."
+    },
+    "mars_places_measured": {
+      "value": 1838.0,
+      "display": "1,838",
+      "unit": "places",
+      "ledger_view": "mars_cells_measured",
+      "definition": "Places across Mars measured from NASA MRO CTX elevation models and compared with Earth."
+    },
+    "mars_gap_places": {
+      "value": 84.0,
+      "display": "84",
+      "unit": "places",
+      "ledger_view": "mars_gap_cells",
+      "definition": "Mars places with no Earth place within the measurement noise of their relief class."
+    },
+    "mars_gap_pct": {
+      "value": 4.570184983677911,
+      "display": "4.6%",
+      "unit": "percent",
+      "ledger_view": "mars_gap_pct",
+      "definition": "Share of the measured Mars places that Earth cannot rehearse (no twin within measurement noise)."
+    },
+    "mars_gap_pct_ci_low": {
+      "value": 3.706499176508708,
+      "display": "3.7%",
+      "unit": "percent",
+      "ledger_view": "mars_gap_wilson_lo",
+      "definition": "Lower end of the 95% Wilson interval of the Mars gap share."
+    },
+    "mars_gap_pct_ci_high": {
+      "value": 5.623373275470392,
+      "display": "5.6%",
+      "unit": "percent",
+      "ledger_view": "mars_gap_wilson_hi",
+      "definition": "Upper end of the 95% Wilson interval of the Mars gap share."
+    },
+    "mars_rehearsable_pct": {
+      "value": 95.4298150163221,
+      "display": "95.4%",
+      "unit": "percent",
+      "ledger_view": "mars_rehearsable_pct",
+      "definition": "Share of the measured Mars places that have at least one Earth twin within measurement noise."
+    },
+    "moon_sites": {
+      "value": 10.0,
+      "display": "10",
+      "unit": "sites",
+      "ledger_view": "moon_targets_total",
+      "definition": "Moon sites checked for an Earth twin."
+    },
+    "moon_gap_sites": {
+      "value": 1.0,
+      "display": "1",
+      "unit": "sites",
+      "ledger_view": "moon_gap_targets",
+      "definition": "Moon sites with no Earth place within measurement noise (the Earth search covers 56 S to 84 N; places with 20% or more ice are left out).",
+      "ids": [
+        "de_gerlache_rim_2"
+      ]
+    },
+    "moon_gap_sites_nasadem": {
+      "value": 3.0,
+      "display": "3",
+      "unit": "sites",
+      "ledger_view": "moon_gap_targets_nasadem",
+      "definition": "Moon sites with no NASADEM Earth place within measurement noise (NASADEM covers 56 S to 60 N only)."
+    },
+    "mars_gap_places_nasadem": {
+      "value": 215.0,
+      "display": "215",
+      "unit": "places",
+      "ledger_view": "mars_gap_cells_nasadem",
+      "definition": "Mars places with no NASADEM Earth place (56 S to 60 N) within the measurement noise of their relief class."
+    },
+    "mars_gap_pct_nasadem": {
+      "value": 11.697497279651795,
+      "display": "11.7%",
+      "unit": "percent",
+      "ledger_view": "mars_gap_pct_nasadem",
+      "definition": "Share of the measured Mars places with no NASADEM Earth twin (56 S to 60 N) within measurement noise."
+    },
+    "mars_rehearsable_pct_nasadem": {
+      "value": 88.3025027203482,
+      "display": "88.3%",
+      "unit": "percent",
+      "ledger_view": "mars_rehearsable_pct_nasadem",
+      "definition": "Share of the measured Mars places with at least one NASADEM Earth twin (56 S to 60 N) within measurement noise."
+    },
+    "twin_places": {
+      "value": 1786.0,
+      "display": "1,786",
+      "unit": "places",
+      "ledger_view": "n_discovery_places",
+      "definition": "Distinct Earth places that are a top-three twin of a site or of a Mars place (a place counts once)."
+    },
+    "new_twin_places": {
+      "value": 1736.0,
+      "display": "1,736",
+      "unit": "places",
+      "ledger_view": "n_new_places",
+      "definition": "Twin places outside the well-known analog regions (drawn as circles, an approximation)."
+    },
+    "known_twin_places": {
+      "value": 50.0,
+      "display": "50",
+      "unit": "places",
+      "ledger_view": "n_known_places",
+      "definition": "Twin places inside one of the well-known analog regions."
+    },
+    "known_regions": {
+      "value": 22.0,
+      "display": "22",
+      "unit": "regions",
+      "ledger_view": "n_known_regions",
+      "definition": "Well-known Earth analog regions used to tell new from known."
+    },
+    "earth_low_sun_max_pct": {
+      "value": 18.643904320987655,
+      "display": "18.6%",
+      "unit": "percent",
+      "ledger_view": "earth_grazing_max_pct",
+      "definition": "Most grazing sunlight any place on Earth gets; far below the lunar south pole, so low sun cannot be rehearsed on Earth."
+    },
+    "validation_auc": {
+      "value": 0.6948148148148148,
+      "display": "0.69",
+      "unit": "AUC",
+      "ledger_view": "auc_v13",
+      "definition": "Blind test on 15 new Earth regions: how well the measure tells same-kind terrain from different (0.5 = chance, 1 = perfect). Pre-registered pass mark: 0.70."
+    }
+  }
+}

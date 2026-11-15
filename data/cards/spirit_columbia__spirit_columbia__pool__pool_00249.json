@@ -1,0 +1,145 @@
+{
+  "target_id": "spirit_columbia",
+  "analog_id": "spirit_columbia__pool__pool_00249",
+  "rank": 5,
+  "D": 0.17087991727029256,
+  "tie_group": 0,
+  "features": {
+    "slope_p95_deg": {
+      "target": 4.129437544489405,
+      "analog": 3.6402820985397755,
+      "z_diff": -0.16085566075983201
+    },
+    "hi": {
+      "target": 0.3847510906520168,
+      "analog": 0.39191377121240517,
+      "z_diff": 0.11189401972797834
+    },
+    "coherence": {
+      "target": 0.13277763329610026,
+      "analog": 0.24694111962234333,
+      "z_diff": 0.7275123652462268
+    },
+    "hurst": {
+      "target": 0.523286853533869,
+      "analog": 0.4788813819876038,
+      "z_diff": -0.22182205284763443
+    },
+    "ridge_pct": {
+      "target": 2.356902356902357,
+      "analog": 1.7871017871017871,
+      "z_diff": -0.31239572017863354
+    },
+    "valley_pct": {
+      "target": 1.7353017353017353,
+      "analog": 0.4144004144004144,
+      "z_diff": -2.149939295831647
+    }
+  },
+  "vertical_exaggeration": 10.0,
+  "in_distance": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "context_features": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "similar": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "different": [],
+  "context_similar": [
+    "coherence",
+    "ridge_pct"
+  ],
+  "context_different": [
+    "valley_pct"
+  ],
+  "analog_place": {
+    "name": "Borkou, Chad",
+    "admin1": "Borkou",
+    "country": "Chad",
+    "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+    "match": "inside",
+    "distance_km": 0.0,
+    "nearest_named_feature": null
+  },
+  "mission_pct": {
+    "landing": {
+      "target": 100.0,
+      "analog": 100.0,
+      "limit_deg": 15.0,
+      "source": "https://marsoweb.nas.nasa.gov/landingsites/mer2003/doc/original.html",
+      "reason": null
+    },
+    "driving": {
+      "target": 100.0,
+      "analog": 100.0,
+      "limit_deg": 30.0,
+      "source": "https://science.nasa.gov/mission/mars-2020-perseverance/rover-components/",
+      "reason": null
+    }
+  },
+  "mission_baseline_m": 100,
+  "rotation_deg": 20.0,
+  "rotation_rms": 1.1990448973622945,
+  "files": {
+    "target": "terrain/spirit_columbia/",
+    "analog": "terrain/spirit_columbia__pool__pool_00249/"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:52:33Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "usgs_ctx_dtm_spirit_p22_009530",
+        "path": "data/raw/mars/spirit_columbia/usgs_ctx_dtm_spirit_p22_009530_win6km.tif",
+        "sha256": "718f4f4ace185de5a02250b27f9f97db5444a4d473424c49e94ce310aa3aaae6"
+      },
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_00249.tif",
+        "sha256": "6977bbe74c7045bc2c2bc7d304c0a4f7246b0b7b879c5163cf30719b6e22cc82"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  },
+  "context": {
+    "koppen_class": "BWh",
+    "koppen_label": "Arid, desert, hot",
+    "koppen_code": 4,
+    "elevation_m": 213.13434021479705,
+    "nearest_town": {
+      "name": "Faya Largeau",
+      "country": "Chad",
+      "distance_km": 19.97
+    },
+    "sources": {
+      "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+      "elevation": "nasadem window mean over the 4 km disk (source_id of the window's measure record)",
+      "town": "Natural Earth 1:10m populated places (public domain)",
+      "novelty": "config/known_analog_regions.json (circle approximation)"
+    }
+  },
+  "novelty": "new",
+  "known_region_id": null,
+  "refined": {
+    "pool_id": "pool__pool_00249",
+    "rank_before": 5,
+    "D_before": 0.23965538021515795,
+    "D_clip_offset0": 0.2450103399420633,
+    "refined_offset_km": [
+      4.0,
+      0.0
+    ]
+  }
+}

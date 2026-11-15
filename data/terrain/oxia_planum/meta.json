@@ -1,0 +1,40 @@
+{
+  "id": "oxia_planum",
+  "kind": "target",
+  "body": "mars",
+  "name": "Oxia Planum, ExoMars Rosalind Franklin landing site (favoured ellipse)",
+  "lat": 18.2,
+  "lon": -24.55,
+  "n": 269,
+  "L": 30.0,
+  "R": 4000.0,
+  "native_res_m": 20.0403039136415,
+  "z_min": -37.597683799273,
+  "z_max": 37.40542309865441,
+  "relief_p99_p1_m": 56.53689543185337,
+  "vertical_exaggeration": 0.8,
+  "source_id": "usgs_ctx_dtm_oxia_n06_064538",
+  "layers": {
+    "mars": "layers_mars.bin"
+  },
+  "files": {
+    "height": "height.bin",
+    "hillshade": "hillshade.png"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:51:50Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "usgs_ctx_dtm_oxia_n06_064538",
+        "path": "data/raw/mars/oxia_planum/usgs_ctx_dtm_oxia_n06_064538_win6km.tif",
+        "sha256": "4f20646c51e142897fee8682442d613f4b94db352c149e611d4aebd989902555"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  }
+}

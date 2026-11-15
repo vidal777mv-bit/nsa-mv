@@ -1,0 +1,40 @@
+{
+  "id": "apollo17_taurus_littrow__pool__pool_01577",
+  "kind": "analog",
+  "body": "earth",
+  "name": "pool__pool_01577 (refined for apollo17_taurus_littrow)",
+  "lat": 35.77,
+  "lon": 54.07,
+  "n": 269,
+  "L": 30.0,
+  "R": 4000.0,
+  "native_res_m": 30.887522287092473,
+  "z_min": -188.91102361394883,
+  "z_max": 303.42387890227565,
+  "relief_p99_p1_m": 404.945298448343,
+  "vertical_exaggeration": 0.8,
+  "source_id": "nasadem",
+  "layers": {
+    "moon": "layers_moon.bin"
+  },
+  "files": {
+    "height": "height.bin",
+    "hillshade": "hillshade.png"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:52:01Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01577.tif",
+        "sha256": "878a99b51731e0ec458f21c0ed83ddbeb72e5cebc008cc13ffaf8fb67c8eafbd"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  }
+}

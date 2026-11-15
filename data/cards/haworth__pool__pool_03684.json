@@ -1,0 +1,141 @@
+{
+  "target_id": "haworth",
+  "analog_id": "pool__pool_03684",
+  "rank": 8,
+  "D": 0.5212585410163894,
+  "tie_group": 0,
+  "features": {
+    "slope_p95_deg": {
+      "target": 12.812275454686848,
+      "analog": 12.75742288664019,
+      "z_diff": -0.018037918519724028
+    },
+    "hi": {
+      "target": 0.5921259614546118,
+      "analog": 0.5574229048412247,
+      "z_diff": -0.542124483785291
+    },
+    "coherence": {
+      "target": 0.34173675241727663,
+      "analog": 0.07923249941983844,
+      "z_diff": -1.6728211105923472
+    },
+    "hurst": {
+      "target": 0.9618269871320272,
+      "analog": 0.8173456024747788,
+      "z_diff": -0.7217389260138406
+    },
+    "ridge_pct": {
+      "target": 9.91970991970992,
+      "analog": 16.36881636881637,
+      "z_diff": 3.5357515602036256
+    },
+    "valley_pct": {
+      "target": 11.706811706811706,
+      "analog": 14.814814814814815,
+      "z_diff": 5.0586806960744655
+    }
+  },
+  "vertical_exaggeration": 2.4,
+  "in_distance": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "context_features": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "similar": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "different": [],
+  "context_similar": [],
+  "context_different": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "analog_place": {
+    "name": "Krasnoyarsk, Russia",
+    "admin1": "Krasnoyarsk",
+    "country": "Russia",
+    "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+    "match": "inside",
+    "distance_km": 0.0,
+    "nearest_named_feature": null
+  },
+  "mission_pct": {
+    "landing": {
+      "target": 90.6477817121433,
+      "analog": 93.73047281816288,
+      "limit_deg": 12.0,
+      "source": "https://ntrs.nasa.gov/citations/19720018253",
+      "reason": null
+    },
+    "driving": {
+      "target": 100.0,
+      "analog": 100.0,
+      "limit_deg": 25.0,
+      "source": "https://ntrs.nasa.gov/citations/19730008090",
+      "reason": null
+    }
+  },
+  "mission_baseline_m": 100,
+  "rotation_deg": 310.0,
+  "rotation_rms": 1.180246554427379,
+  "files": {
+    "target": "terrain/haworth/",
+    "analog": "terrain/pool__pool_03684/"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:52:08Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "lola_5m_haworth_surf",
+        "path": "data/raw/moon/haworth/lola_5m_haworth_surf.tif",
+        "sha256": "387fd6e99bca266f4982f7256c4c185921105313882b4c2eee5b5ff1ef75016b"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_01684.tif",
+        "sha256": "62d13f667a17a0d55563127eb9986c758016589fd2dcff45c87e960d5eb27fe3"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  },
+  "context": {
+    "koppen_class": "ET",
+    "koppen_label": "Polar, tundra",
+    "koppen_code": 29,
+    "elevation_m": 392.20745221746,
+    "nearest_town": {
+      "name": "Nordvik",
+      "country": "Russia",
+      "distance_km": 218.26
+    },
+    "sources": {
+      "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+      "elevation": "cop_dem_glo30 window mean over the 4 km disk (source_id of the window's measure record)",
+      "town": "Natural Earth 1:10m populated places (public domain)",
+      "novelty": "config/known_analog_regions.json (circle approximation)"
+    }
+  },
+  "novelty": "new",
+  "known_region_id": null,
+  "refined": {
+    "pool_id": "pool__pool_03684",
+    "rank_before": 7,
+    "D_before": 0.5212585410163894,
+    "D_clip_offset0": null,
+    "refined_offset_km": null
+  }
+}

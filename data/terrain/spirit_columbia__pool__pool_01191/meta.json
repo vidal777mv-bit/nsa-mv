@@ -1,0 +1,40 @@
+{
+  "id": "spirit_columbia__pool__pool_01191",
+  "kind": "analog",
+  "body": "earth",
+  "name": "pool__pool_01191 (refined for spirit_columbia)",
+  "lat": 29.75201356842439,
+  "lon": -1.13,
+  "n": 269,
+  "L": 30.0,
+  "R": 4000.0,
+  "native_res_m": 30.887522287092473,
+  "z_min": -24.42076327035869,
+  "z_max": 36.64223910846033,
+  "relief_p99_p1_m": 41.63497059513962,
+  "vertical_exaggeration": 0.8,
+  "source_id": "nasadem",
+  "layers": {
+    "mars": "layers_mars.bin"
+  },
+  "files": {
+    "height": "height.bin",
+    "hillshade": "hillshade.png"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:51:58Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "nasadem",
+        "path": "data/derived/refine/clips/pool__pool_01191.tif",
+        "sha256": "007e490e8c7b8e4586167cd42d68fc2480f50f886ef9eba10dc420d95650cff1"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  }
+}

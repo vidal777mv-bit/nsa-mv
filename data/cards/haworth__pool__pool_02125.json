@@ -1,0 +1,141 @@
+{
+  "target_id": "haworth",
+  "analog_id": "pool__pool_02125",
+  "rank": 9,
+  "D": 0.5491259371796396,
+  "tie_group": 0,
+  "features": {
+    "slope_p95_deg": {
+      "target": 12.812275454686848,
+      "analog": 11.925116373646892,
+      "z_diff": -0.29173662761277397
+    },
+    "hi": {
+      "target": 0.5921259614546118,
+      "analog": 0.5899895494788343,
+      "z_diff": -0.03337461747027525
+    },
+    "coherence": {
+      "target": 0.34173675241727663,
+      "analog": 0.10189026840612425,
+      "z_diff": -1.5284333765027462
+    },
+    "hurst": {
+      "target": 0.9618269871320272,
+      "analog": 0.7807292929627584,
+      "z_diff": -0.9046511812119028
+    },
+    "ridge_pct": {
+      "target": 9.91970991970992,
+      "analog": 19.917119917119916,
+      "z_diff": 5.481124908588752
+    },
+    "valley_pct": {
+      "target": 11.706811706811706,
+      "analog": 19.32141932141932,
+      "z_diff": 12.393767705382436
+    }
+  },
+  "vertical_exaggeration": 2.4,
+  "in_distance": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "context_features": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "similar": [
+    "slope_p95_deg",
+    "hi",
+    "hurst"
+  ],
+  "different": [],
+  "context_similar": [],
+  "context_different": [
+    "coherence",
+    "ridge_pct",
+    "valley_pct"
+  ],
+  "analog_place": {
+    "name": "Nunavut, Canada",
+    "admin1": "Nunavut",
+    "country": "Canada",
+    "source": "Natural Earth 1:10m admin-1 states/provinces v5.1.1 (public domain), ne_10m_admin_1_states_provinces.shp",
+    "match": "inside",
+    "distance_km": 0.0,
+    "nearest_named_feature": null
+  },
+  "mission_pct": {
+    "landing": {
+      "target": 90.6477817121433,
+      "analog": 95.10518641949594,
+      "limit_deg": 12.0,
+      "source": "https://ntrs.nasa.gov/citations/19720018253",
+      "reason": null
+    },
+    "driving": {
+      "target": 100.0,
+      "analog": 100.0,
+      "limit_deg": 25.0,
+      "source": "https://ntrs.nasa.gov/citations/19730008090",
+      "reason": null
+    }
+  },
+  "mission_baseline_m": 100,
+  "rotation_deg": 220.0,
+  "rotation_rms": 1.0199978861484438,
+  "files": {
+    "target": "terrain/haworth/",
+    "analog": "terrain/pool__pool_02125/"
+  },
+  "provenance": {
+    "schema": "analog.cards/1",
+    "created": "2026-11-15T03:52:09Z",
+    "config_version": "1.3",
+    "config_sha256": "72a1fab6566598ba2238ded10091d0ea52bc8ee086015d5e5e02eee056403eab",
+    "code_version": "uncommitted",
+    "inputs": [
+      {
+        "source_id": "lola_5m_haworth_surf",
+        "path": "data/raw/moon/haworth/lola_5m_haworth_surf.tif",
+        "sha256": "387fd6e99bca266f4982f7256c4c185921105313882b4c2eee5b5ff1ef75016b"
+      },
+      {
+        "source_id": "cop_dem_glo30",
+        "path": "data/raw/earth/arctic_probe/arc_00125.tif",
+        "sha256": "fef8e78d3ccb1669ea3f97b3f3333d6122dc8be652185af70e826411d7334e5f"
+      }
+    ],
+    "generated_with": "Code written with AI assistance (Claude, Anthropic) under the team's direction; data computed by this code from the listed sources.",
+    "config_file": "config/measure.json"
+  },
+  "context": {
+    "koppen_class": "ET",
+    "koppen_label": "Polar, tundra",
+    "koppen_code": 29,
+    "elevation_m": 288.2743145703254,
+    "nearest_town": {
+      "name": "Arctic Bay",
+      "country": "Canada",
+      "distance_km": 67.44
+    },
+    "sources": {
+      "koppen": "Beck et al. 2018/2023 Koppen-Geiger 1 km, CC BY 4.0 (Beck_KG_V1_present_0p0083.tif)",
+      "elevation": "cop_dem_glo30 window mean over the 4 km disk (source_id of the window's measure record)",
+      "town": "Natural Earth 1:10m populated places (public domain)",
+      "novelty": "config/known_analog_regions.json (circle approximation)"
+    }
+  },
+  "novelty": "new",
+  "known_region_id": null,
+  "refined": {
+    "pool_id": "pool__pool_02125",
+    "rank_before": 8,
+    "D_before": 0.5491259371796396,
+    "D_clip_offset0": null,
+    "refined_offset_km": null
+  }
+}
