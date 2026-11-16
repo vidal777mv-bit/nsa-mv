@@ -31,6 +31,14 @@ from its own measure record (nasadem, or copdem above 60 N). Each window listed 
 gets one fact 'excluded_rule'. Earth gap under the NASADEM band only: 'earth_gap_nasadem' (neighbors column gap_nasadem,
 written when the P-N output has it; without it no such facts are made, and the build logs that).
 
+Permanent-base layer (data/derived/moon_base/moon_base.json, pipelines/moon_base.py, NASA PGDA LOLA products): target facts
+for each Moon site (illum_mean_pct, illum_max_pct, earth_vis_pct, psr_nearest_km, psr_area_km2; footprint local, scale = the
+8 km disk). A site outside the 75 S to 90 S product has no value and no fact. Verified as its centre in config/sites.json.
+Tilt (site/data/tilt.json, tools/export_tilt.py): tilt_deg and downhill_azimuth_deg of every terrain disk (subject target
+for a site, earth_window for a window). External validation (data/derived/validation/external.json,
+pipelines/validate_external.py): summary facts, subject 'validation' 'external'. These rows come last, so the ids of the
+earlier rows keep their order.
+
 Usage: .venv/Scripts/python.exe tools/build_ledger.py [--sample N]
 """
 
@@ -117,11 +125,17 @@ def measure_facts(rec: dict[str, Any], subject_type: str, subject_id: str, body:
     return out
 
 
+def centre_verified(site: dict[str, Any]) -> bool:
+    """A centre from a secondary source or flagged NOT CONFIRMED in config/sites.json is not verified."""
+    how = (site.get("center_source") or {}).get("how", "")
+    return not ("SECONDARY" in how or "NOT CONFIRMED" in how)
+
+
 def centre_facts(site: dict[str, Any]) -> list[dict[str, Any]]:
     """Centre and provenance of a target from config/sites.json. Secondary or NOT CONFIRMED centres: verified false."""
     how = (site.get("center_source") or {}).get("how", "")
     url = (site.get("center_source") or {}).get("url")
-    verified = not ("SECONDARY" in how or "NOT CONFIRMED" in how)
+    verified = centre_verified(site)
     base = dict(subject_type="target", subject_id=site["id"], body=site["body"], footprint="point", kind="published",
                 level="observation", source_url=url, verified=verified, produced_by="config/sites.json")
     return [fact(prop=p, value=site[k], **base) for p, k in (("centre_lat", "lat"), ("centre_lon", "lon"))] + [
@@ -178,6 +192,12 @@ def load_inputs(paths) -> dict[str, Any]:
     data["neighbors_run"] = load_json(ndir / "run.json") if (ndir / "run.json").exists() else None
     xpath = paths.derived / "pool_rules" / "excluded.json"
     data["excluded"] = load_json(xpath) if xpath.exists() else None
+    mpath = paths.derived / "moon_base" / "moon_base.json"
+    data["moon_base"] = load_json(mpath) if mpath.exists() else None
+    tpath = paths.site_data / "tilt.json"
+    data["tilt"] = load_json(tpath) if tpath.exists() else None
+    epath = paths.derived / "validation" / "external.json"
+    data["external"] = load_json(epath) if epath.exists() else None
     return data
 
 
@@ -494,6 +514,9 @@ def build_rows(paths, data: dict[str, Any], sample: int | None) -> list[dict[str
     rows += earth_grazing_rows(data)
     rows += gap_nasadem_rows(data)
     rows += excluded_rows(data)
+    rows += moon_base_rows(data)  # appended last: earlier fact ids keep their order
+    rows += tilt_rows(data)
+    rows += external_rows(data)
 
     for i, r in enumerate(rows, start=1):
         r["fact_id"] = f"F{i:07d}"
@@ -666,6 +689,75 @@ def excluded_rows(data: dict[str, Any]) -> list[dict[str, Any]]:
     return rows
 
 
+DISK_M = 8000.0  # the 8 km disk (4 km radius) of the Moon base layer and of every terrain (site/data/terrain meta R)
+MOON_BASE_PROPS = (("illum_mean_pct", "percent", "pgda_illum_75s_120m"),
+                   ("illum_max_pct", "percent", "pgda_illum_75s_120m"),
+                   ("earth_vis_pct", "percent", "pgda_earth_vis_75s_120m"),
+                   ("psr_nearest_km", "km", "pgda_psr_75s_120m"),
+                   ("psr_area_km2", "km2", "pgda_psr_75s_120m"))
+EXTERNAL_PROPS = (("n_pairs_listed", "pairs"), ("n_valid", "pairs"), ("min_pairs", "pairs"), ("n_within_tie", "pairs"),
+                  ("median_percentile", "percent"), ("wilcoxon_p_less", "p"), ("verdict", None))
+
+
+def moon_base_rows(data: dict[str, Any]) -> list[dict[str, Any]]:
+    """Permanent-base layer of each Moon site (pipelines/moon_base.py, PGDA LOLA products, Mazarico et al. 2011). Target
+    subjects with footprint local. A site with no value (outside the 75 S to 90 S product) gets no fact."""
+    mb = data.get("moon_base")
+    if mb is None:
+        print("moon base facts skipped: data/derived/moon_base/moon_base.json not found")
+        return []
+    targets = {s["id"]: s for s in data["sites"] if s.get("role") == "target"}
+    sources = {s["id"]: s for s in mb.get("sources", [])}
+    rows: list[dict[str, Any]] = []
+    for sid, site in mb["sites"].items():
+        if sid not in targets:
+            raise ValueError(f"moon base site {sid!r} is not a target in config/sites.json")
+        t = targets[sid]
+        for prop, unit, src in MOON_BASE_PROPS:
+            if site.get(prop) is None:
+                continue
+            rows.append(fact("target", sid, prop, site[prop], body=t["body"], unit=unit, scale_m=DISK_M, footprint="local",
+                             kind="derived", level="observation", source_id=src,
+                             source_url=(sources.get(src) or {}).get("url"), verified=centre_verified(t),
+                             produced_by="pipelines/moon_base.py"))
+    return rows
+
+
+def tilt_rows(data: dict[str, Any]) -> list[dict[str, Any]]:
+    """Overall tilt and downhill azimuth of every terrain disk (tools/export_tilt.py, plane fit over the 8 km disk). A
+    terrain of a site is subject 'target'; every other terrain is an Earth window ('earth_window'). Flat ground has no
+    downhill direction: no fact for that property."""
+    tl = data.get("tilt")
+    if tl is None:
+        print("tilt facts skipped: site/data/tilt.json not found")
+        return []
+    body_of = {s["id"]: s["body"] for s in data["sites"] if s.get("role") == "target"}
+    rows: list[dict[str, Any]] = []
+    for tid, t in tl["terrains"].items():
+        subject_type, body = ("target", body_of[tid]) if tid in body_of else ("earth_window", "earth")
+        for prop in ("tilt_deg", "downhill_azimuth_deg"):
+            if t.get(prop) is None:
+                continue
+            rows.append(fact(subject_type, tid, prop, t[prop], body=body, unit="deg", scale_m=DISK_M, footprint="local",
+                             kind="derived", level="observation", produced_by="tools/export_tilt.py"))
+    return rows
+
+
+def external_rows(data: dict[str, Any]) -> list[dict[str, Any]]:
+    """Summary of the external validation (pipelines/validate_external.py, pre-registered): subject 'validation' 'external'.
+    The verdict is text, as the file writes it (no number is forced when the pairs are fewer than the minimum)."""
+    ex = data.get("external")
+    if ex is None:
+        print("external validation facts skipped: data/derived/validation/external.json not found")
+        return []
+    base = dict(subject_type="validation", subject_id="external", footprint="regional", kind="derived", level="observation",
+                scale_m=100, source_id="validation_external", produced_by="pipelines/validate_external.py", verified=True,
+                config_version=ex.get("config_version", CONFIG_VERSION))
+    rows = [fact(prop=prop, value=ex[prop], unit=unit, **base) for prop, unit in EXTERNAL_PROPS if ex.get(prop) is not None]
+    rows.append(fact(prop="pool_n_with_D", value=ex["pool"]["n_with_D"], unit="windows", **base))
+    return rows
+
+
 def _load_optional(paths, p: Path) -> dict[str, Any] | None:
     """A persisted per-window JSON that may be absent (no mission file for that window yet)."""
     return load_json(p) if p.exists() else None
@@ -761,6 +853,18 @@ NASADEM_VIEWS = {
     "moon_gap_targets_nasadem": "SELECT count(*) AS value FROM facts WHERE subject_type='target' AND property='earth_gap_nasadem' AND value_num = 1 AND body='moon'",
 }
 VIEWS.update(NASADEM_VIEWS)
+
+# Moon base layer and external validation (public figures in export_site_facts.py). Single values, one row each.
+_EXT = "FROM facts WHERE subject_type='validation' AND subject_id='external' AND property='{p}'"
+BASE_VALIDATION_VIEWS = {
+    "moon_base_sites": "SELECT count(DISTINCT subject_id) AS value FROM facts WHERE subject_type='target' AND property='illum_mean_pct' AND body='moon'",
+    "external_pairs_listed": "SELECT value_num AS value " + _EXT.format(p="n_pairs_listed"),
+    "external_pairs_valid": "SELECT value_num AS value " + _EXT.format(p="n_valid"),
+    "external_median_percentile": "SELECT value_num AS value " + _EXT.format(p="median_percentile"),
+    "external_wilcoxon_p": "SELECT value_num AS value " + _EXT.format(p="wilcoxon_p_less"),
+    "external_verdict": "SELECT value_text AS value " + _EXT.format(p="verdict"),
+}
+VIEWS.update(BASE_VALIDATION_VIEWS)
 
 
 def write_ledger(out_dir: Path, rows: list[dict[str, Any]]) -> dict[str, Any]:

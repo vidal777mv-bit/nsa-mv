@@ -48,6 +48,6 @@ export_query -> rehearsal -> export_ties -> export_sources -> build_ledger -> ex
 check_ledger, check_site_data.
 
 ## Validation sample (approved design: census where small, sample where large)
-The 211 Mars gap cells (closures must match the rock-only prediction), the 10 Moon sites, the 16 target lists
+The 211 Mars gap cells (historical, before the Arctic integration; current: 84 of 1,838 with all bands, 215 with NASADEM only) (closures must match the rock-only prediction), the 10 Moon sites, the 16 target lists
 (before vs after, each change explained), the 34 excluded NASADEM windows (9 were Mars-cell twins), and a visual
 check of every Arctic window that enters a top 10.

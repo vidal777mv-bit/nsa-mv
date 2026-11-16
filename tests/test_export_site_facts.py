@@ -24,9 +24,11 @@ def _ledger(tmp: Path, drop: str | None = None, places_new: int = 5) -> Path:
     values["n_new_places"] = float(places_new)
     values["n_discovery_places"] = 7.0
     values["n_known_places"] = 2.0
+    values["external_verdict"] = "insuficiente"  # a text view (the external verdict), not a number
     for view, v in values.items():
         if view != drop:
-            con.execute(f"CREATE VIEW {view} AS SELECT {v} AS value")
+            lit = f"'{v}'" if isinstance(v, str) else v
+            con.execute(f"CREATE VIEW {view} AS SELECT {lit} AS value")
     con.close()
     return p
 
@@ -78,6 +80,14 @@ def test_new_sensor_gap_and_exclusion_figures_read_their_views(tmp_path: Path, m
                       ("mars_gap_pct_nasadem", "mars_gap_pct_nasadem"), ("mars_rehearsable_pct_nasadem", "mars_rehearsable_pct_nasadem"),
                       ("moon_gap_sites_nasadem", "moon_gap_targets_nasadem")):
         assert figs[key]["ledger_view"] == view and figs[key]["definition"], key
+
+
+def test_verdict_figure_is_kept_as_text(tmp_path: Path, monkeypatch):
+    monkeypatch.setattr(EF, "export_explain", lambda: 0)
+    out = tmp_path / "facts.json"
+    assert EF.main(_ledger(tmp_path), out, _disc(tmp_path)) == 0
+    fig = json.loads(out.read_text(encoding="utf-8"))["figures"]["external_verdict"]
+    assert fig["value"] == "insuficiente" and fig["display"] == "insuficiente" and fig["ledger_view"] == "external_verdict"
 
 
 def test_missing_new_view_is_refused(tmp_path: Path):

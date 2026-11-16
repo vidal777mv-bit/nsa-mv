@@ -11,7 +11,7 @@ Checks:
   meta.json, hillshade.png and meta.json present; the analog's layer file for the target's body exists;
 - bodies.json, missions.json, validation.json and viz.json parse, and validation.json has the v1.2, v1.3 and v1.3_noise
   blocks.
-- root files the interface reads (ROOT_FILE_KEYS: facts, ties, explain, sources, tilt): each parses and has its main keys.
+- root files the interface reads (ROOT_FILE_KEYS: facts, ties, explain, sources, tilt, moon_base): each parses and has its main keys.
 - rehearsal/ (STANDARDS 10.15, P-P): when the folder exists, every pair card in cards/ has a rehearsal file with the same
   name, no rehearsal file lacks its card, each file has {provenance, target_id, analog_id, lines} with the eight lines in
   order, a status of yes | partial | no | null (null needs a reason), group 'cannot' lines are status no. When the folder
@@ -83,6 +83,7 @@ ROOT_FILE_KEYS = {
     "explain.json": ("doc", "similarity", "features", "layers", "mission_pct", "scope"),
     "sources.json": ("generated_by", "sources", "by_url"),
     "tilt.json": ("generated_by", "method", "terrains"),
+    "moon_base.json": ("generated_by", "sources", "sites"),
 }
 
 

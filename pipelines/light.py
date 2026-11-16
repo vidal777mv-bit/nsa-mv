@@ -1,10 +1,10 @@
-"""P-S light (STANDARDS 10.15): sun-light numbers for the 16 targets and the 2000 Earth windows, plus P-S1 local horizon
+"""P-S light (STANDARDS 10.15): sun-light numbers for the 16 targets and the 4,065 Earth windows, plus P-S1 local horizon
 for the Moon targets that have a LOLA 5 m surface DEM.
 
 Reads (never recomputes what is persisted):
 - site/data/targets.json (targets: body, lat)
 - config/light.json (obliquity per body, with sources)
-- data/raw/earth/pool/index.json (the 2000 Earth windows: id, lat)
+- data/raw/earth/pool/index.json (the 4,065 Earth windows: id, lat; excluded rows are included and flagged in the index)
 - data/raw/moon/<target>/lola_5m*_surf.tif (surface elevation). The *_toterr.tif files are the total vertical
   uncertainty of LOLA, not elevation, so they are never used.
 

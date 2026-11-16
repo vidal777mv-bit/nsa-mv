@@ -151,7 +151,7 @@ Qué no cambia: `_common.measure_raw`, `config/measure.json`, `noise_v1.3.json`,
 
 **Vía B (alternativa): kind separado `pool_arctic`.** Protege sigma sin guardas, pero exige cambiar cinco lectores (`search.py:116`, `neighbors.py:115` y `:410`, `mars_atlas.py:118`, `earth_context.py:214`, `build_ledger.py:301`) a un conjunto de kinds.
 
-**Predicción derivable (para la muestra de validación):** closed = (min(D_pool, D_arctic) ≤ thr). En las 211 celdas gap, D_pool > thr por definición, así que la integración solo cambia la marca de gap en las celdas que `arctic_probe` ya marcó como cerradas. Con n=400 son 87. Las listas de twins top 3 de Marte y los top 10 de los 16 targets sí pueden cambiar en cualquier celda. Este argumento no está probado: la muestra de validación debe ser las 211 celdas gap, los 7 Artemis III y las 16 listas de targets, en copia.
+**Predicción derivable (para la muestra de validación):** closed = (min(D_pool, D_arctic) ≤ thr). En las 211 celdas gap, D_pool > thr por definición, así que la integración solo cambia la marca de gap en las celdas que `arctic_probe` ya marcó como cerradas. Con n=400 son 87. Las listas de twins top 3 de Marte y los top 10 de los 16 targets sí pueden cambiar en cualquier celda. Este argumento no está probado: la muestra de validación debe ser las 211 celdas gap, los 7 Artemis III y las 16 listas de targets, en copia. (historical, before the Arctic integration; current: 84 of 1,838 with all bands, 215 with NASADEM only; the 211 and 87 above are from the 400-window probe.)
 
 ---
 

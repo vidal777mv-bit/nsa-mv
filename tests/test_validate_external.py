@@ -79,8 +79,8 @@ def test_relief_rule_equal_threshold_is_rugged():
 
 
 def test_verdict_rule_fewer_than_six_pairs_is_insufficient():
-    """PREREG 5: with five valid pairs the verdict is 'insuficiente' whatever the numbers say."""
-    assert ve.verdict_of(5, 5.0, 0.001) == "insuficiente"
-    assert ve.verdict_of(6, 20.0, 0.01) == "PASA"
-    assert ve.verdict_of(6, 30.0, 0.01) == "NO PASA"
-    assert ve.verdict_of(6, 20.0, 0.2) == "NO PASA"
+    """PREREG 5: with five valid pairs the verdict is 'insufficient' whatever the numbers say."""
+    assert ve.verdict_of(5, 5.0, 0.001) == "insufficient"
+    assert ve.verdict_of(6, 20.0, 0.01) == "PASS"
+    assert ve.verdict_of(6, 30.0, 0.01) == "FAIL"
+    assert ve.verdict_of(6, 20.0, 0.2) == "FAIL"

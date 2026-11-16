@@ -154,6 +154,7 @@ AUC perfect separation = 1, identical samples = 0.5; Spearman of a monotone tran
 
 ### 10.1 Calibration and validation
 - `sigma_k = 1.4826 * MAD_k` over the **search pool** (label-free, ~2000 Earth windows), not the dev regions. Written into `measure.json` by `pipelines/calibrate_sigma.py`, once, before validation.
+- **Method note (sigma, 2026-11-15).** Sigma was calibrated on 2026-11-14 (02:53:43 UTC) over the 2,000 original NASADEM windows, before the ice rule and the bare-ground rule of `config/earth_pool_rules.json` (applied 2026-11-15). Of those 2,000 windows, 34 have ice >= 20% (2 of them also have bare ground < 80%) and 1 has bare ground < 80% alone (`data/derived/pool_rules/summary.json`, `summary.nasadem`). Sigma stays frozen on purpose: changing it after seeing results would be an after-the-fact adjustment. Expected effect: removing those 35 windows would lower the spread of `slope_p95_deg`, `ridge_pct` and `valley_pct` and of `hurst` a little, so every D would be rescaled by a few per cent; the frozen tie thresholds (`noise_v1.3.json`) are in the same D units, so they would no longer match. Informative figures (1.4826 x MAD, computed for this note, not written to `config/measure.json`): `slope_p95_deg` 3.04096 with the 2,000 windows, 2.89275 without the 35 (-4.9%); `hi` 0.0640131 / 0.0635761 (-0.7%); `coherence` 0.156923 / 0.157907 (+0.6%); `hurst` 0.200185 / 0.196630 (-1.8%); `ridge_pct` 1.82397 / 1.72797 (-5.3%); `valley_pct` 0.61439 / 0.575991 (-6.3%). The 2,000-window values are reproduced exactly from `_backup_pre_arctic/data/derived/measure/pool__pool_*.json`; the current measure records of the 35 windows now have status `excluded` and null features, so a re-run of `calibrate_sigma.py` (which reads status `ok`) would not reproduce the frozen sigma.
 - V0 redundancy: Spearman over the search pool; flag |rho| > 0.80.
 - V1 sensor noise: the 15 **dev** regions measured with NASADEM and with Copernicus GLO-30; report median and p95 of D(same place, two sensors). In rankings, analogs whose D differs by less than the p95 share a `tie_group`.
 - V2 discrimination: 15 dev regions (5 classes x 3) -> 15 same-class pairs vs 90 different-class pairs; AUC >= 0.70, bootstrap 95% CI lower bound > 0.5, permutation p < 0.05.
@@ -296,6 +297,10 @@ R1 a threshold comparison (mission %) whose limit baseline is null or differs fr
 `comparison: reference` (never `compliance`); R2 a `point` footprint fact is never attached to a region-scale subject;
 R3 every fact has `source_id` or `produced_by`; R4 no two facts with the same (subject_id, property, scale_m) and different
 values; R5 every number rendered by P-G resolves to exactly one fact.
+R6 (added 2026-11-15, as defined in `tools/check_ledger.py`): every feature fact (`slope_p95_deg`, `hi`, `coherence`,
+`hurst`, `ridge_pct`, `valley_pct`) of a target, region, earth_window or mars_cell comes from a record whose `measure_key`
+equals the current config's `measure_key`, read from the `validation` fact `config_v1.3` (the record's true config_version
+is kept in the ledger; a different feature definition under the same version name is a violation). Stricter than R1 to R5.
 
 **P-N Neighbors.** Standardised vector `z_k = x_k / sigma_k` over the in-distance features (equal weights), so
 `D(a,b) = ||z_a - z_b||_2 / sqrt(K)` (K = 3). `scipy.spatial.cKDTree` on the Earth pool gives EXACT k-nearest twins

@@ -3,6 +3,8 @@
 Common Ground: measured Earth analogs for Mars and Moon sites.
 Read-only review of the files on disk, 2026-11-15, about 15:35 local time. No pipeline was re-run and no test was executed. Two read-only checks were run: `tools/check_ledger.py` and `tools/check_site_data.py`.
 
+Documentation pass, 2026-11-15 (documentation and comments only; no logic, data or ledger changed). Items 1, 2, 4, 5 and 8 of section 13 are corrected or annotated there; the list of what changed, file by file, with evidence, is `docs/verification/docs_fixes.md`. Sections 11b and 11c were added.
+
 Every figure names its source file in parentheses. `[not found]` means no file holds the figure.
 
 ## 0. The chain at a glance
@@ -118,7 +120,7 @@ Windows within 25 km of a known analog are kept for the sigma pool but are exclu
 
 **Scripts:** `pipelines/build_pool_index.py` (NASADEM windows), `pipelines/arctic_probe.py` (Arctic clips), `pipelines/pool_rules.py` (`shares`, then `apply`: writes the Arctic rows and the exclusion flags; idempotent).
 
-**Discrepancy:** `config/earth_pool_rules.json` names `pipelines/pool_add_arctic.py` as the builder of the Arctic rows. That file does not exist. The code that does it is `pipelines/pool_rules.py` (its docstring and `tools/build_ledger.py` `produced_by`).
+**Corrected 2026-11-15:** `config/earth_pool_rules.json` now names the real scripts. The Arctic rows are written by `pipelines/pool_rules.py apply` (its docstring; the rows are `pool_02001..`, id = 2000 + probe number). The Arctic candidates and clips come from `pipelines/arctic_probe.py` (`candidates`, `clip`), which reuses the candidate rule of `pipelines/build_pool_index.py`. The former name `pipelines/pool_add_arctic.py` does not exist. Who applies which rule (checked in the code): NASADEM windows and their share >= 0.8 candidate rule, `build_pool_index.py`; the 25 km known-analog flag for NASADEM rows, `build_pool_index.py cmd_index`, and for Arctic rows, `pool_rules.py apply`; the bare and ice shares over the full 4 km disk, `pool_rules.py shares`; the ice >= 20%, bare < 80% and no-clip exclusions on every row, `pool_rules.py apply`. The config values are unchanged.
 
 ---
 
@@ -142,6 +144,8 @@ Windows within 25 km of a known analog are kept for the sigma pool but are exclu
 Run: 2026-11-14 02:53:43 UTC, on 2,000 NASADEM windows (`hi` on 1,994, because 6 flat windows are null). Source: `docs/CHANGELOG.md` (sigma section) and `data/derived/measure/run_log.jsonl`.
 
 **Caveat:** sigma was calibrated before the ice and bare-ground rule and before the Arctic rows. Those 2,000 windows include 34 ice-dominated windows and 1 bare-excluded window (`data/derived/pool_rules/summary.json`, `summary.nasadem`). The design freezes sigma, so it was not recomputed (`docs/ARCTIC_INTEGRATION.md`).
+
+**Method note (2026-11-15).** Sigma was calibrated on 2026-11-14 over the 2,000 original NASADEM windows, before the ice rule; 34 of those windows have ice >= 20% (2 of them also bare < 80%) and 1 has bare ground < 80% alone. Sigma stays frozen on purpose: changing it after seeing results would be an after-the-fact adjustment. Expected effect: without those 35 windows the spread is lower for `slope_p95_deg`, `ridge_pct` and `valley_pct`, and a little lower for `hurst`, so every D is rescaled by a few per cent; the frozen tie thresholds are in the same D units and would no longer match. Informative only (1.4826 x MAD, with the 2,000 windows / without the 35): `slope_p95_deg` 3.04096 / 2.89275 (-4.9%); `hi` 0.0640131 / 0.0635761 (-0.7%); `coherence` 0.156923 / 0.157907 (+0.6%); `hurst` 0.200185 / 0.196630 (-1.8%); `ridge_pct` 1.82397 / 1.72797 (-5.3%); `valley_pct` 0.61439 / 0.575991 (-6.3%). The 2,000-window values are reproduced exactly from `_backup_pre_arctic/data/derived/measure/` (the pre-Arctic backup); the current measure records of the 35 have status `excluded` and null features, so a re-run of `calibrate_sigma.py` would not reproduce the frozen values. `config/measure.json` is not changed by this note.
 
 **Script:** `pipelines/calibrate_sigma.py`, `src/analog/core/stats.py` (`robust_sigma`).
 
@@ -214,7 +218,7 @@ Run: 2026-11-14 02:53:43 UTC, on 2,000 NASADEM windows (`hi` on 1,994, because 6
 
 **Out:** `data/derived/light/light.json`, with 16 targets and 4,065 Earth windows (`light.json`, `targets` and `earth_windows`). Copy in `site/data/light.json`. Local horizon available for 5 Moon targets (`tools/build_ledger.py` view `moon_horizon_targets`).
 
-**Script:** `pipelines/light.py`, `src/analog/core/light.py`. Note: the docstring of `pipelines/light.py` still says "the 2000 Earth windows"; the file holds 4,065.
+**Script:** `pipelines/light.py`, `src/analog/core/light.py`. Corrected 2026-11-15: the docstring of `pipelines/light.py` now says "the 4,065 Earth windows" (the index it reads, `data/raw/earth/pool/index.json`, holds 4,065 rows, excluded ones included).
 
 ### 8b. Rehearsal plan (one file per target-twin pair)
 
@@ -236,7 +240,7 @@ Run: 2026-11-14 02:53:43 UTC, on 2,000 NASADEM windows (`hi` on 1,994, because 6
 | low_sun | yes 70, no 90 |
 | gravity, pressure, temperature, day_length | no 160 each (cannot group) |
 
-**Stale files, needs a decision:** `data/derived/rehearsal/` holds 248 pair files. The 88 extra files are not in the current ranking and come from earlier runs. `tools/build_ledger.py` reads the whole folder, so the ledger counts 248 pairs (view `rehearsal_pairs`) and its `rehearsal_*` views are computed over the 248 files. The public `site/data/facts.json` does not use any rehearsal figure, so the site figures are not affected. The same applies to `data/derived/cards/`: 408 files, of which 160 are current (`site/data/cards/`).
+**Stale files: resolved 2026-11-15.** The 88 rehearsal and 248 card files from earlier runs were moved (not deleted) to `_archive/derived_orphans_2026-11-15/` with a manifest. `data/derived/rehearsal/` and `data/derived/cards/` now hold the 160 current pairs, and the ledger views `rehearsal_*` are computed over those 160 (docs/verification/ledger/after.md).
 
 **Script:** `pipelines/rehearsal.py`. Tests: `tests/test_light.py` (11 functions), `tests/test_rehearsal.py` (26).
 
@@ -256,7 +260,7 @@ Row mix (`facts`):
 - By subject: earth_window 75,765; mars_cell 36,922; pair 6,696; target 468; region 336; validation 65; body 34; mission_limit 4.
 - By kind: derived 101,109; published 14,567; measured 4,614.
 - By footprint: local 85,645; point 23,412; regional 7,439; global 3,794.
-- Distinct earth_window ids: 4,225 (= 4,065 pool windows + 160 refined candidates). Distinct pair ids: 248 (see the stale-file note in 8b).
+- Distinct earth_window ids: 4,225 (= 4,065 pool windows + 160 refined candidates). Distinct pair ids: 160 (after the 2026-11-15 cleanup; see 8b).
 
 **Rules** (`tools/check_ledger.py`, run 2026-11-15 about 15:34, read-only):
 
@@ -269,7 +273,7 @@ Row mix (`facts`):
 | R5 | Every `{{fact:...}}` and `{{agg:...}}` placeholder resolves to exactly one fact or view | 0 (OK) |
 | R6 | Feature facts come from records with the current `measure_key` | 0 (OK) |
 
-STANDARDS 10.14 lists R1 to R5. The code also runs R6 (`tools/check_ledger.py` docstring); this is a stricter rule than the standard.
+STANDARDS 10.14 lists R1 to R5. The code also runs R6 (`tools/check_ledger.py` docstring). Corrected 2026-11-15: R6 is now defined in STANDARDS 10.14 with the same wording.
 
 **Tests:** `tests/test_check_ledger.py` (13 functions), `tests/test_render_facts.py` (5).
 
@@ -322,6 +326,25 @@ The v1.2 result is kept as it came out (`data/derived/validation/v1.2.json`). v1
 
 Source of the v1.3 holdout list: `data/derived/validation/v1.3.json`, `design.holdout_regions`.
 
+### 11b. Permanent Moon base layer
+
+Source: `docs/verification/moon_base.md` (2026-11-15). Scope: the 10 Moon sites of `site/data/targets.json`; illumination, permanently shadowed regions (PSR) and Earth visibility from the PGDA "Lunar Polar Illumination" products (120 m, 75 S to 90 S; Mazarico et al. 2011). Script: `pipelines/moon_base.py`.
+
+- Internal checks (`moon_base.md`, "Chequeos internos"): all 1,822,329 PSR pixels in the 75 S to 90 S disk have 0.0% illumination; mean illumination outside PSR is 33.4%; PSR area 26,242 km2 (3.99% of the disk); maximum product illumination 89.58%; maximum Earth visibility 100%. Six synthetic tests pass (`tests/test_moon_base.py`).
+- One site, own product: `de_gerlache_rim_2` mean 38.0%, maximum 79.7% over its disk (`moon_base.md`; the disk radius is not restated there).
+- Verification against published figures: **not achieved per site.** Mazarico et al. 2011 table 3 could not be read (the Icarus page has no content); Barker et al. 2020 table 2 is not in the extracted text; the 90% LOLA polar figure is a summary-level polar number (our product maximum is 89.58%, 0.4 points below it), not a per-site check. A quoted "86%" at one point (Bussey et al. 2010) was not confirmed and is not used.
+- Method differences that block a direct comparison: the product averages 18.6 years; Barker uses about 2 years at 1 m height; PSR distance is good to about 85 m (the 120 m pixel). Some site centres are proxies (`center_note` in `targets.json`).
+
+### 11c. External validation
+
+Source: `docs/validation/external/RESULTS.md`, generated by `pipelines/validate_external.py` against the pre-registration `docs/validation/external/PREREG.md` (written 2026-11-15, 17:35 local, before any D was read). Verdict in the file: **insufficient**.
+
+- Valid pairs: 5 of the 6 required (listed: holuhraun_iceland, pinacate_gran_desierto, qaidam_basin, meteor_crater, kilbourne_hole).
+- Median percentile 26.84. One-sided Wilcoxon (percentile < 50): p = 0.2188.
+- Pairs within the tie threshold: 5. Pool: 2,724 windows with a D (of 2,730 rows).
+- Excluded by rule: mcmurdo_dry_valleys (latitude -77.5, outside both sensor bands; decision pending with Mario) and haughton_crater (source does not name Martian terrain, rule B).
+- Second-form check (pure Python, no cKDTree): identical D and percentiles for the two rows shown in `RESULTS.md`.
+
 ---
 
 ## 12. Tests and checks
@@ -339,15 +362,15 @@ Source of the v1.3 holdout list: `data/derived/validation/v1.3.json`, `design.ho
 
 ## 13. Points to settle before the presentation
 
-1. **Stale rehearsal and card files.** `data/derived/rehearsal/` holds 248 pair files, of which 160 are current. The ledger reads all 248 (section 8b). Stale cards: 408 in `data/derived/cards/`, 160 current. The site copy is correct (160).
-2. **Refined count.** Log 67 against 72 computed (section 6b).
-3. **Context count.** `earth_context.json` has 2,760 entries, and `run.json` reports 2,565 windows with complete context of 2,730 (section 7b).
-4. **Old figures in the docs.** `docs/ARCTIC_INTEGRATION_MAP.md` and `docs/CHANGELOG.md` cite "211 Mars gap cells" and "87 closed" from the 400-window probe. The current NASADEM-only count is 215, and the all-bands count is 84.
-5. **Sigma timing.** Sigma was calibrated on 2,000 windows before the ice rule (section 5).
-6. **Validation display.** `site/data/facts.json` shows the v1.3 AUC as "0.69" (value 0.6948). The README shows 0.695. Pick one rounding.
-7. **Mars mission limits.** No Mars limit has a 100 m baseline (section 3).
-8. **Config and docstring names.** `config/earth_pool_rules.json` names `pool_add_arctic.py` (does not exist). `pipelines/light.py` says "2000 Earth windows" (file holds 4,065). STANDARDS 10.14 lists R1 to R5; the code runs R6 too.
-9. **Site data is moving.** Another agent is moving orphans out of `site/data`. Counted at about 15:31, `site/data/terrain` had 255 directories; at 15:34 `check_site_data` counted 167 terrain folders. The DATA_STATUS counts are from a later pass.
+1. **Stale rehearsal and card files.** Moved to `_archive/derived_orphans_2026-11-15/`; the ledger now counts the 160 current pairs. *[fixed 2026-11-15]*
+2. **Refined count.** Log 67 against 72 computed (section 6b). *[open, not in this pass]*
+3. **Context count.** `earth_context.json` has 2,760 entries, and `run.json` reports 2,565 windows with complete context of 2,730 (section 7b). *[open, not in this pass]*
+4. **Old figures in the docs.** `docs/ARCTIC_INTEGRATION_MAP.md` and `docs/CHANGELOG.md` cite "211 Mars gap cells" and "87 closed" from the 400-window probe. The current NASADEM-only count is 215, and the all-bands count is 84. **[Corrected 2026-11-15]:** the 211 and 87 figures in `ARCTIC_INTEGRATION_MAP.md`, `ARCTIC_INTEGRATION.md`, `CHANGELOG.md` and `REDESIGN_V2.md` are now marked historical with the current values. The templates (`*.template.md`) and `STANDARDS.md`, `site/README.md`, `REFERENCES.md` did not contain them.
+5. **Sigma timing.** Sigma was calibrated on 2,000 windows before the ice rule (section 5). **[Method note added 2026-11-15]** in section 5 and `STANDARDS.md` 10.1: sigma stays frozen; the informative recomputation without the 35 windows is there.
+6. **Validation display.** `site/data/facts.json` shows the v1.3 AUC as "0.69" (value 0.6948). The README shows 0.695. Pick one rounding. *[open, not in this pass]*
+7. **Mars mission limits.** No Mars limit has a 100 m baseline (section 3). *[open, not in this pass]*
+8. **Config and docstring names. [Corrected 2026-11-15]:** `config/earth_pool_rules.json` now names `pipelines/arctic_probe.py` and `pipelines/pool_rules.py apply` (the former `pool_add_arctic.py` does not exist). `pipelines/light.py` docstring now says 4,065 windows. STANDARDS 10.14 now defines R6 as well as R1 to R5.
+9. **Site data is moving.** Another agent is moving orphans out of `site/data`. Counted at about 15:31, `site/data/terrain` had 255 directories; at 15:34 `check_site_data` counted 167 terrain folders. The DATA_STATUS counts are from a later pass. *[open, not in this pass]*
 
 ---
 

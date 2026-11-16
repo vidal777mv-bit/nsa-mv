@@ -1,6 +1,6 @@
 {
   "generated_by": "tools/export_site_facts.py",
-  "generated_at": "2026-11-15T03:54:46Z",
+  "generated_at": "2026-11-16T00:25:12Z",
   "ledger": "data/derived/facts/facts.duckdb",
   "rule": "Public figures are read from this file only. 'display' is the rounding to show; 'value' is exact.",
   "figures": {
@@ -188,6 +188,27 @@
       "unit": "AUC",
       "ledger_view": "auc_v13",
       "definition": "Blind test on 15 new Earth regions: how well the measure tells same-kind terrain from different (0.5 = chance, 1 = perfect). Pre-registered pass mark: 0.70."
+    },
+    "moon_base_sites": {
+      "value": 9.0,
+      "display": "9",
+      "unit": "sites",
+      "ledger_view": "moon_base_sites",
+      "definition": "Moon sites with a permanent-base layer (illumination, shadowed ground and Earth visibility from NASA PGDA LOLA products, 75 S to 90 S). Sites outside that band have none."
+    },
+    "external_pairs_valid": {
+      "value": 5.0,
+      "display": "5",
+      "unit": "pairs",
+      "ledger_view": "external_pairs_valid",
+      "definition": "Analog pairs (an Earth place that space agencies name as an analog of a Mars or Moon place) that the external test could measure."
+    },
+    "external_verdict": {
+      "value": "insufficient",
+      "display": "insufficient",
+      "unit": "verdict",
+      "ledger_view": "external_verdict",
+      "definition": "Verdict of the external test, pre-registered before the run: PASS needs a median percentile of 25 or less and a one-sided Wilcoxon p below 0.05; fewer than 6 valid pairs gives 'insufficient' and forces no result."
     }
   }
 }

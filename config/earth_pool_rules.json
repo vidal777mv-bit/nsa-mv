@@ -16,7 +16,7 @@
       "lat_max": 84.0,
       "source_id": "cop_dem_glo30",
       "sensor": "copdem",
-      "built_by": "pipelines/pool_add_arctic.py (rows pool_02001.., id = 2000 + arctic probe number; probe_id kept)",
+      "built_by": "pipelines/arctic_probe.py (candidates and clips) + pipelines/pool_rules.py apply (writes the Arctic rows pool_02001.., id = 2000 + arctic probe number, probe_id kept; the ice, bare and 25 km flags of every row). (The former name pipelines/pool_add_arctic.py does not exist.)",
       "why": "NASADEM ends at 60N; ESA WorldCover ends at 84N. Copernicus GLO-30 is the only open 30 m DEM there. The tie threshold IS the p95 of D(NASADEM, Copernicus), so mixing the two sensors is inside the stated noise."
     }
   ],

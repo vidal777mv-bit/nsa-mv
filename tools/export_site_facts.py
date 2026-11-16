@@ -31,6 +31,10 @@ def _pct(v: float) -> str:
     return f"{v:.1f}%"
 
 
+def _text(v: str) -> str:
+    return v
+
+
 # key: (ledger view, unit, display format, definition)
 FIGURES = {
     "sites_measured": ("n_targets", "sites", _int, "Mars and Moon landing sites whose ground we measured from NASA elevation models."),
@@ -59,6 +63,9 @@ FIGURES = {
     "known_regions": ("n_known_regions", "regions", _int, "Well-known Earth analog regions used to tell new from known."),
     "earth_low_sun_max_pct": ("earth_grazing_max_pct", "percent", _pct, "Most grazing sunlight any place on Earth gets; far below the lunar south pole, so low sun cannot be rehearsed on Earth."),
     "validation_auc": ("auc_v13", "AUC", lambda v: f"{v:.2f}", "Blind test on 15 new Earth regions: how well the measure tells same-kind terrain from different (0.5 = chance, 1 = perfect). Pre-registered pass mark: 0.70."),
+    "moon_base_sites": ("moon_base_sites", "sites", _int, "Moon sites with a permanent-base layer (illumination, shadowed ground and Earth visibility from NASA PGDA LOLA products, 75 S to 90 S). Sites outside that band have none."),
+    "external_pairs_valid": ("external_pairs_valid", "pairs", _int, "Analog pairs (an Earth place that space agencies name as an analog of a Mars or Moon place) that the external test could measure."),
+    "external_verdict": ("external_verdict", "verdict", _text, "Verdict of the external test, pre-registered before the run: PASS needs a median percentile of 25 or less and a one-sided Wilcoxon p below 0.05; fewer than 6 valid pairs gives 'insufficient' and forces no result."),
 }
 
 
@@ -77,7 +84,7 @@ def main(ledger: Path = LEDGER, out_path: Path = OUT, discoveries: Path = DISCOV
         if row is None or row[0] is None:
             print(f"refused: view {view} is empty")
             return 1
-        v = float(row[0])
+        v = row[0] if isinstance(row[0], str) else float(row[0])  # a text view (the external verdict) is kept as text
         out[key] = {"value": v, "display": fmt(v), "unit": unit, "ledger_view": view, "definition": definition}
 
     moon_gap = con.execute(
