@@ -299,3 +299,45 @@ body #explorationWorkspace .workspace-intro.mf-hero { justify-content: flex-star
 /* Levelled | True orientation (display only; Mario 2026-11-15). Buttons reuse .inspection-tools button styling. */
 .level-switch { display: flex; flex-wrap: wrap; gap: 4px; }
 .level-tool .level-note { margin: 8px 0 0; }
+
+/* ---- Step 1 in the hero (Mario 2026-11-15): with a site open, the hero line gives way to the site brief.
+   Hero back on "← All sites" or when the world changes (the has-options / show-sites classes, app.js). */
+.brief-mark { display: none; margin: 0; font: 600 14px/1.2 var(--f-head); letter-spacing: .18em; text-transform: uppercase; }
+.brief-mark em { color: var(--accent); font-style: normal; }
+.brief-mark small { margin-left: 10px; font: 500 12px/1 var(--f-body); letter-spacing: .02em; text-transform: none; color: var(--muted); }
+.site-brief { display: none; max-width: 46ch; }
+.site-brief .brief-name { font: 600 clamp(30px, 2.8vw, 46px)/1.04 var(--f-head); margin: 4px 0 6px; letter-spacing: -0.01em; }
+.site-brief .brief-mission { color: var(--muted); font-size: 15px; line-height: 1.5; margin: 0 0 14px; }
+.site-brief .brief-share { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 12px; margin: 0 0 14px; }
+.site-brief .brief-share strong { font: 600 clamp(44px, 4vw, 64px)/1 var(--f-head); color: var(--c-target); }
+.site-brief .brief-share span { color: var(--muted); font-size: 15px; line-height: 1.4; }
+.site-brief .brief-facts { display: grid; grid-template-columns: auto 1fr; gap: 6px 18px; margin: 0; font-size: 14px; line-height: 1.5; }
+.site-brief .brief-facts dt { color: var(--muted); }
+.site-brief .brief-facts dd { margin: 0; color: var(--text); }
+.site-brief .brief-note { margin: 14px 0 0; font-size: 13px; }
+
+#explorationWorkspace.has-options:not(.show-sites) .mf-hero .hero-copy > .eyebrow,
+#explorationWorkspace.has-options:not(.show-sites) .mf-hero .hero-gap-line,
+#explorationWorkspace.has-options:not(.show-sites) .mf-hero .hero-why,
+#explorationWorkspace.has-options:not(.show-sites) .mf-hero #atlasCounter,
+#explorationWorkspace.has-options:not(.show-sites) .mf-hero #heroAskGap { display: none; }
+#explorationWorkspace.has-options:not(.show-sites) .mf-hero .brief-mark { display: block; }
+#explorationWorkspace.has-options:not(.show-sites) .mf-hero .site-brief { display: block; animation: cgFade .3s ease-out both; }
+#explorationWorkspace.has-options:not(.show-sites) .mf-hero .world-switch { max-width: 260px; }
+body #explorationWorkspace.has-options:not(.show-sites) .mf-hero .world-switch .seg-btn { min-height: 34px !important; font-size: 14px !important; }
+#explorationWorkspace.has-options:not(.show-sites) .mf-hero .hero-side { gap: 0; }
+@media (prefers-reduced-motion: reduce) {
+  #explorationWorkspace.has-options:not(.show-sites) .mf-hero .site-brief { animation: none !important; }
+}
+
+/* ---- Copy link and downloads, in the Earth options (Mario 2026-11-15) */
+#explorationWorkspace .share-tools { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 14px 0 0; }
+#explorationWorkspace .share-tools .btn { min-height: 40px; }
+#explorationWorkspace .share-status { flex-basis: 100%; margin: 0; font-size: 13px; }
+#explorationWorkspace .share-link {
+  flex-basis: 100%; width: 100%; min-height: 40px; padding: 8px 10px; font: 13px/1.4 var(--f-body); color: var(--text);
+  background: var(--panel-2); border: 1px solid var(--line); border-radius: var(--radius);
+}
+/* The hero eyebrow must give way too (an older !important rule shows every .eyebrow in the hero). */
+body #explorationWorkspace.has-options:not(.show-sites) .mf-hero .hero-copy > .eyebrow { display: none !important; }
+.brief-base { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); } .brief-base .eyebrow { color: var(--c-moon); }

@@ -1,0 +1,111 @@
+{
+  "generated_by": "pipelines/moon_base.py (Claude, Anthropic, under the team's direction); values computed from the PGDA products listed in sources",
+  "sources": [
+    {
+      "id": "pgda_illum_75s_120m",
+      "url": "https://pgda.gsfc.nasa.gov/data/MoonIllumination/AVGVISIB_75S_120M_201608.TIF",
+      "product": "Average solar illumination: fraction of the 18.6-year nutation cycle (hourly steps) with the Sun visible at the surface. The product is a model of LOLA topography, not a direct measurement. File AVGVISIB_75S_120M_201608.TIF (PGDA product 69, south pole 75S-90S).",
+      "resolution_m": 120,
+      "period": "averaged over hourly steps across one 18.6-year lunar nutation cycle; LOLA data 2009-07-13 to 2013-07-18 (GeoTIFF tags START_TIME/STOP_TIME)",
+      "credit": "Mazarico, E., et al. (2011), Illumination conditions of the lunar polar regions using LOLA topography, Icarus 211, 1066-1081, doi:10.1016/j.icarus.2010.10.030; NASA GSFC PGDA (product 69 page: https://pgda.gsfc.nasa.gov/products/69). The page states no licence; cite Mazarico et al. (2011)."
+    },
+    {
+      "id": "pgda_psr_75s_120m",
+      "url": "https://pgda.gsfc.nasa.gov/data/MoonIllumination/LPSR_75S_120M_201608.TIF",
+      "product": "Permanently shadowed regions: binary map (1 = PSR, 0 = not). Value meaning read from the GeoTIFF offset (raw 20000 -> 1.0); the PDS label could not be read (pds-geosciences.wustl.edu was down). File LPSR_75S_120M_201608.TIF (PGDA product 69, south pole 75S-90S).",
+      "resolution_m": 120,
+      "period": "averaged over hourly steps across one 18.6-year lunar nutation cycle; LOLA data 2009-07-13 to 2013-07-18 (GeoTIFF tags START_TIME/STOP_TIME)",
+      "credit": "Mazarico, E., et al. (2011), Illumination conditions of the lunar polar regions using LOLA topography, Icarus 211, 1066-1081, doi:10.1016/j.icarus.2010.10.030; NASA GSFC PGDA (product 69 page: https://pgda.gsfc.nasa.gov/products/69). The page states no licence; cite Mazarico et al. (2011)."
+    },
+    {
+      "id": "pgda_earth_vis_75s_120m",
+      "url": "https://pgda.gsfc.nasa.gov/data/MoonIllumination/AVGVISIB_75S_120M_201608_EARTH.TIF",
+      "product": "Average Earth visibility: fraction of the cycle with any part of the Earth disc unobscured. PGDA warns this may be slightly optimistic for DSN-only radio links. File AVGVISIB_75S_120M_201608_EARTH.TIF (PGDA product 69, south pole 75S-90S).",
+      "resolution_m": 120,
+      "period": "averaged over hourly steps across one 18.6-year lunar nutation cycle; LOLA data 2009-07-13 to 2013-07-18 (GeoTIFF tags START_TIME/STOP_TIME)",
+      "credit": "Mazarico, E., et al. (2011), Illumination conditions of the lunar polar regions using LOLA topography, Icarus 211, 1066-1081, doi:10.1016/j.icarus.2010.10.030; NASA GSFC PGDA (product 69 page: https://pgda.gsfc.nasa.gov/products/69). The page states no licence; cite Mazarico et al. (2011)."
+    }
+  ],
+  "sites": {
+    "apollo17_taurus_littrow": {
+      "illum_mean_pct": null,
+      "illum_max_pct": null,
+      "earth_vis_pct": null,
+      "psr_nearest_km": null,
+      "psr_area_km2": null,
+      "notes": "not polar, constant day/night cycle"
+    },
+    "cabeus_b_peak": {
+      "illum_mean_pct": 38.72,
+      "illum_max_pct": 68.41,
+      "earth_vis_pct": 34.88,
+      "psr_nearest_km": 0.727,
+      "psr_area_km2": 0.2304,
+      "notes": "Disk 4 km radius (8 km across) on the centre; disk pixels valid 3494 of 3494. PSR distance quantised to the 120 m pixel centres (about +/-85 m). Centre: LROC ROI proxy centre (mosaic centre), not a NASA landing coordinate; the NASA release of 28 Oct 2024 gives none."
+    },
+    "de_gerlache_rim_2": {
+      "illum_mean_pct": 38.01,
+      "illum_max_pct": 79.7,
+      "earth_vis_pct": 30.54,
+      "psr_nearest_km": 4.154,
+      "psr_area_km2": 0.0,
+      "notes": "Disk 4 km radius (8 km across) on the centre; disk pixels valid 3483 of 3483. PSR distance quantised to the 120 m pixel centres (about +/-85 m). Centre: ROI polygon bounding-box centre (Site11, real archive; proxy, not a NASA landing coordinate)."
+    },
+    "haworth": {
+      "illum_mean_pct": 27.25,
+      "illum_max_pct": 59.38,
+      "earth_vis_pct": 38.59,
+      "psr_nearest_km": 1.011,
+      "psr_area_km2": 3.6432,
+      "notes": "Disk 4 km radius (8 km across) on the centre; disk pixels valid 3488 of 3488. PSR distance quantised to the 120 m pixel centres (about +/-85 m). Centre: DEM-raster centre of the PGDA 5 m DEM (proxy, not a NASA landing coordinate)."
+    },
+    "im1_odysseus": {
+      "illum_mean_pct": 42.72,
+      "illum_max_pct": 53.08,
+      "earth_vis_pct": 96.88,
+      "psr_nearest_km": 0.633,
+      "psr_area_km2": 0.0432,
+      "notes": "Disk 4 km radius (8 km across) on the centre; disk pixels valid 3492 of 3492. PSR distance quantised to the 120 m pixel centres (about +/-85 m). Centre: Primary: NASA LRO release gives the resting coordinates. The tip-over statement is the company's, reported by news (NASA's release does not mention it)."
+    },
+    "im2_athena": {
+      "illum_mean_pct": 33.09,
+      "illum_max_pct": 53.68,
+      "earth_vis_pct": 68.15,
+      "psr_nearest_km": 2.168,
+      "psr_area_km2": 0.6192,
+      "notes": "Disk 4 km radius (8 km across) on the centre; disk pixels valid 3488 of 3488. PSR distance quantised to the 120 m pixel centres (about +/-85 m). Centre: Primary: intended site from LROC. The LROC page gives no touchdown point; the 6 km disk covers it. Touchdown offset not measured here."
+    },
+    "malapert_massif": {
+      "illum_mean_pct": 37.53,
+      "illum_max_pct": 80.7,
+      "earth_vis_pct": 51.08,
+      "psr_nearest_km": 1.442,
+      "psr_area_km2": 0.0576,
+      "notes": "Disk 4 km radius (8 km across) on the centre; disk pixels valid 3490 of 3490. PSR distance quantised to the 120 m pixel centres (about +/-85 m). Centre: DEM-raster centre of the PGDA 5 m DEM (proxy, not a NASA landing coordinate)."
+    },
+    "mons_mouton_plateau": {
+      "illum_mean_pct": 37.0,
+      "illum_max_pct": 54.23,
+      "earth_vis_pct": 82.19,
+      "psr_nearest_km": 0.764,
+      "psr_area_km2": 0.3168,
+      "notes": "Disk 4 km radius (8 km across) on the centre; disk pixels valid 3490 of 3490. PSR distance quantised to the 120 m pixel centres (about +/-85 m). Centre: LROC ROI proxy centre (mosaic centre), not a NASA landing coordinate; the NASA release of 28 Oct 2024 gives none."
+    },
+    "nobile_rim_1": {
+      "illum_mean_pct": 30.56,
+      "illum_max_pct": 83.53,
+      "earth_vis_pct": 25.52,
+      "psr_nearest_km": 2.013,
+      "psr_area_km2": 1.0944,
+      "notes": "Disk 4 km radius (8 km across) on the centre; disk pixels valid 3493 of 3493. PSR distance quantised to the 120 m pixel centres (about +/-85 m). Centre: DEM-raster centre of the PGDA 5 m DEM (proxy, not a NASA landing coordinate)."
+    },
+    "nobile_rim_2": {
+      "illum_mean_pct": 38.1,
+      "illum_max_pct": 53.82,
+      "earth_vis_pct": 56.25,
+      "psr_nearest_km": 2.565,
+      "psr_area_km2": 0.0288,
+      "notes": "Disk 4 km radius (8 km across) on the centre; disk pixels valid 3494 of 3494. PSR distance quantised to the 120 m pixel centres (about +/-85 m). Centre: DEM-raster centre of the PGDA 5 m DEM (proxy, not a NASA landing coordinate)."
+    }
+  }
+}
