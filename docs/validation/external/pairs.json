@@ -1,0 +1,49 @@
+{
+  "doc": "PRE-REGISTRO 2026-11-15 17:35 (docs/validation/external/PREREG.md). Pares validos fijados antes de medir. Cada region aporta como mucho un par. target.type: site = un sitio de data/derived/neighbors/targets.parquet; set = conjunto (min de D sobre sus celdas): mars_cells = las 1,838 celdas de Marte, moon_targets = los 10 objetivos lunares.",
+  "pairs": [
+    {
+      "region_id": "holuhraun_iceland",
+      "source_url": "https://www.usgs.gov/publications/2014-2015-holuhraun-lava-flow-field-iceland-a-planetary-analog-young-volcanic-terrains",
+      "source_quote": "The Holuhraun eruption 'serves as a terrestrial analog for volcanic terrains in Elysium Planitia' (Planetary Science Journal, 2025).",
+      "body": "mars",
+      "target": {"type": "site", "ids": ["insight_elysium"]},
+      "target_note": "InSight landing site, Elysium Planitia (targets.parquet). Elysium Planitia nombrado por la fuente; el sitio medido de Elysium es insight_elysium."
+    },
+    {
+      "region_id": "pinacate_gran_desierto",
+      "source_url": "https://psi.edu/blog/investigations-of-lava-flows-in-the-pinacate-volcanic-field-as-analogues-for-mars",
+      "source_quote": "Planetary Science Institute (2024): 'Investigations of Lava Flows in the Pinacate Volcanic Field as Analogues for Mars'.",
+      "body": "mars",
+      "target": {"type": "set", "sets": ["mars_cells"]},
+      "target_note": "Tipo: lava flows. La fuente no nombra sitio de Marte; se usan todas las celdas de Marte (regla de 'no permite elegir')."
+    },
+    {
+      "region_id": "qaidam_basin",
+      "source_url": "https://www.usgs.gov/media/images/chinas-qaidam-basin-landscape-similar-mars",
+      "source_quote": "The landscape has some similarity with Mars: almost total lack of vegetation and wind-formed landscape (USGS, 1988).",
+      "body": "mars",
+      "target": {"type": "set", "sets": ["mars_cells"]},
+      "target_note": "Tipo: paisaje formado por el viento. La fuente no nombra sitio de Marte; todas las celdas de Marte."
+    },
+    {
+      "region_id": "meteor_crater",
+      "source_url": "https://science.nasa.gov/earth/earth-observatory/arizonas-meteor-crater-148384/",
+      "source_quote": "Graduate students train to study impact craters on Earth, the Moon, Mars, and other planets.",
+      "body": "moon+mars",
+      "target": {"type": "set", "sets": ["mars_cells", "moon_targets"]},
+      "target_note": "Tipo: impact craters, en Luna y Marte. La fuente no elige sitio: union de celdas de Marte y de los 10 objetivos lunares."
+    },
+    {
+      "region_id": "kilbourne_hole",
+      "source_url": "https://science.nasa.gov/blogs/notes-from-the-field/2018/01/11/in-new-mexico-land-of-volcanoes",
+      "source_quote": "NASA Goddard field team: Kilbourne Hole 'a perfect analog site for testing ... to investigate volcanic areas on the Moon, Mars and other rocky planets or moons'.",
+      "body": "moon+mars",
+      "target": {"type": "set", "sets": ["mars_cells", "moon_targets"]},
+      "target_note": "Tipo: areas volcanicas, en Luna y Marte. Union de celdas de Marte y objetivos lunares (sin eleccion de sitio en la fuente)."
+    }
+  ],
+  "excluded_by_rule": {
+    "mcmurdo_dry_valleys": "lat -77.5: fuera de la banda de sensor (NASADEM 56 S-60 N; Copernicus 60-84 N). Pendiente de decision de Mario.",
+    "haughton_crater": "La fuente no nombra terreno ni sitio de Marte (regla B)."
+  }
+}

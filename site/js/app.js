@@ -8,6 +8,7 @@ import { createAsk } from "./ask.js";
 import { h, fmt, latlon, sampleTag, sourceLink } from "./dom.js";
 import { renderFeatures, renderMissionBlock, renderValidation, renderControls, renderContext, refinedSummary, noveltyBadge, scoringKeys } from "./panels.js";
 import { renderSite, renderTwinPlace, fillLight, fillTwinLight, fillRehearsal, fillGap, fillHero, loadMarsGapCoords } from "./dossier.js";
+import { saveEarthOptions } from "./share.js";
 
 const $ = (sel) => document.querySelector(sel);
 let reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -92,7 +93,11 @@ function updateJourney(name) {
 const inWorkspace = () => !["how","about"].includes(S.currentScreen);
 async function route() {
   const token=++S.routeToken;
-  let name=location.hash.slice(1);
+  // "#name?key=value&..." : the name routes, the query carries a comparison (see stateHash).
+  const hashText=location.hash.slice(1), qAt=hashText.indexOf("?");
+  let name=qAt<0 ? hashText : hashText.slice(0,qAt);
+  const params=new URLSearchParams(qAt<0 ? "" : hashText.slice(qAt+1));
+  if(name==="explore") name="destination";
   if(name==="ask"){const p=$("#askPanel");if(p){p.open=true;p.scrollIntoView?.({block:"start"});}name="destination";}
   if(!SCREENS.includes(name)) name="destination";
   const workspace=!["how","about"].includes(name);
@@ -115,10 +120,12 @@ async function route() {
       if(S.twinEntry) {await enterTwin();enterMission();}
       else {$("#twinBody").hidden=true;}
       if(!wasWorkspace && S.target) S.homeGlobe?.setSelected(targetsForBody().findIndex(t=>t.id===S.target.id));
+      await restoreFromHash(params);
     } else {S.selectionToken++;await ENTER[name]();}
   } catch(err) {if(token===S.routeToken)showError(err);}
   if(token!==S.routeToken)return;
-  status("");
+  status(takeNotice());
+  if(workspace) writeHash();
   if(!workspace) {$("#h-"+name)?.focus({preventScroll:true});window.scrollTo({top:0,behavior:"instant"});}
   else if(name==="twin" && S.card) $("#screen-twin")?.scrollIntoView?.({behavior:reduced?"instant":"smooth",block:"start"});
 }
@@ -131,6 +138,129 @@ const ENTER = {
   how: async () => enterHow(),
   about: async () => {},
 };
+
+// ---------------------------------------------------------------- link to a comparison (hash) and its restore
+
+// A message for the next status line; route() shows it after its own status reset.
+function takeNotice() { const n = S.notice || ""; S.notice = null; return n; }
+
+// The comparison in the hash: #explore?body=&site=&twin=&orient=. The default view (Mars, nothing chosen) has no hash.
+// A Mars atlas cell carries only its world: its id is not a named site.
+function stateHash() {
+  const p = new URLSearchParams();
+  if (S.target && !S.cell && S.target.body === S.body) {
+    p.set("body", S.body);
+    p.set("site", S.target.id);
+    if (S.twinEntry && S.analogs.includes(S.twinEntry)) {
+      p.set("twin", S.twinEntry.analog_id);
+      p.set("orient", S.levelled ? "levelled" : "true");
+    }
+  } else if (S.body !== "mars") p.set("body", S.body);
+  const q = p.toString();
+  return q ? "#explore?" + q : "";
+}
+
+// replaceState: no new history entry and no hashchange, so the router does not run again.
+function writeHash() {
+  if (!inWorkspace()) return;
+  const next = stateHash();
+  if (location.hash === next) return;
+  history.replaceState(null, "", location.pathname + location.search + next);
+}
+
+// Restores world, site, Earth option and orientation from a link. An unknown id is reported, never replaced by a guess.
+async function restoreFromHash(p) {
+  const body = p.get("body");
+  if ((body === "mars" || body === "moon") && body !== S.body) setBody(body);
+  const siteId = p.get("site"), twinId = p.get("twin");
+  if (siteId && !(S.target && !S.cell && S.target.id === siteId)) {
+    const list = targetsForBody(), i = list.findIndex((t) => t.id === siteId);
+    if (i < 0 || !list[i].unlocked) { S.notice = `The site "${siteId}" is not in this atlas.`; return; }
+    await chooseTarget(list[i], i, twinId);
+  } else if (twinId && S.target && !S.cell && S.twinEntry?.analog_id !== twinId) {
+    const i = S.analogs.findIndex((a) => a.analog_id === twinId);
+    if (i >= 0) await selectAnalog(i);
+  }
+  if (twinId && S.target && !S.cell) {
+    const levelled = p.get("orient") !== "true";
+    if (S.twinEntry?.analog_id !== twinId) S.notice = `The Earth place "${twinId}" is not among the twins of this site.`;
+    else if (S.levelled !== levelled) setLevel(levelled);
+  }
+  writeHash();
+}
+
+// Step 1 of the dossier in the hero while a site is open (the hero line is hidden by CSS: mars-first.css).
+// Values come from the site's comparison card (S.regionCard): the same target-side numbers as the step 02 gauges.
+function renderSiteBrief() {
+  const box = $("#siteBrief");
+  if (!box) return;
+  const t = S.target;
+  if (!t) { box.replaceChildren(); return; }
+  if (S.cell) {
+    box.replaceChildren(
+      h("p", { class: "eyebrow" }, "Step 1 · The site"),
+      h("h2", { class: "brief-name" }, t.name),
+      h("p", { class: "brief-mission" }, latlon(t.lat, t.lon)),
+      h("p", { class: "note brief-note" }, "A Mars atlas cell: a measured 8 km window. Atlas cells have no landing limits or terrain comparison of their own."));
+    return;
+  }
+  const landing = missionDetails(S.regionCard?.mission_pct?.landing, "landing");
+  const driving = missionDetails(S.regionCard?.mission_pct?.driving, "driving");
+  const limitText = (m) => (Number.isFinite(m.limit_deg) ? `${fmt(m.limit_deg, 1)}° slope` : "not in card");
+  box.replaceChildren(
+    h("p", { class: "eyebrow" }, "Step 1 · The site"),
+    h("h2", { class: "brief-name" }, t.name),
+    h("p", { class: "brief-mission" }, [t.mission, t.year].filter(Boolean).join(", ") || "Mission not in export"),
+    h("div", { class: "brief-share" },
+      h("strong", {}, Number.isFinite(landing.target) ? `${fmt(landing.target, 1)}%` : "n/a"),
+      h("span", {}, "of the 8 km circle within the landing limit")),
+    h("dl", { class: "brief-facts" },
+      h("dt", {}, "Landing class"), h("dd", {}, CLASS_LABELS[t.landing_class] || "not in export"),
+      h("dt", {}, "Landing limit"), h("dd", {}, limitText(landing)),
+      h("dt", {}, "Driving limit"), h("dd", {}, limitText(driving))),
+    h("p", { class: "note brief-note" }, "Slope limits are measured over a 100 m baseline. The mission evidence is in step 02."),
+    ...[moonBaseBlock(t)].filter(Boolean));
+}
+
+// Permanent Moon base layer (site/data/moon_base.json, NASA PGDA product 69, LOLA, Mazarico et al. 2011).
+function moonBaseBlock(t) {
+  if (t.body !== "moon" || !S.moonBase) return null;
+  const m = S.moonBase.sites?.[t.id];
+  if (!m) return null;
+  if (m.illum_mean_pct === null || m.illum_mean_pct === undefined)
+    return h("div", { class: "brief-base" }, h("p", { class: "eyebrow" }, "Permanent base"), h("p", { class: "note" }, m.notes || "Not in the polar illumination product."));
+  const pct = (v) => (Number.isFinite(v) ? `${fmt(v, 0)}%` : "n/a");
+  return h("div", { class: "brief-base" },
+    h("p", { class: "eyebrow" }, "Permanent base"),
+    h("dl", { class: "brief-facts" },
+      h("dt", {}, "Sunlight"), h("dd", {}, `${pct(m.illum_mean_pct)} of the time on average, up to ${pct(m.illum_max_pct)} at the best spot`),
+      h("dt", {}, "Earth in view"), h("dd", {}, `${pct(m.earth_vis_pct)} of the time (direct radio link)`),
+      h("dt", {}, "Permanent shadow"), h("dd", {}, Number.isFinite(m.psr_nearest_km) ? `${fmt(m.psr_nearest_km, 1)} km away${m.psr_area_km2 > 0.01 ? `, ${fmt(m.psr_area_km2, 1)} km² inside the circle` : ""} (where water ice can survive)` : "n/a")),
+    h("p", { class: "note brief-note" }, "NASA LOLA polar illumination, 120 m, averaged over 18.6 years (PGDA, Mazarico et al. 2011)."));
+}
+
+// Copy the link to this comparison; when the browser blocks the clipboard, the link is shown selected for Ctrl+C.
+async function copyLink() {
+  const url = location.href.split("#")[0] + stateHash();
+  const box = $("#shareLink"), note = $("#shareStatus");
+  try {
+    await navigator.clipboard.writeText(url);
+    box.hidden = true;
+    note.textContent = "Link copied.";
+  } catch (_) {
+    box.value = url;
+    box.hidden = false;
+    box.focus();
+    box.select();
+    note.textContent = "The browser blocked the copy. The link is selected: press Ctrl+C.";
+  }
+}
+
+function saveOptions(kind) {
+  if (!S.target || !S.analogs.length) return;
+  saveEarthOptions(kind, S.target.id, S.analogs);
+  $("#shareStatus").textContent = `${S.analogs.length} Earth options downloaded as ${kind === "csv" ? "CSV" : "GeoJSON"}.`;
+}
 
 // ---------------------------------------------------------------- names, ties and novelty
 
@@ -415,10 +545,12 @@ async function loadCell(cell, ci) {
   if (empty) empty.hidden = true;
   document.querySelectorAll("#targetCards button").forEach((button) => button.setAttribute("aria-pressed", "false"));
   renderCellCard(cell);
+  renderSiteBrief();
   updateJourney("destination");
   await enterScan();
   if (token !== S.selectionToken) return;
   renderPicked();
+  writeHash();
   status(`${cellTitle(cell)}: ${S.analogs.length} Earth twins loaded.`);
 }
 
@@ -515,7 +647,7 @@ async function enterRegion() {
     if(t.thumbnail) { const stage=$("#regionStage"); if(!stage.querySelector("img")) stage.append(h("img",{src:DATA_BASE+t.thumbnail,alt:`Hillshade of ${t.name}`})); }
   }
 }
-async function chooseTarget(t,i) {
+async function chooseTarget(t,i,twinId) {
   if(!t.unlocked) return;
   const token=++S.selectionToken;
   S.twinToken++;
@@ -531,6 +663,7 @@ async function chooseTarget(t,i) {
     if(token!==S.selectionToken || !inWorkspace()) return;
     closeCell();
     Object.assign(S,{target:t,analogs,regionCard,selected:null,twinEntry:null,card:null,loadedTwin:null,cell:null});
+    renderSiteBrief();
     $("#twinBody").hidden=true;
     $("#overlayGuide").hidden=true;
     const empty=$("#workspaceEmpty");if(empty)empty.hidden=true;
@@ -538,8 +671,11 @@ async function chooseTarget(t,i) {
     updateJourney("destination");
     await enterScan();
     if(token!==S.selectionToken || !inWorkspace())return;
-    const firstIndex=S.analogs.findIndex(a=>a.card);
+    // The named Earth option (from a link) if it has a card; otherwise the first one that has.
+    const wanted=twinId ? S.analogs.findIndex(a=>a.analog_id===twinId && a.card) : -1;
+    const firstIndex=wanted>=0 ? wanted : S.analogs.findIndex(a=>a.card);
     if(firstIndex>=0) await selectAnalog(firstIndex);
+    writeHash();
     status("");
   } catch(err) { if(token===S.selectionToken) {S.retry=()=>chooseTarget(t,i);showError(err);} }
 }
@@ -652,7 +788,7 @@ async function selectAnalog(i) {
   try {
     await enterTwin();
     if(S.twinEntry!==entry || !inWorkspace())return;
-    enterMission();updateJourney("twin");
+    enterMission();updateJourney("twin");writeHash();
     const body=$("#twinBody");
     if(!reduced && body.animate)body.animate([{opacity:.35,transform:"translateY(8px)"},{opacity:1,transform:"translateY(0)"}],{duration:420,easing:"ease-out"});
     status("");
@@ -769,6 +905,7 @@ function setLevel(levelled) {
   S.levelled = levelled;
   if(S.holo?.data) { S.holo.setLevelled(levelled); updateProfile(); }
   renderLevel();
+  writeHash();
 }
 // tilt.json is written by the terrain pipeline; until it exists the line says so instead of failing.
 async function loadTilt() {
@@ -870,6 +1007,16 @@ async function enterHow() {
 
 // ---------------------------------------------------------------- wiring
 
+// Switch the home globe to Mars or the Moon: the chosen site and its comparison are cleared.
+function setBody(body) {
+  S.selectionToken++;status("");S.homeGlobe?.setMarks?.(null);S.body=body;S.twinToken++;
+  Object.assign(S,{target:null,analogs:[],regionCard:null,selected:null,twinEntry:null,card:null,loadedTwin:null,cell:null});
+  S.holo?.stop();$("#twinBody").hidden=true;$("#overlayGuide").hidden=true;
+  const empty=$("#workspaceEmpty");if(empty)empty.hidden=false;
+  closeCell();$("#explorationWorkspace").classList.remove("has-options","show-sites");S.linkFrom=null;S.linkedTarget=null;S.linkShown=false;renderTargets();enterScan();updateJourney("destination");fillHero($("#heroGapText"),$("#heroAskGap"),S.body);paintHomeGap();const wn=$("#worldName");if(wn)wn.textContent=S.body==="moon"?"the Moon.":"Mars.";if(S.homeGlobe){S.homeGlobe.focus=S.body==="moon"?{lat:-62,lon:0}:{lat:12,lon:-40};S.homeGlobe.resetView();}
+  renderSiteBrief();writeHash();
+}
+
 function wire() {
   window.matchMedia("(prefers-reduced-motion: reduce)").addEventListener("change",event=>{
     reduced=event.matches;
@@ -877,11 +1024,7 @@ function wire() {
     for(const globe of [S.homeGlobe,S.globe,askGlobe]) if(globe){globe.reduced=reduced;if(reduced&&globe.anim)globe.animateTo(globe.anim.dirB,globe.anim.d1);}
     for(const view of [S.holo,S.regionView]) if(view){if(view.data)view.data.reduced=reduced;view.controls.enableDamping=!reduced;view.setMode(view.mode);}
   });
-  for(const b of document.querySelectorAll("[data-body]")) b.addEventListener("click",()=>{S.selectionToken++;status("");S.homeGlobe?.setMarks?.(null);S.body=b.dataset.body;S.twinToken++;
-    Object.assign(S,{target:null,analogs:[],regionCard:null,selected:null,twinEntry:null,card:null,loadedTwin:null,cell:null});
-    S.holo?.stop();$("#twinBody").hidden=true;$("#overlayGuide").hidden=true;
-    const empty=$("#workspaceEmpty");if(empty)empty.hidden=false;
-    closeCell();$("#explorationWorkspace").classList.remove("has-options","show-sites");S.linkFrom=null;S.linkedTarget=null;S.linkShown=false;renderTargets();enterScan();updateJourney("destination");fillHero($("#heroGapText"),$("#heroAskGap"),S.body);paintHomeGap();const wn=$("#worldName");if(wn)wn.textContent=S.body==="moon"?"the Moon.":"Mars.";if(S.homeGlobe){S.homeGlobe.focus=S.body==="moon"?{lat:-62,lon:0}:{lat:12,lon:-40};S.homeGlobe.resetView();}});
+  for(const b of document.querySelectorAll("[data-body]")) b.addEventListener("click",()=>setBody(b.dataset.body));
   $("#regionalToggle").addEventListener("click",()=>{S.regionalVisible=!S.regionalVisible;renderTargets();});
   $("#compareGo")?.addEventListener("click",()=>$("#step-evidence")?.scrollIntoView?.({behavior:reduced?"instant":"smooth",block:"start"}));
   $("#backToSites")?.addEventListener("click",()=>{$("#explorationWorkspace").classList.add("show-sites");S.linkFrom=null;S.linkedTarget=null;S.linkShown=false;$("#linkLine").style.opacity="0";});
@@ -922,6 +1065,9 @@ function wire() {
   });
   $("#journeyBack").addEventListener("click",()=>goto(({region:"destination",scan:"region",twin:"scan",how:S.twinEntry ? "twin" : "destination",about:"destination"})[S.currentScreen] || "destination"));
   $("#heroAskGap").addEventListener("click",openGapQuestion);
+  $("#copyLink").addEventListener("click",copyLink);
+  $("#downloadCsv").addEventListener("click",()=>saveOptions("csv"));
+  $("#downloadGeoJson").addEventListener("click",()=>saveOptions("geojson"));
   document.querySelectorAll("[data-nav]").forEach(a=>a.addEventListener("click",e=>{if(a.getAttribute("aria-disabled")==="true"){e.preventDefault();status(a.dataset.nav==="scan" ? "Choose a region first." : "Choose an Earth analog first.");}}));
   document.addEventListener("visibilitychange",()=>{if(document.hidden){S.homeGlobe?.stop();S.globe?.stop();S.holo?.stop();S.regionView?.stop();}else{if(inWorkspace()){S.homeGlobe?.start();S.globe?.start();S.holo?.start();}}});
 }
@@ -1047,6 +1193,7 @@ async function boot() {
     try { S.discoveries = await getJSON("discoveries.json"); } catch (_) { S.discoveries = null; }
   }
   try { S.facts = await getJSON("facts.json"); } catch (_) { S.facts = null; }
+  try { S.moonBase = await getJSON("moon_base.json"); } catch (_) { S.moonBase = null; }
   S.windowById = new Map((S.discoveries?.windows || []).map((w) => [w.analog_id, w]));
   renderDiscoveries();
   fillHero($("#heroGapText"), $("#heroAskGap"), S.body);

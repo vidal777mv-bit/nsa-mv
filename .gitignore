@@ -83,3 +83,5 @@ docs/REDESIGN_V2.md
 
 # Pages is served from the gh-pages branch (contents of site/)
 .github/
+video/v2/*.mp4
+video/v2/snapshots/
